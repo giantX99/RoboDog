@@ -1,0 +1,49 @@
+---------------------------------------------------------------------------------------
+In order to set up static IP on the Pi use command,
+	ip a
+and look for wlan0 info if connected via wifi or eth0 info if connected by cable
+Then grab ip address from line
+	inet xxx.xx.xx.x/xx
+	
+The /xx number is a subnet mask:
+	/22 corresponds to 255.255.252.0	- 1,022 usable IP addresses
+	/24 corresponds to 255.255.255.0	- 254 usable IP addresses
+	/28 corresponds to 255.255.255.240	- 14 usable IP addresses
+
+To figure out the range of the of IP addresses possible convert the subnet to binary 8-bit format
+Then convert the base IP address to binary 8-bit format and apply the mask
+The first *subnet mask number* bits is the network address and the rest bits are available addresses for different devices AKA hosts
+So the available addresses start from the original network address up to the broadcast address
+
+Range for TigerWiFi in Naka:
+	10.7.16.1 to 10.7.19.253
+Since it's a school network, the network will use DHCP to dynamically assign the IP addresses for hosts for a specific range. When dynamically assigned there's a lease time for the assigned address
+
+The last IP address is the broadcast and the one before that is the default gateway (internet connection)
+For TigerWiFi in Naka:
+	10.7.19.254 --> gateway
+	10.7.19.255 --> broadcast
+	10.6.16.0   --> Network base address
+	
+Default Gateway address can be found by using:
+	ip r | grep default
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+SET THE STATIC IP FOLLOWING THESE INSTRUCTIONS:
+Choose an available IP address within the range of possible IP addresses and use the following commands:
+	1. nmcli connection show	- This will show the wifi network currently in use
+	2. nmcli connection modify <WiFi in use> ipv4.addresses <ip_address chosen>/<network_subnet_mask#>
+	3. nmcli connection modify <WiFi in use> ipv4.gateway <gateway_address>
+	4. nmcli connection modify <WiFi in use> ipv4.method manual
+	5. nmcli connection up <WiFi in use>	- This apply the changes
+Verify if IP address was changed to static IP chosen by using:
+	ip a
+	hostname -I
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+For TigerWiFi in Naka Static IP address is:
+	10.7.16.24
+Connect ssh by using: 
+	ssh robodog@10.7.16.24
+---------------------------------------------------------------------------------------
+
