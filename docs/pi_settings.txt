@@ -1,0 +1,37 @@
+---------------------------------------------------------------------------------------
+Settings for the pi is the following:
+	Name = RoboDog
+	Username = robodog
+	Password = robodog2024
+	Hostname = robodog-brain
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+When connecting to pi through ssh make sure pi has been connected to network closeby previously.
+
+If IP address of the Pi is known then use the following command to connect:
+	ssh robodog@ip_address
+
+If local machine trying to connect with the pi is in the same network use:
+	ssh robodog@robodog-brain.local
+
+Previous known IP addresses:
+	TigerWifi -->  10.7.18.80
+	Gian's iPhone Hotspot --> 172.20.10.2
+	
+IP address of the pi can be found by the following command ON the pi:
+	hostname -I
+---------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------
+If the Ubuntu 22.04 was just installed, its necessary to do the following steps to activate connection through ssh:
+	1. sudo apt update
+	2. sudo apt install openssh-server
+	3. sudo systemctl enable ssh
+	4. sudo systemctl start ssh
+	
+Also do the following to enable mDNS (hostname access) when connecting through ssh:
+	1. sudo apt update
+	2. sudo apt install avahi-daemon
+	3. sudo systemctl start avahi-daemon
+	4. sudo systemctl enable avahi-daemon
+	5. * To check status use --> sudo systemctl status avahi-daemon
+---------------------------------------------------------------------------------------
