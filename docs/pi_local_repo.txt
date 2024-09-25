@@ -1,7 +1,7 @@
 ---------------------------------------------------------------------------------------
 When developing in raspberry pi local repo, make sure follow the following steps:
 	1. git pull
-	2. Insert push pull token from home/robodog/.repo-token/push_token.txt
+	2. Insert username as giantX99 and then push pull token from home/robodog/.repo-token/push_token.txt
 	3. DEV TIME
 	4. git add -A
 	5. git commit -m "any comments you wanna make"
