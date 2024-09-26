@@ -34,8 +34,9 @@ Choose an available IP address within the range of possible IP addresses and use
 	1. nmcli connection show	- This will show the wifi network currently in use
 	2. nmcli connection modify <WiFi in use> ipv4.addresses <ip_address chosen>/<network_subnet_mask#>
 	3. nmcli connection modify <WiFi in use> ipv4.gateway <gateway_address>
-	4. nmcli connection modify <WiFi in use> ipv4.method manual
-	5. nmcli connection up <WiFi in use>	- This apply the changes
+	4. nmcli connection modify <WiFi in use> ipv4.dns "8.8.8.8 8.8.4.4"
+	5. nmcli connection modify <WiFi in use> ipv4.method manual
+	6. nmcli connection up <WiFi in use>	- This apply the changes
 Verify if IP address was changed to static IP chosen by using:
 	ip a
 	hostname -I
