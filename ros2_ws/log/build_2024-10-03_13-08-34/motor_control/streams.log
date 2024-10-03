@@ -1,0 +1,36 @@
+[2.748s] Invoking command in '/home/robodog/RoboDog/ros2_ws/src/motor_control': PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/robodog/RoboDog/ros2_ws/build/motor_control/build install --record /home/robodog/RoboDog/ros2_ws/build/motor_control/install.log --single-version-externally-managed install_data
+[3.797s] running egg_info
+[3.799s] creating ../../build/motor_control/motor_control.egg-info
+[3.800s] writing ../../build/motor_control/motor_control.egg-info/PKG-INFO
+[3.801s] writing dependency_links to ../../build/motor_control/motor_control.egg-info/dependency_links.txt
+[3.802s] writing entry points to ../../build/motor_control/motor_control.egg-info/entry_points.txt
+[3.802s] writing requirements to ../../build/motor_control/motor_control.egg-info/requires.txt
+[3.803s] writing top-level names to ../../build/motor_control/motor_control.egg-info/top_level.txt
+[3.804s] writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[3.812s] reading manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[3.815s] writing manifest file '../../build/motor_control/motor_control.egg-info/SOURCES.txt'
+[3.816s] running build
+[3.816s] running build_py
+[3.817s] creating /home/robodog/RoboDog/ros2_ws/build/motor_control/build
+[3.817s] creating /home/robodog/RoboDog/ros2_ws/build/motor_control/build/lib
+[3.818s] creating /home/robodog/RoboDog/ros2_ws/build/motor_control/build/lib/motor_control
+[3.818s] copying motor_control/motor_control_node.py -> /home/robodog/RoboDog/ros2_ws/build/motor_control/build/lib/motor_control
+[3.819s] copying motor_control/__init__.py -> /home/robodog/RoboDog/ros2_ws/build/motor_control/build/lib/motor_control
+[3.819s] running install
+[3.820s] running install_lib
+[3.824s] creating /home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages/motor_control
+[3.824s] copying /home/robodog/RoboDog/ros2_ws/build/motor_control/build/lib/motor_control/motor_control_node.py -> /home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages/motor_control
+[3.825s] copying /home/robodog/RoboDog/ros2_ws/build/motor_control/build/lib/motor_control/__init__.py -> /home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages/motor_control
+[3.827s] byte-compiling /home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages/motor_control/motor_control_node.py to motor_control_node.cpython-310.pyc
+[3.830s] byte-compiling /home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages/motor_control/__init__.py to __init__.cpython-310.pyc
+[3.831s] running install_data
+[3.831s] creating /home/robodog/RoboDog/ros2_ws/install/motor_control/share/ament_index
+[3.832s] creating /home/robodog/RoboDog/ros2_ws/install/motor_control/share/ament_index/resource_index
+[3.832s] creating /home/robodog/RoboDog/ros2_ws/install/motor_control/share/ament_index/resource_index/packages
+[3.833s] copying resource/motor_control -> /home/robodog/RoboDog/ros2_ws/install/motor_control/share/ament_index/resource_index/packages
+[3.833s] copying package.xml -> /home/robodog/RoboDog/ros2_ws/install/motor_control/share/motor_control
+[3.834s] running install_egg_info
+[3.841s] Copying ../../build/motor_control/motor_control.egg-info to /home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages/motor_control-0.0.0-py3.10.egg-info
+[3.846s] running install_scripts
+[3.927s] writing list of installed files to '/home/robodog/RoboDog/ros2_ws/build/motor_control/install.log'
+[4.046s] Invoked command in '/home/robodog/RoboDog/ros2_ws/src/motor_control' returned '0': PS1=(.venv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/motor_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/motor_control/lib/python3.10/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(.venv) /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/motor_control build --build-base /home/robodog/RoboDog/ros2_ws/build/motor_control/build install --record /home/robodog/RoboDog/ros2_ws/build/motor_control/install.log --single-version-externally-managed install_data
