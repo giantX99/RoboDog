@@ -3,6 +3,7 @@
 #ifndef MOTION_CMD
 #define MOTION_CMD
 
+#include <memory>
 #include "rclcpp/rclcpp.hpp"
 #include "tf2_ros/transform_broadcaster.h"
 #include "tf2_ros/static_transform_broadcaster.h"
@@ -13,10 +14,11 @@
 #include "std_msgs/msg/float32_multi_array.hpp"
 #include "i2cpwm_controller/msg/servo.hpp"
 #include "i2cpwm_controller/msg/servo_array.hpp"
+#include "i2cpwm_controller/srv/servos_config.hpp"
 
 #include "command.h"
-#include "spot_micro_kinematics/spot_micro_kinematics.h"
 #include "state.h"
+#include "spot_micro_kinematics/spot_micro_kinematics.h"
 
 // Define a configuration struct
 struct SpotMicroNodeConfig {
@@ -108,6 +110,7 @@ public:
 
     // Returns current state name
     std::string getCurrentStateName();
+
 
 private:
     // Declare SpotMicroState a friend to access and modify private members
@@ -205,3 +208,4 @@ private:
     Eigen::Affine3d getOdometryTransform();
 };
 
+#endif

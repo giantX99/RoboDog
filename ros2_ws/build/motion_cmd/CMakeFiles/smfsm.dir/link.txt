@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsmfsm.a CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o
+/usr/bin/ranlib libsmfsm.a

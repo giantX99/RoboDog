@@ -1,0 +1,15 @@
+[01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/main.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+    1 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:90: CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:20:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+   20 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:76: CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/i2cpwm_controller_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+gmake: *** [Makefile:146: all] Error 2

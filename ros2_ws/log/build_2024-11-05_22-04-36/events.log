@@ -1,0 +1,366 @@
+[0.000000] (-) TimerEvent: {}
+[0.001599] (i2cpwm_controller) JobQueued: {'identifier': 'i2cpwm_controller', 'dependencies': OrderedDict()}
+[0.002227] (spot_micro_motion_cmd) JobQueued: {'identifier': 'spot_micro_motion_cmd', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.002737] (i2cpwm_controller) JobStarted: {'identifier': 'i2cpwm_controller'}
+[0.037765] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'cmake'}
+[0.041930] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'build'}
+[0.045894] (i2cpwm_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 58008 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog/RoboDog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '31'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller'), ('SSH_CONNECTION', '10.7.90.125 58008 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099095] (-) TimerEvent: {}
+[0.199926] (-) TimerEvent: {}
+[0.300755] (-) TimerEvent: {}
+[0.320078] (i2cpwm_controller) StdoutLine: {'line': b'[ 12%] Built target i2cpwm_controller__rosidl_generator_c\n'}
+[0.322895] (i2cpwm_controller) StdoutLine: {'line': b'[ 12%] Built target i2cpwm_controller__cpp\n'}
+[0.401007] (-) TimerEvent: {}
+[0.414500] (i2cpwm_controller) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_i2cpwm_controller\n'}
+[0.447898] (i2cpwm_controller) StdoutLine: {'line': b'[ 23%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c\n'}
+[0.478879] (i2cpwm_controller) StdoutLine: {'line': b'[ 45%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c\n'}
+[0.479840] (i2cpwm_controller) StdoutLine: {'line': b'[ 45%] Built target i2cpwm_controller__rosidl_typesupport_c\n'}
+[0.501252] (-) TimerEvent: {}
+[0.592921] (i2cpwm_controller) StdoutLine: {'line': b'[ 57%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp\n'}
+[0.601521] (-) TimerEvent: {}
+[0.625679] (i2cpwm_controller) StdoutLine: {'line': b'[ 69%] Built target i2cpwm_controller__rosidl_typesupport_cpp\n'}
+[0.675492] (i2cpwm_controller) StdoutLine: {'line': b'[ 80%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp\n'}
+[0.701458] (i2cpwm_controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target i2cpwm_controller_node\x1b[0m\n'}
+[0.703799] (-) TimerEvent: {}
+[0.779189] (i2cpwm_controller) StdoutLine: {'line': b'[ 80%] Built target i2cpwm_controller\n'}
+[0.804057] (-) TimerEvent: {}
+[0.828173] (i2cpwm_controller) StdoutLine: {'line': b'[ 81%] \x1b[32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o\x1b[0m\n'}
+[0.839344] (i2cpwm_controller) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.899470] (i2cpwm_controller) StdoutLine: {'line': b'[ 83%] Built target i2cpwm_controller__py\n'}
+[0.904269] (-) TimerEvent: {}
+[1.005383] (-) TimerEvent: {}
+[1.035991] (i2cpwm_controller) StdoutLine: {'line': b'[ 93%] Built target i2cpwm_controller__rosidl_generator_py\n'}
+[1.105557] (-) TimerEvent: {}
+[1.145192] (i2cpwm_controller) StdoutLine: {'line': b'[ 95%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.205746] (-) TimerEvent: {}
+[1.255379] (i2cpwm_controller) StdoutLine: {'line': b'[ 97%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext\n'}
+[1.305945] (-) TimerEvent: {}
+[1.368800] (i2cpwm_controller) StdoutLine: {'line': b'[ 99%] Built target i2cpwm_controller__rosidl_typesupport_c__pyext\n'}
+[1.406641] (-) TimerEvent: {}
+[1.508405] (-) TimerEvent: {}
+[1.610173] (-) TimerEvent: {}
+[1.711947] (-) TimerEvent: {}
+[1.813797] (-) TimerEvent: {}
+[1.915741] (-) TimerEvent: {}
+[1.928012] (i2cpwm_controller) StdoutLine: {'line': b'running egg_info\n'}
+[1.932170] (i2cpwm_controller) StdoutLine: {'line': b'writing i2cpwm_controller.egg-info/PKG-INFO\n'}
+[1.936083] (i2cpwm_controller) StdoutLine: {'line': b'writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt\n'}
+[1.939637] (i2cpwm_controller) StdoutLine: {'line': b'writing top-level names to i2cpwm_controller.egg-info/top_level.txt\n'}
+[1.951606] (i2cpwm_controller) StdoutLine: {'line': b"reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'\n"}
+[1.957268] (i2cpwm_controller) StdoutLine: {'line': b"writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'\n"}
+[2.015941] (-) TimerEvent: {}
+[2.107802] (i2cpwm_controller) StdoutLine: {'line': b'[ 99%] Built target ament_cmake_python_build_i2cpwm_controller_egg\n'}
+[2.116136] (-) TimerEvent: {}
+[2.217624] (-) TimerEvent: {}
+[2.318463] (-) TimerEvent: {}
+[2.419304] (-) TimerEvent: {}
+[2.520101] (-) TimerEvent: {}
+[2.620844] (-) TimerEvent: {}
+[2.721803] (-) TimerEvent: {}
+[2.822711] (-) TimerEvent: {}
+[2.923586] (-) TimerEvent: {}
+[3.025011] (-) TimerEvent: {}
+[3.126124] (-) TimerEvent: {}
+[3.226981] (-) TimerEvent: {}
+[3.328240] (-) TimerEvent: {}
+[3.429651] (-) TimerEvent: {}
+[3.541757] (-) TimerEvent: {}
+[3.642723] (-) TimerEvent: {}
+[3.743734] (-) TimerEvent: {}
+[3.844723] (-) TimerEvent: {}
+[3.945632] (-) TimerEvent: {}
+[4.046855] (-) TimerEvent: {}
+[4.147919] (-) TimerEvent: {}
+[4.249033] (-) TimerEvent: {}
+[4.349921] (-) TimerEvent: {}
+[4.451130] (-) TimerEvent: {}
+[4.552089] (-) TimerEvent: {}
+[4.653435] (-) TimerEvent: {}
+[4.755096] (-) TimerEvent: {}
+[4.856162] (-) TimerEvent: {}
+[4.957189] (-) TimerEvent: {}
+[5.058337] (-) TimerEvent: {}
+[5.159254] (-) TimerEvent: {}
+[5.260978] (-) TimerEvent: {}
+[5.362509] (-) TimerEvent: {}
+[5.463776] (-) TimerEvent: {}
+[5.565761] (-) TimerEvent: {}
+[5.667960] (-) TimerEvent: {}
+[5.769453] (-) TimerEvent: {}
+[5.870576] (-) TimerEvent: {}
+[5.971769] (-) TimerEvent: {}
+[6.072967] (-) TimerEvent: {}
+[6.173997] (-) TimerEvent: {}
+[6.275178] (-) TimerEvent: {}
+[6.376642] (-) TimerEvent: {}
+[6.477901] (-) TimerEvent: {}
+[6.578971] (-) TimerEvent: {}
+[6.680204] (-) TimerEvent: {}
+[6.781237] (-) TimerEvent: {}
+[6.882280] (-) TimerEvent: {}
+[6.983500] (-) TimerEvent: {}
+[7.084825] (-) TimerEvent: {}
+[7.185868] (-) TimerEvent: {}
+[7.287128] (-) TimerEvent: {}
+[7.388243] (-) TimerEvent: {}
+[7.489300] (-) TimerEvent: {}
+[7.590563] (-) TimerEvent: {}
+[7.691596] (-) TimerEvent: {}
+[7.792661] (-) TimerEvent: {}
+[7.893939] (-) TimerEvent: {}
+[7.995213] (-) TimerEvent: {}
+[8.097788] (-) TimerEvent: {}
+[8.199530] (-) TimerEvent: {}
+[8.300830] (-) TimerEvent: {}
+[8.402182] (-) TimerEvent: {}
+[8.503482] (-) TimerEvent: {}
+[8.604512] (-) TimerEvent: {}
+[8.705690] (-) TimerEvent: {}
+[8.806697] (-) TimerEvent: {}
+[8.907975] (-) TimerEvent: {}
+[9.009661] (-) TimerEvent: {}
+[9.110681] (-) TimerEvent: {}
+[9.211982] (-) TimerEvent: {}
+[9.313472] (-) TimerEvent: {}
+[9.415052] (-) TimerEvent: {}
+[9.516981] (-) TimerEvent: {}
+[9.617908] (-) TimerEvent: {}
+[9.719002] (-) TimerEvent: {}
+[9.819857] (-) TimerEvent: {}
+[9.920732] (-) TimerEvent: {}
+[10.021720] (-) TimerEvent: {}
+[10.122604] (-) TimerEvent: {}
+[10.223472] (-) TimerEvent: {}
+[10.324330] (-) TimerEvent: {}
+[10.425988] (-) TimerEvent: {}
+[10.526925] (-) TimerEvent: {}
+[10.627844] (-) TimerEvent: {}
+[10.729314] (-) TimerEvent: {}
+[10.830925] (-) TimerEvent: {}
+[10.932694] (-) TimerEvent: {}
+[11.033638] (-) TimerEvent: {}
+[11.134687] (-) TimerEvent: {}
+[11.236020] (-) TimerEvent: {}
+[11.337196] (-) TimerEvent: {}
+[11.438694] (-) TimerEvent: {}
+[11.539614] (-) TimerEvent: {}
+[11.640631] (-) TimerEvent: {}
+[11.741635] (-) TimerEvent: {}
+[11.842842] (-) TimerEvent: {}
+[11.944020] (-) TimerEvent: {}
+[12.044966] (-) TimerEvent: {}
+[12.146928] (-) TimerEvent: {}
+[12.247846] (-) TimerEvent: {}
+[12.349496] (-) TimerEvent: {}
+[12.450507] (-) TimerEvent: {}
+[12.551409] (-) TimerEvent: {}
+[12.652433] (-) TimerEvent: {}
+[12.753346] (-) TimerEvent: {}
+[12.854282] (-) TimerEvent: {}
+[12.955188] (-) TimerEvent: {}
+[13.056375] (-) TimerEvent: {}
+[13.157340] (-) TimerEvent: {}
+[13.258270] (-) TimerEvent: {}
+[13.359382] (-) TimerEvent: {}
+[13.460318] (-) TimerEvent: {}
+[13.561249] (-) TimerEvent: {}
+[13.662155] (-) TimerEvent: {}
+[13.669114] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KI2cPwmController::I2cPwmController(const rclcpp::NodeOptions&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[13.670513] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:54:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcontroller\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[KI2cPwmController\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[13.671798] (i2cpwm_controller) StderrLine: {'line': b'  135 |     servos_absolute_sub_ = this->create_subscription<\x1b[01;31m\x1b[Kcontroller\x1b[m\x1b[K::msg::ServoArray>(\n'}
+[13.672456] (i2cpwm_controller) StderrLine: {'line': b'      |                                                      \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.673089] (i2cpwm_controller) StderrLine: {'line': b'      |                                                      \x1b[32m\x1b[KI2cPwmController\x1b[m\x1b[K\n'}
+[13.673747] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:34:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kparse error in template argument list\n'}
+[13.674527] (i2cpwm_controller) StderrLine: {'line': b'  135 |     servos_absolute_sub_ = this->\x1b[01;31m\x1b[Kcreate_subscription<controller::msg::ServoArray>\x1b[m\x1b[K(\n'}
+[13.675384] (i2cpwm_controller) StderrLine: {'line': b'      |                                  \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.691771] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[KI2cPwmController::create_subscription<<expression error> >(const char [16], int, std::_Bind_helper<false, void (I2cPwmController::*)(std::shared_ptr<i2cpwm_controller::msg::ServoArray_<std::allocator<void> > >), I2cPwmController*, const std::_Placeholder<1>&>::type)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.693204] (i2cpwm_controller) StderrLine: {'line': b'  135 | servos_absolute_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<controller::msg::ServoArray>(\x1b[m\x1b[K\n'}
+[13.693890] (i2cpwm_controller) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[13.694814] (i2cpwm_controller) StderrLine: {'line': b'\n'}
+[13.695501] (i2cpwm_controller) StderrLine: {'line': b'  136 | \x1b[01;31m\x1b[K    "servos_absolute", 500, std::bind(&I2cPwmController::servos_absolute, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[13.696164] (i2cpwm_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.696839] (i2cpwm_controller) StderrLine: {'line': b'\n'}
+[13.697456] (i2cpwm_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[13.698131] (i2cpwm_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[13.698823] (i2cpwm_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155\x1b[m\x1b[K,\n'}
+[13.699600] (i2cpwm_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:20\x1b[m\x1b[K,\n'}
+[13.700218] (i2cpwm_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1\x1b[m\x1b[K:\n'}
+[13.700956] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[13.701582] (i2cpwm_controller) StderrLine: {'line': b'  219 |   \x1b[01;36m\x1b[Kcreate_subscription\x1b[m\x1b[K(\n'}
+[13.702214] (i2cpwm_controller) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.702859] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[13.703472] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:82:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[13.704295] (i2cpwm_controller) StderrLine: {'line': b'  135 | servos_absolute_sub_ = \x1b[01;31m\x1b[Kthis->create_subscription<controller::msg::ServoArray>(\x1b[m\x1b[K\n'}
+[13.705037] (i2cpwm_controller) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\x1b[m\x1b[K\n'}
+[13.707096] (i2cpwm_controller) StderrLine: {'line': b'\n'}
+[13.707822] (i2cpwm_controller) StderrLine: {'line': b'  136 | \x1b[01;31m\x1b[K    "servos_absolute", 500, std::bind(&I2cPwmController::servos_absolute, this, std::placeholders::_1))\x1b[m\x1b[K;\n'}
+[13.708458] (i2cpwm_controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[13.709270] (i2cpwm_controller) StderrLine: {'line': b'\n'}
+[13.762372] (-) TimerEvent: {}
+[13.863890] (-) TimerEvent: {}
+[13.965240] (-) TimerEvent: {}
+[14.066751] (-) TimerEvent: {}
+[14.167954] (-) TimerEvent: {}
+[14.269468] (-) TimerEvent: {}
+[14.370511] (-) TimerEvent: {}
+[14.471813] (-) TimerEvent: {}
+[14.573037] (-) TimerEvent: {}
+[14.674369] (-) TimerEvent: {}
+[14.775780] (-) TimerEvent: {}
+[14.878202] (-) TimerEvent: {}
+[14.979833] (-) TimerEvent: {}
+[15.080947] (-) TimerEvent: {}
+[15.182274] (-) TimerEvent: {}
+[15.283516] (-) TimerEvent: {}
+[15.384946] (-) TimerEvent: {}
+[15.485927] (-) TimerEvent: {}
+[15.586902] (-) TimerEvent: {}
+[15.687934] (-) TimerEvent: {}
+[15.789008] (-) TimerEvent: {}
+[15.890312] (-) TimerEvent: {}
+[15.991156] (-) TimerEvent: {}
+[16.091995] (-) TimerEvent: {}
+[16.192961] (-) TimerEvent: {}
+[16.293793] (-) TimerEvent: {}
+[16.394616] (-) TimerEvent: {}
+[16.495442] (-) TimerEvent: {}
+[16.596324] (-) TimerEvent: {}
+[16.697112] (-) TimerEvent: {}
+[16.797922] (-) TimerEvent: {}
+[16.898782] (-) TimerEvent: {}
+[16.999827] (-) TimerEvent: {}
+[17.100704] (-) TimerEvent: {}
+[17.201604] (-) TimerEvent: {}
+[17.302465] (-) TimerEvent: {}
+[17.403333] (-) TimerEvent: {}
+[17.504410] (-) TimerEvent: {}
+[17.605262] (-) TimerEvent: {}
+[17.706726] (-) TimerEvent: {}
+[17.807677] (-) TimerEvent: {}
+[17.908475] (-) TimerEvent: {}
+[18.009278] (-) TimerEvent: {}
+[18.110119] (-) TimerEvent: {}
+[18.211085] (-) TimerEvent: {}
+[18.311861] (-) TimerEvent: {}
+[18.412743] (-) TimerEvent: {}
+[18.513645] (-) TimerEvent: {}
+[18.614769] (-) TimerEvent: {}
+[18.715679] (-) TimerEvent: {}
+[18.816536] (-) TimerEvent: {}
+[18.917396] (-) TimerEvent: {}
+[19.018422] (-) TimerEvent: {}
+[19.119236] (-) TimerEvent: {}
+[19.220066] (-) TimerEvent: {}
+[19.320921] (-) TimerEvent: {}
+[19.421757] (-) TimerEvent: {}
+[19.522693] (-) TimerEvent: {}
+[19.623581] (-) TimerEvent: {}
+[19.724436] (-) TimerEvent: {}
+[19.825265] (-) TimerEvent: {}
+[19.926252] (-) TimerEvent: {}
+[20.027050] (-) TimerEvent: {}
+[20.127867] (-) TimerEvent: {}
+[20.228682] (-) TimerEvent: {}
+[20.329478] (-) TimerEvent: {}
+[20.430471] (-) TimerEvent: {}
+[20.531232] (-) TimerEvent: {}
+[20.632024] (-) TimerEvent: {}
+[20.732806] (-) TimerEvent: {}
+[20.833783] (-) TimerEvent: {}
+[20.934625] (-) TimerEvent: {}
+[21.035871] (-) TimerEvent: {}
+[21.136822] (-) TimerEvent: {}
+[21.237769] (-) TimerEvent: {}
+[21.338599] (-) TimerEvent: {}
+[21.439439] (-) TimerEvent: {}
+[21.540231] (-) TimerEvent: {}
+[21.641207] (-) TimerEvent: {}
+[21.741978] (-) TimerEvent: {}
+[21.842832] (-) TimerEvent: {}
+[21.943651] (-) TimerEvent: {}
+[22.044465] (-) TimerEvent: {}
+[22.145308] (-) TimerEvent: {}
+[22.246217] (-) TimerEvent: {}
+[22.346986] (-) TimerEvent: {}
+[22.447755] (-) TimerEvent: {}
+[22.548562] (-) TimerEvent: {}
+[22.649463] (-) TimerEvent: {}
+[22.750288] (-) TimerEvent: {}
+[22.851053] (-) TimerEvent: {}
+[22.951837] (-) TimerEvent: {}
+[23.052777] (-) TimerEvent: {}
+[23.153609] (-) TimerEvent: {}
+[23.254474] (-) TimerEvent: {}
+[23.355294] (-) TimerEvent: {}
+[23.456081] (-) TimerEvent: {}
+[23.557064] (-) TimerEvent: {}
+[23.657853] (-) TimerEvent: {}
+[23.758728] (-) TimerEvent: {}
+[23.859527] (-) TimerEvent: {}
+[23.960317] (-) TimerEvent: {}
+[24.061266] (-) TimerEvent: {}
+[24.162073] (-) TimerEvent: {}
+[24.262935] (-) TimerEvent: {}
+[24.363729] (-) TimerEvent: {}
+[24.464681] (-) TimerEvent: {}
+[24.565957] (-) TimerEvent: {}
+[24.666789] (-) TimerEvent: {}
+[24.767551] (-) TimerEvent: {}
+[24.868504] (-) TimerEvent: {}
+[24.969320] (-) TimerEvent: {}
+[25.070137] (-) TimerEvent: {}
+[25.170922] (-) TimerEvent: {}
+[25.271733] (-) TimerEvent: {}
+[25.372739] (-) TimerEvent: {}
+[25.473568] (-) TimerEvent: {}
+[25.574339] (-) TimerEvent: {}
+[25.675116] (-) TimerEvent: {}
+[25.776099] (-) TimerEvent: {}
+[25.876912] (-) TimerEvent: {}
+[25.977700] (-) TimerEvent: {}
+[26.078590] (-) TimerEvent: {}
+[26.179651] (-) TimerEvent: {}
+[26.280695] (-) TimerEvent: {}
+[26.381472] (-) TimerEvent: {}
+[26.482216] (-) TimerEvent: {}
+[26.582943] (-) TimerEvent: {}
+[26.683840] (-) TimerEvent: {}
+[26.784539] (-) TimerEvent: {}
+[26.885250] (-) TimerEvent: {}
+[26.985950] (-) TimerEvent: {}
+[27.086680] (-) TimerEvent: {}
+[27.187605] (-) TimerEvent: {}
+[27.288421] (-) TimerEvent: {}
+[27.389269] (-) TimerEvent: {}
+[27.490134] (-) TimerEvent: {}
+[27.590971] (-) TimerEvent: {}
+[27.691964] (-) TimerEvent: {}
+[27.792768] (-) TimerEvent: {}
+[27.893611] (-) TimerEvent: {}
+[27.994436] (-) TimerEvent: {}
+[28.095459] (-) TimerEvent: {}
+[28.196237] (-) TimerEvent: {}
+[28.296997] (-) TimerEvent: {}
+[28.397787] (-) TimerEvent: {}
+[28.498635] (-) TimerEvent: {}
+[28.599653] (-) TimerEvent: {}
+[28.615205] (i2cpwm_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:76: CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o] Error 1\n'}
+[28.616210] (i2cpwm_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/i2cpwm_controller_node.dir/all] Error 2\n'}
+[28.617295] (i2cpwm_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[28.624163] (i2cpwm_controller) CommandEnded: {'returncode': 2}
+[28.699846] (-) TimerEvent: {}
+[28.800932] (-) TimerEvent: {}
+[28.901666] (-) TimerEvent: {}
+[29.002421] (-) TimerEvent: {}
+[29.103399] (-) TimerEvent: {}
+[29.204082] (-) TimerEvent: {}
+[29.304806] (-) TimerEvent: {}
+[29.406208] (-) TimerEvent: {}
+[29.507237] (-) TimerEvent: {}
+[29.608149] (-) TimerEvent: {}
+[29.709553] (-) TimerEvent: {}
+[29.810507] (-) TimerEvent: {}
+[29.911205] (-) TimerEvent: {}
+[29.921344] (i2cpwm_controller) JobEnded: {'identifier': 'i2cpwm_controller', 'rc': 2}
+[29.933303] (spot_micro_motion_cmd) JobSkipped: {'identifier': 'spot_micro_motion_cmd'}
+[29.933560] (-) EventReactorShutdown: {}

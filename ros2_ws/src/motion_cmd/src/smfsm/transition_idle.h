@@ -1,6 +1,6 @@
 #pragma once
 
-#include "spot_micro_state.h"
+#include "state.h"
 #include "command.h"
 #include "rate_limited_first_order_filter.h"
 

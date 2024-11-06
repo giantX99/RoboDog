@@ -1,0 +1,43 @@
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_generator_c[0m
+[  0%] Built target i2cpwm_controller__cpp
+[  0%] Built target ament_cmake_python_copy_i2cpwm_controller
+[ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_introspection_cpp[0m
+[ 24%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[ 35%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[ 47%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_fastrtps_c[0m
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_introspection_c[0m
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_c[0m
+[ 58%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[ 69%] Built target i2cpwm_controller__rosidl_typesupport_c
+[ 80%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[ 81%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o[0m
+[ 82%] Built target i2cpwm_controller
+[01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/main.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+    1 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:90: CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+[ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:20:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+   20 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:76: CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/i2cpwm_controller_node.dir/all] Error 2
+gmake[1]: *** Waiting for unfinished jobs....
+running egg_info
+writing i2cpwm_controller.egg-info/PKG-INFO
+writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt
+writing top-level names to i2cpwm_controller.egg-info/top_level.txt
+reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[ 83%] Built target ament_cmake_python_build_i2cpwm_controller_egg
+[ 83%] Built target i2cpwm_controller__py
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,20 @@
+[ 17%] Built target gtest
+[ 20%] Built target spot_micro_kinematics
+[ 27%] Built target gtest_main
+[ 34%] Built target gmock
+[ 41%] Built target test_utils
+[ 48%] Built target test_spot_micro_leg
+[ 55%] Built target test_spot_micro_kinematics
+[ 58%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[ 72%] Built target gmock_main
+[ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[ 79%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o[0m
+[ 86%] [32m[1mLinking CXX static library libsmfsm.a[0m
+[ 86%] Built target smfsm
+[35m[1mConsolidate compiler generated dependencies of target motion_cmd_node[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/main.cpp.o[0m
+[ 96%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o[0m

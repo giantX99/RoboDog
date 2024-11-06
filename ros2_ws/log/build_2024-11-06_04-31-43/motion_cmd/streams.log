@@ -1,0 +1,43 @@
+[0.047s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.300s] [ 17%] Built target gtest
+[0.302s] [ 20%] Built target spot_micro_kinematics
+[0.394s] [35m[1mConsolidate compiler generated dependencies of target smfsm[0m
+[0.423s] [ 27%] Built target gtest_main
+[0.426s] [ 34%] Built target gmock
+[0.541s] [ 41%] Built target test_utils
+[0.591s] [ 48%] Built target test_spot_micro_kinematics
+[0.609s] [ 55%] Built target test_spot_micro_leg
+[0.654s] [ 62%] Built target gmock_main
+[0.663s] [ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[0.670s] [ 68%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[0.691s] [ 72%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[0.702s] [ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[3.497s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/walk.h:3[m[K,
+[3.501s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:4[m[K:
+[3.505s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+[3.510s]     8 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+[3.514s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.515s] compilation terminated.
+[3.518s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1
+[3.519s] gmake[2]: *** Waiting for unfinished jobs....
+[3.540s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:2[m[K:
+[3.544s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+[3.548s]     8 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+[3.552s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.557s] compilation terminated.
+[3.561s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:4[m[K:
+[3.565s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+[3.569s]     8 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+[3.572s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.573s] compilation terminated.
+[3.574s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1
+[3.574s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:4[m[K:
+[3.575s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:8:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+[3.575s]     8 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+[3.576s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.576s] compilation terminated.
+[3.579s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1
+[3.593s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1
+[3.594s] gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2
+[3.595s] gmake: *** [Makefile:146: all] Error 2
+[3.602s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

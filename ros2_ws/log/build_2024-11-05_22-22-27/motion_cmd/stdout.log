@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target spot_micro_kinematics[0m
+[  6%] Built target gtest
+[ 20%] Built target spot_micro_kinematics
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[35m[1mConsolidate compiler generated dependencies of target smfsm[0m
+[ 27%] Built target gtest_main
+[ 34%] Built target gmock
+[35m[1mConsolidate compiler generated dependencies of target test_utils[0m
+[35m[1mConsolidate compiler generated dependencies of target test_spot_micro_leg[0m
+[35m[1mConsolidate compiler generated dependencies of target test_spot_micro_kinematics[0m
+[ 41%] Built target test_spot_micro_leg
+[ 48%] Built target test_utils
+[ 55%] Built target test_spot_micro_kinematics
+[ 58%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[ 62%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[ 72%] [32m[1mLinking CXX static library ../../../../../../lib/libgmock_main.a[0m
+[ 72%] Built target gmock_main
+[ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m

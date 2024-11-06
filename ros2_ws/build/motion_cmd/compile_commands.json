@@ -1,0 +1,52 @@
+[
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -Wno-error=maybe-uninitialized -std=gnu++14 -o CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_kinematics.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/src/spot_micro_kinematics.cpp",
+  "file": "/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/src/spot_micro_kinematics.cpp"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -Wno-error=maybe-uninitialized -std=gnu++14 -o CMakeFiles/spot_micro_kinematics.dir/src/utils.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/src/utils.cpp",
+  "file": "/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/src/utils.cpp"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -Wno-error=maybe-uninitialized -std=gnu++14 -o CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_leg.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/src/spot_micro_leg.cpp",
+  "file": "/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/src/spot_micro_leg.cpp"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest -Wno-error=maybe-uninitialized -std=gnu++14 -o CMakeFiles/test_utils.dir/tests/test_utils.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/tests/test_utils.cpp",
+  "file": "/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/tests/test_utils.cpp"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest -Wno-error=maybe-uninitialized -std=gnu++14 -o CMakeFiles/test_spot_micro_leg.dir/tests/test_spot_micro_leg.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/tests/test_spot_micro_leg.cpp",
+  "file": "/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/tests/test_spot_micro_leg.cpp"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest -Wno-error=maybe-uninitialized -std=gnu++14 -o CMakeFiles/test_spot_micro_kinematics.dir/tests/test_spot_micro_kinematics.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/tests/test_spot_micro_kinematics.cpp",
+  "file": "/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/tests/test_spot_micro_kinematics.cpp"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/include -I/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-error=maybe-uninitialized -std=c++11 -o CMakeFiles/gmock.dir/src/gmock-all.cc.o -c /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/src/gmock-all.cc",
+  "file": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/src/gmock-all.cc"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock",
+  "command": "/usr/bin/c++  -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-error=maybe-uninitialized -std=c++11 -o CMakeFiles/gmock_main.dir/src/gmock_main.cc.o -c /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/src/gmock_main.cc",
+  "file": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/src/gmock_main.cc"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest",
+  "command": "/usr/bin/c++  -I/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/include -I/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-error=maybe-uninitialized -std=c++11 -o CMakeFiles/gtest.dir/src/gtest-all.cc.o -c /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-all.cc",
+  "file": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-all.cc"
+},
+{
+  "directory": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest",
+  "command": "/usr/bin/c++  -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/include -isystem /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest -Wall -Wshadow -Werror -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -Wno-error=maybe-uninitialized -std=c++11 -o CMakeFiles/gtest_main.dir/src/gtest_main.cc.o -c /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest_main.cc",
+  "file": "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest_main.cc"
+}
+]

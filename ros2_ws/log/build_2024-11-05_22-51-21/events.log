@@ -1,0 +1,483 @@
+[0.000000] (-) TimerEvent: {}
+[0.001041] (i2cpwm_controller) JobQueued: {'identifier': 'i2cpwm_controller', 'dependencies': OrderedDict()}
+[0.002092] (motion_cmd) JobQueued: {'identifier': 'motion_cmd', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.002724] (i2cpwm_controller) JobStarted: {'identifier': 'i2cpwm_controller'}
+[0.037848] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'cmake'}
+[0.042441] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'build'}
+[0.045982] (i2cpwm_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 58008 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog/RoboDog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '31'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller'), ('SSH_CONNECTION', '10.7.90.125 58008 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099245] (-) TimerEvent: {}
+[0.200362] (-) TimerEvent: {}
+[0.285142] (i2cpwm_controller) StdoutLine: {'line': b'[  0%] Built target i2cpwm_controller__cpp\n'}
+[0.304230] (-) TimerEvent: {}
+[0.326765] (i2cpwm_controller) StdoutLine: {'line': b'[ 12%] Built target i2cpwm_controller__rosidl_generator_c\n'}
+[0.370808] (i2cpwm_controller) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_i2cpwm_controller\n'}
+[0.404480] (-) TimerEvent: {}
+[0.427498] (i2cpwm_controller) StdoutLine: {'line': b'[ 24%] Built target i2cpwm_controller__rosidl_typesupport_cpp\n'}
+[0.458072] (i2cpwm_controller) StdoutLine: {'line': b'[ 35%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp\n'}
+[0.504268] (i2cpwm_controller) StdoutLine: {'line': b'[ 47%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp\n'}
+[0.505735] (-) TimerEvent: {}
+[0.523972] (i2cpwm_controller) StdoutLine: {'line': b'[ 58%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c\n'}
+[0.566491] (i2cpwm_controller) StdoutLine: {'line': b'[ 69%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c\n'}
+[0.592329] (i2cpwm_controller) StdoutLine: {'line': b'[ 80%] Built target i2cpwm_controller__rosidl_typesupport_c\n'}
+[0.605934] (-) TimerEvent: {}
+[0.660960] (i2cpwm_controller) StdoutLine: {'line': b'[ 83%] Built target i2cpwm_controller_node\n'}
+[0.686863] (i2cpwm_controller) StdoutLine: {'line': b'[ 83%] Built target i2cpwm_controller\n'}
+[0.706127] (-) TimerEvent: {}
+[0.792278] (i2cpwm_controller) StdoutLine: {'line': b'[ 84%] Built target i2cpwm_controller__py\n'}
+[0.806366] (-) TimerEvent: {}
+[0.907517] (-) TimerEvent: {}
+[0.910112] (i2cpwm_controller) StdoutLine: {'line': b'[ 94%] Built target i2cpwm_controller__rosidl_generator_py\n'}
+[1.007788] (-) TimerEvent: {}
+[1.024112] (i2cpwm_controller) StdoutLine: {'line': b'[ 96%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.035152] (i2cpwm_controller) StdoutLine: {'line': b'[ 98%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext\n'}
+[1.039167] (i2cpwm_controller) StdoutLine: {'line': b'[100%] Built target i2cpwm_controller__rosidl_typesupport_c__pyext\n'}
+[1.108002] (-) TimerEvent: {}
+[1.209655] (-) TimerEvent: {}
+[1.310405] (-) TimerEvent: {}
+[1.411043] (-) TimerEvent: {}
+[1.511898] (-) TimerEvent: {}
+[1.612608] (-) TimerEvent: {}
+[1.698698] (i2cpwm_controller) StdoutLine: {'line': b'running egg_info\n'}
+[1.702468] (i2cpwm_controller) StdoutLine: {'line': b'writing i2cpwm_controller.egg-info/PKG-INFO\n'}
+[1.703737] (i2cpwm_controller) StdoutLine: {'line': b'writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt\n'}
+[1.704968] (i2cpwm_controller) StdoutLine: {'line': b'writing top-level names to i2cpwm_controller.egg-info/top_level.txt\n'}
+[1.712780] (-) TimerEvent: {}
+[1.716952] (i2cpwm_controller) StdoutLine: {'line': b"reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'\n"}
+[1.720343] (i2cpwm_controller) StdoutLine: {'line': b"writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'\n"}
+[1.813084] (-) TimerEvent: {}
+[1.850432] (i2cpwm_controller) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_i2cpwm_controller_egg\n'}
+[1.899758] (i2cpwm_controller) CommandEnded: {'returncode': 0}
+[1.913285] (-) TimerEvent: {}
+[2.014086] (-) TimerEvent: {}
+[2.114922] (-) TimerEvent: {}
+[2.216058] (-) TimerEvent: {}
+[2.317376] (-) TimerEvent: {}
+[2.418216] (-) TimerEvent: {}
+[2.518996] (-) TimerEvent: {}
+[2.620027] (-) TimerEvent: {}
+[2.720722] (-) TimerEvent: {}
+[2.821429] (-) TimerEvent: {}
+[2.922121] (-) TimerEvent: {}
+[3.022853] (-) TimerEvent: {}
+[3.124061] (-) TimerEvent: {}
+[3.141548] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'install'}
+[3.178974] (i2cpwm_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 58008 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog/RoboDog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '31'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller'), ('SSH_CONNECTION', '10.7.90.125 58008 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[3.211151] (i2cpwm_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.212114] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/ament_index/resource_index/rosidl_interfaces/i2cpwm_controller\n'}
+[3.212623] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller\n'}
+[3.213064] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv\n'}
+[3.213572] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/stop_servos.h\n'}
+[3.213951] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/servos_config.h\n'}
+[3.214460] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail\n'}
+[3.214850] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__struct.h\n'}
+[3.215768] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__type_support.h\n'}
+[3.216313] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__functions.c\n'}
+[3.216767] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__functions.h\n'}
+[3.217336] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__functions.h\n'}
+[3.217729] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__functions.c\n'}
+[3.218699] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__struct.h\n'}
+[3.220505] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__type_support.h\n'}
+[3.221028] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__type_support.h\n'}
+[3.221452] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__functions.c\n'}
+[3.222027] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__struct.h\n'}
+[3.222565] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__functions.c\n'}
+[3.222896] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__type_support.h\n'}
+[3.223384] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__functions.h\n'}
+[3.223802] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__struct.h\n'}
+[3.224244] (-) TimerEvent: {}
+[3.224701] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__functions.h\n'}
+[3.225323] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/int_value.h\n'}
+[3.225797] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/drive_mode.h\n'}
+[3.226190] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg\n'}
+[3.226848] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position.h\n'}
+[3.227275] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config.h\n'}
+[3.227718] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo.h\n'}
+[3.228256] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.228660] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config_array.h\n'}
+[3.229092] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_array.h\n'}
+[3.229484] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position_array.h\n'}
+[3.230165] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail\n'}
+[3.230738] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__type_support.h\n'}
+[3.231286] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__struct.h\n'}
+[3.231805] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__struct.h\n'}
+[3.232107] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__struct.h\n'}
+[3.232413] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__functions.c\n'}
+[3.232861] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__functions.c\n'}
+[3.233196] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__functions.h\n'}
+[3.233549] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__type_support.h\n'}
+[3.233898] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__functions.c\n'}
+[3.234484] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__struct.h\n'}
+[3.234926] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__type_support.h\n'}
+[3.235252] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__struct.h\n'}
+[3.235734] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__functions.c\n'}
+[3.236130] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__type_support.h\n'}
+[3.236743] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__functions.c\n'}
+[3.237197] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__functions.h\n'}
+[3.237499] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__functions.h\n'}
+[3.237888] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__functions.c\n'}
+[3.238880] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__functions.h\n'}
+[3.240098] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__type_support.h\n'}
+[3.240489] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__functions.h\n'}
+[3.240798] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__functions.h\n'}
+[3.241105] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__struct.h\n'}
+[3.242056] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__type_support.h\n'}
+[3.242463] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/library_path.sh\n'}
+[3.242834] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/library_path.dsv\n'}
+[3.243368] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_c.so\n'}
+[3.243712] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller\n'}
+[3.244175] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv\n'}
+[3.244581] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail\n'}
+[3.244959] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_fastrtps_c.h\n'}
+[3.245428] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_fastrtps_c.h\n'}
+[3.245832] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_fastrtps_c.h\n'}
+[3.246466] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_fastrtps_c.h\n'}
+[3.246982] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg\n'}
+[3.247445] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail\n'}
+[3.247912] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_fastrtps_c.h\n'}
+[3.248326] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_fastrtps_c.h\n'}
+[3.248719] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_fastrtps_c.h\n'}
+[3.249178] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_fastrtps_c.h\n'}
+[3.249823] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_fastrtps_c.h\n'}
+[3.250378] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_c.h\n'}
+[3.250903] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.251510] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_c.so\n'}
+[3.251916] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller\n'}
+[3.252366] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv\n'}
+[3.252757] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/servos_config.hpp\n'}
+[3.253180] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/stop_servos.hpp\n'}
+[3.253570] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail\n'}
+[3.253960] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__struct.hpp\n'}
+[3.254472] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__traits.hpp\n'}
+[3.254899] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__builder.hpp\n'}
+[3.255348] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__struct.hpp\n'}
+[3.255717] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__traits.hpp\n'}
+[3.256289] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__builder.hpp\n'}
+[3.256775] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__traits.hpp\n'}
+[3.257239] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__builder.hpp\n'}
+[3.257664] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__builder.hpp\n'}
+[3.258085] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__traits.hpp\n'}
+[3.258596] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__struct.hpp\n'}
+[3.259081] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__struct.hpp\n'}
+[3.259398] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/drive_mode.hpp\n'}
+[3.259785] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/int_value.hpp\n'}
+[3.260241] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg\n'}
+[3.260553] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_array.hpp\n'}
+[3.261113] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position_array.hpp\n'}
+[3.261417] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position.hpp\n'}
+[3.261859] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo.hpp\n'}
+[3.262252] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail\n'}
+[3.262646] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__struct.hpp\n'}
+[3.262950] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__traits.hpp\n'}
+[3.263341] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__traits.hpp\n'}
+[3.263641] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__traits.hpp\n'}
+[3.263971] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__traits.hpp\n'}
+[3.264300] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__traits.hpp\n'}
+[3.264589] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__struct.hpp\n'}
+[3.264950] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__struct.hpp\n'}
+[3.265279] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__builder.hpp\n'}
+[3.265592] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__builder.hpp\n'}
+[3.265939] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__struct.hpp\n'}
+[3.266235] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__struct.hpp\n'}
+[3.266924] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__builder.hpp\n'}
+[3.267266] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__builder.hpp\n'}
+[3.267692] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__traits.hpp\n'}
+[3.269333] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__builder.hpp\n'}
+[3.269932] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__struct.hpp\n'}
+[3.270746] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__builder.hpp\n'}
+[3.271232] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config_array.hpp\n'}
+[3.271641] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config.hpp\n'}
+[3.272043] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller\n'}
+[3.272453] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv\n'}
+[3.272834] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail\n'}
+[3.273153] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.273521] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.273843] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/dds_fastrtps\n'}
+[3.274236] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.274706] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.275132] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg\n'}
+[3.275685] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.276108] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail\n'}
+[3.276511] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.276900] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.277292] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.277614] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.278003] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.278476] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/dds_fastrtps\n'}
+[3.278917] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.279348] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.279705] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller\n'}
+[3.280005] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv\n'}
+[3.280311] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail\n'}
+[3.280951] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_introspection_c.h\n'}
+[3.281329] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__type_support.c\n'}
+[3.281632] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_introspection_c.h\n'}
+[3.281935] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__type_support.c\n'}
+[3.282352] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__type_support.c\n'}
+[3.282703] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__type_support.c\n'}
+[3.283037] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_introspection_c.h\n'}
+[3.283550] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_introspection_c.h\n'}
+[3.283867] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg\n'}
+[3.284170] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail\n'}
+[3.284610] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__type_support.c\n'}
+[3.284951] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__type_support.c\n'}
+[3.285475] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_introspection_c.h\n'}
+[3.285887] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_introspection_c.h\n'}
+[3.286327] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_introspection_c.h\n'}
+[3.286795] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__type_support.c\n'}
+[3.287210] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__type_support.c\n'}
+[3.287607] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_introspection_c.h\n'}
+[3.288712] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__type_support.c\n'}
+[3.289899] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_introspection_c.h\n'}
+[3.290612] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_introspection_c.h\n'}
+[3.291065] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__type_support.c\n'}
+[3.291391] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.291863] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_c.so\n'}
+[3.292278] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_c.so\n'}
+[3.292653] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller\n'}
+[3.292973] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv\n'}
+[3.293377] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail\n'}
+[3.293774] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.294149] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.294595] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__type_support.cpp\n'}
+[3.294991] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__type_support.cpp\n'}
+[3.295531] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__type_support.cpp\n'}
+[3.295838] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.296237] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.296619] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__type_support.cpp\n'}
+[3.297047] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg\n'}
+[3.297390] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail\n'}
+[3.297689] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__type_support.cpp\n'}
+[3.297996] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.298596] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__type_support.cpp\n'}
+[3.298984] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.299341] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.299649] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__type_support.cpp\n'}
+[3.300117] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.300414] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__type_support.cpp\n'}
+[3.300744] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.301226] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.301552] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__type_support.cpp\n'}
+[3.301901] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__type_support.cpp\n'}
+[3.302255] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_cpp.so\n'}
+[3.302817] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_cpp.so\n'}
+[3.303296] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/pythonpath.sh\n'}
+[3.303756] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/pythonpath.dsv\n'}
+[3.304081] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info\n'}
+[3.304504] (i2cpwm_controller) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/PKG-INFO\n'}
+[3.306013] (i2cpwm_controller) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/top_level.txt\n'}
+[3.307475] (i2cpwm_controller) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/dependency_links.txt\n'}
+[3.308883] (i2cpwm_controller) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/SOURCES.txt\n'}
+[3.310492] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller\n'}
+[3.311197] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.311735] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv\n'}
+[3.312228] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_servos_config_s.c\n'}
+[3.312687] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_servos_config.py\n'}
+[3.313087] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/__init__.py\n'}
+[3.313479] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_drive_mode.py\n'}
+[3.313881] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_stop_servos_s.c\n'}
+[3.314324] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_int_value_s.c\n'}
+[3.314926] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_drive_mode_s.c\n'}
+[3.315647] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_stop_servos.py\n'}
+[3.316226] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_int_value.py\n'}
+[3.316656] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_c.c\n'}
+[3.316974] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg\n'}
+[3.317370] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_array.py\n'}
+[3.317755] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_array_s.c\n'}
+[3.318737] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position_s.c\n'}
+[3.320287] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_s.c\n'}
+[3.320754] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config_array_s.c\n'}
+[3.321164] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/__init__.py\n'}
+[3.321568] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position.py\n'}
+[3.321965] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position_array_s.c\n'}
+[3.322409] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo.py\n'}
+[3.322914] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config_array.py\n'}
+[3.323345] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config_s.c\n'}
+[3.323660] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config.py\n'}
+[3.324065] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position_array.py\n'}
+[3.324584] (-) TimerEvent: {}
+[3.325069] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.325737] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/__init__.py\n'}
+[3.326223] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.326700] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.327006] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.327310] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/libi2cpwm_controller__rosidl_generator_py.so\n'}
+[3.424832] (-) TimerEvent: {}
+[3.464484] (i2cpwm_controller) StdoutLine: {'line': b"Listing '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller'...\n"}
+[3.465937] (i2cpwm_controller) StdoutLine: {'line': b"Listing '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg'...\n"}
+[3.467652] (i2cpwm_controller) StdoutLine: {'line': b"Listing '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv'...\n"}
+[3.489972] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.492629] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.495268] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.498389] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_py.so\n'}
+[3.500194] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/Position.idl\n'}
+[3.501137] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/PositionArray.idl\n'}
+[3.501865] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/Servo.idl\n'}
+[3.502581] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoArray.idl\n'}
+[3.503278] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfig.idl\n'}
+[3.503916] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfigArray.idl\n'}
+[3.504527] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode.idl\n'}
+[3.505099] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue.idl\n'}
+[3.505822] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig.idl\n'}
+[3.506403] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos.idl\n'}
+[3.507034] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/Position.msg\n'}
+[3.507515] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/PositionArray.msg\n'}
+[3.508027] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/Servo.msg\n'}
+[3.508545] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoArray.msg\n'}
+[3.509118] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfig.msg\n'}
+[3.509614] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfigArray.msg\n'}
+[3.510109] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode.srv\n'}
+[3.510839] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode_Request.msg\n'}
+[3.511368] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode_Response.msg\n'}
+[3.511842] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue.srv\n'}
+[3.512314] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue_Request.msg\n'}
+[3.512770] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue_Response.msg\n'}
+[3.513258] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig.srv\n'}
+[3.513765] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig_Request.msg\n'}
+[3.514248] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig_Response.msg\n'}
+[3.514816] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos.srv\n'}
+[3.515468] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos_Request.msg\n'}
+[3.515958] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos_Response.msg\n'}
+[3.516514] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/launch\n'}
+[3.517122] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/launch/i2cpwm_node.launch.py\n'}
+[3.517627] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/ament_index/resource_index/package_run_dependencies/i2cpwm_controller\n'}
+[3.518127] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/ament_index/resource_index/parent_prefix_path/i2cpwm_controller\n'}
+[3.520026] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/ament_prefix_path.sh\n'}
+[3.520764] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/ament_prefix_path.dsv\n'}
+[3.521343] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/path.sh\n'}
+[3.521721] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/path.dsv\n'}
+[3.522049] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.bash\n'}
+[3.522467] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.sh\n'}
+[3.522975] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.zsh\n'}
+[3.523388] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.dsv\n'}
+[3.523724] (i2cpwm_controller) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.dsv\n'}
+[3.524230] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/ament_index/resource_index/packages/i2cpwm_controller\n'}
+[3.524682] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_cExport.cmake\n'}
+[3.525211] (-) TimerEvent: {}
+[3.525702] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.526221] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[3.526774] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[3.527672] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_cppExport.cmake\n'}
+[3.528684] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[3.529266] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[3.530460] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.531071] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.531928] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cExport.cmake\n'}
+[3.532509] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.533525] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.534108] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.535170] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cppExport.cmake\n'}
+[3.535793] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.537051] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_pyExport.cmake\n'}
+[3.537616] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_pyExport-noconfig.cmake\n'}
+[3.539305] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/rosidl_cmake-extras.cmake\n'}
+[3.540201] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.540753] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.541278] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.541774] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.542232] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.542956] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.543364] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controllerConfig.cmake\n'}
+[3.543769] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controllerConfig-version.cmake\n'}
+[3.544161] (i2cpwm_controller) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.xml\n'}
+[3.550639] (i2cpwm_controller) CommandEnded: {'returncode': 0}
+[3.625429] (-) TimerEvent: {}
+[3.726214] (-) TimerEvent: {}
+[3.827010] (-) TimerEvent: {}
+[3.928163] (-) TimerEvent: {}
+[4.028907] (-) TimerEvent: {}
+[4.129797] (-) TimerEvent: {}
+[4.230564] (-) TimerEvent: {}
+[4.331239] (-) TimerEvent: {}
+[4.431927] (-) TimerEvent: {}
+[4.532955] (-) TimerEvent: {}
+[4.633855] (-) TimerEvent: {}
+[4.734625] (-) TimerEvent: {}
+[4.835287] (-) TimerEvent: {}
+[4.933489] (i2cpwm_controller) JobEnded: {'identifier': 'i2cpwm_controller', 'rc': 0}
+[4.938341] (-) TimerEvent: {}
+[4.939536] (motion_cmd) JobStarted: {'identifier': 'motion_cmd'}
+[4.969465] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'cmake'}
+[4.972952] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'build'}
+[4.978847] (motion_cmd) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 58008 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog/RoboDog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '31'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'), ('SSH_CONNECTION', '10.7.90.125 58008 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')]), 'shell': False}
+[5.038530] (-) TimerEvent: {}
+[5.139474] (-) TimerEvent: {}
+[5.215444] (motion_cmd) StdoutLine: {'line': b'[  6%] Built target gtest\n'}
+[5.217441] (motion_cmd) StdoutLine: {'line': b'[ 20%] Built target spot_micro_kinematics\n'}
+[5.239688] (-) TimerEvent: {}
+[5.314840] (motion_cmd) StdoutLine: {'line': b'[ 27%] Built target gtest_main\n'}
+[5.322120] (motion_cmd) StdoutLine: {'line': b'[ 34%] Built target gmock\n'}
+[5.339890] (-) TimerEvent: {}
+[5.407840] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target smfsm\x1b[0m\n'}
+[5.446535] (motion_cmd) StdoutLine: {'line': b'[ 41%] Built target test_spot_micro_kinematics\n'}
+[5.447316] (-) TimerEvent: {}
+[5.458466] (motion_cmd) StdoutLine: {'line': b'[ 48%] Built target test_utils\n'}
+[5.468672] (motion_cmd) StdoutLine: {'line': b'[ 55%] Built target test_spot_micro_leg\n'}
+[5.547526] (-) TimerEvent: {}
+[5.551728] (motion_cmd) StdoutLine: {'line': b'[ 62%] Built target gmock_main\n'}
+[5.594698] (motion_cmd) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o\x1b[0m\n'}
+[5.600795] (motion_cmd) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o\x1b[0m\n'}
+[5.608309] (motion_cmd) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o\x1b[0m\n'}
+[5.611963] (motion_cmd) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o\x1b[0m\n'}
+[5.647858] (-) TimerEvent: {}
+[5.749690] (-) TimerEvent: {}
+[5.850961] (-) TimerEvent: {}
+[5.952049] (-) TimerEvent: {}
+[6.053562] (-) TimerEvent: {}
+[6.154984] (-) TimerEvent: {}
+[6.256133] (-) TimerEvent: {}
+[6.357297] (-) TimerEvent: {}
+[6.458677] (-) TimerEvent: {}
+[6.559851] (-) TimerEvent: {}
+[6.660982] (-) TimerEvent: {}
+[6.762654] (-) TimerEvent: {}
+[6.863996] (-) TimerEvent: {}
+[6.965406] (-) TimerEvent: {}
+[7.066844] (-) TimerEvent: {}
+[7.168219] (-) TimerEvent: {}
+[7.269443] (-) TimerEvent: {}
+[7.370705] (-) TimerEvent: {}
+[7.472394] (-) TimerEvent: {}
+[7.594941] (-) TimerEvent: {}
+[7.696314] (-) TimerEvent: {}
+[7.798017] (-) TimerEvent: {}
+[7.832847] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2\x1b[m\x1b[K,\n'}
+[7.836527] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.h:5\x1b[m\x1b[K,\n'}
+[7.839558] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:1\x1b[m\x1b[K:\n'}
+[7.842541] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksmfsm/command.h: No such file or directory\n'}
+[7.845592] (motion_cmd) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"smfsm/command.h"\x1b[m\x1b[K\n'}
+[7.849108] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.852008] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[7.855199] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2\x1b[m\x1b[K,\n'}
+[7.858268] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1\x1b[m\x1b[K:\n'}
+[7.861662] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksmfsm/command.h: No such file or directory\n'}
+[7.864857] (motion_cmd) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"smfsm/command.h"\x1b[m\x1b[K\n'}
+[7.870970] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.871765] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[7.872388] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2\x1b[m\x1b[K,\n'}
+[7.873128] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.h:5\x1b[m\x1b[K,\n'}
+[7.873636] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:1\x1b[m\x1b[K:\n'}
+[7.874021] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksmfsm/command.h: No such file or directory\n'}
+[7.874425] (motion_cmd) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"smfsm/command.h"\x1b[m\x1b[K\n'}
+[7.874824] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.875344] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[7.875647] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1\n'}
+[7.876107] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[7.876553] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1\n'}
+[7.877191] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1\n'}
+[7.898217] (-) TimerEvent: {}
+[7.901979] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2\x1b[m\x1b[K,\n'}
+[7.902751] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.h:3\x1b[m\x1b[K,\n'}
+[7.903165] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:1\x1b[m\x1b[K:\n'}
+[7.903518] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ksmfsm/command.h: No such file or directory\n'}
+[7.903923] (motion_cmd) StderrLine: {'line': b'   18 | #include \x1b[01;31m\x1b[K"smfsm/command.h"\x1b[m\x1b[K\n'}
+[7.904272] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[7.904917] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[7.913558] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1\n'}
+[7.915265] (motion_cmd) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2\n'}
+[7.916199] (motion_cmd) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[7.923156] (motion_cmd) CommandEnded: {'returncode': 2}
+[7.998447] (-) TimerEvent: {}
+[8.099605] (-) TimerEvent: {}
+[8.203667] (-) TimerEvent: {}
+[8.245962] (motion_cmd) JobEnded: {'identifier': 'motion_cmd', 'rc': 2}
+[8.257031] (-) EventReactorShutdown: {}

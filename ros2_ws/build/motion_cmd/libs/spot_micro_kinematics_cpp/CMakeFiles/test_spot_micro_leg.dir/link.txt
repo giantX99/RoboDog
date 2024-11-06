@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_spot_micro_leg.dir/tests/test_spot_micro_leg.cpp.o -o test_spot_micro_leg  libspot_micro_kinematics.a ../../lib/libgtest.a ../../lib/libgtest_main.a ../../lib/libgtest.a 

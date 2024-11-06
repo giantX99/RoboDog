@@ -1,0 +1,49 @@
+[0.042s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.276s] [  6%] Built target gtest
+[0.280s] [ 20%] Built target spot_micro_kinematics
+[0.378s] [ 27%] Built target gtest_main
+[0.385s] [ 34%] Built target gmock
+[0.471s] [35m[1mConsolidate compiler generated dependencies of target smfsm[0m
+[0.507s] [ 41%] Built target test_spot_micro_kinematics
+[0.519s] [ 48%] Built target test_utils
+[0.529s] [ 55%] Built target test_spot_micro_leg
+[0.613s] [ 62%] Built target gmock_main
+[0.658s] [ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[0.664s] [ 68%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[0.671s] [ 72%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[0.675s] [ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[2.896s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[2.899s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.h:5[m[K,
+[2.902s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:1[m[K:
+[2.905s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:[m[K [01;31m[Kfatal error: [m[Ksmfsm/command.h: No such file or directory
+[2.908s]    18 | #include [01;31m[K"smfsm/command.h"[m[K
+[2.912s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.915s] compilation terminated.
+[2.918s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[2.921s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1[m[K:
+[2.924s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:[m[K [01;31m[Kfatal error: [m[Ksmfsm/command.h: No such file or directory
+[2.931s]    18 | #include [01;31m[K"smfsm/command.h"[m[K
+[2.932s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.933s] compilation terminated.
+[2.933s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[2.934s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.h:5[m[K,
+[2.934s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:1[m[K:
+[2.935s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:[m[K [01;31m[Kfatal error: [m[Ksmfsm/command.h: No such file or directory
+[2.935s]    18 | #include [01;31m[K"smfsm/command.h"[m[K
+[2.935s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.936s] compilation terminated.
+[2.936s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1
+[2.937s] gmake[2]: *** Waiting for unfinished jobs....
+[2.937s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1
+[2.938s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1
+[2.963s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[2.963s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.h:3[m[K,
+[2.964s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:1[m[K:
+[2.964s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:18:10:[m[K [01;31m[Kfatal error: [m[Ksmfsm/command.h: No such file or directory
+[2.965s]    18 | #include [01;31m[K"smfsm/command.h"[m[K
+[2.965s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.966s] compilation terminated.
+[2.974s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1
+[2.976s] gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2
+[2.977s] gmake: *** [Makefile:146: all] Error 2
+[2.984s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

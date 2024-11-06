@@ -1,0 +1,31 @@
+[  0%] Built target i2cpwm_controller__cpp
+[ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_i2cpwm_controller
+[ 27%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[ 39%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[ 47%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[ 58%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[ 69%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[ 80%] Built target i2cpwm_controller__rosidl_typesupport_c
+[ 81%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o[0m
+[ 82%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o[0m
+[ 82%] Built target i2cpwm_controller
+[ 83%] Built target i2cpwm_controller__py
+[35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_generator_py[0m
+[ 93%] Built target i2cpwm_controller__rosidl_generator_py
+[ 94%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 95%] [32m[1mLinking C shared library rosidl_generator_py/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+running egg_info
+writing i2cpwm_controller.egg-info/PKG-INFO
+writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt
+writing top-level names to i2cpwm_controller.egg-info/top_level.txt
+reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[ 95%] Built target ament_cmake_python_build_i2cpwm_controller_egg
+[ 95%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext
+[ 96%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 97%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_c.c.o[0m
+[ 98%] [32m[1mLinking C shared library rosidl_generator_py/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 99%] [32m[1mLinking C shared library rosidl_generator_py/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[ 99%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext
+[ 99%] Built target i2cpwm_controller__rosidl_typesupport_c__pyext

@@ -1,8 +1,8 @@
-#include "spot_micro_transition_stand.h"
+#include "transition_stand.h"
 
-#include "spot_micro_stand.h"
-#include "spot_micro_motion_cmd.h"
-#include "spot_micro_state.h"
+#include "stand.h"
+#include "motion_cmd.h"
+#include "state.h"
 
 SpotMicroTransitionStandState::SpotMicroTransitionStandState() {
   // Construcotr, doesn't need to do anything, for now...
@@ -61,7 +61,7 @@ void SpotMicroTransitionStandState::handleInputCommands(
   
   // Check if desired end state reached, if so, change to stand state
   if (checkBodyStateEquality(body_state, end_body_state_, 0.001f)) {
-    changeState(smmc, std::make_unique<SpotMicroStandState>());
+    SMSchangeState(smmc, std::make_unique<SpotMicroStandState>());
   
   } else {
     // Otherwise, rise filters and assign output values to body state command

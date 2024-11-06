@@ -1,0 +1,426 @@
+[0.052s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
+[0.294s] [  0%] Built target i2cpwm_controller__cpp
+[0.326s] [ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[0.387s] [ 12%] Built target ament_cmake_python_copy_i2cpwm_controller
+[0.423s] [ 24%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[0.455s] [ 35%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[0.515s] [ 47%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[0.569s] [ 68%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[0.575s] [ 69%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[0.601s] [ 80%] Built target i2cpwm_controller__rosidl_typesupport_c
+[0.626s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller_node[0m
+[0.739s] [ 80%] Built target i2cpwm_controller
+[0.757s] [ 81%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o[0m
+[0.768s] [ 82%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o[0m
+[0.850s] [ 83%] Built target i2cpwm_controller__py
+[0.967s] [ 93%] Built target i2cpwm_controller__rosidl_generator_py
+[1.016s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext[0m
+[1.088s] [ 95%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext
+[1.137s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext[0m
+[1.210s] [ 97%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext
+[1.258s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_c__pyext[0m
+[1.317s] [ 99%] Built target i2cpwm_controller__rosidl_typesupport_c__pyext
+[1.973s] running egg_info
+[1.980s] writing i2cpwm_controller.egg-info/PKG-INFO
+[1.982s] writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt
+[1.984s] writing top-level names to i2cpwm_controller.egg-info/top_level.txt
+[1.996s] reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[2.001s] writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[2.159s] [ 99%] Built target ament_cmake_python_build_i2cpwm_controller_egg
+[12.728s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[12.728s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+[12.729s]   102 |     rclcpp::Subscription<[01;31m[Kgeometry_msgs[m[K::msg::Twist>::SharedPtr servos_drive_sub_;
+[12.729s]       |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[12.730s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.732s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr servos_drive_sub_;
+[12.733s]       |                                                   [01;31m[K^[m[K
+[12.733s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[12.734s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[12.735s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[12.735s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[12.736s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K servos_drive_sub_;
+[12.737s]       |                                                      [01;31m[K^~~~~~~~~[m[K
+[12.737s]       |                                                               [32m[K;[m[K
+[12.741s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_drive_sub_[m[K’ does not name a type
+[12.741s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr [01;31m[Kservos_drive_sub_[m[K;
+[12.742s]       |                                                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[12.842s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/main.cpp:2[m[K:
+[12.843s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:26:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+[12.844s]   102 |     rclcpp::Subscription<[01;31m[Kgeometry_msgs[m[K::msg::Twist>::SharedPtr servos_drive_sub_;
+[12.845s]       |                          [01;31m[K^~~~~~~~~~~~~[m[K
+[12.845s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[12.846s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist[01;31m[K>[m[K::SharedPtr servos_drive_sub_;
+[12.847s]       |                                                   [01;31m[K^[m[K
+[12.847s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 3 is invalid
+[12.848s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 4 is invalid
+[12.848s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:51:[m[K [01;31m[Kerror: [m[Ktemplate argument 5 is invalid
+[12.849s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:54:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[12.849s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::[01;31m[KSharedPtr[m[K servos_drive_sub_;
+[12.850s]       |                                                      [01;31m[K^~~~~~~~~[m[K
+[12.851s]       |                                                               [32m[K;[m[K
+[12.855s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:64:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_drive_sub_[m[K’ does not name a type
+[12.856s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::SharedPtr [01;31m[Kservos_drive_sub_[m[K;
+[12.857s]       |                                                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.005s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.006s]   108 |     rclcpp::Service<[01;31m[Kstd_srvs[m[K::srv::Empty>::SharedPtr stop_servos_srv_;
+[13.007s]       |                     [01;31m[K^~~~~~~~[m[K
+[13.007s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.008s]   108 |     rclcpp::Service<std_srvs::srv::Empty[01;31m[K>[m[K::SharedPtr stop_servos_srv_;
+[13.008s]       |                                         [01;31m[K^[m[K
+[13.009s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.010s]   108 |     rclcpp::Service<std_srvs::srv::Empty>::[01;31m[KSharedPtr[m[K stop_servos_srv_;
+[13.010s]       |                                            [01;31m[K^~~~~~~~~[m[K
+[13.011s]       |                                                     [32m[K;[m[K
+[13.012s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:44:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint I2cPwmController::SharedPtr[m[K’
+[13.013s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:54:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint I2cPwmController::SharedPtr[m[K’
+[13.013s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::[01;36m[KSharedPtr[m[K servos_drive_sub_;
+[13.014s]       |                                                      [01;36m[K^~~~~~~~~[m[K
+[13.018s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_servos_srv_[m[K’ does not name a type
+[13.019s]   108 |     rclcpp::Service<std_srvs::srv::Empty>::SharedPtr [01;31m[Kstop_servos_srv_[m[K;
+[13.020s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.030s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[13.032s]   113 |     void servos_drive(const [01;31m[Kgeometry_msgs[m[K::msg::Twist::SharedPtr msg);
+[13.032s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[13.033s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[13.034s]   113 |     void servos_drive(const geometry_msgs::msg[01;31m[K::[m[KTwist::SharedPtr msg);
+[13.035s]       |                                               [01;31m[K^~[m[K
+[13.036s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[13.037s]   113 |     void servos_drive[34m[K([m[Kconst geometry_msgs::msg[01;31m[K:[m[K[32m[K:[m[KTwist::SharedPtr msg);
+[13.037s]       |                      [34m[K~[m[K                        [01;31m[K^[m[K[32m[K~[m[K
+[13.038s]       |                                               [32m[K)[m[K
+[13.039s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.040s]   113 |     void servos_drive(const geometry_msgs::[01;31m[Kmsg[m[K::Twist::SharedPtr msg);
+[13.041s]       |                                            [01;31m[K^~~[m[K
+[13.042s]       |                                               [32m[K;[m[K
+[13.044s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:49:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[13.047s]   113 |     void servos_drive(const geometry_msgs::msg::[01;31m[KTwist[m[K::SharedPtr msg);
+[13.047s]       |                                                 [01;31m[K^~~~~[m[K
+[13.073s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.074s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.075s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.075s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.076s]   122 |     bool stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.077s]       |                                                                         [01;31m[K^[m[K
+[13.102s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.103s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.104s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.104s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.105s]   122 |     bool stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.106s]       |                                                                         [01;31m[K^[m[K
+[13.131s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.135s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.136s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.139s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.140s]   122 |     bool stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.140s]       |                                                                         [01;31m[K^[m[K
+[13.142s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:28:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[13.143s]   122 |     bool stop_servos(const [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Empty::Request> req,
+[13.143s]       |                            [01;31m[K^~~[m[K
+[13.144s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+[13.144s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.145s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.147s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:22:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[13.148s]   122 |     bool stop_servos([01;31m[Kconst[m[K std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[13.148s]       |                      [01;31m[K^~~~~[m[K
+[13.149s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.150s]   108 |     rclcpp::Service<[01;31m[Kstd_srvs[m[K::srv::Empty>::SharedPtr stop_servos_srv_;
+[13.151s]       |                     [01;31m[K^~~~~~~~[m[K
+[13.152s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:41:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.154s]   108 |     rclcpp::Service<std_srvs::srv::Empty[01;31m[K>[m[K::SharedPtr stop_servos_srv_;
+[13.154s]       |                                         [01;31m[K^[m[K
+[13.156s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.157s]   108 |     rclcpp::Service<std_srvs::srv::Empty>::[01;31m[KSharedPtr[m[K stop_servos_srv_;
+[13.157s]       |                                            [01;31m[K^~~~~~~~~[m[K
+[13.158s]       |                                                     [32m[K;[m[K
+[13.158s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:44:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint I2cPwmController::SharedPtr[m[K’
+[13.159s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:102:54:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint I2cPwmController::SharedPtr[m[K’
+[13.160s]   102 |     rclcpp::Subscription<geometry_msgs::msg::Twist>::[01;36m[KSharedPtr[m[K servos_drive_sub_;
+[13.160s]       |                                                      [01;36m[K^~~~~~~~~[m[K
+[13.161s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:108:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_servos_srv_[m[K’ does not name a type
+[13.163s]   108 |     rclcpp::Service<std_srvs::srv::Empty>::SharedPtr [01;31m[Kstop_servos_srv_[m[K;
+[13.165s]       |                                                      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.166s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[13.167s]   113 |     void servos_drive(const [01;31m[Kgeometry_msgs[m[K::msg::Twist::SharedPtr msg);
+[13.168s]       |                             [01;31m[K^~~~~~~~~~~~~[m[K
+[13.169s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:47:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[13.170s]   113 |     void servos_drive(const geometry_msgs::msg[01;31m[K::[m[KTwist::SharedPtr msg);
+[13.172s]       |                                               [01;31m[K^~[m[K
+[13.173s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[13.175s]   113 |     void servos_drive[34m[K([m[Kconst geometry_msgs::msg[01;31m[K:[m[K[32m[K:[m[KTwist::SharedPtr msg);
+[13.176s]       |                      [34m[K~[m[K                        [01;31m[K^[m[K[32m[K~[m[K
+[13.177s]       |                                               [32m[K)[m[K
+[13.178s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:44:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[13.179s]   113 |     void servos_drive(const geometry_msgs::[01;31m[Kmsg[m[K::Twist::SharedPtr msg);
+[13.180s]       |                                            [01;31m[K^~~[m[K
+[13.181s]       |                                               [32m[K;[m[K
+[13.183s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.184s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.186s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.187s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.188s]   123 |                               std::shared_ptr<std_srvs::srv::Empty::Response[01;31m[K>[m[K res);
+[13.189s]       |                                                                             [01;31m[K^[m[K
+[13.191s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:113:49:[m[K [01;31m[Kerror: [m[K‘[01m[KTwist[m[K’ in namespace ‘[01m[K::[m[K’ does not name a type
+[13.192s]   113 |     void servos_drive(const geometry_msgs::msg::[01;31m[KTwist[m[K::SharedPtr msg);
+[13.193s]       |                                                 [01;31m[K^~~~~[m[K
+[13.201s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.202s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.203s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.205s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.205s]   123 |                               std::shared_ptr<std_srvs::srv::Empty::Response[01;31m[K>[m[K res);
+[13.206s]       |                                                                             [01;31m[K^[m[K
+[13.212s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.213s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.214s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.214s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.215s]   122 |     bool stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.216s]       |                                                                         [01;31m[K^[m[K
+[13.233s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.234s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.235s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.236s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.237s]   123 |                               std::shared_ptr<std_srvs::srv::Empty::Response[01;31m[K>[m[K res);
+[13.238s]       |                                                                             [01;31m[K^[m[K
+[13.239s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:31:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[13.240s]   123 |                               [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Empty::Response> res);
+[13.242s]       |                               [01;31m[K^~~[m[K
+[13.242s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+[13.243s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.244s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.245s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:31:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[13.247s]   123 |                               [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Empty::Response> res);
+[13.248s]       |                               [01;31m[K^~~[m[K
+[13.249s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:128:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[13.251s]   128 | }
+[13.252s]       |  [01;31m[K^[m[K
+[13.254s]       |  [32m[K;[m[K
+[13.255s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.255s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.256s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.257s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.258s]   122 |     bool stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.259s]       |                                                                         [01;31m[K^[m[K
+[13.274s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.275s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.276s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.277s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:73:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.278s]   122 |     bool stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.279s]       |                                                                         [01;31m[K^[m[K
+[13.279s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:28:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[13.281s]   122 |     bool stop_servos(const [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Empty::Request> req,
+[13.282s]       |                            [01;31m[K^~~[m[K
+[13.283s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:44:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+[13.284s]   122 |     bool stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.285s]       |                                            [01;31m[K^~~~~~~~[m[K
+[13.285s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:122:22:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[13.286s]   122 |     bool stop_servos([01;31m[Kconst[m[K std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[13.287s]       |                      [01;31m[K^~~~~[m[K
+[13.289s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:[m[K In constructor ‘[01m[KI2cPwmController::I2cPwmController(const rclcpp::NodeOptions&)[m[K’:
+[13.290s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontroller[m[K’ was not declared in this scope; did you mean ‘[01m[KI2cPwmController[m[K’?
+[13.290s]   135 |     servos_absolute_sub_ = this->create_subscription<[01;31m[Kcontroller[m[K::msg::ServoArray>(
+[13.291s]       |                                                      [01;31m[K^~~~~~~~~~[m[K
+[13.292s]       |                                                      [32m[KI2cPwmController[m[K
+[13.293s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:34:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[13.294s]   135 |     servos_absolute_sub_ = this->[01;31m[Kcreate_subscription<controller::msg::ServoArray>[m[K(
+[13.295s]       |                                  [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.305s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.305s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.306s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.307s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.308s]   123 |                               std::shared_ptr<std_srvs::srv::Empty::Response[01;31m[K>[m[K res);
+[13.308s]       |                                                                             [01;31m[K^[m[K
+[13.316s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:82:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KI2cPwmController::create_subscription<<expression error> >(const char [16], int, std::_Bind_helper<false, void (I2cPwmController::*)(std::shared_ptr<i2cpwm_controller::msg::ServoArray_<std::allocator<void> > >), I2cPwmController*, const std::_Placeholder<1>&>::type)[m[K’
+[13.317s]   135 |     servos_absolute_sub_ = [01;31m[Kthis->create_subscription<controller::msg::ServoArray>([m[K
+[13.318s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.319s]   136 | [01;31m[K        "servos_absolute", 500, std::bind(&I2cPwmController::servos_absolute, this, std::placeholders::_1))[m[K;
+[13.319s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.321s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[13.322s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[13.323s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[13.324s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:20[m[K,
+[13.325s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[13.325s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[13.326s]   219 |   [01;36m[Kcreate_subscription[m[K(
+[13.327s]       |   [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[13.328s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:219:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.329s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:135:82:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.329s]   135 |     servos_absolute_sub_ = [01;31m[Kthis->create_subscription<controller::msg::ServoArray>([m[K
+[13.330s]       |                            [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.331s]   136 | [01;31m[K        "servos_absolute", 500, std::bind(&I2cPwmController::servos_absolute, this, std::placeholders::_1))[m[K;
+[13.332s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.335s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.336s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.337s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.338s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.339s]   123 |                               std::shared_ptr<std_srvs::srv::Empty::Response[01;31m[K>[m[K res);
+[13.339s]       |                                                                             [01;31m[K^[m[K
+[13.364s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope
+[13.364s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.365s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.367s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.367s]   123 |                               std::shared_ptr<std_srvs::srv::Empty::Response[01;31m[K>[m[K res);
+[13.368s]       |                                                                             [01;31m[K^[m[K
+[13.368s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:31:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[13.369s]   123 |                               [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Empty::Response> res);
+[13.369s]       |                               [01;31m[K^~~[m[K
+[13.369s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:47:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ has not been declared
+[13.370s]   123 |                               std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res);
+[13.370s]       |                                               [01;31m[K^~~~~~~~[m[K
+[13.371s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:123:31:[m[K [01;31m[Kerror: [m[Kclass template placeholder ‘[01m[Kstd::shared_ptr[m[K’ not permitted in this context
+[13.372s]   123 |                               [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Empty::Response> res);
+[13.372s]       |                               [01;31m[K^~~[m[K
+[13.374s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:128:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+[13.375s]   128 | }
+[13.376s]       |  [01;31m[K^[m[K
+[13.376s]       |  [32m[K;[m[K
+[13.379s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:141:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_drive_sub_[m[K’ was not declared in this scope; did you mean ‘[01m[Kservos_drive[m[K’?
+[13.379s]   141 |     [01;31m[Kservos_drive_sub_[m[K = this->create_subscription<geometry_msgs::msg::Twist>(
+[13.381s]       |     [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[13.382s]       |     [32m[Kservos_drive[m[K
+[13.415s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:141:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ was not declared in this scope
+[13.416s]   141 |     servos_drive_sub_ = this->create_subscription<[01;31m[Kgeometry_msgs[m[K::msg::Twist>(
+[13.416s]       |                                                   [01;31m[K^~~~~~~~~~~~~[m[K
+[13.417s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:141:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[13.418s]   141 |     servos_drive_sub_ = this->[01;31m[Kcreate_subscription<geometry_msgs::msg::Twist>[m[K(
+[13.418s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.423s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:141:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KI2cPwmController::create_subscription<<expression error> >(const char [13], int, std::_Bind_helper<false, void (I2cPwmController::*)(...), I2cPwmController*, const std::_Placeholder<1>&>::type)[m[K’
+[13.423s]   141 |     servos_drive_sub_ = [01;31m[Kthis->create_subscription<geometry_msgs::msg::Twist>([m[K
+[13.424s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.425s]   142 | [01;31m[K        "servos_drive", 500, std::bind(&I2cPwmController::servos_drive, this, std::placeholders::_1))[m[K;
+[13.426s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.426s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[13.427s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[13.427s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[13.428s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[13.429s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:20[m[K,
+[13.429s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[13.431s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class CallbackT, class AllocatorT, class SubscriptionT, class MessageMemoryStrategyT> std::shared_ptr<ROSMessageT> rclcpp::Node::create_subscription(const string&, const rclcpp::QoS&, CallbackT&&, const rclcpp::SubscriptionOptionsWithAllocator<AllocatorT>&, typename MessageMemoryStrategyT::SharedPtr)[m[K’
+[13.432s]    92 | [01;36m[KNode[m[K::create_subscription(
+[13.433s]       | [01;36m[K^~~~[m[K
+[13.433s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:92:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.434s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:141:77:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.435s]   141 |     servos_drive_sub_ = [01;31m[Kthis->create_subscription<geometry_msgs::msg::Twist>([m[K
+[13.436s]       |                         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.436s]   142 | [01;31m[K        "servos_drive", 500, std::bind(&I2cPwmController::servos_drive, this, std::placeholders::_1))[m[K;
+[13.437s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.500s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:154:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kstop_servos_srv_[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_servos[m[K’?
+[13.501s]   154 |     [01;31m[Kstop_servos_srv_[m[K = this->create_service<std_srvs::srv::Empty>(
+[13.502s]       |     [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.503s]       |     [32m[Kstop_servos[m[K
+[13.528s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:154:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_servos[m[K’?
+[13.529s]   154 |     stop_servos_srv_ = this->create_service<[01;31m[Kstd_srvs[m[K::srv::Empty>(
+[13.530s]       |                                             [01;31m[K^~~~~~~~[m[K
+[13.531s]       |                                             [32m[Kstop_servos[m[K
+[13.532s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:154:30:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[13.533s]   154 |     stop_servos_srv_ = this->[01;31m[Kcreate_service<std_srvs::srv::Empty>[m[K(
+[13.534s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.539s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:154:66:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KI2cPwmController::create_service<<expression error> >(const char [12], std::_Bind_helper<false, bool (I2cPwmController::*)(...), I2cPwmController*, const std::_Placeholder<1>&, const std::_Placeholder<2>&>::type)[m[K’
+[13.539s]   154 |     stop_servos_srv_ = [01;31m[Kthis->create_service<std_srvs::srv::Empty>([m[K
+[13.540s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.540s]   155 | [01;31m[K        "stop_servos", std::bind(&I2cPwmController::stop_servos, this, std::placeholders::_1, std::placeholders::_2))[m[K;
+[13.541s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.548s] In file included from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node.hpp:1321[m[K,
+[13.551s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[13.554s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/executors.hpp:22[m[K,
+[13.557s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:155[m[K,
+[13.559s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:20[m[K,
+[13.563s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[13.566s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ServiceT, class CallbackT> typename rclcpp::Service<ServiceT>::SharedPtr rclcpp::Node::create_service(const string&, CallbackT&&, const rmw_qos_profile_t&, rclcpp::CallbackGroup::SharedPtr)[m[K’
+[13.568s]   141 | [01;36m[KNode[m[K::create_service(
+[13.571s]       | [01;36m[K^~~~[m[K
+[13.574s] [01m[K/opt/ros/humble/include/rclcpp/rclcpp/node_impl.hpp:141:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[13.577s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:154:66:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.580s]   154 |     stop_servos_srv_ = [01;31m[Kthis->create_service<std_srvs::srv::Empty>([m[K
+[13.582s]       |                        [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[13.583s]   155 | [01;31m[K        "stop_servos", std::bind(&I2cPwmController::stop_servos, this, std::placeholders::_1, std::placeholders::_2))[m[K;
+[13.584s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[13.585s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:[m[K At global scope:
+[13.585s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:192:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kgeometry_msgs[m[K’ does not name a type
+[13.586s]   192 | void I2cPwmController::servos_drive(const [01;31m[Kgeometry_msgs[m[K::msg::Twist::SharedPtr msg) {
+[13.587s]       |                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[13.587s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:192:61:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[K::[m[K’ token
+[13.588s]   192 | void I2cPwmController::servos_drive(const geometry_msgs::msg[01;31m[K::[m[KTwist::SharedPtr msg) {
+[13.589s]       |                                                             [01;31m[K^~[m[K
+[13.590s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:192:61:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K::[m[K’ token
+[13.591s]   192 | void I2cPwmController::servos_drive[34m[K([m[Kconst geometry_msgs::msg[01;31m[K:[m[K[32m[K:[m[KTwist::SharedPtr msg) {
+[13.592s]       |                                    [34m[K~[m[K                        [01;31m[K^[m[K[32m[K~[m[K
+[13.593s]       |                                                             [32m[K)[m[K
+[13.594s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:192:61:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[K::[m[K’ token
+[13.594s]   192 | void I2cPwmController::servos_drive(const geometry_msgs::msg[01;31m[K::[m[KTwist::SharedPtr msg) {
+[13.595s]       |                                                             [01;31m[K^~[m[K
+[13.682s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_servos[m[K’?
+[13.683s]   414 | bool I2cPwmController::stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.684s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[13.684s]       |                                                          [32m[Kstop_servos[m[K
+[13.685s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.686s]   414 | bool I2cPwmController::stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.687s]       |                                                                                       [01;31m[K^[m[K
+[13.709s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_servos[m[K’?
+[13.712s]   414 | bool I2cPwmController::stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.713s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[13.714s]       |                                                          [32m[Kstop_servos[m[K
+[13.715s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.716s]   414 | bool I2cPwmController::stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.717s]       |                                                                                       [01;31m[K^[m[K
+[13.739s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_servos[m[K’?
+[13.740s]   414 | bool I2cPwmController::stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.740s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[13.741s]       |                                                          [32m[Kstop_servos[m[K
+[13.742s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.743s]   414 | bool I2cPwmController::stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request[01;31m[K>[m[K req,
+[13.743s]       |                                                                                       [01;31m[K^[m[K
+[13.744s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:42:[m[K [01;31m[Kerror: [m[Kinvalid template-id
+[13.745s]   414 | bool I2cPwmController::stop_servos(const [01;31m[Kstd[m[K::shared_ptr<std_srvs::srv::Empty::Request> req,
+[13.746s]       |                                          [01;31m[K^~~[m[K
+[13.768s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:58:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_servos[m[K’?
+[13.769s]   414 | bool I2cPwmController::stop_servos(const std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Request> req,
+[13.770s]       |                                                          [01;31m[K^~~~~~~~[m[K
+[13.771s]       |                                                          [32m[Kstop_servos[m[K
+[13.772s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:6:[m[K [01;31m[Kerror: [m[K‘[01m[Kbool I2cPwmController::stop_servos[m[K’ is not a static data member of ‘[01m[Kclass I2cPwmController[m[K’
+[13.773s]   414 | bool [01;31m[KI2cPwmController[m[K::stop_servos(const std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[13.773s]       |      [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[13.774s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:414:36:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kconst[m[K’
+[13.775s]   414 | bool I2cPwmController::stop_servos([01;31m[Kconst[m[K std::shared_ptr<std_srvs::srv::Empty::Request> req,
+[13.776s]       |                                    [01;31m[K^~~~~[m[K
+[13.797s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:415:52:[m[K [01;31m[Kerror: [m[K‘[01m[Kstd_srvs[m[K’ was not declared in this scope; did you mean ‘[01m[Kstop_servos[m[K’?
+[13.798s]   415 |                                    std::shared_ptr<[01;31m[Kstd_srvs[m[K::srv::Empty::Response> res) {
+[13.799s]       |                                                    [01;31m[K^~~~~~~~[m[K
+[13.799s]       |                                                    [32m[Kstop_servos[m[K
+[13.800s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:415:82:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[13.801s]   415 |                                    std::shared_ptr<std_srvs::srv::Empty::Response[01;31m[K>[m[K res) {
+[13.801s]       |                                                                                  [01;31m[K^[m[K
+[13.802s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:415:87:[m[K [01;31m[Kerror: [m[Kexpression list treated as compound expression in initializer [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.803s]   415 |                                    std::shared_ptr<std_srvs::srv::Empty::Response> res[01;31m[K)[m[K {
+[13.803s]       |                                                                                       [01;31m[K^[m[K
+[13.804s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:442:53:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kint I2cPwmController::_smoothing(float)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.805s]   442 | static int I2cPwmController::_smoothing (float speed[01;31m[K)[m[K
+[13.805s]       |                                                     [01;31m[K^[m[K
+[13.806s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:456:73:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kfloat I2cPwmController::_convert_mps_to_proportional(float)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.807s]   456 | static float I2cPwmController::_convert_mps_to_proportional (float speed[01;31m[K)[m[K
+[13.807s]       |                                                                         [01;31m[K^[m[K
+[13.816s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:542:72:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kvoid I2cPwmController::_set_pwm_interval_all(int, int)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.817s]   542 | static void I2cPwmController::_set_pwm_interval_all (int start, int end[01;31m[K)[m[K
+[13.818s]       |                                                                        [01;31m[K^[m[K
+[13.825s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:568:59:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kvoid I2cPwmController::_set_active_board(int)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.826s]   568 | static void I2cPwmController::_set_active_board (int board[01;31m[K)[m[K
+[13.827s]       |                                                           [01;31m[K^[m[K
+[13.836s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:625:79:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kvoid I2cPwmController::_set_pwm_interval(int, int, int)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.837s]   625 | static void I2cPwmController::_set_pwm_interval (int servo, int start, int end[01;31m[K)[m[K
+[13.837s]       |                                                                               [01;31m[K^[m[K
+[13.848s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:664:85:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kvoid I2cPwmController::_set_pwm_interval_proportional(int, float)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.849s]   664 | static void I2cPwmController::_set_pwm_interval_proportional (int servo, float value[01;31m[K)[m[K
+[13.852s]       |                                                                                     [01;31m[K^[m[K
+[13.857s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:699:93:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kvoid I2cPwmController::_config_servo(int, int, int, int)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.857s]   699 | static void I2cPwmController::_config_servo (int servo, int center, int range, int direction[01;31m[K)[m[K
+[13.858s]       |                                                                                             [01;31m[K^[m[K
+[13.866s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:727:77:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kint I2cPwmController::_config_servo_position(int, int)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.867s]   727 | static int I2cPwmController::_config_servo_position (int servo, int position[01;31m[K)[m[K
+[13.867s]       |                                                                             [01;31m[K^[m[K
+[13.872s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:743:117:[m[K [01;31m[Kerror: [m[Kcannot declare member function ‘[01m[Kint I2cPwmController::_config_drive_mode(std::string, float, float, float, float)[m[K’ to have static linkage [[01;31m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-fpermissive-fpermissive]8;;[m[K]
+[13.872s]   743 | static int I2cPwmController::_config_drive_mode (std::string mode, float rpm, float radius, float track, float scale[01;31m[K)[m[K
+[13.873s]       |                                                                                                                     [01;31m[K^[m[K
+[15.362s] gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:90: CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o] Error 1
+[15.363s] gmake[2]: *** Waiting for unfinished jobs....
+[24.839s] gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:76: CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o] Error 1
+[24.840s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/i2cpwm_controller_node.dir/all] Error 2
+[24.841s] gmake: *** [Makefile:146: all] Error 2
+[24.848s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4

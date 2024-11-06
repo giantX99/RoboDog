@@ -8,7 +8,7 @@
 #include "geometry_msgs/msg/vector3.hpp"
 #include "geometry_msgs/msg/twist.hpp"
 #include "tf2/LinearMath/Quaternion.h"
-#include "tf2_eigen/tf2_eigen.h"
+#include "tf2_eigen/tf2_eigen.hpp"
 #include "tf2_geometry_msgs/tf2_geometry_msgs.h"
 
 #include "spot_micro_kinematics/spot_micro_kinematics.h"
@@ -174,7 +174,7 @@ void SpotMicroMotionCmd::runOnce() {
 
 bool SpotMicroMotionCmd::publishServoConfiguration() {
     // Create a temporary servo config
-    auto temp_servo_config = std::make_shared<i2cpwm_controller::srv::ServoConfig::Request>();
+    i2cpwm_controller::msg::ServoConfig temp_servo_config;
     auto temp_servo_config_array = std::make_shared<i2cpwm_controller::srv::ServosConfig::Request>();
 
     // Loop through servo configuration dictionary in smnc_, append servo to temp config array
@@ -194,10 +194,10 @@ bool SpotMicroMotionCmd::publishServoConfiguration() {
     auto result = servos_config_client_->async_send_request(temp_servo_config_array);
 
     // Check the service result
-    if (rclcpp::spin_until_future_complete(node_, result) != rclcpp::FutureReturnCode::SUCCESS) {
+    if (rclcpp::spin_until_future_complete(this->get_node_base_interface(), result) != rclcpp::FutureReturnCode::SUCCESS) {
         if (!smnc_.debug_mode && !smnc_.run_standalone) {
             // Only error out if not in debug mode or standalone mode
-            RCLCPP_ERROR(node_->get_logger(), "Failed to call service servo_config");
+            RCLCPP_ERROR(get_logger(), "Failed to call service servo_config");
             return false;
         }
     }

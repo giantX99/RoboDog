@@ -18,6 +18,7 @@ find_package(geometry_msgs REQUIRED)
 find_package(tf2 REQUIRED)
 find_package(tf2_ros REQUIRED)
 find_package(tf2_geometry_msgs REQUIRED)
+find_package(tf2_eigen REQUIRED)
 find_package(i2cpwm_controller REQUIRED)
 find_package(eigen3_cmake_module REQUIRED)
 find_package(Eigen3 REQUIRED)
@@ -49,6 +50,7 @@ target_link_libraries(smfsm
   tf2::tf2
   tf2_ros::tf2_ros
   tf2_geometry_msgs::tf2_geometry_msgs
+  tf2_eigen
   Eigen3::Eigen
   i2cpwm_controller
 )
@@ -61,13 +63,14 @@ ament_target_dependencies(smfsm
   tf2
   tf2_ros
   tf2_geometry_msgs
+  tf2_eigen
   i2cpwm_controller
 )
 
 # Add the executable for the SpotMicroMotionCmd node
 add_executable(motion_cmd_node
   src/motion_cmd.cpp
-  src/motion_cmd_node.cpp
+  src/main.cpp
   src/utils.cpp
 )
 
@@ -79,6 +82,7 @@ target_link_libraries(motion_cmd_node
   tf2::tf2
   tf2_ros::tf2_ros
   tf2_geometry_msgs::tf2_geometry_msgs
+  tf2_eigen
   Eigen3::Eigen
 )
 
@@ -90,6 +94,7 @@ ament_target_dependencies(motion_cmd_node
   tf2
   tf2_ros
   tf2_geometry_msgs
+  tf2_eigen
   i2cpwm_controller
 )
 
@@ -105,5 +110,5 @@ install(DIRECTORY launch config
 )
 
 # Export package dependencies
-ament_export_dependencies(rclcpp std_msgs geometry_msgs tf2 tf2_ros tf2_geometry_msgs i2cpwm_controller Eigen3)
+ament_export_dependencies(rclcpp std_msgs geometry_msgs tf2 tf2_ros tf2_geometry_msgs tf2_eigen i2cpwm_controller Eigen3)
 ament_package()

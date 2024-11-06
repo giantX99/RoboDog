@@ -1,9 +1,9 @@
-#include "spot_micro_walk.h"
+#include "walk.h"
 
 #include <eigen3/Eigen/Geometry>
 
-#include "spot_micro_transition_stand.h"
-#include "spot_micro_motion_cmd.h"
+#include "transition_stand.h"
+#include "motion_cmd.h"
 #include "rate_limited_first_order_filter.h"
 
 SpotMicroWalkState::SpotMicroWalkState() {
@@ -35,7 +35,7 @@ void SpotMicroWalkState::handleInputCommands(const smk::BodyState& body_state,
   // If stand command received, change to transition to stand state
   if (cmd.getStandCmd() == true) {
     // Call parent class's change state method
-    changeState(smmc, std::make_unique<SpotMicroTransitionStandState>());
+    SMSchangeState(smmc, std::make_unique<SpotMicroTransitionStandState>());
 
   } else {
     // Update gate phasing data

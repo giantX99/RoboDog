@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.001967] (i2cpwm_controller) JobQueued: {'identifier': 'i2cpwm_controller', 'dependencies': OrderedDict()}
+[0.002555] (spot_micro_motion_cmd) JobQueued: {'identifier': 'spot_micro_motion_cmd', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.003043] (i2cpwm_controller) JobStarted: {'identifier': 'i2cpwm_controller'}
+[0.037962] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'cmake'}
+[0.038959] (i2cpwm_controller) Command: {'cmd': ['/usr/bin/cmake', '/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller', '-DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 52044 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog/RoboDog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '5'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller'), ('SSH_CONNECTION', '10.7.90.125 52044 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099427] (-) TimerEvent: {}
+[0.200267] (-) TimerEvent: {}
+[0.301180] (-) TimerEvent: {}
+[0.402190] (-) TimerEvent: {}
+[0.503417] (-) TimerEvent: {}
+[0.604622] (-) TimerEvent: {}
+[0.705462] (-) TimerEvent: {}
+[0.806320] (-) TimerEvent: {}
+[0.846098] (i2cpwm_controller) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.906514] (-) TimerEvent: {}
+[1.008083] (-) TimerEvent: {}
+[1.109141] (-) TimerEvent: {}
+[1.210262] (-) TimerEvent: {}
+[1.311043] (-) TimerEvent: {}
+[1.412106] (-) TimerEvent: {}
+[1.513173] (-) TimerEvent: {}
+[1.614068] (-) TimerEvent: {}
+[1.638441] (i2cpwm_controller) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.687924] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.714348] (-) TimerEvent: {}
+[1.815198] (-) TimerEvent: {}
+[1.916194] (-) TimerEvent: {}
+[2.017534] (-) TimerEvent: {}
+[2.066472] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.092781] (i2cpwm_controller) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.094739] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.097033] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.112695] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.117482] (-) TimerEvent: {}
+[2.218390] (-) TimerEvent: {}
+[2.319333] (-) TimerEvent: {}
+[2.420297] (-) TimerEvent: {}
+[2.475888] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.503489] (i2cpwm_controller) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.504637] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.506943] (i2cpwm_controller) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.520452] (-) TimerEvent: {}
+[2.532905] (i2cpwm_controller) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.620624] (-) TimerEvent: {}
+[2.721549] (-) TimerEvent: {}
+[2.823054] (-) TimerEvent: {}
+[2.924493] (-) TimerEvent: {}
+[3.025261] (-) TimerEvent: {}
+[3.126439] (-) TimerEvent: {}
+[3.227555] (-) TimerEvent: {}
+[3.265338] (i2cpwm_controller) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[3.327745] (-) TimerEvent: {}
+[3.428461] (-) TimerEvent: {}
+[3.529159] (-) TimerEvent: {}
+[3.629997] (-) TimerEvent: {}
+[3.730751] (-) TimerEvent: {}
+[3.831718] (-) TimerEvent: {}
+[3.932425] (-) TimerEvent: {}
+[4.001977] (i2cpwm_controller) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.032645] (-) TimerEvent: {}
+[4.133374] (-) TimerEvent: {}
+[4.234229] (-) TimerEvent: {}
+[4.319591] (i2cpwm_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.334341] (-) TimerEvent: {}
+[4.359994] (i2cpwm_controller) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.414544] (i2cpwm_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.434512] (-) TimerEvent: {}
+[4.484131] (i2cpwm_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.534690] (-) TimerEvent: {}
+[4.580991] (i2cpwm_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.634865] (-) TimerEvent: {}
+[4.735716] (-) TimerEvent: {}
+[4.836740] (-) TimerEvent: {}
+[4.850415] (i2cpwm_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.871369] (i2cpwm_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.936911] (-) TimerEvent: {}
+[5.037616] (-) TimerEvent: {}
+[5.138285] (-) TimerEvent: {}
+[5.239053] (-) TimerEvent: {}
+[5.339932] (-) TimerEvent: {}
+[5.412481] (i2cpwm_controller) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[5.440102] (-) TimerEvent: {}
+[5.540833] (-) TimerEvent: {}
+[5.641533] (-) TimerEvent: {}
+[5.666331] (i2cpwm_controller) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[5.741733] (-) TimerEvent: {}
+[5.842589] (-) TimerEvent: {}
+[5.943354] (-) TimerEvent: {}
+[6.044088] (-) TimerEvent: {}
+[6.064711] (i2cpwm_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.135223] (i2cpwm_controller) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[6.144288] (-) TimerEvent: {}
+[6.245384] (-) TimerEvent: {}
+[6.346260] (-) TimerEvent: {}
+[6.447069] (-) TimerEvent: {}
+[6.500964] (i2cpwm_controller) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[6.503584] (i2cpwm_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.547289] (-) TimerEvent: {}
+[6.648359] (-) TimerEvent: {}
+[6.749394] (-) TimerEvent: {}
+[6.844664] (i2cpwm_controller) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.849456] (-) TimerEvent: {}
+[6.850205] (i2cpwm_controller) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.949646] (-) TimerEvent: {}
+[7.050579] (-) TimerEvent: {}
+[7.110940] (i2cpwm_controller) StdoutLine: {'line': b'-- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)\n'}
+[7.150748] (-) TimerEvent: {}
+[7.161709] (i2cpwm_controller) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.221795] (i2cpwm_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[7.250954] (-) TimerEvent: {}
+[7.272117] (i2cpwm_controller) StderrLine: {'line': b'\x1b[31mCMake Error at CMakeLists.txt:14 (find_library):\n'}
+[7.273158] (i2cpwm_controller) StderrLine: {'line': b'  Could not find I2C_LIBRARY using the following names: i2c\n'}
+[7.273617] (i2cpwm_controller) StderrLine: {'line': b'\n'}
+[7.273977] (i2cpwm_controller) StderrLine: {'line': b'\x1b[0m\n'}
+[7.274332] (i2cpwm_controller) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[7.274742] (i2cpwm_controller) StdoutLine: {'line': b'See also "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles/CMakeOutput.log".\n'}
+[7.310336] (i2cpwm_controller) CommandEnded: {'returncode': 1}
+[7.351295] (-) TimerEvent: {}
+[7.392569] (i2cpwm_controller) JobEnded: {'identifier': 'i2cpwm_controller', 'rc': 1}
+[7.404163] (spot_micro_motion_cmd) JobSkipped: {'identifier': 'spot_micro_motion_cmd'}
+[7.404537] (-) EventReactorShutdown: {}

@@ -1,0 +1,201 @@
+[0.044s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.285s] [  6%] Built target gtest
+[0.288s] [ 20%] Built target spot_micro_kinematics
+[0.393s] [ 27%] Built target gtest_main
+[0.397s] [ 34%] Built target gmock
+[0.469s] [ 37%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[0.516s] [ 44%] Built target test_utils
+[0.523s] [ 51%] Built target test_spot_micro_kinematics
+[0.539s] [ 58%] Built target test_spot_micro_leg
+[0.566s] [ 62%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[0.586s] [ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[0.625s] [ 72%] Built target gmock_main
+[0.664s] [ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[24.026s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[24.029s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1[m[K:
+[24.035s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[24.039s]   118 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[24.043s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.047s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[24.051s]   118 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[24.062s]       |                                   [01;31m[K^[m[K
+[24.067s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[25.164s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ is not a member of ‘[01m[Ki2cpwm_controller[m[K’; did you mean ‘[01m[Krcl_interfaces::srv[m[K’?
+[25.167s]   169 |     rclcpp::Client<i2cpwm_controller::[01;31m[Ksrv[m[K::ServosConfig>::SharedPtr servos_config_client_;
+[25.170s]       |                                       [01;31m[K^~~[m[K
+[25.173s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:7[m[K,
+[25.176s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:28[m[K,
+[25.181s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:159[m[K,
+[25.189s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7[m[K,
+[25.193s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[25.208s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1[m[K:
+[25.209s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K‘[01m[Krcl_interfaces::srv[m[K’ declared here
+[25.209s]    27 | namespace [01;36m[Ksrv[m[K
+[25.209s]       |           [01;36m[K^~~[m[K
+[25.210s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[25.210s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1[m[K:
+[25.211s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[25.211s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig[01;31m[K>[m[K::SharedPtr servos_config_client_;
+[25.212s]       |                                                        [01;31m[K^[m[K
+[25.212s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[25.213s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::[01;31m[KSharedPtr[m[K servos_config_client_;
+[25.213s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[25.213s]       |                                                                    [32m[K;[m[K
+[25.214s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_config_client_[m[K’ does not name a type
+[25.214s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::SharedPtr [01;31m[Kservos_config_client_[m[K;
+[25.215s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[25.260s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[25.261s]   198 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[25.262s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[25.263s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[25.263s]   198 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[25.264s]       |                                                    [01;31m[K^[m[K
+[25.265s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[25.346s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroState::changeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState>)[m[K’:
+[25.347s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:21:30:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::remove_reference<std::unique_ptr<SpotMicroState>&>::type[m[K’ {aka ‘[01m[Kstd::unique_ptr<SpotMicroState>[m[K’} to ‘[01m[Kint[m[K’
+[25.347s]    21 |   smmc->changeState([01;31m[Kstd::move(sms)[m[K);
+[25.348s]       |                     [01;31m[K~~~~~~~~~^~~~~[m[K
+[25.348s]       |                              [01;31m[K|[m[K
+[25.349s]       |                              [01;31m[Kstd::remove_reference<std::unique_ptr<SpotMicroState>&>::type {aka std::unique_ptr<SpotMicroState>}[m[K
+[25.350s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[25.351s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1[m[K:
+[25.352s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:54:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid SpotMicroMotionCmd::changeState(int)[m[K’
+[25.353s]   198 |     void changeState([01;36m[Kstd::unique_ptr<SpotMicroState> sms[m[K);
+[25.354s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[25.677s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[25.678s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.h:3[m[K,
+[25.679s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:1[m[K:
+[25.679s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[25.680s]   118 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[25.681s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[25.682s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[25.682s]   118 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[25.683s]       |                                   [01;31m[K^[m[K
+[25.684s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[26.134s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[26.139s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.h:5[m[K,
+[26.143s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:1[m[K:
+[26.146s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[26.149s]   118 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[26.156s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[26.161s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[26.177s]   118 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[26.182s]       |                                   [01;31m[K^[m[K
+[26.186s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[26.648s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[26.652s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.h:5[m[K,
+[26.656s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:1[m[K:
+[26.660s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[26.664s]   118 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[26.680s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[26.684s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[26.692s]   118 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[26.696s]       |                                   [01;31m[K^[m[K
+[26.700s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:118:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[26.983s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ is not a member of ‘[01m[Ki2cpwm_controller[m[K’; did you mean ‘[01m[Krcl_interfaces::srv[m[K’?
+[26.988s]   169 |     rclcpp::Client<i2cpwm_controller::[01;31m[Ksrv[m[K::ServosConfig>::SharedPtr servos_config_client_;
+[26.991s]       |                                       [01;31m[K^~~[m[K
+[26.995s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:7[m[K,
+[26.996s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:28[m[K,
+[26.996s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:159[m[K,
+[26.997s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7[m[K,
+[26.998s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[26.999s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.h:3[m[K,
+[26.999s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:1[m[K:
+[27.000s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K‘[01m[Krcl_interfaces::srv[m[K’ declared here
+[27.000s]    27 | namespace [01;36m[Ksrv[m[K
+[27.001s]       |           [01;36m[K^~~[m[K
+[27.002s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[27.002s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.h:3[m[K,
+[27.003s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:1[m[K:
+[27.004s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[27.005s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig[01;31m[K>[m[K::SharedPtr servos_config_client_;
+[27.005s]       |                                                        [01;31m[K^[m[K
+[27.018s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[27.019s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::[01;31m[KSharedPtr[m[K servos_config_client_;
+[27.020s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[27.021s]       |                                                                    [32m[K;[m[K
+[27.033s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_config_client_[m[K’ does not name a type
+[27.035s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::SharedPtr [01;31m[Kservos_config_client_[m[K;
+[27.035s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[27.124s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[27.124s]   198 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[27.125s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[27.126s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[27.127s]   198 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[27.127s]       |                                                    [01;31m[K^[m[K
+[27.128s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[27.206s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ is not a member of ‘[01m[Ki2cpwm_controller[m[K’; did you mean ‘[01m[Krcl_interfaces::srv[m[K’?
+[27.207s]   169 |     rclcpp::Client<i2cpwm_controller::[01;31m[Ksrv[m[K::ServosConfig>::SharedPtr servos_config_client_;
+[27.208s]       |                                       [01;31m[K^~~[m[K
+[27.210s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:7[m[K,
+[27.210s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:28[m[K,
+[27.211s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:159[m[K,
+[27.212s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7[m[K,
+[27.212s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[27.213s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.h:5[m[K,
+[27.214s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:1[m[K:
+[27.214s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K‘[01m[Krcl_interfaces::srv[m[K’ declared here
+[27.215s]    27 | namespace [01;36m[Ksrv[m[K
+[27.215s]       |           [01;36m[K^~~[m[K
+[27.216s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[27.216s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.h:5[m[K,
+[27.217s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:1[m[K:
+[27.217s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[27.226s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig[01;31m[K>[m[K::SharedPtr servos_config_client_;
+[27.227s]       |                                                        [01;31m[K^[m[K
+[27.228s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[27.228s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::[01;31m[KSharedPtr[m[K servos_config_client_;
+[27.229s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[27.230s]       |                                                                    [32m[K;[m[K
+[27.233s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_config_client_[m[K’ does not name a type
+[27.234s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::SharedPtr [01;31m[Kservos_config_client_[m[K;
+[27.235s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[27.312s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[27.312s]   198 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[27.313s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[27.314s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[27.315s]   198 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[27.315s]       |                                                    [01;31m[K^[m[K
+[27.316s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[27.752s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:39:[m[K [01;31m[Kerror: [m[K‘[01m[Ksrv[m[K’ is not a member of ‘[01m[Ki2cpwm_controller[m[K’; did you mean ‘[01m[Krcl_interfaces::srv[m[K’?
+[27.753s]   169 |     rclcpp::Client<i2cpwm_controller::[01;31m[Ksrv[m[K::ServosConfig>::SharedPtr servos_config_client_;
+[27.756s]       |                                       [01;31m[K^~~[m[K
+[27.760s] In file included from [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/describe_parameters.hpp:7[m[K,
+[27.763s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/parameter_client.hpp:28[m[K,
+[27.768s]                  from [01m[K/opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp:159[m[K,
+[27.771s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7[m[K,
+[27.788s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[27.791s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.h:5[m[K,
+[27.794s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:1[m[K:
+[27.797s] [01m[K/opt/ros/humble/include/rcl_interfaces/rcl_interfaces/srv/detail/describe_parameters__struct.hpp:27:11:[m[K [01;36m[Knote: [m[K‘[01m[Krcl_interfaces::srv[m[K’ declared here
+[27.800s]    27 | namespace [01;36m[Ksrv[m[K
+[27.816s]       |           [01;36m[K^~~[m[K
+[27.819s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[27.822s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.h:5[m[K,
+[27.826s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:1[m[K:
+[27.828s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:56:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[27.831s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig[01;31m[K>[m[K::SharedPtr servos_config_client_;
+[27.835s]       |                                                        [01;31m[K^[m[K
+[27.840s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[27.854s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::[01;31m[KSharedPtr[m[K servos_config_client_;
+[27.857s]       |                                                           [01;31m[K^~~~~~~~~[m[K
+[27.860s]       |                                                                    [32m[K;[m[K
+[27.863s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:169:69:[m[K [01;31m[Kerror: [m[K‘[01m[Kservos_config_client_[m[K’ does not name a type
+[27.867s]   169 |     rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::SharedPtr [01;31m[Kservos_config_client_[m[K;
+[27.870s]       |                                                                     [01;31m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[27.945s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[27.948s]   198 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[27.951s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[27.955s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[27.958s]   198 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[27.962s]       |                                                    [01;31m[K^[m[K
+[27.969s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:198:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[28.610s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1
+[28.613s] gmake[2]: *** Waiting for unfinished jobs....
+[30.162s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1
+[30.306s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1
+[30.831s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1
+[30.832s] gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2
+[30.833s] gmake: *** [Makefile:146: all] Error 2
+[30.840s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

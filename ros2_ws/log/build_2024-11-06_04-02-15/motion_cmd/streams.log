@@ -1,0 +1,100 @@
+[0.048s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.277s] [  6%] Built target gtest
+[0.282s] [ 20%] Built target spot_micro_kinematics
+[0.355s] [35m[1mConsolidate compiler generated dependencies of target smfsm[0m
+[0.380s] [ 27%] Built target gtest_main
+[0.390s] [ 34%] Built target gmock
+[0.499s] [ 41%] Built target test_utils
+[0.515s] [ 48%] Built target test_spot_micro_leg
+[0.554s] [ 55%] Built target test_spot_micro_kinematics
+[0.555s] [ 58%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[0.574s] [ 62%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[0.605s] [ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[0.621s] [ 72%] Built target gmock_main
+[0.658s] [ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[22.764s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[22.765s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.h:3[m[K,
+[22.766s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:1[m[K:
+[22.766s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[22.767s]   120 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[22.768s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[22.768s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[22.769s]   120 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[22.770s]       |                                   [01;31m[K^[m[K
+[22.771s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[22.937s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[22.937s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.h:5[m[K,
+[22.938s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:1[m[K:
+[22.939s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[22.939s]   120 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[22.940s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[22.941s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[22.942s]   120 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[22.943s]       |                                   [01;31m[K^[m[K
+[22.945s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[23.121s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[23.121s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1[m[K:
+[23.122s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[23.123s]   120 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[23.123s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[23.125s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[23.125s]   120 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[23.126s]       |                                   [01;31m[K^[m[K
+[23.127s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[23.951s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[23.954s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.h:5[m[K,
+[23.958s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:1[m[K:
+[23.963s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:21:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[23.966s]   120 |     std::unique_ptr<[01;31m[KSpotMicroState[m[K> state_;
+[23.984s]       |                     [01;31m[K^~~~~~~~~~~~~~[m[K
+[23.987s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[23.990s]   120 |     std::unique_ptr<SpotMicroState[01;31m[K>[m[K state_;
+[23.994s]       |                                   [01;31m[K^[m[K
+[23.997s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:120:35:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[24.177s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[24.181s]   201 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[24.184s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.187s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[24.191s]   201 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[24.194s]       |                                                    [01;31m[K^[m[K
+[24.206s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[24.363s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[24.366s]   201 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[24.369s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.372s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[24.376s]   201 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[24.379s]       |                                                    [01;31m[K^[m[K
+[24.394s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[24.642s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[24.646s]   201 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[24.651s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[24.657s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[24.662s]   201 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[24.672s]       |                                                    [01;31m[K^[m[K
+[24.675s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[24.771s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:[m[K In member function ‘[01m[Kvoid SpotMicroState::SMSchangeState(SpotMicroMotionCmd*, std::unique_ptr<SpotMicroState>)[m[K’:
+[24.775s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:21:30:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kstd::remove_reference<std::unique_ptr<SpotMicroState>&>::type[m[K’ {aka ‘[01m[Kstd::unique_ptr<SpotMicroState>[m[K’} to ‘[01m[Kint[m[K’
+[24.778s]    21 |   smmc->changeState([01;31m[Kstd::move(sms)[m[K);
+[24.782s]       |                     [01;31m[K~~~~~~~~~^~~~~[m[K
+[24.786s]       |                              [01;31m[K|[m[K
+[24.790s]       |                              [01;31m[Kstd::remove_reference<std::unique_ptr<SpotMicroState>&>::type {aka std::unique_ptr<SpotMicroState>}[m[K
+[24.805s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h:2[m[K,
+[24.808s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:1[m[K:
+[24.811s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:54:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid SpotMicroMotionCmd::changeState(int)[m[K’
+[24.814s]   201 |     void changeState([01;36m[Kstd::unique_ptr<SpotMicroState> sms[m[K);
+[24.818s]       |                      [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[25.353s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:38:[m[K [01;31m[Kerror: [m[K‘[01m[KSpotMicroState[m[K’ was not declared in this scope
+[25.356s]   201 |     void changeState(std::unique_ptr<[01;31m[KSpotMicroState[m[K> sms);
+[25.360s]       |                                      [01;31m[K^~~~~~~~~~~~~~[m[K
+[25.363s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[25.367s]   201 |     void changeState(std::unique_ptr<SpotMicroState[01;31m[K>[m[K sms);
+[25.370s]       |                                                    [01;31m[K^[m[K
+[25.379s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:201:52:[m[K [01;31m[Kerror: [m[Ktemplate argument 2 is invalid
+[27.258s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1
+[27.261s] gmake[2]: *** Waiting for unfinished jobs....
+[27.417s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1
+[27.770s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1
+[28.354s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1
+[28.355s] gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2
+[28.356s] gmake: *** [Makefile:146: all] Error 2
+[28.363s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

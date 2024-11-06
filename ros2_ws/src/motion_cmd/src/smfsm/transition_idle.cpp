@@ -1,8 +1,8 @@
-#include "spot_micro_transition_idle.h"
+#include "transition_idle.h"
 
-#include "spot_micro_idle.h"
-#include "spot_micro_motion_cmd.h"
-#include "spot_micro_state.h"
+#include "idle.h"
+#include "motion_cmd.h"
+#include "state.h"
 
 SpotMicroTransitionIdleState::SpotMicroTransitionIdleState() {
   // Construcotr, doesn't need to do anything, for now...
@@ -61,7 +61,7 @@ void SpotMicroTransitionIdleState::handleInputCommands(
   
   // Check if desired end state reached, if so, change to stand state
   if (checkBodyStateEquality(body_state, end_body_state_, 0.001f)) {
-    changeState(smmc, std::make_unique<SpotMicroIdleState>());
+    SMSchangeState(smmc, std::make_unique<SpotMicroIdleState>());
   
   } else {
     // Otherwise, rise filters and assign output values to body state command

@@ -1,7 +1,7 @@
-#include "spot_micro_state.h"
+#include "state.h"
 
 #include "spot_micro_kinematics/spot_micro_kinematics.h"
-#include "spot_micro_motion_cmd.h"
+#include "motion_cmd.h"
 
 using namespace smk;
 
@@ -17,7 +17,7 @@ SpotMicroState::~SpotMicroState() {
 }
 
 
-void SpotMicroState::changeState(SpotMicroMotionCmd* smmc, std::unique_ptr<SpotMicroState> sms) {
+void SpotMicroState::SMSchangeState(SpotMicroMotionCmd* smmc, std::unique_ptr<SpotMicroState> sms) {
   smmc->changeState(std::move(sms));
 }
 

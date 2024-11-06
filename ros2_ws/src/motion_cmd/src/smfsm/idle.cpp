@@ -22,7 +22,7 @@ void SpotMicroIdleState::handleInputCommands(const smk::BodyState& body_state,
   
   // Check if stand command issued, if so, transition to stand state
   if (cmd.getStandCmd() == true) {
-    changeState(smmc, std::make_unique<SpotMicroTransitionStandState>());
+    SMSchangeState(smmc, std::make_unique<SpotMicroTransitionStandState>());
   
   } else {
     // Otherwise, just command idle servo commands

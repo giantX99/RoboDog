@@ -1,0 +1,36 @@
+[0.044s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.274s] [  6%] Built target gtest
+[0.279s] [ 20%] Built target spot_micro_kinematics
+[0.355s] [35m[1mConsolidate compiler generated dependencies of target smfsm[0m
+[0.380s] [ 27%] Built target gmock
+[0.388s] [ 34%] Built target gtest_main
+[0.503s] [ 41%] Built target test_utils
+[0.526s] [ 48%] Built target test_spot_micro_kinematics
+[0.537s] [ 55%] Built target test_spot_micro_leg
+[0.544s] [ 58%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[0.579s] [ 62%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[0.595s] [ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[0.619s] [ 72%] Built target gmock_main
+[0.660s] [ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[27.019s] [ 79%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o[0m
+[27.268s] [ 82%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o[0m
+[50.291s] [ 86%] [32m[1mLinking CXX static library libsmfsm.a[0m
+[50.528s] [ 86%] Built target smfsm
+[50.626s] [ 93%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o[0m
+[50.628s] [ 93%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/main.cpp.o[0m
+[50.642s] [ 96%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o[0m
+[52.034s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp:1[m[K:
+[52.037s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/utils.h:5:10:[m[K [01;31m[Kfatal error: [m[Ktf2_eigen/tf2_eigen.h: No such file or directory
+[52.040s]     5 | #include [01;31m[K"tf2_eigen/tf2_eigen.h"[m[K
+[52.043s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.046s] compilation terminated.
+[52.053s] gmake[2]: *** [CMakeFiles/motion_cmd_node.dir/build.make:104: CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o] Error 1
+[52.055s] gmake[2]: *** Waiting for unfinished jobs....
+[53.312s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/motion_cmd.cpp:11:10:[m[K [01;31m[Kfatal error: [m[Ktf2_eigen/tf2_eigen.h: No such file or directory
+[53.315s]    11 | #include [01;31m[K"tf2_eigen/tf2_eigen.h"[m[K
+[53.316s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[53.317s] compilation terminated.
+[53.336s] gmake[2]: *** [CMakeFiles/motion_cmd_node.dir/build.make:76: CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o] Error 1
+[68.680s] gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/motion_cmd_node.dir/all] Error 2
+[68.683s] gmake: *** [Makefile:146: all] Error 2
+[68.688s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': AMENT_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller LD_LIBRARY_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "spot_micro_motion_cmd.h"
-#include "spot_micro_state.h"
+#include "motion_cmd.h"
+#include "state.h"
 #include "command.h"
 
 struct ContactFeet {

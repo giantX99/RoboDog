@@ -132,7 +132,7 @@ I2cPwmController::I2cPwmController(const rclcpp::NodeOptions &options)
     }
 
     // Initialize subscriptions
-    servos_absolute_sub_ = this->create_subscription<controller::msg::ServoArray>(
+    servos_absolute_sub_ = this->create_subscription<i2cpwm_controller::msg::ServoArray>(
         "servos_absolute", 500, std::bind(&I2cPwmController::servos_absolute, this, std::placeholders::_1));
 
     servos_proportional_sub_ = this->create_subscription<i2cpwm_controller::msg::ServoArray>(
@@ -439,7 +439,7 @@ bool I2cPwmController::stop_servos(const std::shared_ptr<std_srvs::srv::Empty::R
  @param speed an int value (±1.0) indicating original speed
  @returns an integer value (±1.0) smoothed for more gentle acceleration
  */
-static int I2cPwmController::_smoothing (float speed)
+int I2cPwmController::_smoothing (float speed)
 {
 	/* if smoothing is desired, then remove the commented code  */
 	// speed = (cos(_PI*(((float)1.0 - speed))) + 1) / 2;
@@ -453,7 +453,7 @@ static int I2cPwmController::_smoothing (float speed)
    @param speed float requested speed in meters per second
    @returns float value (±1.0) for servo speed
  */
-static float I2cPwmController::_convert_mps_to_proportional (float speed)
+float I2cPwmController::_convert_mps_to_proportional (float speed)
 {
 	/* we use the drive mouter output rpm and wheel radius to compute the conversion */
 
@@ -539,7 +539,7 @@ void I2cPwmController::_set_pwm_frequency(int freq) {
  *@param end an int value (0..4096) indicating when the pulse will go low stoping power to each channel.
  *Example _set_pwm_interval_all (0, 108)   // set all servos with a pulse width of 105
  */
-static void I2cPwmController::_set_pwm_interval_all (int start, int end)
+void I2cPwmController::_set_pwm_interval_all (int start, int end)
 {
     // the public API is ONE based and hardware is ZERO based
     if ((_active_board<1) || (_active_board>62)) {
@@ -565,7 +565,7 @@ static void I2cPwmController::_set_pwm_interval_all (int start, int end)
  *@param board an int value (1..62) indicating which board to activate for subsequent service and topic subscription activity where 1 coresponds to the default board address of 0x40 and value increment up
  *Example _set_active_board (68)   // set the pulse frequency to 68Hz
  */
-static void I2cPwmController::_set_active_board (int board)
+void I2cPwmController::_set_active_board (int board)
 {
 	char mode1res;
 
@@ -622,7 +622,7 @@ static void I2cPwmController::_set_active_board (int board)
  *@param end an int value (0..4096) indicating when the pulse will go low stoping power to each channel.
  *Example _set_pwm_interval (3, 0, 350)    // set servo #3 (fourth position on the hardware board) with a pulse of 350
  */
-static void I2cPwmController::_set_pwm_interval (int servo, int start, int end)
+void I2cPwmController::_set_pwm_interval (int servo, int start, int end)
 {
 	RCLCPP_DEBUG(get_logger(), "_set_pwm_interval enter");
 
@@ -661,7 +661,7 @@ static void I2cPwmController::_set_pwm_interval (int servo, int start, int end)
  *@param value an int value (±1.0) indicating when the size of the pulse for the channel.
  *Example _set_pwm_interval (3, 0, 350)    // set servo #3 (fourth position on the hardware board) with a pulse of 350
  */
-static void I2cPwmController::_set_pwm_interval_proportional (int servo, float value)
+void I2cPwmController::_set_pwm_interval_proportional (int servo, float value)
 {
 	// need a little wiggle room to allow for accuracy of a floating point value
 	if ((value < -1.0001) || (value > 1.0001)) {
@@ -696,7 +696,7 @@ static void I2cPwmController::_set_pwm_interval_proportional (int servo, float v
  *@param direction an int  either -1 or 1
  *Example _config_server (1, 300, 100, -1)   // configure the first servo with a center of 300 and range of 100 and reversed direction
  */
-static void I2cPwmController::_config_servo (int servo, int center, int range, int direction)
+void I2cPwmController::_config_servo (int servo, int center, int range, int direction)
 {
 	if ((servo < 1) || (servo > (MAX_SERVOS))) {
 		RCLCPP_ERROR(get_logger(), "Invalid servo number %d :: servo numbers must be between 1 and %d", servo, MAX_SERVOS);
@@ -724,7 +724,7 @@ static void I2cPwmController::_config_servo (int servo, int center, int range, i
 }
 
 
-static int I2cPwmController::_config_servo_position (int servo, int position)
+int I2cPwmController::_config_servo_position (int servo, int position)
 {
 	if ((servo < 1) || (servo > (MAX_SERVOS))) {
 		RCLCPP_ERROR(get_logger(), "Invalid servo number %d :: servo numbers must be between 1 and %d", servo, MAX_SERVOS);
@@ -740,7 +740,7 @@ static int I2cPwmController::_config_servo_position (int servo, int position)
 }
 
 
-static int I2cPwmController::_config_drive_mode (std::string mode, float rpm, float radius, float track, float scale)
+int I2cPwmController::_config_drive_mode (std::string mode, float rpm, float radius, float track, float scale)
 {
 	int mode_val = MODE_UNDEFINED;
 
@@ -792,13 +792,13 @@ void I2cPwmController::load_configuration_from_parameters() {
     // Declare parameters with default values if not already set by .yaml or launch, override handled internally
     declare_parameter("i2c_device_number", 1);
     declare_parameter("pwm_frequency", 50);
-    declare_parameter("servo_config", std::vector<rclcpp::ParameterValue>());
+    // declare_parameter("servo_config", std::vector<rclcpp::ParameterValue>());
     declare_parameter("drive_config.mode", std::string("undefined"));
     declare_parameter("drive_config.rpm", 60.0);
     declare_parameter("drive_config.radius", 0.062);
     declare_parameter("drive_config.track", 0.2);
     declare_parameter("drive_config.scale", 1.0);
-    declare_parameter("drive_config.servos", std::vector<rclcpp::ParameterValue>());
+    // declare_parameter("drive_config.servos", std::vector<rclcpp::ParameterValue>());
 
     // Load I2C device number
     int i2c_device;
@@ -821,46 +821,46 @@ void I2cPwmController::load_configuration_from_parameters() {
     _set_pwm_frequency(pwm_frequency);
 
     // Load servo configuration
-    std::vector<rclcpp::Parameter> servo_configs = get_parameter("servo_config").as_parameter_list();
-    if (servo_configs.empty()) {
-        RCLCPP_WARN(get_logger(), "No servo configurations found.");
-        throw std::runtime_error("Servo configurations empty.");
-    }
-    for (const auto &param : servo_configs) {
-        // Assuming each 'param' is a map containing "servo", "center", "direction", and "range"
-        auto servo_map = param.as_parameter_map();
+    // std::vector<rclcpp::Parameter> servo_configs = get_parameter("servo_config").as_parameter_list();
+    // if (servo_configs.empty()) {
+    //     RCLCPP_WARN(get_logger(), "No servo configurations found.");
+    //     throw std::runtime_error("Servo configurations empty.");
+    // }
+    // for (const auto &param : servo_configs) {
+    //     // Assuming each 'param' is a map containing "servo", "center", "direction", and "range"
+    //     auto servo_map = param.as_parameter_map();
 
-        // Extract values from the map
-        int servo_id = servo_map.at("servo").as_int();
-        int center = servo_map.at("center").as_int();
-        int direction = servo_map.at("direction").as_int();
-        int range = servo_map.at("range").as_int();
+    //     // Extract values from the map
+    //     int servo_id = servo_map.at("servo").as_int();
+    //     int center = servo_map.at("center").as_int();
+    //     int direction = servo_map.at("direction").as_int();
+    //     int range = servo_map.at("range").as_int();
 
-        // Validate values
-        if (servo_id < 1 || servo_id > MAX_SERVOS) {
-            RCLCPP_ERROR(get_logger(), "Invalid servo ID %d :: ID must be between 1 and %d", servo_id, MAX_SERVOS);
-            continue;
-        }
+    //     // Validate values
+    //     if (servo_id < 1 || servo_id > MAX_SERVOS) {
+    //         RCLCPP_ERROR(get_logger(), "Invalid servo ID %d :: ID must be between 1 and %d", servo_id, MAX_SERVOS);
+    //         continue;
+    //     }
 
-        if (center < 0 || center > 4096) {
-            RCLCPP_ERROR(get_logger(), "Invalid center value %d for servo %d :: Center must be between 0 and 4096", center, servo_id);
-            continue;
-        }
+    //     if (center < 0 || center > 4096) {
+    //         RCLCPP_ERROR(get_logger(), "Invalid center value %d for servo %d :: Center must be between 0 and 4096", center, servo_id);
+    //         continue;
+    //     }
 
-        if (range < 0 || range > 4096) {
-            RCLCPP_ERROR(get_logger(), "Invalid range value %d for servo %d :: Range must be between 0 and 4096", range, servo_id);
-            continue;
-        }
+    //     if (range < 0 || range > 4096) {
+    //         RCLCPP_ERROR(get_logger(), "Invalid range value %d for servo %d :: Range must be between 0 and 4096", range, servo_id);
+    //         continue;
+    //     }
 
-        if (direction != 1 && direction != -1) {
-            RCLCPP_ERROR(get_logger(), "Invalid direction %d for servo %d :: Direction must be 1 or -1", direction, servo_id);
-            continue;
-        }
+    //     if (direction != 1 && direction != -1) {
+    //         RCLCPP_ERROR(get_logger(), "Invalid direction %d for servo %d :: Direction must be 1 or -1", direction, servo_id);
+    //         continue;
+    //     }
 
-        // Configure the servo with the extracted values
-        _config_servo(servo_id, center, range, direction);
-        RCLCPP_INFO(get_logger(), "Configured servo %d: center=%d, range=%d, direction=%d", servo_id, center, range, direction);
-    }
+    //     // Configure the servo with the extracted values
+    //     _config_servo(servo_id, center, range, direction);
+    //     RCLCPP_INFO(get_logger(), "Configured servo %d: center=%d, range=%d, direction=%d", servo_id, center, range, direction);
+    // }
 
     // Load drive mode configuration
     std::string mode;
@@ -874,41 +874,41 @@ void I2cPwmController::load_configuration_from_parameters() {
     _config_drive_mode(mode, rpm, radius, track, scale);
 
     // Load drive servos
-    std::vector<rclcpp::Parameter> drive_servos = get_parameter("drive_config.servos").as_parameter_list();
-    if (drive_servos.empty()) {
-        RCLCPP_WARN(get_logger(), "No drive configurations found.");
-        throw std::runtime_error("Drive configurations empty.");
-    }
-    for (const auto &servo_param : drive_servos) {
-        // Each servo_param is expected to contain a structure with two fields: "servo" and "position"
-        if (servo_param.get_type() == rclcpp::ParameterType::PARAMETER_STRING) {
-            // The parameter might be in a serialized format (like a string), so you might need to parse it
-            RCLCPP_ERROR(get_logger(), "Unexpected servo parameter format.");
-            continue;
-        }
+    // std::vector<rclcpp::Parameter> drive_servos = get_parameter("drive_config.servos").as_parameter_list();
+    // if (drive_servos.empty()) {
+    //     RCLCPP_WARN(get_logger(), "No drive configurations found.");
+    //     throw std::runtime_error("Drive configurations empty.");
+    // }
+    // for (const auto &servo_param : drive_servos) {
+    //     // Each servo_param is expected to contain a structure with two fields: "servo" and "position"
+    //     if (servo_param.get_type() == rclcpp::ParameterType::PARAMETER_STRING) {
+    //         // The parameter might be in a serialized format (like a string), so you might need to parse it
+    //         RCLCPP_ERROR(get_logger(), "Unexpected servo parameter format.");
+    //         continue;
+    //     }
 
-        // Get the "servo" and "position" values from the current parameter
-        auto servo_config = servo_param.as_parameter_map();
-        int servo_id = servo_config.at("servo").as_int();
-        int position = servo_config.at("position").as_int();
+    //     // Get the "servo" and "position" values from the current parameter
+    //     auto servo_config = servo_param.as_parameter_map();
+    //     int servo_id = servo_config.at("servo").as_int();
+    //     int position = servo_config.at("position").as_int();
 
-        // Validate the extracted servo_id and position
-        if (servo_id < 1 || servo_id > MAX_SERVOS) {
-            RCLCPP_ERROR(get_logger(), "Invalid servo number %d :: servo numbers must be between 1 and %d", servo_id, MAX_SERVOS);
-            continue;
-        }
+    //     // Validate the extracted servo_id and position
+    //     if (servo_id < 1 || servo_id > MAX_SERVOS) {
+    //         RCLCPP_ERROR(get_logger(), "Invalid servo number %d :: servo numbers must be between 1 and %d", servo_id, MAX_SERVOS);
+    //         continue;
+    //     }
 
-        if (position < POSITION_UNDEFINED || position > POSITION_RIGHTREAR) {
-            RCLCPP_ERROR(get_logger(), "Invalid servo position %d :: positions are 0 = non-drive, 1 = left front, 2 = right front, 3 = left rear, and 4 = right rear", position);
-            continue;
-        }
+    //     if (position < POSITION_UNDEFINED || position > POSITION_RIGHTREAR) {
+    //         RCLCPP_ERROR(get_logger(), "Invalid servo position %d :: positions are 0 = non-drive, 1 = left front, 2 = right front, 3 = left rear, and 4 = right rear", position);
+    //         continue;
+    //     }
 
-        // Configure the servo position
-        int result = _config_servo_position(servo_id, position);
-        if (result != 0) {
-            RCLCPP_ERROR(get_logger(), "Failed to configure servo %d with position %d", servo_id, position);
-        } else {
-            RCLCPP_INFO(get_logger(), "Configured servo %d at position %d", servo_id, position);
-        }
-    }
+    //     // Configure the servo position
+    //     int result = _config_servo_position(servo_id, position);
+    //     if (result != 0) {
+    //         RCLCPP_ERROR(get_logger(), "Failed to configure servo %d with position %d", servo_id, position);
+    //     } else {
+    //         RCLCPP_INFO(get_logger(), "Configured servo %d at position %d", servo_id, position);
+    //     }
+    // }
 }

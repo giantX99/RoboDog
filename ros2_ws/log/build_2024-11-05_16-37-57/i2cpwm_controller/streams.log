@@ -1,0 +1,45 @@
+[0.053s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
+[0.256s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_generator_c[0m
+[0.297s] [  0%] Built target i2cpwm_controller__cpp
+[0.326s] [  0%] Built target ament_cmake_python_copy_i2cpwm_controller
+[0.334s] [ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[0.362s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_cpp[0m
+[0.372s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp[0m
+[0.447s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_introspection_cpp[0m
+[0.530s] [ 24%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[0.539s] [ 35%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[0.603s] [ 47%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[0.610s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_fastrtps_c[0m
+[0.649s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_introspection_c[0m
+[0.714s] [35m[1mConsolidate compiler generated dependencies of target i2cpwm_controller__rosidl_typesupport_c[0m
+[0.761s] [ 58%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[0.788s] [ 69%] Built target i2cpwm_controller__rosidl_typesupport_c
+[0.796s] [ 80%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[0.885s] [ 81%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o[0m
+[0.911s] [ 82%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o[0m
+[0.944s] [ 82%] Built target i2cpwm_controller
+[1.000s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/main.cpp:1:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+[1.001s]     1 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+[1.001s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.002s] compilation terminated.
+[1.010s] gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:90: CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o] Error 1
+[1.010s] gmake[2]: *** Waiting for unfinished jobs....
+[1.075s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[1.595s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[1.596s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:20:10:[m[K [01;31m[Kfatal error: [m[Krclcpp/rclcpp.h: No such file or directory
+[1.597s]    20 | #include [01;31m[K"rclcpp/rclcpp.h"[m[K
+[1.598s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[1.598s] compilation terminated.
+[1.608s] gmake[2]: *** [CMakeFiles/i2cpwm_controller_node.dir/build.make:76: CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o] Error 1
+[1.611s] gmake[1]: *** [CMakeFiles/Makefile2:593: CMakeFiles/i2cpwm_controller_node.dir/all] Error 2
+[1.616s] gmake[1]: *** Waiting for unfinished jobs....
+[1.871s] running egg_info
+[1.875s] writing i2cpwm_controller.egg-info/PKG-INFO
+[1.876s] writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt
+[1.878s] writing top-level names to i2cpwm_controller.egg-info/top_level.txt
+[1.888s] reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[1.891s] writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[2.032s] [ 83%] Built target ament_cmake_python_build_i2cpwm_controller_egg
+[7.395s] [ 83%] Built target i2cpwm_controller__py
+[7.399s] gmake: *** [Makefile:146: all] Error 2
+[7.407s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
