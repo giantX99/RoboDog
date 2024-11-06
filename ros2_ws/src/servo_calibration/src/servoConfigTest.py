@@ -4,7 +4,8 @@
 Class for testing control of 12 servos. It assumes ros-12cpwmboard has been
 installed
 """
-import rospy
+import rclpy
+from rclpy.node import Node
 import sys, select, termios, tty # For terminal keyboard key press reading
 from i2cpwm_controller.msg import Servo, ServoArray, ServoConfig, ServoConfigArray
 from i2cpwm_controller.srv import ServosConfig
@@ -51,10 +52,10 @@ keyDict = {
     't': lambda x: x.set_value(x._min),
     'y': lambda x: x.set_value(x._center),
     'u': lambda x: x.set_value(x._max),
-    'f': lambda x: x.set_value(x.value-0.01),
-    'g': lambda x: x.set_value(x.value-.1),
-    'j': lambda x: x.set_value(x.value+.1),
-    'k': lambda x: x.set_value(x.value+0.01),
+    'f': lambda x: x.set_value(x.value - 0.01),
+    'g': lambda x: x.set_value(x.value - 0.1),
+    'j': lambda x: x.set_value(x.value + 0.1),
+    'k': lambda x: x.set_value(x.value + 0.01),
     'b': lambda x: x.set_min(x.value),
     'n': lambda x: x.set_center(x.value),
     'm': lambda x: x.set_max(x.value),
