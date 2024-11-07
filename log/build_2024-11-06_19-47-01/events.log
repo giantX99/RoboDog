@@ -1,0 +1,138 @@
+[0.000000] (-) TimerEvent: {}
+[0.001741] (-) JobUnselected: {'identifier': 'i2cpwm_controller'}
+[0.002324] (-) JobUnselected: {'identifier': 'motion_cmd'}
+[0.002802] (servo_calibration) JobQueued: {'identifier': 'servo_calibration', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/install/i2cpwm_controller')])}
+[0.003012] (servo_calibration) JobStarted: {'identifier': 'servo_calibration'}
+[0.048130] (servo_calibration) JobProgress: {'identifier': 'servo_calibration', 'progress': 'cmake'}
+[0.049577] (servo_calibration) Command: {'cmd': ['/usr/bin/cmake', '/home/robodog/RoboDog/ros2_ws/src/servo_calibration', '-DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/install/servo_calibration'], 'cwd': '/home/robodog/RoboDog/build/servo_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 63986 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '70'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/build/servo_calibration'), ('SSH_CONNECTION', '10.7.90.125 63986 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble')]), 'shell': False}
+[0.099230] (-) TimerEvent: {}
+[0.200285] (-) TimerEvent: {}
+[0.301121] (-) TimerEvent: {}
+[0.316119] (servo_calibration) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.401358] (-) TimerEvent: {}
+[0.502271] (-) TimerEvent: {}
+[0.565487] (servo_calibration) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.595782] (servo_calibration) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.602412] (-) TimerEvent: {}
+[0.703222] (-) TimerEvent: {}
+[0.804120] (-) TimerEvent: {}
+[0.904894] (-) TimerEvent: {}
+[0.907506] (servo_calibration) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.934374] (servo_calibration) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.935208] (servo_calibration) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.936564] (servo_calibration) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.947492] (servo_calibration) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.005188] (-) TimerEvent: {}
+[1.106222] (-) TimerEvent: {}
+[1.207079] (-) TimerEvent: {}
+[1.290152] (servo_calibration) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.307232] (-) TimerEvent: {}
+[1.316918] (servo_calibration) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[1.317958] (servo_calibration) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.319504] (servo_calibration) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.346050] (servo_calibration) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[1.407500] (-) TimerEvent: {}
+[1.508523] (-) TimerEvent: {}
+[1.609271] (-) TimerEvent: {}
+[1.710064] (-) TimerEvent: {}
+[1.811177] (-) TimerEvent: {}
+[1.911896] (-) TimerEvent: {}
+[2.012622] (-) TimerEvent: {}
+[2.064909] (servo_calibration) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[2.112811] (-) TimerEvent: {}
+[2.213566] (-) TimerEvent: {}
+[2.314440] (-) TimerEvent: {}
+[2.415478] (-) TimerEvent: {}
+[2.516181] (-) TimerEvent: {}
+[2.590150] (servo_calibration) StdoutLine: {'line': b'-- Found i2cpwm_controller: 0.5.1 (/home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake)\n'}
+[2.616344] (-) TimerEvent: {}
+[2.717106] (-) TimerEvent: {}
+[2.817824] (-) TimerEvent: {}
+[2.867265] (servo_calibration) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[2.910681] (servo_calibration) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[2.917986] (-) TimerEvent: {}
+[2.965699] (servo_calibration) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[3.018149] (-) TimerEvent: {}
+[3.035741] (servo_calibration) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.118321] (-) TimerEvent: {}
+[3.133423] (servo_calibration) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.218485] (-) TimerEvent: {}
+[3.319159] (-) TimerEvent: {}
+[3.419898] (-) TimerEvent: {}
+[3.520708] (-) TimerEvent: {}
+[3.621415] (-) TimerEvent: {}
+[3.685845] (servo_calibration) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[3.708244] (servo_calibration) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.721586] (-) TimerEvent: {}
+[3.822267] (-) TimerEvent: {}
+[3.923121] (-) TimerEvent: {}
+[4.023859] (-) TimerEvent: {}
+[4.124749] (-) TimerEvent: {}
+[4.225654] (-) TimerEvent: {}
+[4.249125] (servo_calibration) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[4.325822] (-) TimerEvent: {}
+[4.426517] (-) TimerEvent: {}
+[4.498083] (servo_calibration) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[4.526692] (-) TimerEvent: {}
+[4.627368] (-) TimerEvent: {}
+[4.728097] (-) TimerEvent: {}
+[4.828770] (-) TimerEvent: {}
+[4.895245] (servo_calibration) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.928931] (-) TimerEvent: {}
+[4.963045] (servo_calibration) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[5.029222] (-) TimerEvent: {}
+[5.130037] (-) TimerEvent: {}
+[5.230796] (-) TimerEvent: {}
+[5.295561] (servo_calibration) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[5.297248] (servo_calibration) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.331008] (-) TimerEvent: {}
+[5.431781] (-) TimerEvent: {}
+[5.532566] (-) TimerEvent: {}
+[5.621541] (servo_calibration) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.626896] (servo_calibration) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.632706] (-) TimerEvent: {}
+[5.733417] (-) TimerEvent: {}
+[5.834236] (-) TimerEvent: {}
+[5.864541] (servo_calibration) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.934413] (-) TimerEvent: {}
+[6.035106] (-) TimerEvent: {}
+[6.135886] (-) TimerEvent: {}
+[6.236545] (-) TimerEvent: {}
+[6.291108] (servo_calibration) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[6.294536] (servo_calibration) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[6.297408] (servo_calibration) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[6.306350] (servo_calibration) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[6.313296] (servo_calibration) StdoutLine: {'line': b'-- Configuring done\n'}
+[6.336718] (-) TimerEvent: {}
+[6.352077] (servo_calibration) StdoutLine: {'line': b'-- Generating done\n'}
+[6.358942] (servo_calibration) StdoutLine: {'line': b'-- Build files have been written to: /home/robodog/RoboDog/build/servo_calibration\n'}
+[6.392358] (servo_calibration) CommandEnded: {'returncode': 0}
+[6.394356] (servo_calibration) JobProgress: {'identifier': 'servo_calibration', 'progress': 'build'}
+[6.396839] (servo_calibration) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/build/servo_calibration', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/build/servo_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 63986 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '70'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/build/servo_calibration'), ('SSH_CONNECTION', '10.7.90.125 63986 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble')]), 'shell': False}
+[6.436914] (-) TimerEvent: {}
+[6.537652] (-) TimerEvent: {}
+[6.559917] (servo_calibration) CommandEnded: {'returncode': 0}
+[6.637834] (-) TimerEvent: {}
+[6.661534] (servo_calibration) JobProgress: {'identifier': 'servo_calibration', 'progress': 'install'}
+[6.700266] (servo_calibration) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robodog/RoboDog/build/servo_calibration'], 'cwd': '/home/robodog/RoboDog/build/servo_calibration', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.125 63986 22'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '70'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/build/servo_calibration'), ('SSH_CONNECTION', '10.7.90.125 63986 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble')]), 'shell': False}
+[6.729659] (servo_calibration) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.730603] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/ament_index/resource_index/package_run_dependencies/servo_calibration\n'}
+[6.732312] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/ament_index/resource_index/parent_prefix_path/servo_calibration\n'}
+[6.733866] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/environment/ament_prefix_path.sh\n'}
+[6.734990] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/environment/ament_prefix_path.dsv\n'}
+[6.736200] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/environment/path.sh\n'}
+[6.737378] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/environment/path.dsv\n'}
+[6.737843] (-) TimerEvent: {}
+[6.738609] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/local_setup.bash\n'}
+[6.739751] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/local_setup.sh\n'}
+[6.740923] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/local_setup.zsh\n'}
+[6.742110] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/local_setup.dsv\n'}
+[6.743211] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.dsv\n'}
+[6.744708] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/ament_index/resource_index/packages/servo_calibration\n'}
+[6.746186] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/cmake/servo_calibrationConfig.cmake\n'}
+[6.747212] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/cmake/servo_calibrationConfig-version.cmake\n'}
+[6.748370] (servo_calibration) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.xml\n'}
+[6.754235] (servo_calibration) CommandEnded: {'returncode': 0}
+[6.838092] (-) TimerEvent: {}
+[6.927723] (servo_calibration) JobEnded: {'identifier': 'servo_calibration', 'rc': 0}
+[6.930534] (-) EventReactorShutdown: {}

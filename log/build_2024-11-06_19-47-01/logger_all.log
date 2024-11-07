@@ -1,0 +1,213 @@
+[0.426s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'servo_calibration']
+[0.427s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['servo_calibration'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8e6ef4f0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8e870100>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8e870100>>)
+[1.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.168s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.169s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.169s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robodog/RoboDog'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.170s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.171s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ignore', 'ignore_ament_install']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ignore_ament_install'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_pkg']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_pkg'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['colcon_meta']
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'colcon_meta'
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['ros']
+[1.223s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'ros'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['cmake', 'python']
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'cmake'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python'
+[1.224s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extensions ['python_setup_py']
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(docs) by extension 'python_setup_py'
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extensions ['ignore', 'ignore_ament_install']
+[1.225s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'ignore'
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'ignore_ament_install'
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extensions ['colcon_pkg']
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'colcon_pkg'
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extensions ['colcon_meta']
+[1.226s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'colcon_meta'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extensions ['ros']
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'ros'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extensions ['cmake', 'python']
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'cmake'
+[1.227s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'python'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extensions ['python_setup_py']
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(docs/past_docs) by extension 'python_setup_py'
+[1.228s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.229s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.230s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ignore_ament_install'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_pkg']
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_pkg'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['colcon_meta']
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'colcon_meta'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['ros']
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'ros'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['cmake', 'python']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'cmake'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extensions ['python_setup_py']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws) by extension 'python_setup_py'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extensions ['ignore', 'ignore_ament_install']
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) by extension 'ignore'
+[1.234s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/build) ignored
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extensions ['ignore', 'ignore_ament_install']
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) by extension 'ignore'
+[1.235s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/install) ignored
+[1.236s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) by extension 'ignore'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/log) ignored
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ignore_ament_install'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_pkg']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_pkg'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['colcon_meta']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'colcon_meta'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['ros']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'ros'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['cmake', 'python']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'cmake'
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python'
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extensions ['python_setup_py']
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src) by extension 'python_setup_py'
+[1.240s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extension 'ignore'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extension 'ignore_ament_install'
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extensions ['colcon_pkg']
+[1.241s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extension 'colcon_pkg'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extensions ['colcon_meta']
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extension 'colcon_meta'
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extensions ['ros']
+[1.242s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/i2cpwm_controller) by extension 'ros'
+[1.252s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/i2cpwm_controller' with type 'ros.ament_cmake' and name 'i2cpwm_controller'
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extensions ['ignore', 'ignore_ament_install']
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extension 'ignore'
+[1.253s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extension 'ignore_ament_install'
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extensions ['colcon_pkg']
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extension 'colcon_pkg'
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extensions ['colcon_meta']
+[1.254s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extension 'colcon_meta'
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extensions ['ros']
+[1.255s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/motion_cmd) by extension 'ros'
+[1.258s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/motion_cmd' with type 'ros.catkin' and name 'motion_cmd'
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extensions ['ignore', 'ignore_ament_install']
+[1.259s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extension 'ignore'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extension 'ignore_ament_install'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extensions ['colcon_pkg']
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extension 'colcon_pkg'
+[1.260s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extensions ['colcon_meta']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extension 'colcon_meta'
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extensions ['ros']
+[1.261s] Level 1:colcon.colcon_core.package_identification:_identify(ros2_ws/src/servo_calibration) by extension 'ros'
+[1.263s] DEBUG:colcon.colcon_core.package_identification:Package 'ros2_ws/src/servo_calibration' with type 'ros.ament_cmake' and name 'servo_calibration'
+[1.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.264s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.338s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'i2cpwm_controller' in 'ros2_ws/src/i2cpwm_controller'
+[1.338s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'motion_cmd' in 'ros2_ws/src/motion_cmd'
+[1.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.340s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.354s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[1.364s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_args' from command line to 'None'
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_target' from command line to 'None'
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_clean_cache' from command line to 'False'
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_clean_first' from command line to 'False'
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_force_configure' from command line to 'False'
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'ament_cmake_args' from command line to 'None'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'catkin_cmake_args' from command line to 'None'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.570s] DEBUG:colcon.colcon_core.verb:Building package 'servo_calibration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robodog/RoboDog/build/servo_calibration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robodog/RoboDog/install/servo_calibration', 'merge_install': False, 'path': '/home/robodog/RoboDog/ros2_ws/src/servo_calibration', 'symlink_install': False, 'test_result_base': None}
+[1.570s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.574s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration' with build type 'ament_cmake'
+[1.575s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration'
+[1.584s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.585s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.585s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.635s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/build/servo_calibration': AMENT_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/robodog/RoboDog/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/servo_calibration -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/install/servo_calibration
+[7.967s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/build/servo_calibration' returned '0': AMENT_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/robodog/RoboDog/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/servo_calibration -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/install/servo_calibration
+[7.976s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/build/servo_calibration': AMENT_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/robodog/RoboDog/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/build/servo_calibration -- -j4 -l4
+[8.135s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/build/servo_calibration' returned '0': AMENT_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/robodog/RoboDog/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/robodog/RoboDog/build/servo_calibration -- -j4 -l4
+[8.278s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/build/servo_calibration': AMENT_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/robodog/RoboDog/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robodog/RoboDog/build/servo_calibration
+[8.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_calibration)
+[8.329s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/build/servo_calibration' returned '0': AMENT_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/robodog/RoboDog/install/i2cpwm_controller:/opt/ros/humble LD_LIBRARY_PATH=/home/robodog/RoboDog/install/i2cpwm_controller/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/robodog/RoboDog/build/servo_calibration
+[8.338s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration' for CMake module files
+[8.341s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration' for CMake config files
+[8.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_calibration', 'cmake_prefix_path')
+[8.344s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/hook/cmake_prefix_path.ps1'
+[8.347s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/hook/cmake_prefix_path.dsv'
+[8.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/hook/cmake_prefix_path.sh'
+[8.352s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/bin'
+[8.353s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/lib/pkgconfig/servo_calibration.pc'
+[8.354s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/lib/python3.10/site-packages'
+[8.355s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/bin'
+[8.356s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.ps1'
+[8.360s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.dsv'
+[8.362s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.sh'
+[8.365s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.bash'
+[8.369s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.zsh'
+[8.372s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robodog/RoboDog/install/servo_calibration/share/colcon-core/packages/servo_calibration)
+[8.468s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_calibration)
+[8.469s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration' for CMake module files
+[8.473s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration' for CMake config files
+[8.475s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_calibration', 'cmake_prefix_path')
+[8.477s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/hook/cmake_prefix_path.ps1'
+[8.479s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/hook/cmake_prefix_path.dsv'
+[8.481s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/hook/cmake_prefix_path.sh'
+[8.484s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/bin'
+[8.485s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/lib/pkgconfig/servo_calibration.pc'
+[8.486s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/lib/python3.10/site-packages'
+[8.487s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/install/servo_calibration/bin'
+[8.488s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.ps1'
+[8.491s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.dsv'
+[8.493s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.sh'
+[8.495s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.bash'
+[8.497s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/install/servo_calibration/share/servo_calibration/package.zsh'
+[8.500s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robodog/RoboDog/install/servo_calibration/share/colcon-core/packages/servo_calibration)
+[8.501s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[8.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[8.502s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[8.503s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[8.522s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[8.522s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[8.523s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[8.573s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[8.574s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/install/local_setup.ps1'
+[8.579s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robodog/RoboDog/install/_local_setup_util_ps1.py'
+[8.585s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/install/setup.ps1'
+[8.591s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/install/local_setup.sh'
+[8.595s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robodog/RoboDog/install/_local_setup_util_sh.py'
+[8.599s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/install/setup.sh'
+[8.604s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/install/local_setup.bash'
+[8.606s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/install/setup.bash'
+[8.610s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/install/local_setup.zsh'
+[8.613s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/install/setup.zsh'

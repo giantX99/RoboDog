@@ -1,4 +1,5 @@
 #include "i2cpwm_controller.h"
+#include <cstdio>
 
 // Global variables
 #define MAX_BOARDS 62
@@ -507,6 +508,7 @@ void I2cPwmController::_set_pwm_frequency(int freq) {
 
 
 	RCLCPP_INFO(get_logger(), "Setting PWM frequency to %d Hz", freq);
+    printf("Setting PWM frequency to %d Hz\n", freq);
 
     nanosleep ((const struct timespec[]){{1, 000000L}}, NULL); 
 
@@ -516,17 +518,26 @@ void I2cPwmController::_set_pwm_frequency(int freq) {
 
     if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE1, newmode)) // go to sleep
         RCLCPP_ERROR(get_logger(), "Unable to set PWM controller to sleep mode"); 
+    else:
+        printf("Sent sleep mode byte data (%x) to address %x\n", newmode, __MODE1);
 
     if (0 >  i2c_smbus_write_byte_data(_controller_io_handle, __PRESCALE, (int)(floor(prescale))))
         RCLCPP_ERROR(get_logger(), "Unable to set PWM controller prescale"); 
+    else:
+        printf("Sent prescale data (%d) to address %x\n", (int)(floor(prescale)), __PRESCALE);
 
     if (0 > i2c_smbus_write_byte_data(_controller_io_handle, __MODE1, oldmode))
         RCLCPP_ERROR(get_logger(), "Unable to set PWM controller to active mode"); 
+    else:
+        printf("Sent active mode byte data (%x) to address %x\n", oldmode, __MODE1);
+
 
     nanosleep((const struct timespec[]){{0, 5000000L}}, NULL);   //sleep 5microsec,
 
     if (0 > i2c_smbus_write_byte_data(_controller_io_handle, __MODE1, oldmode | 0x80))
         RCLCPP_ERROR(get_logger(), "Unable to restore PWM controller to active mode");
+    else:
+        printf("Sent active mode byte data (%x) to address %x\n", (oldmode | 0x80), __MODE1);
 
 }
 
@@ -550,12 +561,23 @@ void I2cPwmController::_set_pwm_interval_all (int start, int end)
 
     if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_ON_L, start & 0xFF))
         RCLCPP_ERROR (get_logger(), "Error setting PWM start low byte for all servos on board %d", _active_board);
+    else:
+        printf("Sent PWM start LOW byte (%x) to all servos on board, address = %x\n", (start & 0xFF), __ALL_CHANNELS_ON_L);
+
     if (0 >  i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_ON_H, start  >> 8))
         RCLCPP_ERROR (get_logger(), "Error setting PWM start high byte for all servos on board %d", _active_board);
+    else:
+        printf("Sent PWM start HIGH byte (%x) to all servos on board, address = %x\n", (start >> 8), __ALL_CHANNELS_ON_H);
+    
     if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_OFF_L, end & 0xFF))
         RCLCPP_ERROR (get_logger(), "Error setting PWM end low byte for all servos on board %d", _active_board);
+    else:
+        printf("Sent PWM end LOW byte (%x) to all servos on board, address = %x\n", (end & 0xFF), __ALL_CHANNELS_OFF_L);
+    
     if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_OFF_H, end >> 8))
         RCLCPP_ERROR (get_logger(), "Error setting PWM end high byte for all servos on board %d", _active_board);
+    else:
+        printf("Sent PWM end HIGH byte (%x) to all servos on board, address = %x\n", (end >> 8), __ALL_CHANNELS_OFF_H);
 }
 
 
@@ -641,15 +663,27 @@ void I2cPwmController::_set_pwm_interval (int servo, int start, int end)
     board = _active_board - 1;				// the hardware enumerates boards as 0..61
     int channel = servo - 1;				// the hardware enumerates servos as 0..15
 	RCLCPP_DEBUG(get_logger(), "_set_pwm_interval board=%d servo=%d", board, servo);
+    printf("_set_pwm_interval board=%d servo=%d\n", board, servo);
     
     if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_ON_L+4*channel, start & 0xFF))
         RCLCPP_ERROR (get_logger(), "Error setting PWM start low byte on servo %d on board %d", servo, _active_board);
+    else:
+        printf("Sent PWM start LOW byte (%x) to servo %d, address = %x\n", (start & 0xFF), servo, (__CHANNEL_ON_L+4*channel));
+
     if (0 >  i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_ON_H+4*channel, start  >> 8))
         RCLCPP_ERROR (get_logger(), "Error setting PWM start high byte on servo %d on board %d", servo, _active_board);
+    else:
+        printf("Sent PWM start HIGH byte (%x) to servo %d, address = %x\n", (start >> 8), servo, (__CHANNEL_ON_H+4*channel));
+
     if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_OFF_L+4*channel, end & 0xFF))
         RCLCPP_ERROR (get_logger(), "Error setting PWM end low byte on servo %d on board %d", servo, _active_board);
+    else:
+        printf("Sent PWM end LOW byte (%x) to servo %d, address = %x\n", (end & 0xFF), servo, (__CHANNEL_OFF_L+4*channel));
+
     if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_OFF_H+4*channel, end >> 8))
         RCLCPP_ERROR (get_logger(), "Error setting PWM end high byte on servo %d on board %d", servo, _active_board);
+    else:
+        printf("Sent PWM end HIGH byte (%x) to servo %d, address = %x\n", (end >> 8), servo, (__CHANNEL_OFF_H+4*channel));
 }
 
 

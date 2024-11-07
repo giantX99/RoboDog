@@ -1,0 +1,520 @@
+[0.046s] Invoking command in '/home/robodog/RoboDog/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/install/i2cpwm_controller
+[0.294s] -- The C compiler identification is GNU 11.4.0
+[0.539s] -- The CXX compiler identification is GNU 11.4.0
+[0.571s] -- Detecting C compiler ABI info
+[0.877s] -- Detecting C compiler ABI info - done
+[0.903s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.904s] -- Detecting C compile features
+[0.905s] -- Detecting C compile features - done
+[0.916s] -- Detecting CXX compiler ABI info
+[1.252s] -- Detecting CXX compiler ABI info - done
+[1.280s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.281s] -- Detecting CXX compile features
+[1.283s] -- Detecting CXX compile features - done
+[1.308s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.009s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.530s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[2.844s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.884s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.936s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.004s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.099s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.402s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.422s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.950s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.195s] -- Found FastRTPS: /opt/ros/humble/include  
+[4.587s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[4.651s] -- Looking for pthread.h
+[4.973s] -- Looking for pthread.h - found
+[4.975s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.298s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.303s] -- Found Threads: TRUE  
+[5.552s] -- Found std_srvs: 4.2.4 (/opt/ros/humble/share/std_srvs/cmake)
+[5.602s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[5.660s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[7.209s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[9.118s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[9.852s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[9.954s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[9.970s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[10.082s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[10.083s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[10.083s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[10.083s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+[10.182s] -- Found PythonExtra: .so  
+[10.507s] -- Configuring done
+[10.801s] -- Generating done
+[10.817s] -- Build files have been written to: /home/robodog/RoboDog/build/i2cpwm_controller
+[10.868s] Invoked command in '/home/robodog/RoboDog/build/i2cpwm_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/install/i2cpwm_controller
+[10.877s] Invoking command in '/home/robodog/RoboDog/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robodog/RoboDog/build/i2cpwm_controller -- -j4 -l4
+[11.062s] [  1%] [34m[1mGenerating C code for ROS interfaces[0m
+[11.111s] [  1%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.142s] [  1%] Built target ament_cmake_python_copy_i2cpwm_controller
+[12.499s] running egg_info
+[12.503s] creating i2cpwm_controller.egg-info
+[12.506s] writing i2cpwm_controller.egg-info/PKG-INFO
+[12.508s] writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt
+[12.511s] writing top-level names to i2cpwm_controller.egg-info/top_level.txt
+[12.513s] writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[12.517s] reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[12.520s] writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[12.661s] [  1%] Built target ament_cmake_python_build_i2cpwm_controller_egg
+[15.408s] [  1%] Built target i2cpwm_controller__cpp
+[15.460s] [  2%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[15.466s] [  3%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[15.479s] [  4%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[16.456s] [  5%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/msg/detail/position__functions.c.o[0m
+[16.782s] [  6%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/msg/detail/position_array__functions.c.o[0m
+[17.104s] [  7%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/msg/detail/servo__functions.c.o[0m
+[17.416s] [  8%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/msg/detail/servo_array__functions.c.o[0m
+[17.732s] [  9%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/msg/detail/servo_config__functions.c.o[0m
+[18.058s] [ 10%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/msg/detail/servo_config_array__functions.c.o[0m
+[18.409s] [ 11%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/srv/detail/drive_mode__functions.c.o[0m
+[18.571s] [ 12%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/msg/position__type_support.cpp.o[0m
+[18.817s] [ 13%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/srv/detail/int_value__functions.c.o[0m
+[19.198s] [ 14%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/srv/detail/servos_config__functions.c.o[0m
+[19.624s] [ 15%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/rosidl_generator_c/i2cpwm_controller/srv/detail/stop_servos__functions.c.o[0m
+[19.740s] [ 16%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/msg/detail/position__type_support.cpp.o[0m
+[20.021s] [ 17%] [32m[1mLinking C shared library libi2cpwm_controller__rosidl_generator_c.so[0m
+[20.309s] [ 17%] Built target i2cpwm_controller__rosidl_generator_c
+[20.336s] [ 18%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/msg/detail/dds_fastrtps/position__type_support.cpp.o[0m
+[20.371s] [ 19%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[20.495s] [ 20%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/msg/position_array__type_support.cpp.o[0m
+[22.361s] [ 21%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/msg/servo__type_support.cpp.o[0m
+[22.375s] [ 22%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/msg/detail/position_array__type_support.cpp.o[0m
+[23.009s] [ 23%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/msg/detail/dds_fastrtps/position_array__type_support.cpp.o[0m
+[24.211s] [ 24%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/msg/servo_array__type_support.cpp.o[0m
+[25.508s] [ 25%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/msg/detail/servo__type_support.cpp.o[0m
+[25.712s] [ 26%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/msg/detail/position__type_support_c.cpp.o[0m
+[26.191s] [ 27%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/msg/detail/dds_fastrtps/servo__type_support.cpp.o[0m
+[26.384s] [ 28%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/msg/servo_config__type_support.cpp.o[0m
+[28.110s] [ 28%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/msg/detail/position_array__type_support_c.cpp.o[0m
+[28.175s] [ 29%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/msg/detail/servo_array__type_support.cpp.o[0m
+[28.409s] [ 30%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/msg/servo_config_array__type_support.cpp.o[0m
+[28.809s] [ 31%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/msg/detail/dds_fastrtps/servo_array__type_support.cpp.o[0m
+[30.391s] [ 32%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/srv/drive_mode__type_support.cpp.o[0m
+[30.418s] [ 33%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/msg/detail/servo__type_support_c.cpp.o[0m
+[30.967s] [ 34%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/msg/detail/servo_config__type_support.cpp.o[0m
+[31.823s] [ 34%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/msg/detail/dds_fastrtps/servo_config__type_support.cpp.o[0m
+[32.226s] [ 35%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/srv/int_value__type_support.cpp.o[0m
+[32.694s] [ 36%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/msg/detail/servo_array__type_support_c.cpp.o[0m
+[33.547s] [ 37%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/msg/detail/servo_config_array__type_support.cpp.o[0m
+[34.085s] [ 38%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/srv/servos_config__type_support.cpp.o[0m
+[34.524s] [ 39%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/msg/detail/dds_fastrtps/servo_config_array__type_support.cpp.o[0m
+[35.070s] [ 40%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/msg/detail/servo_config__type_support_c.cpp.o[0m
+[35.920s] [ 41%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/i2cpwm_controller/srv/stop_servos__type_support.cpp.o[0m
+[36.325s] [ 42%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/srv/detail/drive_mode__type_support.cpp.o[0m
+[37.484s] [ 43%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/msg/detail/servo_config_array__type_support_c.cpp.o[0m
+[37.494s] [ 44%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/srv/detail/dds_fastrtps/drive_mode__type_support.cpp.o[0m
+[37.826s] [ 45%] [32m[1mLinking CXX shared library libi2cpwm_controller__rosidl_typesupport_cpp.so[0m
+[38.036s] [ 45%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[38.080s] [ 46%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/srv/detail/drive_mode__type_support_c.cpp.o[0m
+[39.265s] [ 47%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/srv/detail/int_value__type_support.cpp.o[0m
+[39.771s] [ 48%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/srv/detail/int_value__type_support_c.cpp.o[0m
+[40.627s] [ 49%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/srv/detail/servos_config__type_support_c.cpp.o[0m
+[40.637s] [ 50%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/srv/detail/dds_fastrtps/int_value__type_support.cpp.o[0m
+[41.847s] [ 51%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/srv/detail/servos_config__type_support.cpp.o[0m
+[42.316s] [ 52%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/srv/detail/dds_fastrtps/servos_config__type_support.cpp.o[0m
+[43.015s] [ 53%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/i2cpwm_controller/srv/detail/stop_servos__type_support_c.cpp.o[0m
+[43.632s] [ 54%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/i2cpwm_controller/srv/detail/stop_servos__type_support.cpp.o[0m
+[44.644s] [ 55%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/i2cpwm_controller/srv/detail/dds_fastrtps/stop_servos__type_support.cpp.o[0m
+[45.408s] [ 56%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[45.457s] [ 57%] [32m[1mLinking CXX shared library libi2cpwm_controller__rosidl_typesupport_fastrtps_c.so[0m
+[46.010s] [ 57%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[46.067s] [ 58%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[46.454s] [ 59%] [32m[1mLinking CXX shared library libi2cpwm_controller__rosidl_typesupport_introspection_cpp.so[0m
+[47.011s] [ 59%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[47.119s] [ 60%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o[0m
+[47.647s] [ 61%] [32m[1mLinking CXX shared library libi2cpwm_controller__rosidl_typesupport_fastrtps_cpp.so[0m
+[48.132s] [ 61%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[48.175s] [ 62%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o[0m
+[49.262s] [ 63%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/msg/position__type_support.cpp.o[0m
+[49.474s] [ 64%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/msg/position_array__type_support.cpp.o[0m
+[49.683s] [ 65%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/msg/servo__type_support.cpp.o[0m
+[49.888s] [ 66%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/msg/servo_array__type_support.cpp.o[0m
+[50.089s] [ 67%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/msg/servo_config__type_support.cpp.o[0m
+[50.179s] [ 68%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/msg/detail/position__type_support.c.o[0m
+[50.296s] [ 69%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/msg/servo_config_array__type_support.cpp.o[0m
+[50.434s] [ 70%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/msg/detail/position_array__type_support.c.o[0m
+[50.509s] [ 71%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/srv/drive_mode__type_support.cpp.o[0m
+[50.726s] [ 72%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/msg/detail/servo__type_support.c.o[0m
+[50.742s] [ 73%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/srv/int_value__type_support.cpp.o[0m
+[50.956s] [ 74%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/srv/servos_config__type_support.cpp.o[0m
+[50.987s] [ 75%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/msg/detail/servo_array__type_support.c.o[0m
+[51.183s] [ 75%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/rosidl_typesupport_c/i2cpwm_controller/srv/stop_servos__type_support.cpp.o[0m
+[51.274s] [ 76%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/msg/detail/servo_config__type_support.c.o[0m
+[51.409s] [ 77%] [32m[1mLinking CXX shared library libi2cpwm_controller__rosidl_typesupport_c.so[0m
+[51.542s] [ 78%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/msg/detail/servo_config_array__type_support.c.o[0m
+[51.720s] [ 78%] Built target i2cpwm_controller__rosidl_typesupport_c
+[51.769s] [ 79%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/srv/detail/drive_mode__type_support.c.o[0m
+[51.869s] [ 80%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/srv/detail/int_value__type_support.c.o[0m
+[52.099s] [ 81%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/srv/detail/servos_config__type_support.c.o[0m
+[52.156s] [ 82%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/i2cpwm_controller/srv/detail/stop_servos__type_support.c.o[0m
+[52.446s] [ 82%] [32m[1mLinking C shared library libi2cpwm_controller__rosidl_typesupport_introspection_c.so[0m
+[52.644s] [ 82%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[52.747s] [ 82%] Built target i2cpwm_controller
+[52.853s] [ 83%] [34m[1mGenerating Python code for ROS interfaces[0m
+[61.273s] [ 83%] Built target i2cpwm_controller__py
+[61.377s] [ 84%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/msg/_position_s.c.o[0m
+[61.381s] [ 85%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/msg/_position_array_s.c.o[0m
+[62.057s] [ 86%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/msg/_servo_s.c.o[0m
+[62.086s] [ 86%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/msg/_servo_array_s.c.o[0m
+[62.738s] [ 87%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/msg/_servo_config_s.c.o[0m
+[62.780s] [ 88%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/msg/_servo_config_array_s.c.o[0m
+[63.430s] [ 89%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/srv/_drive_mode_s.c.o[0m
+[63.471s] [ 90%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/srv/_int_value_s.c.o[0m
+[64.178s] [ 91%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/srv/_servos_config_s.c.o[0m
+[64.212s] [ 92%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rosidl_generator_py/i2cpwm_controller/srv/_stop_servos_s.c.o[0m
+[64.928s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/i2cpwm_controller/libi2cpwm_controller__rosidl_generator_py.so[0m
+[65.210s] [ 93%] Built target i2cpwm_controller__rosidl_generator_py
+[65.321s] [ 94%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[65.325s] [ 95%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[66.276s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so[0m
+[66.325s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so[0m
+[66.460s] [ 98%] [32mBuilding C object CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_c.c.o[0m
+[66.612s] [ 98%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext
+[66.634s] [ 98%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext
+[67.304s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so[0m
+[67.546s] [ 99%] Built target i2cpwm_controller__rosidl_typesupport_c__pyext
+[105.732s] [100%] [32m[1mLinking CXX executable i2cpwm_controller_node[0m
+[108.808s] [100%] Built target i2cpwm_controller_node
+[108.859s] Invoked command in '/home/robodog/RoboDog/build/i2cpwm_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/robodog/RoboDog/build/i2cpwm_controller -- -j4 -l4
+[110.081s] Invoking command in '/home/robodog/RoboDog/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robodog/RoboDog/build/i2cpwm_controller
+[110.110s] -- Install configuration: ""
+[110.111s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/ament_index/resource_index/rosidl_interfaces/i2cpwm_controller
+[110.112s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller
+[110.113s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv
+[110.113s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/stop_servos.h
+[110.115s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/servos_config.h
+[110.116s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail
+[110.116s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__struct.h
+[110.118s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__type_support.h
+[110.119s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__functions.c
+[110.120s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__functions.h
+[110.121s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__functions.h
+[110.123s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__functions.c
+[110.124s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__struct.h
+[110.125s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__type_support.h
+[110.126s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__type_support.h
+[110.128s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__functions.c
+[110.129s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__struct.h
+[110.130s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__functions.c
+[110.132s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__type_support.h
+[110.133s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__functions.h
+[110.134s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__struct.h
+[110.135s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__functions.h
+[110.136s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/int_value.h
+[110.137s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/drive_mode.h
+[110.138s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg
+[110.139s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position.h
+[110.140s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config.h
+[110.141s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo.h
+[110.142s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_generator_c__visibility_control.h
+[110.144s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config_array.h
+[110.145s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_array.h
+[110.146s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position_array.h
+[110.147s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail
+[110.148s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__type_support.h
+[110.149s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__struct.h
+[110.150s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__struct.h
+[110.151s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__struct.h
+[110.152s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__functions.c
+[110.153s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__functions.c
+[110.154s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__functions.h
+[110.156s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__type_support.h
+[110.157s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__functions.c
+[110.158s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__struct.h
+[110.159s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__type_support.h
+[110.160s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__struct.h
+[110.161s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__functions.c
+[110.163s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__type_support.h
+[110.164s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__functions.c
+[110.165s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__functions.h
+[110.166s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__functions.h
+[110.167s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__functions.c
+[110.168s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__functions.h
+[110.170s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__type_support.h
+[110.171s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__functions.h
+[110.172s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__functions.h
+[110.173s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__struct.h
+[110.174s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__type_support.h
+[110.176s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/library_path.sh
+[110.177s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/library_path.dsv
+[110.179s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_c.so
+[110.182s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_c.so" to ""
+[110.183s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller
+[110.183s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv
+[110.184s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail
+[110.184s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_fastrtps_c.h
+[110.185s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_fastrtps_c.h
+[110.186s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_fastrtps_c.h
+[110.188s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_fastrtps_c.h
+[110.189s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg
+[110.189s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail
+[110.190s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[110.191s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_fastrtps_c.h
+[110.192s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_fastrtps_c.h
+[110.194s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_fastrtps_c.h
+[110.195s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_fastrtps_c.h
+[110.196s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_c.h
+[110.198s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[110.199s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_c.so
+[110.202s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_c.so" to ""
+[110.203s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller
+[110.204s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv
+[110.204s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/servos_config.hpp
+[110.205s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/stop_servos.hpp
+[110.206s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail
+[110.206s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__struct.hpp
+[110.208s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__traits.hpp
+[110.209s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__builder.hpp
+[110.210s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__struct.hpp
+[110.211s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__traits.hpp
+[110.212s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__builder.hpp
+[110.213s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__traits.hpp
+[110.214s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__builder.hpp
+[110.216s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__builder.hpp
+[110.217s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__traits.hpp
+[110.218s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__struct.hpp
+[110.219s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__struct.hpp
+[110.220s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/drive_mode.hpp
+[110.221s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/int_value.hpp
+[110.222s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg
+[110.223s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_array.hpp
+[110.224s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position_array.hpp
+[110.225s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/position.hpp
+[110.226s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo.hpp
+[110.227s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail
+[110.228s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__struct.hpp
+[110.229s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__traits.hpp
+[110.230s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__traits.hpp
+[110.231s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__traits.hpp
+[110.232s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__traits.hpp
+[110.234s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__traits.hpp
+[110.235s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__struct.hpp
+[110.236s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__struct.hpp
+[110.237s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__builder.hpp
+[110.238s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__builder.hpp
+[110.239s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__struct.hpp
+[110.241s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__struct.hpp
+[110.242s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__builder.hpp
+[110.243s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__builder.hpp
+[110.244s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__traits.hpp
+[110.245s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__builder.hpp
+[110.246s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__struct.hpp
+[110.248s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__builder.hpp
+[110.249s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config_array.hpp
+[110.250s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/servo_config.hpp
+[110.251s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller
+[110.252s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv
+[110.252s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail
+[110.252s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_fastrtps_cpp.hpp
+[110.254s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_fastrtps_cpp.hpp
+[110.255s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/dds_fastrtps
+[110.256s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_fastrtps_cpp.hpp
+[110.257s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_fastrtps_cpp.hpp
+[110.258s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg
+[110.259s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[110.260s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail
+[110.260s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_fastrtps_cpp.hpp
+[110.262s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_fastrtps_cpp.hpp
+[110.263s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_fastrtps_cpp.hpp
+[110.264s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_fastrtps_cpp.hpp
+[110.266s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[110.267s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/dds_fastrtps
+[110.268s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_fastrtps_cpp.hpp
+[110.269s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_cpp.so
+[110.274s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_cpp.so" to ""
+[110.274s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller
+[110.275s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv
+[110.275s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail
+[110.275s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_introspection_c.h
+[110.276s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__type_support.c
+[110.278s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_introspection_c.h
+[110.279s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__type_support.c
+[110.280s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__type_support.c
+[110.282s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__type_support.c
+[110.283s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_introspection_c.h
+[110.284s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_introspection_c.h
+[110.285s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg
+[110.286s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail
+[110.286s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__type_support.c
+[110.288s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__type_support.c
+[110.289s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_introspection_c.h
+[110.290s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_introspection_c.h
+[110.291s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_introspection_c.h
+[110.293s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__type_support.c
+[110.294s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__type_support.c
+[110.295s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_introspection_c.h
+[110.297s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__type_support.c
+[110.298s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_introspection_c.h
+[110.299s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_introspection_c.h
+[110.300s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__type_support.c
+[110.302s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[110.303s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_c.so
+[110.307s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_c.so" to ""
+[110.307s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_c.so
+[110.310s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_c.so" to ""
+[110.310s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller
+[110.311s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv
+[110.311s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail
+[110.311s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__rosidl_typesupport_introspection_cpp.hpp
+[110.313s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__rosidl_typesupport_introspection_cpp.hpp
+[110.314s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/stop_servos__type_support.cpp
+[110.315s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__type_support.cpp
+[110.316s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/drive_mode__type_support.cpp
+[110.318s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__rosidl_typesupport_introspection_cpp.hpp
+[110.319s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/servos_config__rosidl_typesupport_introspection_cpp.hpp
+[110.320s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/srv/detail/int_value__type_support.cpp
+[110.322s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg
+[110.322s] -- Up-to-date: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail
+[110.322s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__type_support.cpp
+[110.324s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_array__rosidl_typesupport_introspection_cpp.hpp
+[110.325s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__type_support.cpp
+[110.326s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__rosidl_typesupport_introspection_cpp.hpp
+[110.328s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__rosidl_typesupport_introspection_cpp.hpp
+[110.329s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position_array__type_support.cpp
+[110.330s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__rosidl_typesupport_introspection_cpp.hpp
+[110.332s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config__type_support.cpp
+[110.333s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[110.334s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo__rosidl_typesupport_introspection_cpp.hpp
+[110.335s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/servo_config_array__type_support.cpp
+[110.337s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/include/i2cpwm_controller/i2cpwm_controller/msg/detail/position__type_support.cpp
+[110.338s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_cpp.so
+[110.343s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_cpp.so" to ""
+[110.343s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_cpp.so
+[110.346s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_cpp.so" to ""
+[110.346s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/pythonpath.sh
+[110.348s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/pythonpath.dsv
+[110.349s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info
+[110.350s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/PKG-INFO
+[110.351s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/top_level.txt
+[110.352s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/dependency_links.txt
+[110.353s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller-0.5.1-py3.10.egg-info/SOURCES.txt
+[110.355s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller
+[110.356s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_introspection_c.c
+[110.357s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv
+[110.358s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_servos_config_s.c
+[110.359s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_servos_config.py
+[110.361s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/__init__.py
+[110.362s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_drive_mode.py
+[110.363s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_stop_servos_s.c
+[110.364s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_int_value_s.c
+[110.365s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_drive_mode_s.c
+[110.366s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_stop_servos.py
+[110.368s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_int_value.py
+[110.369s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_c.c
+[110.370s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg
+[110.371s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_array.py
+[110.372s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_array_s.c
+[110.373s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position_s.c
+[110.374s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_s.c
+[110.376s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config_array_s.c
+[110.377s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/__init__.py
+[110.378s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position.py
+[110.379s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position_array_s.c
+[110.380s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo.py
+[110.381s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config_array.py
+[110.382s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config_s.c
+[110.384s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config.py
+[110.385s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position_array.py
+[110.386s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[110.388s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/__init__.py
+[110.389s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[110.390s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[110.392s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/_i2cpwm_controller_s.ep.rosidl_typesupport_fastrtps_c.c
+[110.394s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/libi2cpwm_controller__rosidl_generator_py.so
+[110.583s] Listing '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller'...
+[110.584s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/__init__.py'...
+[110.585s] Listing '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg'...
+[110.587s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/__init__.py'...
+[110.588s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position.py'...
+[110.589s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_position_array.py'...
+[110.590s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo.py'...
+[110.591s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_array.py'...
+[110.592s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config.py'...
+[110.593s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/msg/_servo_config_array.py'...
+[110.594s] Listing '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv'...
+[110.596s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/__init__.py'...
+[110.596s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_drive_mode.py'...
+[110.597s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_int_value.py'...
+[110.597s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_servos_config.py'...
+[110.598s] Compiling '/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/srv/_stop_servos.py'...
+[110.610s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[110.613s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""
+[110.615s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[110.619s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""
+[110.621s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[110.625s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/local/lib/python3.10/dist-packages/i2cpwm_controller/i2cpwm_controller_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""
+[110.625s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_py.so
+[110.629s] -- Set runtime path of "/home/robodog/RoboDog/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_py.so" to ""
+[110.630s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/Position.idl
+[110.631s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/PositionArray.idl
+[110.632s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/Servo.idl
+[110.633s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoArray.idl
+[110.635s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfig.idl
+[110.636s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfigArray.idl
+[110.637s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode.idl
+[110.639s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue.idl
+[110.640s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig.idl
+[110.641s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos.idl
+[110.642s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/Position.msg
+[110.644s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/PositionArray.msg
+[110.645s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/Servo.msg
+[110.646s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoArray.msg
+[110.647s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfig.msg
+[110.648s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/msg/ServoConfigArray.msg
+[110.650s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode.srv
+[110.651s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode_Request.msg
+[110.652s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/DriveMode_Response.msg
+[110.653s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue.srv
+[110.655s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue_Request.msg
+[110.656s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/IntValue_Response.msg
+[110.657s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig.srv
+[110.659s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig_Request.msg
+[110.660s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/ServosConfig_Response.msg
+[110.661s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos.srv
+[110.662s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos_Request.msg
+[110.664s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos_Response.msg
+[110.665s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/launch
+[110.665s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/launch/i2cpwm_node.launch.py
+[110.667s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/ament_index/resource_index/package_run_dependencies/i2cpwm_controller
+[110.669s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/ament_index/resource_index/parent_prefix_path/i2cpwm_controller
+[110.671s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/ament_prefix_path.sh
+[110.672s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/ament_prefix_path.dsv
+[110.674s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/path.sh
+[110.675s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/environment/path.dsv
+[110.676s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.bash
+[110.677s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.sh
+[110.678s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.zsh
+[110.680s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/local_setup.dsv
+[110.681s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/package.dsv
+[110.682s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/ament_index/resource_index/packages/i2cpwm_controller
+[110.684s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_cExport.cmake
+[110.686s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_cExport-noconfig.cmake
+[110.687s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cExport.cmake
+[110.689s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[110.691s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_cppExport.cmake
+[110.692s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cppExport.cmake
+[110.694s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[110.695s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cExport.cmake
+[110.697s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[110.698s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cExport.cmake
+[110.700s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cExport-noconfig.cmake
+[110.702s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cppExport.cmake
+[110.703s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[110.705s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cppExport.cmake
+[110.706s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controller__rosidl_typesupport_cppExport-noconfig.cmake
+[110.708s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_pyExport.cmake
+[110.710s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_pyExport-noconfig.cmake
+[110.711s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/rosidl_cmake-extras.cmake
+[110.712s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_dependencies-extras.cmake
+[110.714s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_include_directories-extras.cmake
+[110.715s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_libraries-extras.cmake
+[110.717s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/ament_cmake_export_targets-extras.cmake
+[110.718s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[110.720s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[110.721s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controllerConfig.cmake
+[110.722s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/cmake/i2cpwm_controllerConfig-version.cmake
+[110.723s] -- Installing: /home/robodog/RoboDog/install/i2cpwm_controller/share/i2cpwm_controller/package.xml
+[110.732s] Invoked command in '/home/robodog/RoboDog/build/i2cpwm_controller' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/robodog/RoboDog/build/i2cpwm_controller

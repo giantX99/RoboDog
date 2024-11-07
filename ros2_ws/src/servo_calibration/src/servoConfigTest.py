@@ -90,7 +90,6 @@ class ServoConvert():
         else:
             self.value = value_in
 
-
     def set_center(self,center_val):
         '''
         Set Servo center value
@@ -124,8 +123,11 @@ class ServoConvert():
             self._min = min_val
             print('Servo %2i min set to %4i'%(self.id+1,min_val))
 
-class SpotMicroServoControl():
+
+class SpotMicroServoControl(Node):
     def __init__(self):
+        super().__init__('test_servo_control')
+
         # Create a ServoConfig messag for one servo
         self._servo_config_msg = ServoConfigArray()
         self._servo1_config = ServoConfig()
@@ -137,55 +139,59 @@ class SpotMicroServoControl():
 
         self._servo_config_msg.servos.append(self._servo1_config)
 
-        rospy.loginfo("> Waiting for config_servos service...")
+        self.get_logger().info("> Waiting for config_servos service...")
         print('test1')
-        rospy.wait_for_service('config_servos')
-        rospy.loginfo("> Config_servos service found!")
-        print('test2')
-        try:
-            servoConfigService = rospy.ServiceProxy('config_servos',ServosConfig)
-            resp = servoConfigService(self._servo_config_msg.servos)
-            print("Config servos done!!, returned value: %i"%resp.error)
-        except rospy.ServiceException, e:
-            print "Service call failed: %s"%e
+
+        # Wait for the config_servos service to be available
+        self.servos_config_client = self.create_client(ServosConfig, 'config_servos')
+        while not self.servos_config_client.wait_for_service(timeout_sec=1.0):
+            self.get_logger().info('service not available, waiting again...')
+        self.get_logger().info("> Config_servos service found!")
         
+        print('test2')
+        # Call the service
+        try:
+            request = ServosConfig.Request()
+            request.servos = self._servo_config_msg.servos
+            future = self.servos_config_client.call_async(request)
+            rclpy.spin_until_future_complete(self, future)
+            if future.result() is not None:
+                self.get_logger().info("Config servos done!!")
+            else:
+                self.get_logger().error("Failed to call service config_servos")
+        except Exception as e:
+            self.get_logger().error(f"Service call failed: {e}")
 
-        rospy.loginfo("Setting Up the Spot Micro Servo Control Node...")
-
-        # Set up and title the ros node for this code
-        rospy.init_node('spot_micro_servo_control')
-
-        # Intialize empty servo dictionary
-        self.servos = {}
+        
+        self.get_logger().info("Setting Up the Spot Micro Servo Control Node...")
 
         # Create a servo dictionary with 12 ServoConvert objects
-        # keys: integers 0 through 12
+        # keys: integers 0 through 11
         # values: ServoConvert objects
-        for i in range(numServos):
-            self.servos[i] = ServoConvert(id=i)
-        rospy.loginfo("> Servos corrrectly initialized")
+        self.servos = {i : ServoConvert(id=i), for i in range(numServos)}
+        self.get_logger().info("> Servos correctly initialized")
 
         # Create empty ServoArray message with n number of Servos in its array
-        self._servo_msg       = ServoArray()
-        for i in range(numServos): 
-            self._servo_msg.servos.append(Servo())
-
+        self._servo_array_msg = ServoArray()
+        self._servo_array_msg.servos = [Servo() for _ in range(numServos)]
+        
         # Create the servo array publisher
-        self.ros_pub_servo_array    = rospy.Publisher("/servos_proportional", ServoArray, queue_size=1)
-        rospy.loginfo("> Publisher corrrectly initialized")
+        self.ros_pub_servo_array = self.create_publisher(ServoArray, "/servos_proportional", 1)
+        self.get_logger().info("> Publisher corrrectly initialized")
 
-        rospy.loginfo("Initialization complete")
+        self.get_logger().info("Initialization complete")
 
         # Setup terminal input reading, taken from teleop_twist_keyboard
         self.settings = termios.tcgetattr(sys.stdin)
 
+
     def send_servo_msg(self):
         for servo_key, servo_obj in self.servos.iteritems():
-            self._servo_msg.servos[servo_obj.id].servo = servo_obj.id+1
-            self._servo_msg.servos[servo_obj.id].value = servo_obj.value
-            #rospy.loginfo("Sending to %s command %d"%(servo_key, servo_obj.value))
+            self._servo_array_msg.servos[servo_obj.id].servo = servo_obj.id + 1
+            self._servo_array_msg.servos[servo_obj.id].value = servo_obj.value
+            self.get_logger().info(f"Sending to {servo_key} command {servo_obj.value}")
 
-        self.ros_pub_servo_array.publish(self._servo_msg)
+        self.ros_pub_servo_array.publish(self._servo_array_msg)
 
     def reset_all_servos_center(self):
         '''
@@ -211,19 +217,21 @@ class SpotMicroServoControl():
         # Ability to control individual servo to find limits and center values
         # and ability to control all servos together
         
-        while not rospy.is_shutdown():
+        while rclpy.ok():
             print(msg)
             userInput = raw_input("Command?: ")
 
             if userInput not in validCmds:
                 print('Valid command not entered, try again...')
+            
             else:
                 if userInput == 'quit':
                     print("Ending program...")
                     print('Final Servo Values')
                     print('--------------------')
                     for i in range(numServos):
-                        print('Servo %2i:   Min: %1.2f,   Center: %1.2f,   Max: %1.2f'%(i,self.servos[i]._min,self.servos[i]._center,self.servos[i]._max))                    
+                        servo = self.servos[i]
+                        print(f"Servo {i + 1}:   Min: {servo._min},   Center: {servo._center},   Max: {servo._max}")                    
                     break
 
                 elif userInput == 'oneServo':
@@ -236,7 +244,7 @@ class SpotMicroServoControl():
                     while (1):
                         userInput = input('Which servo to control? Enter a number 1 through 12: ')
                         
-                        if userInput not in range(1,numServos+1):
+                        if userInput not in range(1, numServos + 1):
                             print("Invalid servo number entered, try again")
                         else:
                             nSrv = userInput - 1
@@ -254,7 +262,7 @@ class SpotMicroServoControl():
                             print('Key not in valid key commands, try again')
                         else:
                             keyDict[userInput](self.servos[nSrv])
-                            print('Servo %2i cmd: %1.2f'%(nSrv,self.servos[nSrv].value))
+                            print(f"Servo {nSrv + 1} cmd: {self.servos[nSrv].value}")
                             self.send_servo_msg()
 
                 elif userInput == 'allServos':
@@ -279,20 +287,21 @@ class SpotMicroServoControl():
                             print('All Servos Commanded')
                             self.send_servo_msg()
                                 
-
-
-
-
-
-
-            # print self._last_time_cmd_rcv, self.is_controller_connected
-            # if not self.is_controller_connected:
-            #     self.set_actuators_idle()
-           
             # Set the control rate in Hz
-            rate = rospy.Rate(10)
-            rate.sleep()
+            rclpy.spin_once(self, timeout_sec=0.1)
+
+def main():
+    rclpy.init(args=args)
+    smsc = SpotMicroServoControl()
+    try:
+        smsc.run()
+        smsc.destroy_node()
+        rclpy.shutdown()
+    except KeyboardInterrupt:
+        print("KeyboardInterrupt received! Shutting down...")
+    finally:
+        smsc.destroy_node()
+        rclpy.shutdown()
 
 if __name__ == "__main__":
-    smsc     = SpotMicroServoControl()
-    smsc.run()
+    main()

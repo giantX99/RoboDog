@@ -4,7 +4,8 @@
 Class for testing control of 12 servos. It assumes ros-12cpwmboard has been
 installed
 """
-import rospy
+import rclpy
+from rclpy.node import Node
 import sys, select, termios, tty # For terminal keyboard key press reading
 from i2cpwm_controller.msg import Servo, ServoArray
 
@@ -155,7 +156,6 @@ class SpotMicroServoControl(Node):
         for servo_key, servo_obj in self.servos.items():
             self._servo_array_msg.servos[servo_obj.id].servo = servo_obj.id + 1
             self._servo_array_msg.servos[servo_obj.id].value = servo_obj.value
-            #rospy.loginfo("Sending to %s command %d"%(servo_key, servo_obj.value))
             self.get_logger().info(f"Sending to {servo_key} command {servo_obj.value}")
 
         self.ros_pub_servo_array.publish(self._servo_array_msg)
@@ -218,7 +218,7 @@ class SpotMicroServoControl(Node):
                     while (1):
                         userInput = input('Which servo to control? Enter a number 1 through 12: ')
                         
-                        if userInput not in range(1,numServos+1):
+                        if userInput not in range(1, numServos + 1):
                             print("Invalid servo number entered, try again")
                         else:
                             nSrv = userInput - 1
