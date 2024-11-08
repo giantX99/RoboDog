@@ -1,4 +1,0 @@
-[31mCMake Error at CMakeLists.txt:14 (find_library):
-  Could not find I2C_LIBRARY using the following names: i2c
-
-[0m

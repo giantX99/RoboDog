@@ -92,17 +92,10 @@ static float _absmax(float v1, float v2) {
 I2cPwmController::I2cPwmController(const rclcpp::NodeOptions &options)
     : Node("i2cpwm_controller", options) {
 
-    // Initialize the I2C bus and servos within the constructor (moving _init logic here)
-    get_parameter("i2c_device_number", _controller_io_device);
-    std::stringstream device;
-    device << "/dev/i2c-" << _controller_io_device;
-
-    _controller_io_handle = open(device.str().c_str(), O_RDWR);
-    if (_controller_io_handle < 0) {
-        RCLCPP_FATAL(get_logger(), "Failed to open I2C bus: %s", device.str().c_str());
-    } else {
-        RCLCPP_INFO(get_logger(), "I2C bus opened on %s", device.str().c_str());
-    }
+    /* initialize all of the global data objects */
+    for (int i=0; i<MAX_BOARDS;i++)
+        _pwm_boards[i] = -1;
+    _active_board = -1;
 
     // Initialize all servo configurations to default values
     for (int i = 0; i < MAX_SERVOS; ++i) {
@@ -120,10 +113,7 @@ I2cPwmController::I2cPwmController(const rclcpp::NodeOptions &options)
     _active_drive.track = -1.0;
     _active_drive.scale = -1.0;
 
-    // Set active board to 1 and set the PWM frequency
-    _set_active_board(1);
-    _set_pwm_frequency(_pwm_frequency);
-
+    
     // Try to Load parameters from configuration
     try {
         load_configuration_from_parameters();
@@ -342,7 +332,7 @@ void I2cPwmController::servos_drive(const geometry_msgs::msg::Twist::SharedPtr m
 				_set_pwm_interval_proportional (i+1, speed[2]);
 		case MODE_DIFFERENTIAL:
 			if (_servo_configs[i].mode_pos == POSITION_RIGHTFRONT)
-			_set_pwm_interval_proportional (i+1, speed[1]);
+			    _set_pwm_interval_proportional (i+1, speed[1]);
 		case MODE_ACKERMAN:
 			if (_servo_configs[i].mode_pos == POSITION_LEFTFRONT)
 				_set_pwm_interval_proportional (i+1, speed[0]);
@@ -516,27 +506,27 @@ void I2cPwmController::_set_pwm_frequency(int freq) {
     oldmode = i2c_smbus_read_byte_data (_controller_io_handle, __MODE1);
     newmode = (oldmode & 0x7F) | 0x10; // sleep
 
-    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE1, newmode)) // go to sleep
+    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE1, newmode) && DEBUG_MODE==false) // go to sleep
         RCLCPP_ERROR(get_logger(), "Unable to set PWM controller to sleep mode"); 
-    else:
+    else
         printf("Sent sleep mode byte data (%x) to address %x\n", newmode, __MODE1);
 
-    if (0 >  i2c_smbus_write_byte_data(_controller_io_handle, __PRESCALE, (int)(floor(prescale))))
+    if (0 >  i2c_smbus_write_byte_data(_controller_io_handle, __PRESCALE, (int)(floor(prescale))) && DEBUG_MODE==false)
         RCLCPP_ERROR(get_logger(), "Unable to set PWM controller prescale"); 
-    else:
+    else
         printf("Sent prescale data (%d) to address %x\n", (int)(floor(prescale)), __PRESCALE);
 
-    if (0 > i2c_smbus_write_byte_data(_controller_io_handle, __MODE1, oldmode))
+    if (0 > i2c_smbus_write_byte_data(_controller_io_handle, __MODE1, oldmode) && DEBUG_MODE==false)
         RCLCPP_ERROR(get_logger(), "Unable to set PWM controller to active mode"); 
-    else:
+    else
         printf("Sent active mode byte data (%x) to address %x\n", oldmode, __MODE1);
 
 
     nanosleep((const struct timespec[]){{0, 5000000L}}, NULL);   //sleep 5microsec,
 
-    if (0 > i2c_smbus_write_byte_data(_controller_io_handle, __MODE1, oldmode | 0x80))
+    if (0 > i2c_smbus_write_byte_data(_controller_io_handle, __MODE1, oldmode | 0x80) && DEBUG_MODE==false)
         RCLCPP_ERROR(get_logger(), "Unable to restore PWM controller to active mode");
-    else:
+    else
         printf("Sent active mode byte data (%x) to address %x\n", (oldmode | 0x80), __MODE1);
 
 }
@@ -559,24 +549,24 @@ void I2cPwmController::_set_pwm_interval_all (int start, int end)
     }
     int board = _active_board - 1;
 
-    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_ON_L, start & 0xFF))
+    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_ON_L, start & 0xFF) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM start low byte for all servos on board %d", _active_board);
-    else:
+    else
         printf("Sent PWM start LOW byte (%x) to all servos on board, address = %x\n", (start & 0xFF), __ALL_CHANNELS_ON_L);
 
-    if (0 >  i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_ON_H, start  >> 8))
+    if (0 >  i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_ON_H, start  >> 8) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM start high byte for all servos on board %d", _active_board);
-    else:
+    else
         printf("Sent PWM start HIGH byte (%x) to all servos on board, address = %x\n", (start >> 8), __ALL_CHANNELS_ON_H);
     
-    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_OFF_L, end & 0xFF))
+    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_OFF_L, end & 0xFF) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM end low byte for all servos on board %d", _active_board);
-    else:
+    else
         printf("Sent PWM end LOW byte (%x) to all servos on board, address = %x\n", (end & 0xFF), __ALL_CHANNELS_OFF_L);
     
-    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_OFF_H, end >> 8))
+    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __ALL_CHANNELS_OFF_H, end >> 8) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM end high byte for all servos on board %d", _active_board);
-    else:
+    else
         printf("Sent PWM end HIGH byte (%x) to all servos on board, address = %x\n", (end >> 8), __ALL_CHANNELS_OFF_H);
 }
 
@@ -601,7 +591,7 @@ void I2cPwmController::_set_active_board (int board)
         // the public API is ONE based and hardware is ZERO based
         board--;
         
-        if (0 > ioctl (_controller_io_handle, I2C_SLAVE, (_BASE_ADDR+(board)))) {
+        if (0 > ioctl (_controller_io_handle, I2C_SLAVE, (_BASE_ADDR+(board))) && DEBUG_MODE==false) {
             RCLCPP_FATAL (get_logger(), "Failed to acquire bus access and/or talk to I2C slave at address 0x%02X", (_BASE_ADDR+board));
             throw std::runtime_error("Failed to acquire bus access and/or talk to I2C slave"); /* exit(1) */   /* additional ERROR HANDLING information is available with 'errno' */
         }
@@ -611,11 +601,15 @@ void I2cPwmController::_set_active_board (int board)
 
             /* this is guess but I believe the following needs to be done on each board only once */
 
-            if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE2, __OUTDRV))
+            if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE2, __OUTDRV) && DEBUG_MODE==false)
                 RCLCPP_ERROR (get_logger(), "Failed to enable PWM outputs for totem-pole structure");
+            else
+                printf("Enabled PWM outputs for totem-pole structure; data_sent= %x ; address= %x\n", __OUTDRV, __MODE2);
 
-            if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE1, __ALLCALL))
+            if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE1, __ALLCALL) && DEBUG_MODE==false)
                 RCLCPP_ERROR (get_logger(), "Failed to enable ALLCALL for PWM channels");
+            else
+                printf("Enabled ALLCALL for PWM channels; data_sent= %x ; address= %x\n", __ALLCALL, __MODE1);
 
             nanosleep ((const struct timespec[]){{0, 5000000L}}, NULL);   //sleep 5microsec, wait for osci
 
@@ -623,9 +617,11 @@ void I2cPwmController::_set_active_board (int board)
             mode1res = i2c_smbus_read_byte_data (_controller_io_handle, __MODE1);
             mode1res = mode1res & ~__SLEEP; //                 # wake up (reset sleep)
 
-            if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE1, mode1res))
+            if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __MODE1, mode1res) && DEBUG_MODE==false)
                 RCLCPP_ERROR (get_logger(), "Failed to recover from low power mode");
-
+            else
+                printf("Enabled recover from low power mode; data_sent= %x ; address= %x\n", mode1res, __MODE1);
+            
             nanosleep((const struct timespec[]){{0, 5000000L}}, NULL);   //sleep 5microsec, wait for osci
 
             // the first time we activate a board, we mark it and set all of its servo channels to 0
@@ -665,24 +661,24 @@ void I2cPwmController::_set_pwm_interval (int servo, int start, int end)
 	RCLCPP_DEBUG(get_logger(), "_set_pwm_interval board=%d servo=%d", board, servo);
     printf("_set_pwm_interval board=%d servo=%d\n", board, servo);
     
-    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_ON_L+4*channel, start & 0xFF))
+    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_ON_L+4*channel, start & 0xFF) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM start low byte on servo %d on board %d", servo, _active_board);
-    else:
+    else
         printf("Sent PWM start LOW byte (%x) to servo %d, address = %x\n", (start & 0xFF), servo, (__CHANNEL_ON_L+4*channel));
 
-    if (0 >  i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_ON_H+4*channel, start  >> 8))
+    if (0 >  i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_ON_H+4*channel, start  >> 8) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM start high byte on servo %d on board %d", servo, _active_board);
-    else:
+    else
         printf("Sent PWM start HIGH byte (%x) to servo %d, address = %x\n", (start >> 8), servo, (__CHANNEL_ON_H+4*channel));
 
-    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_OFF_L+4*channel, end & 0xFF))
+    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_OFF_L+4*channel, end & 0xFF) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM end low byte on servo %d on board %d", servo, _active_board);
-    else:
+    else
         printf("Sent PWM end LOW byte (%x) to servo %d, address = %x\n", (end & 0xFF), servo, (__CHANNEL_OFF_L+4*channel));
 
-    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_OFF_H+4*channel, end >> 8))
+    if (0 > i2c_smbus_write_byte_data (_controller_io_handle, __CHANNEL_OFF_H+4*channel, end >> 8) && DEBUG_MODE==false)
         RCLCPP_ERROR (get_logger(), "Error setting PWM end high byte on servo %d on board %d", servo, _active_board);
-    else:
+    else
         printf("Sent PWM end HIGH byte (%x) to servo %d, address = %x\n", (end >> 8), servo, (__CHANNEL_OFF_H+4*channel));
 }
 
@@ -835,24 +831,36 @@ void I2cPwmController::load_configuration_from_parameters() {
     // declare_parameter("drive_config.servos", std::vector<rclcpp::ParameterValue>());
 
     // Load I2C device number
-    int i2c_device;
-    get_parameter("i2c_device_number", i2c_device);
+    get_parameter("i2c_device_number", _controller_io_device);
     std::stringstream device;
-    device << "/dev/i2c-" << i2c_device;
+    device << "/dev/i2c-" << _controller_io_device;
 
+    DEBUG_MODE = true;
+    printf("DEBUG = %d\n", DEBUG_MODE);
     // Initialize the I2C controller
     _controller_io_handle = open(device.str().c_str(), O_RDWR);
-    if (_controller_io_handle < 0) {
-        RCLCPP_FATAL(get_logger(), "Failed to open I2C bus %s", device.str().c_str());
+    if (_controller_io_handle < 0 && DEBUG_MODE == false) {
+        RCLCPP_FATAL(get_logger(), "Failed to open I2C bus: %s", device.str().c_str());
         throw std::runtime_error("Failed to open I2C bus");
+    } else {
+        RCLCPP_INFO(get_logger(), "I2C bus opened on %s", device.str().c_str());
     }
 
-    RCLCPP_INFO(get_logger(), "I2C bus opened on %s", device.str().c_str());
+    // Load drive mode configuration
+    std::string mode;
+    get_parameter("drive_config.mode", mode);
+    get_parameter("drive_config.rpm", _active_drive.rpm);
+    get_parameter("drive_config.radius", _active_drive.radius);
+    get_parameter("drive_config.track", _active_drive.track);
+    get_parameter("drive_config.scale", _active_drive.scale);
 
-    // Load PWM frequency
-    int pwm_frequency;
-    get_parameter("pwm_frequency", pwm_frequency);
-    _set_pwm_frequency(pwm_frequency);
+    _config_drive_mode(mode, _active_drive.rpm, _active_drive.radius, _active_drive.track, _active_drive.scale);
+
+
+    // Set active board to 1 and set the PWM frequency
+    _set_active_board(1);
+    get_parameter("pwm_frequency", _pwm_frequency);
+    _set_pwm_frequency(_pwm_frequency);
 
     // Load servo configuration
     // std::vector<rclcpp::Parameter> servo_configs = get_parameter("servo_config").as_parameter_list();
@@ -895,17 +903,6 @@ void I2cPwmController::load_configuration_from_parameters() {
     //     _config_servo(servo_id, center, range, direction);
     //     RCLCPP_INFO(get_logger(), "Configured servo %d: center=%d, range=%d, direction=%d", servo_id, center, range, direction);
     // }
-
-    // Load drive mode configuration
-    std::string mode;
-    get_parameter("drive_config.mode", mode);
-    float rpm, radius, track, scale;
-    get_parameter("drive_config.rpm", rpm);
-    get_parameter("drive_config.radius", radius);
-    get_parameter("drive_config.track", track);
-    get_parameter("drive_config.scale", scale);
-
-    _config_drive_mode(mode, rpm, radius, track, scale);
 
     // Load drive servos
     // std::vector<rclcpp::Parameter> drive_servos = get_parameter("drive_config.servos").as_parameter_list();

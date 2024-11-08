@@ -64,12 +64,17 @@ rosidl_get_typesupport_target(cpp_typesupport_target
 target_link_libraries(i2cpwm_controller_node "${cpp_typesupport_target}" ${I2C_LIBRARY})
 
 
+# Install the executable
+install(TARGETS i2cpwm_controller_node
+  DESTINATION lib/${PROJECT_NAME}
+)
+
 # Install launch files
 install(DIRECTORY launch/
   DESTINATION share/${PROJECT_NAME}/launch
 )
 
+
 # Export package and targets
-ament_export_dependencies(rosidl_default_runtime)
 ament_export_dependencies(rosidl_default_runtime rclcpp std_msgs std_srvs geometry_msgs)
 ament_package()

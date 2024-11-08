@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000925] (-) JobUnselected: {'identifier': 'i2cpwm_controller'}
-[0.001112] (-) JobUnselected: {'identifier': 'motion_cmd'}
-[0.002128] (servo_calibration) JobQueued: {'identifier': 'servo_calibration', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/install/i2cpwm_controller')])}
-[0.002242] (servo_calibration) JobStarted: {'identifier': 'servo_calibration'}
-[0.063451] (servo_calibration) JobEnded: {'identifier': 'servo_calibration', 'rc': 1}
-[0.074630] (-) EventReactorShutdown: {}

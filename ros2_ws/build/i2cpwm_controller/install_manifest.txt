@@ -230,7 +230,8 @@
 /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos.srv
 /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos_Request.msg
 /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/srv/StopServos_Response.msg
-/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/launch/i2cpwm_node.launch.py
+/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/i2cpwm_controller/i2cpwm_controller_node
+/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/launch/i2cpwm_controller.launch.py
 /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/ament_index/resource_index/package_run_dependencies/i2cpwm_controller
 /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/ament_index/resource_index/parent_prefix_path/i2cpwm_controller
 /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/environment/ament_prefix_path.sh

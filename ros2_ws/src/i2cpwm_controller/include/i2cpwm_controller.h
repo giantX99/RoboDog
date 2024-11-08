@@ -80,6 +80,7 @@ private:
 
     int _pwm_frequency = 50;      // PWM frequency, default is 50Hz for RC servos
 
+    bool DEBUG_MODE;
 
     // Private utility methods:
     int _smoothing (float speed);

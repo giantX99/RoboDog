@@ -1,3 +1,0 @@
-/home/robodog/RoboDog/ros2_ws/build/spot_micro_motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/CMakeFiles/googletest.dir
-/home/robodog/RoboDog/ros2_ws/build/spot_micro_motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/CMakeFiles/edit_cache.dir
-/home/robodog/RoboDog/ros2_ws/build/spot_micro_motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/CMakeFiles/rebuild_cache.dir

@@ -1,0 +1,3 @@
+[console_scripts]
+servo_calib_node = servo_calibration.servo_move_keyboard:main
+
