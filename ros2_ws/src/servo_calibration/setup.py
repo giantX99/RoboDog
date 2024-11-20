@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'servo_calib_node = servo_calibration.servo_move_keyboard:main'
+            # 'servo_calib_node = servo_calibration.servo_move_keyboard:main' # Move Servos Script
+            'servo_calib_node = servo_calibration.servo_calib_test:main' # Calibration Script
         ],
     },
 )

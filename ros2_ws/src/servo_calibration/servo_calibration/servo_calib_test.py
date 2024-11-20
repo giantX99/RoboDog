@@ -290,7 +290,8 @@ class SpotMicroServoControl(Node):
             # Set the control rate in Hz
             rclpy.spin_once(self, timeout_sec=0.1)
 
-def main():
+
+def main(args=None):
     rclpy.init(args=args)
     smsc = SpotMicroServoControl()
     try:
