@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "motion_cmd")
 set(motion_cmd_VERSION "0.0.0")
-set(motion_cmd_MAINTAINER "gian <gat7hb@umsystem.edu>")
+set(motion_cmd_MAINTAINER "gian_lucca <gat7hb@umsystem.edu>")
 set(motion_cmd_BUILD_DEPENDS "rclcpp" "std_msgs" "geometry_msgs" "tf2" "tf2_ros" "tf2_geometry_msgs" "tf2_eigen" "i2cpwm_controller" "Eigen3")
 set(motion_cmd_BUILDTOOL_DEPENDS "ament_cmake")
 set(motion_cmd_BUILD_EXPORT_DEPENDS "rclcpp" "std_msgs" "geometry_msgs" "tf2" "tf2_ros" "tf2_geometry_msgs" "tf2_eigen" "i2cpwm_controller" "Eigen3")

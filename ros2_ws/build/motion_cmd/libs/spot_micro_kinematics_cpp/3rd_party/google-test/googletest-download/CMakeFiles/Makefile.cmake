@@ -10,13 +10,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "CMakeLists.txt"
   "googletest-prefix/tmp/googletest-cfgcmd.txt.in"
-  "/usr/share/cmake-3.22/Modules/CMakeDetermineSystem.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeGenericSystem.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeInitializeConfigs.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeSystem.cmake.in"
   "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeSystemSpecificInitialize.cmake"
-  "/usr/share/cmake-3.22/Modules/CMakeUnixFindMake.cmake"
   "/usr/share/cmake-3.22/Modules/ExternalProject-download.cmake.in"
   "/usr/share/cmake-3.22/Modules/ExternalProject.cmake"
   "/usr/share/cmake-3.22/Modules/Platform/Linux.cmake"
@@ -32,7 +29,6 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
-  "CMakeFiles/3.22.1/CMakeSystem.cmake"
   "googletest-prefix/src/googletest-stamp/googletest-urlinfo.txt"
   "googletest-prefix/src/googletest-stamp/download-googletest.cmake"
   "googletest-prefix/tmp/googletest-cfgcmd.txt"

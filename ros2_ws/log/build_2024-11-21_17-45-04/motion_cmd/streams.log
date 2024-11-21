@@ -1,0 +1,42 @@
+[0.060s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.312s] [ 13%] Built target gtest
+[0.313s] [ 20%] Built target spot_micro_kinematics
+[0.425s] [ 27%] Built target gmock
+[0.427s] [ 34%] Built target gtest_main
+[0.489s] [ 37%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[0.545s] [ 44%] Built target test_utils
+[0.559s] [ 51%] Built target test_spot_micro_kinematics
+[0.562s] [ 58%] Built target test_spot_micro_leg
+[0.586s] [ 62%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[0.609s] [ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[0.670s] [ 72%] Built target gmock_main
+[0.710s] [ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[3.362s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:4[m[K:
+[3.366s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:[m[K [01;31m[Kfatal error: [m[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory
+[3.370s]    15 | #include [01;31m[K"i2cpwm_board/srv/servos_config.hpp"[m[K
+[3.373s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.377s] compilation terminated.
+[3.381s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1
+[3.384s] gmake[2]: *** Waiting for unfinished jobs....
+[3.467s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:2[m[K:
+[3.471s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:[m[K [01;31m[Kfatal error: [m[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory
+[3.474s]    15 | #include [01;31m[K"i2cpwm_board/srv/servos_config.hpp"[m[K
+[3.478s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.481s] compilation terminated.
+[3.485s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1
+[3.500s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/walk.h:3[m[K,
+[3.503s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:4[m[K:
+[3.506s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:[m[K [01;31m[Kfatal error: [m[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory
+[3.509s]    15 | #include [01;31m[K"i2cpwm_board/srv/servos_config.hpp"[m[K
+[3.512s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.513s] compilation terminated.
+[3.515s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1
+[3.598s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:4[m[K:
+[3.598s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:[m[K [01;31m[Kfatal error: [m[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory
+[3.598s]    15 | #include [01;31m[K"i2cpwm_board/srv/servos_config.hpp"[m[K
+[3.599s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.599s] compilation terminated.
+[3.612s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1
+[3.613s] gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2
+[3.614s] gmake: *** [Makefile:146: all] Error 2
+[3.621s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

@@ -5,7 +5,7 @@
   <description>ROS 2 adaptation of spot_micro_motion_cmd package</description>
 
   <!-- Maintainer information -->
-  <maintainer email="gat7hb@umsystem.edu">gian</maintainer>
+  <maintainer email="gat7hb@umsystem.edu">gian_lucca</maintainer>
 
   <!-- License information -->
   <license>TODO</license>

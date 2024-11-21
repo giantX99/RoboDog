@@ -1,5 +1,10 @@
 # Configuration parameters
 
+# For ROS 2 I've decided to hard code parameters and not utilize of this config file.
+# Although this file should be of reference whenever in doubt which parameter is which
+# The parameters setup for this package is done by SpotMicroMotionCmd::setupParameters() function
+# Edit by Gian Lucca Teixeira - 11/21/2024
+
 # Robot wireframe size parameters
 # Lengths representening a wireframe model of the robot. All lengths joint to joint
 hip_link_length: 0.055 # Straight line distance of the hip link (horizontal leg link)

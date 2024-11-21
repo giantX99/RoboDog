@@ -1,0 +1,2 @@
+Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

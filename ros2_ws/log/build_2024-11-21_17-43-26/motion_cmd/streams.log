@@ -1,0 +1,42 @@
+[0.060s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.304s] [  6%] Built target gtest
+[0.307s] [ 20%] Built target spot_micro_kinematics
+[0.411s] [ 27%] Built target gtest_main
+[0.414s] [ 34%] Built target gmock
+[0.494s] [ 37%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[0.531s] [ 44%] Built target test_utils
+[0.539s] [ 51%] Built target test_spot_micro_leg
+[0.551s] [ 58%] Built target test_spot_micro_kinematics
+[0.586s] [ 62%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[0.593s] [ 65%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[0.656s] [ 72%] Built target gmock_main
+[0.696s] [ 75%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[3.348s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:4[m[K:
+[3.351s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/static_transform_broadcaster.hpp: No such file or directory
+[3.355s]     7 | #include [01;31m[K"tf2_ros/static_transform_broadcaster.hpp"[m[K
+[3.358s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.361s] compilation terminated.
+[3.367s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1
+[3.368s] gmake[2]: *** Waiting for unfinished jobs....
+[3.481s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:2[m[K:
+[3.485s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/static_transform_broadcaster.hpp: No such file or directory
+[3.488s]     7 | #include [01;31m[K"tf2_ros/static_transform_broadcaster.hpp"[m[K
+[3.492s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.498s] compilation terminated.
+[3.500s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:4[m[K:
+[3.503s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/static_transform_broadcaster.hpp: No such file or directory
+[3.503s]     7 | #include [01;31m[K"tf2_ros/static_transform_broadcaster.hpp"[m[K
+[3.504s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.504s] compilation terminated.
+[3.505s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1
+[3.507s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1
+[3.510s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/walk.h:3[m[K,
+[3.511s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:4[m[K:
+[3.524s] [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:7:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/static_transform_broadcaster.hpp: No such file or directory
+[3.525s]     7 | #include [01;31m[K"tf2_ros/static_transform_broadcaster.hpp"[m[K
+[3.526s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.527s] compilation terminated.
+[3.527s] gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1
+[3.529s] gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2
+[3.529s] gmake: *** [Makefile:146: all] Error 2
+[3.537s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

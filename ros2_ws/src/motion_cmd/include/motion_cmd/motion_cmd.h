@@ -3,8 +3,8 @@
 #define SPOT_MICRO_MOTION_CMD
 
 #include "rclcpp/rclcpp.hpp"
-#include "tf2_ros/transform_broadcaster.hpp"
-#include "tf2_ros/static_transform_broadcaster.hpp"
+#include "tf2_ros/transform_broadcaster.h"
+#include "tf2_ros/static_transform_broadcaster.h"
 #include "std_msgs/msg/bool.hpp"
 #include "std_msgs/msg/string.hpp"
 #include "geometry_msgs/msg/vector3.hpp"

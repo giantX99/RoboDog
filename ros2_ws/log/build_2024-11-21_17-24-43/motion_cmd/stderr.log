@@ -1,0 +1,52 @@
+[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/walk.h:3[m[K,
+                 from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:4[m[K:
+[01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+    6 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:4[m[K:
+[01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+    6 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+compilation terminated.
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:2[m[K:
+[01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+    6 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:4[m[K:
+[01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:6:10:[m[K [01;31m[Kfatal error: [m[Ktf2_ros/transform_broadcaster.hpp: No such file or directory
+    6 | #include [01;31m[K"tf2_ros/transform_broadcaster.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1
+gmake[2]: *** Waiting for unfinished jobs....
+gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1
+gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

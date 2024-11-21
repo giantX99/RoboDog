@@ -1,0 +1,90 @@
+[0.000000] (-) TimerEvent: {}
+[0.001564] (-) JobUnselected: {'identifier': 'i2cpwm_controller'}
+[0.002159] (-) JobUnselected: {'identifier': 'servo_calibration'}
+[0.002689] (motion_cmd) JobQueued: {'identifier': 'motion_cmd', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.002902] (motion_cmd) JobStarted: {'identifier': 'motion_cmd'}
+[0.052162] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'cmake'}
+[0.055638] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'build'}
+[0.058766] (motion_cmd) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.119 61016 22'), ('ROS_PACKAGE_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog/RoboDog'), ('SSH_TTY', '/dev/pts/2'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/aarch64-linux-gnu/pkgconfig:/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '8'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'), ('SSH_CONNECTION', '10.7.90.119 61016 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')]), 'shell': False}
+[0.099022] (-) TimerEvent: {}
+[0.199818] (-) TimerEvent: {}
+[0.300846] (-) TimerEvent: {}
+[0.314050] (motion_cmd) StdoutLine: {'line': b'[ 13%] Built target gtest\n'}
+[0.315567] (motion_cmd) StdoutLine: {'line': b'[ 20%] Built target spot_micro_kinematics\n'}
+[0.401100] (-) TimerEvent: {}
+[0.427597] (motion_cmd) StdoutLine: {'line': b'[ 27%] Built target gmock\n'}
+[0.428766] (motion_cmd) StdoutLine: {'line': b'[ 34%] Built target gtest_main\n'}
+[0.491273] (motion_cmd) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o\x1b[0m\n'}
+[0.501402] (-) TimerEvent: {}
+[0.545691] (motion_cmd) StdoutLine: {'line': b'[ 44%] Built target test_utils\n'}
+[0.557032] (motion_cmd) StdoutLine: {'line': b'[ 51%] Built target test_spot_micro_kinematics\n'}
+[0.562589] (motion_cmd) StdoutLine: {'line': b'[ 58%] Built target test_spot_micro_leg\n'}
+[0.586719] (motion_cmd) StdoutLine: {'line': b'[ 62%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o\x1b[0m\n'}
+[0.601671] (-) TimerEvent: {}
+[0.609304] (motion_cmd) StdoutLine: {'line': b'[ 65%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o\x1b[0m\n'}
+[0.670997] (motion_cmd) StdoutLine: {'line': b'[ 72%] Built target gmock_main\n'}
+[0.701871] (-) TimerEvent: {}
+[0.711488] (motion_cmd) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o\x1b[0m\n'}
+[0.802083] (-) TimerEvent: {}
+[0.903325] (-) TimerEvent: {}
+[1.004508] (-) TimerEvent: {}
+[1.105694] (-) TimerEvent: {}
+[1.207043] (-) TimerEvent: {}
+[1.308218] (-) TimerEvent: {}
+[1.409388] (-) TimerEvent: {}
+[1.510667] (-) TimerEvent: {}
+[1.612119] (-) TimerEvent: {}
+[1.713311] (-) TimerEvent: {}
+[1.814600] (-) TimerEvent: {}
+[1.916235] (-) TimerEvent: {}
+[2.017919] (-) TimerEvent: {}
+[2.119362] (-) TimerEvent: {}
+[2.220768] (-) TimerEvent: {}
+[2.321896] (-) TimerEvent: {}
+[2.423103] (-) TimerEvent: {}
+[2.524836] (-) TimerEvent: {}
+[2.626066] (-) TimerEvent: {}
+[2.727477] (-) TimerEvent: {}
+[2.828790] (-) TimerEvent: {}
+[2.930149] (-) TimerEvent: {}
+[3.031777] (-) TimerEvent: {}
+[3.133020] (-) TimerEvent: {}
+[3.234311] (-) TimerEvent: {}
+[3.335536] (-) TimerEvent: {}
+[3.360088] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp:4\x1b[m\x1b[K:\n'}
+[3.366540] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory\n'}
+[3.370223] (motion_cmd) StderrLine: {'line': b'   15 | #include \x1b[01;31m\x1b[K"i2cpwm_board/srv/servos_config.hpp"\x1b[m\x1b[K\n'}
+[3.373897] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.376834] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[3.381624] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:76: CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o] Error 1\n'}
+[3.384798] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** Waiting for unfinished jobs....\n'}
+[3.435792] (-) TimerEvent: {}
+[3.467892] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp:2\x1b[m\x1b[K:\n'}
+[3.471115] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory\n'}
+[3.474564] (motion_cmd) StderrLine: {'line': b'   15 | #include \x1b[01;31m\x1b[K"i2cpwm_board/srv/servos_config.hpp"\x1b[m\x1b[K\n'}
+[3.478192] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.481767] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[3.485887] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:90: CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o] Error 1\n'}
+[3.501203] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/walk.h:3\x1b[m\x1b[K,\n'}
+[3.503938] (motion_cmd) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp:4\x1b[m\x1b[K:\n'}
+[3.506530] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory\n'}
+[3.509656] (motion_cmd) StderrLine: {'line': b'   15 | #include \x1b[01;31m\x1b[K"i2cpwm_board/srv/servos_config.hpp"\x1b[m\x1b[K\n'}
+[3.512858] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.515334] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[3.517992] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:104: CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o] Error 1\n'}
+[3.535915] (-) TimerEvent: {}
+[3.600244] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp:4\x1b[m\x1b[K:\n'}
+[3.600909] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h:15:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Ki2cpwm_board/srv/servos_config.hpp: No such file or directory\n'}
+[3.601343] (motion_cmd) StderrLine: {'line': b'   15 | #include \x1b[01;31m\x1b[K"i2cpwm_board/srv/servos_config.hpp"\x1b[m\x1b[K\n'}
+[3.601707] (motion_cmd) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.602071] (motion_cmd) StderrLine: {'line': b'compilation terminated.\n'}
+[3.614890] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/smfsm.dir/build.make:118: CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o] Error 1\n'}
+[3.616003] (motion_cmd) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:230: CMakeFiles/smfsm.dir/all] Error 2\n'}
+[3.616947] (motion_cmd) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.623175] (motion_cmd) CommandEnded: {'returncode': 2}
+[3.636116] (-) TimerEvent: {}
+[3.736911] (-) TimerEvent: {}
+[3.837597] (-) TimerEvent: {}
+[3.938361] (-) TimerEvent: {}
+[3.972812] (motion_cmd) JobEnded: {'identifier': 'motion_cmd', 'rc': 2}
+[3.984833] (-) EventReactorShutdown: {}
