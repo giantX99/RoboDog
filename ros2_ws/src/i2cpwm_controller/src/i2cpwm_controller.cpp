@@ -835,10 +835,11 @@ void I2cPwmController::load_configuration_from_parameters() {
     std::stringstream device;
     device << "/dev/i2c-" << _controller_io_device;
 
-    DEBUG_MODE = true;
-    printf("DEBUG = %d\n", DEBUG_MODE);
+    DEBUG_MODE = false;
+    // printf("DEBUG = %d\n", DEBUG_MODE);
     // Initialize the I2C controller
     _controller_io_handle = open(device.str().c_str(), O_RDWR);
+    printf("CONTROLLER IO = %d\n", _controller_io_handle);
     if (_controller_io_handle < 0 && DEBUG_MODE == false) {
         RCLCPP_FATAL(get_logger(), "Failed to open I2C bus: %s", device.str().c_str());
         throw std::runtime_error("Failed to open I2C bus");

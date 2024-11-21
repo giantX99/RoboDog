@@ -73,11 +73,11 @@ class ServoConvert():
     for 1 ms, 1.5 ms, and 2 ms, respectively
     '''
     def __init__(self, id=1, center_value=0, direction=1):
-        self.value      = center_value
-        self._center    = center_value
-        self._min       = -1
-        self._max       = 1
-        self._dir       = direction
+        self.value      = float(center_value)
+        self._center    = float(center_value)
+        self._min       = float(-1)
+        self._max       = float(1)
+        self._dir       = float(direction)
         self.id         = id
 
     def set_value(self, value_in):
@@ -186,7 +186,7 @@ class SpotMicroServoControl(Node):
 
 
     def send_servo_msg(self):
-        for servo_key, servo_obj in self.servos.iteritems():
+        for servo_key, servo_obj in self.servos.items():
             self._servo_array_msg.servos[servo_obj.id].servo = servo_obj.id + 1
             self._servo_array_msg.servos[servo_obj.id].value = servo_obj.value
             self.get_logger().info(f"Sending to {servo_key} command {servo_obj.value}")
@@ -219,7 +219,7 @@ class SpotMicroServoControl(Node):
         
         while rclpy.ok():
             print(msg)
-            userInput = raw_input("Command?: ")
+            userInput = input("Command?: ")
 
             if userInput not in validCmds:
                 print('Valid command not entered, try again...')
@@ -242,7 +242,7 @@ class SpotMicroServoControl(Node):
                     # First get servo number to command
                     nSrv = -1
                     while (1):
-                        userInput = input('Which servo to control? Enter a number 1 through 12: ')
+                        userInput = int( input('Which servo to control? Enter a number 1 through 12: ') )
                         
                         if userInput not in range(1, numServos + 1):
                             print("Invalid servo number entered, try again")
