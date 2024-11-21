@@ -1,5 +1,5 @@
 #pragma once
-#include <memory>
+#include "spot_micro_kinematics/spot_micro_kinematics.h"
 
 #include "rate_limited_first_order_filter.h"
 #include "spot_micro_kinematics/spot_micro_kinematics.h"
@@ -57,7 +57,7 @@ class SpotMicroState {
  protected:
 
   // Calls SpotMicroMotionCmd's method to change the currently active state
-  void SMSchangeState(SpotMicroMotionCmd* smmc, std::unique_ptr<SpotMicroState> sms);
+  void changeState(SpotMicroMotionCmd* smmc, std::unique_ptr<SpotMicroState> sms);
 
   // Initializes set of filters controlling body state values to values
   // contained in body_state

@@ -28,10 +28,10 @@ void SpotMicroStandState::handleInputCommands(const smk::BodyState& body_state,
 
   if (cmd.getIdleCmd() == true) {
     // Call parent class's change state method
-    SMSchangeState(smmc, std::make_unique<SpotMicroTransitionIdleState>());
+    changeState(smmc, std::make_unique<SpotMicroTransitionIdleState>());
 
   } else if (cmd.getWalkCmd() == true) {
-    SMSchangeState(smmc, std::make_unique<SpotMicroWalkState>());
+    changeState(smmc, std::make_unique<SpotMicroWalkState>());
 
   } else {
     // Get command values

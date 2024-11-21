@@ -1,46 +1,44 @@
-#include "motion_cmd.h"
-#include <iostream>
+// Node file to create object and initialising the ROS node
+#include "motion_cmd.h" 
 #include "rclcpp/rclcpp.hpp"
+#include "builtin_interfaces/msg/time.hpp"
+#include "rclcpp/clock.hpp" 
+#include <iostream>
 
 
-int main(int argc, char **argv) {
-    // Initialize the ROS 2 node
+int main(int argc, char** argv) {
+    /* initialising the ROS node creating node handle
+    for regestring it to the master and then private node handle to
+    handle the parameters */
     rclcpp::init(argc, argv);
+    auto nh = rclcpp::Node::make_shared("motion_cmd");
 
-    // Create an instance of SpotMicroMotionCmd using NodeOptions
-    auto node = std::make_shared<SpotMicroMotionCmd>(rclcpp::NodeOptions());
+    SpotMicroMotionCmd node(nh); // Creating the object
 
-    // Create a loop rate based on the config's `dt` value
-    rclcpp::Rate rate(1.0 / node->getNodeConfig().dt);
+    rclcpp::Rate rate(1.0/node.getNodeConfig().dt); // Defing the looping rate
 
-    // Only proceed if the servo configuration publishing succeeds
-    if (node->publishServoConfiguration()) {
-        bool debug_mode = node->getNodeConfig().debug_mode;
+    // Only proceed if servo configuration publishing succeeds
+    if (node.publishServoConfiguration()) {
+
+        bool debug_mode = node.getNodeConfig().debug_mode;  
         rclcpp::Time begin;
-
-        // Main loop runs indefinitely unless there is an interrupt
-        while (rclcpp::ok()) {
+        /* Looking for any interupt else it will continue looping */
+        // Main loop runs indefinitely unless there is an interupt call
+        while (rclcpp::ok())
+        {   
             if (debug_mode) {
-                begin = node->get_clock()->now();
+                begin = rclcpp::Clock(RCL_ROS_TIME).now();
             }
 
-            // Run one iteration of the control loop
-            node->runOnce();
-
-            // Handle any callbacks and spin
-            rclcpp::spin_some(node);
-
-            // Sleep for the remaining time to maintain the loop rate
+            node.runOnce();
+            rclcpp::spin_some(node.nh_);
             rate.sleep();
 
             if (debug_mode) {
-                RCLCPP_INFO(node->get_logger(), "Loop execution time: %f", 
-                            (node->get_clock()->now() - begin).seconds());
+                std::cout << (rclcpp::Clock(RCL_ROS_TIME).now(); - begin) << std::endl;
             }
         }
-    }
 
-    // Shutdown ROS 2
-    rclcpp::shutdown();
+    }
     return 0;
 }

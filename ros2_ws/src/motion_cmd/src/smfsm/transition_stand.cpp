@@ -61,7 +61,7 @@ void SpotMicroTransitionStandState::handleInputCommands(
   
   // Check if desired end state reached, if so, change to stand state
   if (checkBodyStateEquality(body_state, end_body_state_, 0.001f)) {
-    SMSchangeState(smmc, std::make_unique<SpotMicroStandState>());
+    changeState(smmc, std::make_unique<SpotMicroStandState>());
   
   } else {
     // Otherwise, rise filters and assign output values to body state command

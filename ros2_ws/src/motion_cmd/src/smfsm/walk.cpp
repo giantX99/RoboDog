@@ -35,7 +35,7 @@ void SpotMicroWalkState::handleInputCommands(const smk::BodyState& body_state,
   // If stand command received, change to transition to stand state
   if (cmd.getStandCmd() == true) {
     // Call parent class's change state method
-    SMSchangeState(smmc, std::make_unique<SpotMicroTransitionStandState>());
+    changeState(smmc, std::make_unique<SpotMicroTransitionStandState>());
 
   } else {
     // Update gate phasing data

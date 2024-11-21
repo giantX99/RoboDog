@@ -17,7 +17,7 @@ SpotMicroState::~SpotMicroState() {
 }
 
 
-void SpotMicroState::SMSchangeState(SpotMicroMotionCmd* smmc, std::unique_ptr<SpotMicroState> sms) {
+void SpotMicroState::changeState(SpotMicroMotionCmd* smmc, std::unique_ptr<SpotMicroState> sms) {
   smmc->changeState(std::move(sms));
 }
 
