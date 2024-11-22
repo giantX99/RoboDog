@@ -1,4 +1,0 @@
-Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
-Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
-Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd
-Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd

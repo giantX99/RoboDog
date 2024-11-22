@@ -1,0 +1,187 @@
+[0.058s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/motion_cmd -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/motion_cmd
+[0.325s] -- The C compiler identification is GNU 11.4.0
+[0.589s] -- The CXX compiler identification is GNU 11.4.0
+[0.617s] -- Detecting C compiler ABI info
+[0.936s] -- Detecting C compiler ABI info - done
+[0.961s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.962s] -- Detecting C compile features
+[0.964s] -- Detecting C compile features - done
+[0.976s] -- Detecting CXX compiler ABI info
+[1.350s] -- Detecting CXX compiler ABI info - done
+[1.377s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.379s] -- Detecting CXX compile features
+[1.382s] -- Detecting CXX compile features - done
+[1.414s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.208s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.784s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[3.164s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[3.210s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[3.272s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[3.352s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.463s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.766s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.789s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[4.342s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[4.604s] -- Found FastRTPS: /opt/ros/humble/include  
+[5.006s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.082s] -- Looking for pthread.h
+[5.418s] -- Looking for pthread.h - found
+[5.420s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.750s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[5.756s] -- Found Threads: TRUE  
+[6.015s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[6.086s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[6.206s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[6.663s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[6.818s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[6.823s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[6.824s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[6.845s] -- Found tf2_eigen: 0.25.8 (/opt/ros/humble/share/tf2_eigen/cmake)
+[6.856s] -- Found i2cpwm_controller: 0.5.1 (/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake)
+[7.124s] -- Configuring done
+[7.136s] -- Generating done
+[7.139s] -- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download
+[7.331s] [ 11%] Creating directories for 'googletest'
+[7.603s] [ 22%] Performing download step (download, verify and extract) for 'googletest'
+[7.639s] -- Downloading...
+[7.640s]    dst='/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/googletest-prefix/src/703bd9caab50b139428cea1aaff9974ebee5742e.tar.gz'
+[7.640s]    timeout='none'
+[7.640s]    inactivity timeout='none'
+[7.641s] -- Using src='https://github.com/google/googletest/archive/703bd9caab50b139428cea1aaff9974ebee5742e.tar.gz'
+[8.344s] -- Downloading... done
+[8.424s] -- extracting...
+[8.424s]      src='/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/googletest-prefix/src/703bd9caab50b139428cea1aaff9974ebee5742e.tar.gz'
+[8.425s]      dst='/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src'
+[8.425s] -- extracting... [tar xfz]
+[8.547s] -- extracting... [analysis]
+[8.547s] -- extracting... [rename]
+[8.547s] -- extracting... [clean up]
+[8.548s] -- extracting... done
+[8.625s] [ 33%] No update step for 'googletest'
+[8.717s] [ 44%] No patch step for 'googletest'
+[8.808s] [ 55%] No configure step for 'googletest'
+[8.911s] [ 66%] No build step for 'googletest'
+[9.017s] [ 77%] No install step for 'googletest'
+[9.123s] [ 88%] No test step for 'googletest'
+[9.227s] [100%] Completed 'googletest'
+[9.350s] [100%] Built target googletest
+[9.395s] [0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/CMakeLists.txt:4 (cmake_minimum_required):
+[9.396s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[9.397s]   CMake.
+[9.397s] 
+[9.397s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[9.398s]   CMake that the project does not need compatibility with older versions.
+[9.398s] 
+[9.399s] [0m
+[9.410s] [0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+[9.411s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[9.411s]   CMake.
+[9.411s] 
+[9.412s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[9.412s]   CMake that the project does not need compatibility with older versions.
+[9.412s] 
+[9.412s] [0m
+[9.416s] [0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+[9.416s]   Compatibility with CMake < 2.8.12 will be removed from a future version of
+[9.416s]   CMake.
+[9.416s] 
+[9.417s]   Update the VERSION argument <min> value or use a ...<max> suffix to tell
+[9.417s]   CMake that the project does not need compatibility with older versions.
+[9.417s] 
+[9.418s] [0m
+[9.517s] -- Found PythonInterp: /usr/bin/python3.10 (found version "3.10.12") 
+[9.838s] -- Configuring done
+[10.012s] -- Generating done
+[10.025s] [33mCMake Warning:
+[10.025s]   Manually-specified variables were not used by the project:
+[10.026s] 
+[10.026s]     CATKIN_INSTALL_INTO_PREFIX_ROOT
+[10.026s] 
+[10.027s] [0m
+[10.027s] -- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd
+[10.092s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/motion_cmd -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/motion_cmd
+[10.095s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[10.320s] [  6%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[10.321s] [ 10%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/utils.cpp.o[0m
+[10.323s] [ 10%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_kinematics.cpp.o[0m
+[10.326s] [ 13%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_leg.cpp.o[0m
+[18.425s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-all.cc:42[m[K:
+[18.428s] [01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:[m[K In function ‘[01m[Kbool testing::internal::StackGrowsDown()[m[K’:
+[18.430s] [01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:1301:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdummy[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+[18.432s]  1301 |   [01;35m[KStackLowerThanAddress(&dummy, &result)[m[K;
+[18.434s]       |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[18.436s] [01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:1290:13:[m[K [01;36m[Knote: [m[Kby argument 1 of type ‘[01m[Kconst void*[m[K’ to ‘[01m[Kvoid testing::internal::StackLowerThanAddress(const void*, bool*)[m[K’ declared here
+[18.449s]  1290 | static void [01;36m[KStackLowerThanAddress[m[K(const void* ptr, bool* result) {
+[18.450s]       |             [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[18.451s] [01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:1299:7:[m[K [01;36m[Knote: [m[K‘[01m[Kdummy[m[K’ declared here
+[18.452s]  1299 |   int [01;36m[Kdummy[m[K;
+[18.453s]       |       [01;36m[K^~~~~[m[K
+[23.187s] [ 17%] [32m[1mLinking CXX static library libspot_micro_kinematics.a[0m
+[23.518s] [ 17%] Built target spot_micro_kinematics
+[23.612s] [ 20%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o[0m
+[23.614s] [ 24%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o[0m
+[23.617s] [ 27%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o[0m
+[26.386s] [ 31%] [32m[1mLinking CXX static library ../../../../../../lib/libgtest.a[0m
+[26.729s] [ 31%] Built target gtest
+[26.765s] [ 34%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o[0m
+[49.743s] [ 37%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o[0m
+[49.893s] [ 41%] [32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o[0m
+[50.299s] [ 44%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[53.905s] [ 48%] [32m[1mLinking CXX static library ../../../../../../lib/libgtest_main.a[0m
+[53.982s] [ 51%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o[0m
+[54.081s] [ 51%] Built target gtest_main
+[54.192s] [ 55%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/tests/test_utils.cpp.o[0m
+[64.119s] [ 58%] [32m[1mLinking CXX static library ../../../../../../lib/libgmock.a[0m
+[64.370s] [ 58%] Built target gmock
+[64.482s] [ 62%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/tests/test_spot_micro_leg.cpp.o[0m
+[71.444s] [ 65%] [32m[1mLinking CXX executable test_utils[0m
+[72.472s] [ 65%] Built target test_utils
+[72.587s] [ 68%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/tests/test_spot_micro_kinematics.cpp.o[0m
+[75.641s] [ 72%] [32m[1mLinking CXX executable test_spot_micro_leg[0m
+[76.566s] [ 72%] Built target test_spot_micro_leg
+[76.694s] [ 75%] [32mBuilding CXX object libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o[0m
+[81.251s] [ 79%] [32m[1mLinking CXX static library ../../../../../../lib/libgmock_main.a[0m
+[81.287s] [ 82%] [32m[1mLinking CXX static library libsmfsm.a[0m
+[81.407s] [ 82%] Built target gmock_main
+[81.678s] [ 82%] Built target smfsm
+[81.776s] [ 86%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o[0m
+[81.782s] [ 89%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/main.cpp.o[0m
+[81.788s] [ 93%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o[0m
+[82.324s] [ 96%] [32m[1mLinking CXX executable test_spot_micro_kinematics[0m
+[83.110s] [ 96%] Built target test_spot_micro_kinematics
+[84.945s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp:6[m[K:
+[84.946s] [01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[84.947s]    32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+[84.948s]       |  [01;35m[K^~~~~~~[m[K
+[84.949s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp:7[m[K:
+[84.950s] [01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+[84.950s]    35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+[84.951s]       |  [01;35m[K^~~~~~~[m[K
+[162.794s] [100%] [32m[1mLinking CXX executable motion_cmd_node[0m
+[168.210s] [100%] Built target motion_cmd_node
+[168.251s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[168.802s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd
+[168.830s] -- Install configuration: ""
+[168.831s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node
+[168.903s] -- Set runtime path of "/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node" to ""
+[168.904s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch
+[168.904s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch/motion_cmd.launch.py
+[168.909s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config
+[168.910s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config/motion_cmd.yaml
+[168.920s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/package_run_dependencies/motion_cmd
+[168.922s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/parent_prefix_path/motion_cmd
+[168.926s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.sh
+[168.929s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.dsv
+[168.930s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.sh
+[168.931s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.dsv
+[168.932s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.bash
+[168.934s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.sh
+[168.935s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.zsh
+[168.936s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.dsv
+[168.937s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.dsv
+[168.938s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/packages/motion_cmd
+[168.940s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/ament_cmake_export_dependencies-extras.cmake
+[168.941s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig.cmake
+[168.942s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig-version.cmake
+[168.943s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.xml
+[168.952s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd
