@@ -73,55 +73,55 @@ SpotMicroMotionCmd::SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node> nh) {
 
   // Initialize publishers and subscribers
   // stand cmd event subscriber 
-  stand_sub_ = nh->create_subscription<std_msgs::msg::Bool>(
+  stand_sub_ = nh_->create_subscription<std_msgs::msg::Bool>(
     "/stand_cmd", // Topic
     1, 
     std::bind(&SpotMicroMotionCmd::standCommandCallback, this, std::placeholders::_1) );
     
   // idle cmd event subscriber
-  idle_sub_ = nh->create_subscription<std_msgs::msg::Bool>(
+  idle_sub_ = nh_->create_subscription<std_msgs::msg::Bool>(
     "/idle_cmd", 
     1, 
     std::bind(&SpotMicroMotionCmd::idleCommandCallback, this, std::placeholders::_1) );
   
   // walk cmd event subscriber
-  walk_sub_ = nh->create_subscription<std_msgs::msg::Bool>(
+  walk_sub_ = nh_->create_subscription<std_msgs::msg::Bool>(
     "/walk_cmd", 
     1, 
     std::bind(&SpotMicroMotionCmd::walkCommandCallback, this, std::placeholders::_1) );
 
   // body angle command subscriber
-  body_angle_cmd_sub_ = nh->create_subscription<geometry_msgs::msg::Vector3>(
+  body_angle_cmd_sub_ = nh_->create_subscription<geometry_msgs::msg::Vector3>(
     "/angle_cmd",
     1,
     std::bind(&SpotMicroMotionCmd::angleCommandCallback, this, std::placeholders::_1) );  
 
   // velocity command subscriber 
-  vel_cmd_sub_ = nh->create_subscription<geometry_msgs::msg::Twist>(
+  vel_cmd_sub_ = nh_->create_subscription<geometry_msgs::msg::Twist>(
     "/cmd_vel",
     1,
     std::bind(&SpotMicroMotionCmd::velCommandCallback, this, std::placeholders::_1) );  
 
   // servos_absolute publisher
-  servos_absolute_pub_ = nh->create_publisher<i2cpwm_controller::msg::ServoArray>("servos_absolute", 1);
+  servos_absolute_pub_ = nh_->create_publisher<i2cpwm_controller::msg::ServoArray>("servos_absolute", 1);
 
   // Servos proportional publisher
-  servos_proportional_pub_ = nh->create_publisher<i2cpwm_controller::msg::ServoArray>("servos_proportional", 1);  
+  servos_proportional_pub_ = nh_->create_publisher<i2cpwm_controller::msg::ServoArray>("servos_proportional", 1);  
   
   // Servos configuration publisher
-  servos_config_client_ = nh->create_client<i2cpwm_controller::srv::ServosConfig>("config_servos");
+  servos_config_client_ = nh_->create_client<i2cpwm_controller::srv::ServosConfig>("config_servos");
 
   // Body state publisher for plotting
-  body_state_pub_ = nh->create_publisher<std_msgs::msg::Float32MultiArray>("body_state",1);
+  body_state_pub_ = nh_->create_publisher<std_msgs::msg::Float32MultiArray>("body_state",1);
 
   // State string publisher for lcd monitor
-  lcd_state_pub_ = nh->create_publisher<std_msgs::msg::String>("lcd_state", 1);
+  lcd_state_pub_ = nh_->create_publisher<std_msgs::msg::String>("lcd_state", 1);
 
   // Velocity command state publisher for lcd monitor
-  lcd_vel_cmd_pub_ = nh->create_publisher<geometry_msgs::msg::Twist>("lcd_vel_cmd", 1);
+  lcd_vel_cmd_pub_ = nh_->create_publisher<geometry_msgs::msg::Twist>("lcd_vel_cmd", 1);
 
   // Angle command state publisher for lcd monitor
-  lcd_angle_cmd_pub_ = nh->create_publisher<geometry_msgs::msg::Vector3>("lcd_angle_cmd", 1);
+  lcd_angle_cmd_pub_ = nh_->create_publisher<geometry_msgs::msg::Vector3>("lcd_angle_cmd", 1);
 
 
 
@@ -198,7 +198,8 @@ void SpotMicroMotionCmd::runOnce() {
 bool SpotMicroMotionCmd::publishServoConfiguration() {  
   // Create a temporary servo config
   i2cpwm_controller::msg::ServoConfig temp_servo_config;
-  i2cpwm_controller::srv::ServosConfig temp_servo_config_array;
+  // Create a shared pointer for the service request
+  auto request = std::make_shared<i2cpwm_controller::srv::ServosConfig::Request>();
 
   // Loop through servo configuration dictionary in smnc_, append servo to
   for (std::map<std::string, std::map<std::string, float>>::iterator
@@ -213,15 +214,15 @@ bool SpotMicroMotionCmd::publishServoConfiguration() {
     temp_servo_config.direction = servo_config_params["direction"];
 
     // Append to temp_servo_config_array
-    temp_servo_config_array.request.servos.push_back(temp_servo_config);
+    request->servos.push_back(temp_servo_config);
   }
 
   // call the client service, return true if succesfull, false if not
-  auto result = servos_config_client_->async_send_request(temp_servo_config_array);
-  if (rclcpp::spin_until_future_complete(nh, result) != rclcpp::FutureReturnCode::SUCCESS) {
+  auto result = servos_config_client_->async_send_request(request);
+  if (rclcpp::spin_until_future_complete(nh_, result) != rclcpp::FutureReturnCode::SUCCESS) {
     if (!smnc_.debug_mode && !smnc_.run_standalone) {
       // Only error out if not in debug mode or standalone mode 
-      RCLCPP_ERROR(nh->get_logger(), "Failed to call service servo_config");
+      RCLCPP_ERROR(nh_->get_logger(), "Failed to call service servo_config");
       return false;
     }
   }
@@ -273,12 +274,12 @@ void SpotMicroMotionCmd::publishServoProportionalCommand() {
  
     if (servo_proportional_cmd > 1.0f) {
       servo_proportional_cmd = 1.0f;
-      RCLCPP_WARN(nh->get_logger(), "Proportional Command above +1.0 was computed, clipped to 1.0");
-      RCLCPP_WARN(nh->get_logger(), "Joint %s, Angle: %1.2f", servo_name.c_str(), cmd_ang_rad * 180.0 / M_PI);
+      RCLCPP_WARN(nh_->get_logger(), "Proportional Command above +1.0 was computed, clipped to 1.0");
+      // RCLCPP_WARN(nh_->get_logger(), "Joint %s, Angle: %1.2f", servo_name.c_str(), cmd_ang_rad * 180.0 / M_PI);
     } else if (servo_proportional_cmd < -1.0f) {
       servo_proportional_cmd = -1.0f;
-      RCLCPP_WARN(nh->get_logger(), "Proportional Command below -1.0 was computed, clipped to -1.0");
-      RCLCPP_WARN(nh->get_logger(), "Joint %s, Angle: %1.2f", servo_name.c_str(), cmd_ang_rad * 180.0 / M_PI);
+      RCLCPP_WARN(nh_->get_logger(), "Proportional Command below -1.0 was computed, clipped to -1.0");
+      // RCLCPP_WARN(nh_->get_logger(), "Joint %s, Angle: %1.2f", servo_name.c_str(), cmd_ang_rad * 180.0 / M_PI);
     }
  
     servo_array_.servos[servo_num-1].servo = servo_num;
@@ -344,93 +345,93 @@ std::string SpotMicroMotionCmd::getCurrentStateName() {
 }
 
 
-void SpotMicroMotionCmd::readInConfigParameters() {
-  // Read in and save parameters 
-  // Use private node handle for getting params so just the relative
-  // parameter name can be used (as opposed to the global name, e.g.:
-  // /spot_micro_motion_cmd/param1
-  pnh_.getParam("hip_link_length", smnc_.smc.hip_link_length);
-  pnh_.getParam("upper_leg_link_length", smnc_.smc.upper_leg_link_length);
-  pnh_.getParam("lower_leg_link_length", smnc_.smc.lower_leg_link_length);
-  pnh_.getParam("body_width", smnc_.smc.body_width);
-  pnh_.getParam("body_length", smnc_.smc.body_length);
-  pnh_.getParam("default_stand_height", smnc_.default_stand_height);
-  pnh_.getParam("stand_front_x_offset", smnc_.stand_front_x_offset);
-  pnh_.getParam("stand_back_x_offset", smnc_.stand_back_x_offset);
-  pnh_.getParam("lie_down_height", smnc_.lie_down_height);
-  pnh_.getParam("lie_down_foot_x_offset", smnc_.lie_down_feet_x_offset);
-  pnh_.getParam("num_servos", smnc_.num_servos);
-  pnh_.getParam("servo_max_angle_deg", smnc_.servo_max_angle_deg);
-  pnh_.getParam("transit_tau", smnc_.transit_tau);
-  pnh_.getParam("transit_rl", smnc_.transit_rl);
-  pnh_.getParam("transit_angle_rl", smnc_.transit_angle_rl);
-  pnh_.getParam("dt", smnc_.dt);
-  pnh_.getParam("debug_mode", smnc_.debug_mode);
-  pnh_.getParam("run_standalone", smnc_.run_standalone);
-  pnh_.getParam("plot_mode", smnc_.plot_mode);
-  pnh_.getParam("max_fwd_velocity", smnc_.max_fwd_velocity);
-  pnh_.getParam("max_side_velocity", smnc_.max_side_velocity);
-  pnh_.getParam("max_yaw_rate", smnc_.max_yaw_rate);
-  pnh_.getParam("z_clearance", smnc_.z_clearance);
-  pnh_.getParam("alpha", smnc_.alpha);
-  pnh_.getParam("beta", smnc_.beta);
-  pnh_.getParam("num_phases", smnc_.num_phases);
-  pnh_.getParam("rb_contact_phases", smnc_.rb_contact_phases);
-  pnh_.getParam("rf_contact_phases", smnc_.rf_contact_phases);
-  pnh_.getParam("lf_contact_phases", smnc_.lf_contact_phases);
-  pnh_.getParam("lb_contact_phases", smnc_.lb_contact_phases);
-  pnh_.getParam("overlap_time", smnc_.overlap_time);
-  pnh_.getParam("swing_time", smnc_.swing_time);
-  pnh_.getParam("foot_height_time_constant", smnc_.foot_height_time_constant);
-  pnh_.getParam("body_shift_phases", smnc_.body_shift_phases);
-  pnh_.getParam("fwd_body_balance_shift", smnc_.fwd_body_balance_shift);
-  pnh_.getParam("back_body_balance_shift", smnc_.back_body_balance_shift);
-  pnh_.getParam("side_body_balance_shift", smnc_.side_body_balance_shift);
-  pnh_.getParam("publish_odom", smnc_.publish_odom);
-  pnh_.getParam("lidar_x_pos", smnc_.lidar_x_pos);
-  pnh_.getParam("lidar_y_pos", smnc_.lidar_y_pos);
-  pnh_.getParam("lidar_z_pos", smnc_.lidar_z_pos);
-  pnh_.getParam("lidar_yaw_angle", smnc_.lidar_yaw_angle);
+// void SpotMicroMotionCmd::readInConfigParameters() {
+//   // Read in and save parameters 
+//   // Use private node handle for getting params so just the relative
+//   // parameter name can be used (as opposed to the global name, e.g.:
+//   // /spot_micro_motion_cmd/param1
+//   pnh_.getParam("hip_link_length", smnc_.smc.hip_link_length);
+//   pnh_.getParam("upper_leg_link_length", smnc_.smc.upper_leg_link_length);
+//   pnh_.getParam("lower_leg_link_length", smnc_.smc.lower_leg_link_length);
+//   pnh_.getParam("body_width", smnc_.smc.body_width);
+//   pnh_.getParam("body_length", smnc_.smc.body_length);
+//   pnh_.getParam("default_stand_height", smnc_.default_stand_height);
+//   pnh_.getParam("stand_front_x_offset", smnc_.stand_front_x_offset);
+//   pnh_.getParam("stand_back_x_offset", smnc_.stand_back_x_offset);
+//   pnh_.getParam("lie_down_height", smnc_.lie_down_height);
+//   pnh_.getParam("lie_down_foot_x_offset", smnc_.lie_down_feet_x_offset);
+//   pnh_.getParam("num_servos", smnc_.num_servos);
+//   pnh_.getParam("servo_max_angle_deg", smnc_.servo_max_angle_deg);
+//   pnh_.getParam("transit_tau", smnc_.transit_tau);
+//   pnh_.getParam("transit_rl", smnc_.transit_rl);
+//   pnh_.getParam("transit_angle_rl", smnc_.transit_angle_rl);
+//   pnh_.getParam("dt", smnc_.dt);
+//   pnh_.getParam("debug_mode", smnc_.debug_mode);
+//   pnh_.getParam("run_standalone", smnc_.run_standalone);
+//   pnh_.getParam("plot_mode", smnc_.plot_mode);
+//   pnh_.getParam("max_fwd_velocity", smnc_.max_fwd_velocity);
+//   pnh_.getParam("max_side_velocity", smnc_.max_side_velocity);
+//   pnh_.getParam("max_yaw_rate", smnc_.max_yaw_rate);
+//   pnh_.getParam("z_clearance", smnc_.z_clearance);
+//   pnh_.getParam("alpha", smnc_.alpha);
+//   pnh_.getParam("beta", smnc_.beta);
+//   pnh_.getParam("num_phases", smnc_.num_phases);
+//   pnh_.getParam("rb_contact_phases", smnc_.rb_contact_phases);
+//   pnh_.getParam("rf_contact_phases", smnc_.rf_contact_phases);
+//   pnh_.getParam("lf_contact_phases", smnc_.lf_contact_phases);
+//   pnh_.getParam("lb_contact_phases", smnc_.lb_contact_phases);
+//   pnh_.getParam("overlap_time", smnc_.overlap_time);
+//   pnh_.getParam("swing_time", smnc_.swing_time);
+//   pnh_.getParam("foot_height_time_constant", smnc_.foot_height_time_constant);
+//   pnh_.getParam("body_shift_phases", smnc_.body_shift_phases);
+//   pnh_.getParam("fwd_body_balance_shift", smnc_.fwd_body_balance_shift);
+//   pnh_.getParam("back_body_balance_shift", smnc_.back_body_balance_shift);
+//   pnh_.getParam("side_body_balance_shift", smnc_.side_body_balance_shift);
+//   pnh_.getParam("publish_odom", smnc_.publish_odom);
+//   pnh_.getParam("lidar_x_pos", smnc_.lidar_x_pos);
+//   pnh_.getParam("lidar_y_pos", smnc_.lidar_y_pos);
+//   pnh_.getParam("lidar_z_pos", smnc_.lidar_z_pos);
+//   pnh_.getParam("lidar_yaw_angle", smnc_.lidar_yaw_angle);
   
-  // Derived parameters, round result of division of floats
-  smnc_.overlap_ticks = round(smnc_.overlap_time / smnc_.dt);
-  smnc_.swing_ticks = round(smnc_.swing_time / smnc_.dt);
+//   // Derived parameters, round result of division of floats
+//   smnc_.overlap_ticks = round(smnc_.overlap_time / smnc_.dt);
+//   smnc_.swing_ticks = round(smnc_.swing_time / smnc_.dt);
   
-  // 8 Phase gait specific
-  if (smnc_.num_phases == 8) {    
-    smnc_.stance_ticks = 7 * smnc_.swing_ticks;
-    smnc_.overlap_ticks = round(smnc_.overlap_time / smnc_.dt);
-    smnc_.phase_ticks = std::vector<int>
-        {smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks,
-        smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks};
-    smnc_.phase_length = smnc_.num_phases * smnc_.swing_ticks;
+//   // 8 Phase gait specific
+//   if (smnc_.num_phases == 8) {    
+//     smnc_.stance_ticks = 7 * smnc_.swing_ticks;
+//     smnc_.overlap_ticks = round(smnc_.overlap_time / smnc_.dt);
+//     smnc_.phase_ticks = std::vector<int>
+//         {smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks,
+//         smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks, smnc_.swing_ticks};
+//     smnc_.phase_length = smnc_.num_phases * smnc_.swing_ticks;
 
-  } else { 
-    // 4 phase gait specific
-    smnc_.stance_ticks = 2 * smnc_.overlap_ticks + smnc_.swing_ticks;
-    smnc_.overlap_ticks = round(smnc_.overlap_time / smnc_.dt);
-    smnc_.phase_ticks = std::vector<int>
-        {smnc_.overlap_ticks, smnc_.swing_ticks, smnc_.overlap_ticks, smnc_.swing_ticks};
-    smnc_.phase_length = 2 * smnc_.swing_ticks + 2 * smnc_.overlap_ticks;
-  }
+//   } else { 
+//     // 4 phase gait specific
+//     smnc_.stance_ticks = 2 * smnc_.overlap_ticks + smnc_.swing_ticks;
+//     smnc_.overlap_ticks = round(smnc_.overlap_time / smnc_.dt);
+//     smnc_.phase_ticks = std::vector<int>
+//         {smnc_.overlap_ticks, smnc_.swing_ticks, smnc_.overlap_ticks, smnc_.swing_ticks};
+//     smnc_.phase_length = 2 * smnc_.swing_ticks + 2 * smnc_.overlap_ticks;
+//   }
 
-  // Temporary map for populating map in smnc_
-  std::map<std::string, float> temp_map;
+//   // Temporary map for populating map in smnc_
+//   std::map<std::string, float> temp_map;
   
-  // Iterate over servo names, as defined in the map servo_cmds_rad, to populate
-  // the servo config map in smnc_
-  for(std::map<std::string, float>::iterator 
-      iter = servo_cmds_rad_.begin();
-      iter != servo_cmds_rad_.end();
-      ++iter) {
+//   // Iterate over servo names, as defined in the map servo_cmds_rad, to populate
+//   // the servo config map in smnc_
+//   for(std::map<std::string, float>::iterator 
+//       iter = servo_cmds_rad_.begin();
+//       iter != servo_cmds_rad_.end();
+//       ++iter) {
 
-    std::string servo_name = iter->first; // Get key, string of the servo name
+//     std::string servo_name = iter->first; // Get key, string of the servo name
     
-    pnh_.getParam(servo_name, temp_map); // Read the parameter. Parameter name must match servo name
-    smnc_.servo_config[servo_name] = temp_map; // Assing in servo config to map in the struct
-  }
+//     pnh_.getParam(servo_name, temp_map); // Read the parameter. Parameter name must match servo name
+//     smnc_.servo_config[servo_name] = temp_map; // Assing in servo config to map in the struct
+//   }
   
-}
+// }
 
 
 void SpotMicroMotionCmd::standCommandCallback(
@@ -795,7 +796,7 @@ void SpotMicroMotionCmd::setupParameters() {
     {"LF_3", {{"num", 10}, {"center", 306}, {"range", 375.8}, {"direction", 1}, {"center_angle_deg", -93.95}}},
     {"LF_2", {{"num", 11}, {"center", 306}, {"range", 416.2}, {"direction", 1}, {"center_angle_deg", 40.84}}},
     {"LF_1", {{"num", 12}, {"center", 306}, {"range", 341.0}, {"direction", 1}, {"center_angle_deg", -14.03}}}
-  }
+  };
 
   // Control
   smnc_.transit_tau = 0.3;
@@ -812,13 +813,13 @@ void SpotMicroMotionCmd::setupParameters() {
   smnc_.foot_height_time_constant = 0.02;
   // 8 Phase Gait
   smnc_.num_phases = 8;
-  smnc_.rb_contact_phases = [1, 0, 1, 1, 1, 1, 1, 1];
-  smnc_.rf_contact_phases = [1, 1, 1, 0, 1, 1, 1, 1];
-  smnc_.lf_contact_phases = [1, 1, 1, 1, 1, 1, 1, 0];
-  smnc_.lb_contact_phases = [1, 1, 1, 1, 1, 0, 1, 1];
+  smnc_.rb_contact_phases = {1, 0, 1, 1, 1, 1, 1, 1};
+  smnc_.rf_contact_phases = {1, 1, 1, 0, 1, 1, 1, 1};
+  smnc_.lf_contact_phases = {1, 1, 1, 1, 1, 1, 1, 0};
+  smnc_.lb_contact_phases = {1, 1, 1, 1, 1, 0, 1, 1};
   smnc_.overlap_time = 0.0;
   smnc_.swing_time = 0.36;
-  smnc_.body_shift_phases = [1, 2, 3, 4, 5, 6, 7, 8];
+  smnc_.body_shift_phases = {1, 2, 3, 4, 5, 6, 7, 8};
   smnc_.fwd_body_balance_shift = 0.035;
   smnc_.back_body_balance_shift = 0.005;
   smnc_.side_body_balance_shift = 0.015;

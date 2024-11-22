@@ -1,6 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o"
-  "CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o.d"
   "CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o"
   "CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o.d"
   "i2cpwm_controller_node"

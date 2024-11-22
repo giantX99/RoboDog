@@ -41,28 +41,46 @@ rosidl_generate_interfaces(${PROJECT_NAME}
 include_directories(
   include
   /usr/include
-  ${rclcpp_INCLUDE_DIRS}
-  ${std_msgs_INCLUDE_DIRS}
-  ${std_srvs_INCLUDE_DIRS}
+)
+
+# Create a shared library for i2cpwm_controller
+add_library(i2cpwm_controller_lib SHARED
+  src/i2cpwm_controller.cpp
+)
+
+# Link the library with required dependencies
+ament_target_dependencies(i2cpwm_controller_lib
+  rclcpp
+  std_msgs
+  std_srvs
+  geometry_msgs
+)
+# Link generated message/service libraries
+rosidl_get_typesupport_target(cpp_typesupport_target
+  ${PROJECT_NAME} rosidl_typesupport_cpp
+)
+target_link_libraries(i2cpwm_controller_lib "${cpp_typesupport_target}" ${I2C_LIBRARY})
+
+# Install the library
+install(TARGETS i2cpwm_controller_lib
+  EXPORT export_i2cpwm_controller
+  ARCHIVE DESTINATION lib
+  LIBRARY DESTINATION lib
+  RUNTIME DESTINATION bin
+  INCLUDES DESTINATION include
 )
 
 # Add executable for i2cpwm_controller
-add_executable(i2cpwm_controller_node src/i2cpwm_controller.cpp src/main.cpp)
+add_executable(i2cpwm_controller_node src/main.cpp)
 
-# Link libraries
+# Link the executable with the library and required dependencies
+target_link_libraries(i2cpwm_controller_node i2cpwm_controller_lib)
 ament_target_dependencies(i2cpwm_controller_node
   rclcpp
   std_msgs
   std_srvs
   geometry_msgs
 )
-
-# Link generated message/service libraries
-rosidl_get_typesupport_target(cpp_typesupport_target
-  ${PROJECT_NAME} rosidl_typesupport_cpp
-)
-target_link_libraries(i2cpwm_controller_node "${cpp_typesupport_target}" ${I2C_LIBRARY})
-
 
 # Install the executable
 install(TARGETS i2cpwm_controller_node
@@ -74,7 +92,7 @@ install(DIRECTORY launch/
   DESTINATION share/${PROJECT_NAME}/launch
 )
 
-
 # Export package and targets
+ament_export_targets(export_i2cpwm_controller HAS_LIBRARY_TARGET)
 ament_export_dependencies(rosidl_default_runtime rclcpp std_msgs std_srvs geometry_msgs)
 ament_package()

@@ -150,27 +150,10 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
  /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.h \
- /usr/include/c++/11/memory /usr/include/c++/11/bits/stl_uninitialized.h \
- /usr/include/c++/11/bits/stl_tempbuf.h \
- /usr/include/c++/11/bits/stl_raw_storage_iter.h \
- /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
- /usr/include/c++/11/bits/uses_allocator.h \
- /usr/include/c++/11/bits/unique_ptr.h /usr/include/c++/11/utility \
- /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/tuple \
- /usr/include/c++/11/array /usr/include/c++/11/bits/invoke.h \
- /usr/include/c++/11/bits/shared_ptr.h \
- /usr/include/c++/11/bits/shared_ptr_base.h \
- /usr/include/c++/11/bits/allocated_ptr.h \
- /usr/include/c++/11/bits/refwrap.h \
- /usr/include/c++/11/ext/aligned_buffer.h \
- /usr/include/c++/11/ext/concurrence.h \
- /usr/include/c++/11/bits/shared_ptr_atomic.h \
- /usr/include/c++/11/bits/atomic_base.h \
- /usr/include/c++/11/bits/atomic_lockfree_defines.h \
- /usr/include/c++/11/backward/auto_ptr.h \
- /usr/include/c++/11/pstl/glue_memory_defs.h \
- /usr/include/c++/11/pstl/execution_defs.h \
- /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter/rate_limited_first_order_filter.h \
+ /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include/spot_micro_kinematics/spot_micro_kinematics.h \
+ /usr/include/eigen3/Eigen/Geometry /usr/include/eigen3/Eigen/Core \
+ /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
  /usr/include/c++/11/cmath /usr/include/math.h \
  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -194,10 +177,6 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /usr/include/c++/11/tr1/poly_hermite.tcc \
  /usr/include/c++/11/tr1/poly_laguerre.tcc \
  /usr/include/c++/11/tr1/riemann_zeta.tcc \
- /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include/spot_micro_kinematics/spot_micro_kinematics.h \
- /usr/include/eigen3/Eigen/Geometry /usr/include/eigen3/Eigen/Core \
- /usr/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
- /usr/include/eigen3/Eigen/src/Core/util/Macros.h \
  /usr/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/arm_neon.h \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/arm_fp16.h \
@@ -207,18 +186,26 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/util/MKL_support.h \
  /usr/include/c++/11/cstddef /usr/include/c++/11/cassert \
  /usr/include/assert.h /usr/include/c++/11/functional \
+ /usr/include/c++/11/tuple /usr/include/c++/11/utility \
+ /usr/include/c++/11/bits/stl_relops.h /usr/include/c++/11/array \
+ /usr/include/c++/11/bits/uses_allocator.h \
+ /usr/include/c++/11/bits/invoke.h /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/bits/std_function.h \
- /usr/include/c++/11/unordered_map /usr/include/c++/11/bits/hashtable.h \
+ /usr/include/c++/11/unordered_map \
+ /usr/include/c++/11/ext/aligned_buffer.h \
+ /usr/include/c++/11/bits/hashtable.h \
  /usr/include/c++/11/bits/hashtable_policy.h \
  /usr/include/c++/11/bits/enable_special_members.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/unordered_map.h \
  /usr/include/c++/11/bits/erase_if.h /usr/include/c++/11/vector \
+ /usr/include/c++/11/bits/stl_uninitialized.h \
  /usr/include/c++/11/bits/stl_vector.h \
  /usr/include/c++/11/bits/stl_bvector.h \
  /usr/include/c++/11/bits/vector.tcc /usr/include/c++/11/bits/stl_algo.h \
  /usr/include/c++/11/bits/algorithmfwd.h \
  /usr/include/c++/11/bits/stl_heap.h \
+ /usr/include/c++/11/bits/stl_tempbuf.h \
  /usr/include/c++/11/bits/uniform_int_dist.h /usr/include/c++/11/cstring \
  /usr/include/string.h /usr/include/strings.h /usr/include/c++/11/climits \
  /usr/lib/gcc/aarch64-linux-gnu/11/include/limits.h \
@@ -231,6 +218,7 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /usr/include/aarch64-linux-gnu/bits/uio_lim.h \
  /usr/include/c++/11/algorithm \
  /usr/include/c++/11/pstl/glue_algorithm_defs.h \
+ /usr/include/c++/11/pstl/execution_defs.h \
  /usr/include/eigen3/Eigen/src/Core/util/Constants.h \
  /usr/include/eigen3/Eigen/src/Core/util/Meta.h \
  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
@@ -327,7 +315,8 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /usr/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
  /usr/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
  /usr/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
- /usr/include/c++/11/atomic \
+ /usr/include/c++/11/atomic /usr/include/c++/11/bits/atomic_base.h \
+ /usr/include/c++/11/bits/atomic_lockfree_defines.h \
  /usr/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
  /usr/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
@@ -398,21 +387,39 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /usr/include/eigen3/Eigen/src/Geometry/arch/Geometry_SIMD.h \
  /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include/spot_micro_kinematics/utils.h \
  /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include/spot_micro_kinematics/spot_micro_leg.h \
+ /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter/rate_limited_first_order_filter.h \
  /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/command.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.h \
- /usr/lib/gcc/aarch64-linux-gnu/11/include/stdbool.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__functions.h \
- /usr/include/c++/11/stdlib.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/rosidl_generator_c__visibility_control.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__type_support.h \
- /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__functions.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__type_support.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/float32.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__struct.hpp \
+ /usr/include/c++/11/memory \
+ /usr/include/c++/11/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/11/bits/align.h /usr/include/c++/11/bit \
+ /usr/include/c++/11/bits/unique_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr.h \
+ /usr/include/c++/11/bits/shared_ptr_base.h \
+ /usr/include/c++/11/bits/allocated_ptr.h \
+ /usr/include/c++/11/ext/concurrence.h \
+ /usr/include/c++/11/bits/shared_ptr_atomic.h \
+ /usr/include/c++/11/backward/auto_ptr.h \
+ /usr/include/c++/11/pstl/glue_memory_defs.h \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__builder.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/float32__traits.hpp \
+ /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
+ /usr/include/c++/11/codecvt /usr/include/c++/11/bits/codecvt.h \
+ /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
+ /usr/include/c++/11/bits/locale_facets_nonio.h /usr/include/c++/11/ctime \
+ /usr/include/aarch64-linux-gnu/c++/11/bits/time_members.h \
+ /usr/include/aarch64-linux-gnu/c++/11/bits/messages_members.h \
+ /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
+ /usr/include/c++/11/bits/locale_conv.h \
+ /usr/include/c++/11/bits/quoted_string.h \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
+ /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
  /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.h \
  /home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd/motion_cmd.h \
  /opt/ros/humble/include/rclcpp/rclcpp/rclcpp.hpp \
@@ -464,7 +471,7 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/executors.hpp \
  /usr/include/c++/11/future /usr/include/c++/11/mutex \
  /usr/include/c++/11/chrono /usr/include/c++/11/ratio \
- /usr/include/c++/11/ctime /usr/include/c++/11/bits/parse_numbers.h \
+ /usr/include/c++/11/bits/parse_numbers.h \
  /usr/include/c++/11/bits/std_mutex.h \
  /usr/include/c++/11/bits/unique_lock.h \
  /usr/include/c++/11/condition_variable \
@@ -483,6 +490,7 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /opt/ros/humble/include/rcl/rcl/guard_condition.h \
  /opt/ros/humble/include/rcl/rcl/allocator.h \
  /opt/ros/humble/include/rcutils/rcutils/allocator.h \
+ /usr/lib/gcc/aarch64-linux-gnu/11/include/stdbool.h \
  /opt/ros/humble/include/rcutils/rcutils/macros.h \
  /opt/ros/humble/include/rcutils/rcutils/testing/fault_injection.h \
  /opt/ros/humble/include/rcutils/rcutils/visibility_control.h \
@@ -504,6 +512,7 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /opt/ros/humble/include/rmw/rmw/types.h \
  /opt/ros/humble/include/rcutils/rcutils/logging.h \
  /opt/ros/humble/include/rcutils/rcutils/error_handling.h \
+ /usr/include/c++/11/stdlib.h \
  /opt/ros/humble/include/rcutils/rcutils/snprintf.h \
  /opt/ros/humble/include/rcutils/rcutils/time.h \
  /opt/ros/humble/include/rcutils/rcutils/types.h \
@@ -532,6 +541,8 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /opt/ros/humble/include/rcl/rcl/wait.h \
  /opt/ros/humble/include/rcl/rcl/client.h \
  /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/service_type_support_struct.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h \
+ /opt/ros/humble/include/rosidl_typesupport_interface/rosidl_typesupport_interface/macros.h \
  /opt/ros/humble/include/rcl/rcl/event_callback.h \
  /opt/ros/humble/include/rmw/rmw/event_callback_type.h \
  /opt/ros/humble/include/rcl/rcl/node.h \
@@ -539,6 +550,7 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /opt/ros/humble/include/rcl/rcl/domain_id.h \
  /opt/ros/humble/include/rcl/rcl/service.h \
  /opt/ros/humble/include/rcl/rcl/subscription.h \
+ /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_type_support_struct.h \
  /opt/ros/humble/include/rmw/rmw/message_sequence.h \
  /opt/ros/humble/include/rcl/rcl/timer.h \
  /opt/ros/humble/include/rcl/rcl/time.h \
@@ -591,20 +603,8 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /opt/ros/humble/include/rclcpp/rclcpp/duration.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/duration.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__struct.hpp \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/bounded_vector.hpp \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/message_initialization.hpp \
- /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/message_initialization.h \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__builder.hpp \
  /opt/ros/humble/include/builtin_interfaces/builtin_interfaces/msg/detail/duration__traits.hpp \
- /opt/ros/humble/include/rosidl_runtime_cpp/rosidl_runtime_cpp/traits.hpp \
- /usr/include/c++/11/codecvt /usr/include/c++/11/bits/codecvt.h \
- /usr/include/c++/11/iomanip /usr/include/c++/11/locale \
- /usr/include/c++/11/bits/locale_facets_nonio.h \
- /usr/include/aarch64-linux-gnu/c++/11/bits/time_members.h \
- /usr/include/aarch64-linux-gnu/c++/11/bits/messages_members.h \
- /usr/include/libintl.h /usr/include/c++/11/bits/locale_facets_nonio.tcc \
- /usr/include/c++/11/bits/locale_conv.h \
- /usr/include/c++/11/bits/quoted_string.h \
  /opt/ros/humble/include/rcl/rcl/logging_rosout.h \
  /opt/ros/humble/include/rmw/rmw/incompatible_qos_events_statuses.h \
  /opt/ros/humble/include/rclcpp/rclcpp/type_support_decl.hpp \
@@ -837,10 +837,6 @@ CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o: \
  /opt/ros/humble/include/tf2_msgs/tf2_msgs/msg/detail/tf_message__traits.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/qos.hpp \
  /opt/ros/humble/include/tf2_ros/tf2_ros/static_transform_broadcaster.h \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/bool.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__struct.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__builder.hpp \
- /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/bool__traits.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/string.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__struct.hpp \
  /opt/ros/humble/include/std_msgs/std_msgs/msg/detail/string__builder.hpp \

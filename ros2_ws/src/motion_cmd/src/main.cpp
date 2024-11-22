@@ -22,12 +22,13 @@ int main(int argc, char** argv) {
 
         bool debug_mode = node.getNodeConfig().debug_mode;  
         rclcpp::Time begin;
+        rclcpp::Clock clock;
         /* Looking for any interupt else it will continue looping */
         // Main loop runs indefinitely unless there is an interupt call
         while (rclcpp::ok())
         {   
             if (debug_mode) {
-                begin = rclcpp::Clock(RCL_ROS_TIME).now();
+                begin = clock.now();
             }
 
             node.runOnce();
@@ -35,7 +36,10 @@ int main(int argc, char** argv) {
             rate.sleep();
 
             if (debug_mode) {
-                std::cout << (rclcpp::Clock(RCL_ROS_TIME).now(); - begin) << std::endl;
+                auto elapsed = clock.now() - begin;
+                std::cout << "Elapsed time: " 
+                          << elapsed.seconds() << " seconds" 
+                          << std::endl;
             }
         }
 

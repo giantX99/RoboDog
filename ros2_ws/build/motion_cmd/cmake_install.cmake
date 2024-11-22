@@ -54,7 +54,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/motion_cmd/motion_cmd_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/motion_cmd/motion_cmd_node"
-         OLD_RPATH "/opt/ros/humble/lib:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:"
+         OLD_RPATH "/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/motion_cmd/motion_cmd_node")

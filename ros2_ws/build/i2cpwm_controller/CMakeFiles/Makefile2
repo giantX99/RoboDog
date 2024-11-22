@@ -76,6 +76,7 @@ all: CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/all
 all: CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/all
 all: CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/all
 all: CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/all
+all: CMakeFiles/i2cpwm_controller_lib.dir/all
 all: CMakeFiles/i2cpwm_controller_node.dir/all
 all: i2cpwm_controller__py/all
 .PHONY : all
@@ -102,6 +103,7 @@ clean: CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/clean
 clean: CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/clean
 clean: CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/clean
 clean: CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/clean
+clean: CMakeFiles/i2cpwm_controller_lib.dir/clean
 clean: CMakeFiles/i2cpwm_controller_node.dir/clean
 clean: i2cpwm_controller__py/clean
 .PHONY : clean
@@ -192,7 +194,7 @@ CMakeFiles/i2cpwm_controller.dir/all: CMakeFiles/i2cpwm_controller__rosidl_types
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 80
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 79
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller.dir/rule
@@ -239,7 +241,7 @@ CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/clean:
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/all: CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=49,50,51,52,53,54,55,56,57,58,59 "Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=48,49,50,51,52,53,54,55,56,57,58 "Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c"
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c.dir/all
 
 # Build rule for subdir invocation for target.
@@ -291,7 +293,7 @@ CMakeFiles/i2cpwm_controller__cpp.dir/clean:
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/all: CMakeFiles/i2cpwm_controller__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=62,63,64,65,66,67,68,69,70,71,72 "Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=61,62,63,64,65,66,67,68,69,70,71 "Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp"
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/all
 
 # Build rule for subdir invocation for target.
@@ -317,12 +319,12 @@ CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_cpp.dir/clean:
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/all: CMakeFiles/i2cpwm_controller__rosidl_generator_c.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=73,74,75,76,77,78,79,80,81,82,83 "Built target i2cpwm_controller__rosidl_typesupport_introspection_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=72,73,74,75,76,77,78,79,80,81,82,83 "Built target i2cpwm_controller__rosidl_typesupport_introspection_c"
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 23
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 24
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c.dir/rule
@@ -369,12 +371,12 @@ CMakeFiles/i2cpwm_controller__rosidl_typesupport_c.dir/clean:
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/all: CMakeFiles/i2cpwm_controller__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=86,87,88,89,90,91,92,93,94,95,96,97 "Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=86,87,88,89,90,91,92,93,94,95,96 "Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp"
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/rule
@@ -395,12 +397,12 @@ CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_cpp.dir/clean:
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/all: CMakeFiles/i2cpwm_controller__cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47,48 "Built target i2cpwm_controller__rosidl_typesupport_cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=37,38,39,40,41,42,43,44,45,46,47 "Built target i2cpwm_controller__rosidl_typesupport_cpp"
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/rule
@@ -480,7 +482,7 @@ CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/all: i2cpwm_controller__py
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 91
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 90
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_generator_py.dir/rule
@@ -505,12 +507,12 @@ CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/all: CMak
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/all: i2cpwm_controller__py/CMakeFiles/i2cpwm_controller__py.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/build.make CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=60,61 "Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=59,60 "Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext"
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 93
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 92
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext.dir/rule
@@ -540,7 +542,7 @@ CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 93
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 92
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_introspection_c__pyext.dir/rule
@@ -569,7 +571,7 @@ CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/all: i2cpwm_contro
 
 # Build rule for subdir invocation for target.
 CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 93
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 92
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/rule
@@ -584,14 +586,42 @@ CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/clean:
 .PHONY : CMakeFiles/i2cpwm_controller__rosidl_typesupport_c__pyext.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/i2cpwm_controller_lib.dir
+
+# All Build rule for target.
+CMakeFiles/i2cpwm_controller_lib.dir/all: CMakeFiles/i2cpwm_controller__cpp.dir/all
+CMakeFiles/i2cpwm_controller_lib.dir/all: CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_lib.dir/build.make CMakeFiles/i2cpwm_controller_lib.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_lib.dir/build.make CMakeFiles/i2cpwm_controller_lib.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=97,98 "Built target i2cpwm_controller_lib"
+.PHONY : CMakeFiles/i2cpwm_controller_lib.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/i2cpwm_controller_lib.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/i2cpwm_controller_lib.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
+.PHONY : CMakeFiles/i2cpwm_controller_lib.dir/rule
+
+# Convenience name for target.
+i2cpwm_controller_lib: CMakeFiles/i2cpwm_controller_lib.dir/rule
+.PHONY : i2cpwm_controller_lib
+
+# clean rule for target.
+CMakeFiles/i2cpwm_controller_lib.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_lib.dir/build.make CMakeFiles/i2cpwm_controller_lib.dir/clean
+.PHONY : CMakeFiles/i2cpwm_controller_lib.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/i2cpwm_controller_node.dir
 
 # All Build rule for target.
 CMakeFiles/i2cpwm_controller_node.dir/all: CMakeFiles/i2cpwm_controller__cpp.dir/all
 CMakeFiles/i2cpwm_controller_node.dir/all: CMakeFiles/i2cpwm_controller__rosidl_typesupport_cpp.dir/all
+CMakeFiles/i2cpwm_controller_node.dir/all: CMakeFiles/i2cpwm_controller_lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_node.dir/build.make CMakeFiles/i2cpwm_controller_node.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_node.dir/build.make CMakeFiles/i2cpwm_controller_node.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=98,99,100 "Built target i2cpwm_controller_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=99,100 "Built target i2cpwm_controller_node"
 .PHONY : CMakeFiles/i2cpwm_controller_node.dir/all
 
 # Build rule for subdir invocation for target.
@@ -622,7 +652,7 @@ i2cpwm_controller__py/CMakeFiles/i2cpwm_controller__py.dir/all: CMakeFiles/i2cpw
 
 # Build rule for subdir invocation for target.
 i2cpwm_controller__py/CMakeFiles/i2cpwm_controller__py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 81
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 80
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 i2cpwm_controller__py/CMakeFiles/i2cpwm_controller__py.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles 0
 .PHONY : i2cpwm_controller__py/CMakeFiles/i2cpwm_controller__py.dir/rule

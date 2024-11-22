@@ -1,0 +1,55 @@
+[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/CMakeLists.txt:4 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/CMakeLists.txt:45 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/CMakeLists.txt:56 (cmake_minimum_required):
+  Compatibility with CMake < 2.8.12 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value or use a ...<max> suffix to tell
+  CMake that the project does not need compatibility with older versions.
+
+[0m
+[33mCMake Warning:
+  Manually-specified variables were not used by the project:
+
+    CATKIN_INSTALL_INTO_PREFIX_ROOT
+
+[0m
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-all.cc:42[m[K:
+[01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:[m[K In function ‘[01m[Kbool testing::internal::StackGrowsDown()[m[K’:
+[01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:1301:24:[m[K [01;35m[Kwarning: [m[K‘[01m[Kdummy[m[K’ may be used uninitialized [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmaybe-uninitialized-Wmaybe-uninitialized]8;;[m[K]
+ 1301 |   [01;35m[KStackLowerThanAddress(&dummy, &result)[m[K;
+      |   [01;35m[K~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:1290:13:[m[K [01;36m[Knote: [m[Kby argument 1 of type ‘[01m[Kconst void*[m[K’ to ‘[01m[Kvoid testing::internal::StackLowerThanAddress(const void*, bool*)[m[K’ declared here
+ 1290 | static void [01;36m[KStackLowerThanAddress[m[K(const void* ptr, bool* result) {
+      |             [01;36m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/src/gtest-death-test.cc:1299:7:[m[K [01;36m[Knote: [m[K‘[01m[Kdummy[m[K’ declared here
+ 1299 |   int [01;36m[Kdummy[m[K;
+      |       [01;36m[K^~~~~[m[K
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp:6[m[K:
+[01m[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   32 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:[m[K [01;35m[Kwarning: [m[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp-Wcpp]8;;[m[K]
+   35 | #[01;35m[Kwarning[m[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead
+      |  [01;35m[K^~~~~~~[m[K
+/usr/bin/ld: cannot find -li2cpwm_controller_lib: No such file or directory
+/usr/bin/ld: cannot find -ltf2_eigen: No such file or directory
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/motion_cmd_node.dir/build.make:250: motion_cmd_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/motion_cmd_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

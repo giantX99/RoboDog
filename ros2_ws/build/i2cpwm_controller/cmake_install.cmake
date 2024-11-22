@@ -468,6 +468,29 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libi2cpwm_controller_lib.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libi2cpwm_controller_lib.so")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libi2cpwm_controller_lib.so"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/libi2cpwm_controller_lib.so")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libi2cpwm_controller_lib.so" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libi2cpwm_controller_lib.so")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libi2cpwm_controller_lib.so"
+         OLD_RPATH "/opt/ros/humble/lib:/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libi2cpwm_controller_lib.so")
+    endif()
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/i2cpwm_controller/i2cpwm_controller_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/i2cpwm_controller/i2cpwm_controller_node")
     file(RPATH_CHECK
@@ -479,7 +502,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/i2cpwm_controller/i2cpwm_controller_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/i2cpwm_controller/i2cpwm_controller_node"
-         OLD_RPATH "/opt/ros/humble/lib:/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller:"
+         OLD_RPATH "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller:/opt/ros/humble/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/i2cpwm_controller/i2cpwm_controller_node")
@@ -704,6 +727,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake" TYPE FILE FILES "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles/Export/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_pyExport.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
     file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake" TYPE FILE FILES "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles/Export/share/i2cpwm_controller/cmake/export_i2cpwm_controller__rosidl_generator_pyExport-noconfig.cmake")
+  endif()
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake/export_i2cpwm_controllerExport.cmake")
+    file(DIFFERENT EXPORT_FILE_CHANGED FILES
+         "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake/export_i2cpwm_controllerExport.cmake"
+         "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles/Export/share/i2cpwm_controller/cmake/export_i2cpwm_controllerExport.cmake")
+    if(EXPORT_FILE_CHANGED)
+      file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake/export_i2cpwm_controllerExport-*.cmake")
+      if(OLD_CONFIG_FILES)
+        message(STATUS "Old export file \"$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake/export_i2cpwm_controllerExport.cmake\" will be replaced.  Removing files [${OLD_CONFIG_FILES}].")
+        file(REMOVE ${OLD_CONFIG_FILES})
+      endif()
+    endif()
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake" TYPE FILE FILES "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles/Export/share/i2cpwm_controller/cmake/export_i2cpwm_controllerExport.cmake")
+  if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^()$")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/i2cpwm_controller/cmake" TYPE FILE FILES "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles/Export/share/i2cpwm_controller/cmake/export_i2cpwm_controllerExport-noconfig.cmake")
   endif()
 endif()
 

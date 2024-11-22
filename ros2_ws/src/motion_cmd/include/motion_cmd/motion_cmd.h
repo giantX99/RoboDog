@@ -12,7 +12,7 @@
 #include "std_msgs/msg/float32_multi_array.hpp"
 #include "i2cpwm_controller/msg/servo.hpp"
 #include "i2cpwm_controller/msg/servo_array.hpp"
-#include "i2cpwm_board/srv/servos_config.hpp"
+#include "i2cpwm_controller/srv/servos_config.hpp"
 
 #include "command.h"
 #include "spot_micro_kinematics/spot_micro_kinematics.h"
@@ -73,7 +73,7 @@ class SpotMicroMotionCmd
 {
  public:
   // Constructor
-  SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node> nh, std::shared_ptr<rclcpp::Node> pnh); 
+  SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node> nh); 
   
   // Destructor
   ~SpotMicroMotionCmd(); 
@@ -173,7 +173,7 @@ class SpotMicroMotionCmd
   rclcpp::Publisher<geometry_msgs::msg::Vector3>::SharedPtr lcd_angle_cmd_pub_;
   rclcpp::Publisher<std_msgs::msg::String>::SharedPtr lcd_state_pub_;
   
-  rclcpp::Client<i2cpwm_board::srv::ServosConfig>::SharedPtr servos_config_client_;
+  rclcpp::Client<i2cpwm_controller::srv::ServosConfig>::SharedPtr servos_config_client_;
   
   std::shared_ptr<tf2_ros::TransformBroadcaster> transform_br_;
   std::shared_ptr<tf2_ros::StaticTransformBroadcaster> static_transform_br_;

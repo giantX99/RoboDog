@@ -393,6 +393,19 @@ i2cpwm_controller__rosidl_typesupport_c__pyext/fast:
 .PHONY : i2cpwm_controller__rosidl_typesupport_c__pyext/fast
 
 #=============================================================================
+# Target rules for targets named i2cpwm_controller_lib
+
+# Build rule for target.
+i2cpwm_controller_lib: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 i2cpwm_controller_lib
+.PHONY : i2cpwm_controller_lib
+
+# fast build rule for target.
+i2cpwm_controller_lib/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_lib.dir/build.make CMakeFiles/i2cpwm_controller_lib.dir/build
+.PHONY : i2cpwm_controller_lib/fast
+
+#=============================================================================
 # Target rules for targets named i2cpwm_controller_node
 
 # Build rule for target.
@@ -2415,7 +2428,7 @@ src/i2cpwm_controller.o: src/i2cpwm_controller.cpp.o
 
 # target to build an object file
 src/i2cpwm_controller.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_node.dir/build.make CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_lib.dir/build.make CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.o
 .PHONY : src/i2cpwm_controller.cpp.o
 
 src/i2cpwm_controller.i: src/i2cpwm_controller.cpp.i
@@ -2423,7 +2436,7 @@ src/i2cpwm_controller.i: src/i2cpwm_controller.cpp.i
 
 # target to preprocess a source file
 src/i2cpwm_controller.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_node.dir/build.make CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_lib.dir/build.make CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.i
 .PHONY : src/i2cpwm_controller.cpp.i
 
 src/i2cpwm_controller.s: src/i2cpwm_controller.cpp.s
@@ -2431,7 +2444,7 @@ src/i2cpwm_controller.s: src/i2cpwm_controller.cpp.s
 
 # target to generate assembly for a file
 src/i2cpwm_controller.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_node.dir/build.make CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/i2cpwm_controller_lib.dir/build.make CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.s
 .PHONY : src/i2cpwm_controller.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -2489,6 +2502,7 @@ help:
 	@echo "... i2cpwm_controller__rosidl_typesupport_introspection_c"
 	@echo "... i2cpwm_controller__rosidl_typesupport_introspection_c__pyext"
 	@echo "... i2cpwm_controller__rosidl_typesupport_introspection_cpp"
+	@echo "... i2cpwm_controller_lib"
 	@echo "... i2cpwm_controller_node"
 	@echo "... rosidl_generator_c/i2cpwm_controller/msg/detail/position__functions.o"
 	@echo "... rosidl_generator_c/i2cpwm_controller/msg/detail/position__functions.i"

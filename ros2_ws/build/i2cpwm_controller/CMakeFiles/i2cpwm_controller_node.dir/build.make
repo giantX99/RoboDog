@@ -69,24 +69,10 @@ include CMakeFiles/i2cpwm_controller_node.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/i2cpwm_controller_node.dir/flags.make
 
-CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o: CMakeFiles/i2cpwm_controller_node.dir/flags.make
-CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o: /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp
-CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o: CMakeFiles/i2cpwm_controller_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o -MF CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o.d -o CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp
-
-CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp > CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.i
-
-CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp -o CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.s
-
 CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o: CMakeFiles/i2cpwm_controller_node.dir/flags.make
 CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o: /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/main.cpp
 CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o: CMakeFiles/i2cpwm_controller_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o -MF CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o.d -o CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/main.cpp
 
 CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.i: cmake_force
@@ -99,15 +85,14 @@ CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.s: cmake_force
 
 # Object files for target i2cpwm_controller_node
 i2cpwm_controller_node_OBJECTS = \
-"CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o" \
 "CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o"
 
 # External object files for target i2cpwm_controller_node
 i2cpwm_controller_node_EXTERNAL_OBJECTS =
 
-i2cpwm_controller_node: CMakeFiles/i2cpwm_controller_node.dir/src/i2cpwm_controller.cpp.o
 i2cpwm_controller_node: CMakeFiles/i2cpwm_controller_node.dir/src/main.cpp.o
 i2cpwm_controller_node: CMakeFiles/i2cpwm_controller_node.dir/build.make
+i2cpwm_controller_node: libi2cpwm_controller_lib.so
 i2cpwm_controller_node: /opt/ros/humble/lib/librclcpp.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so
@@ -119,8 +104,6 @@ i2cpwm_controller_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport
 i2cpwm_controller_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so
-i2cpwm_controller_node: libi2cpwm_controller__rosidl_typesupport_cpp.so
-i2cpwm_controller_node: /usr/lib/aarch64-linux-gnu/libi2c.so
 i2cpwm_controller_node: /opt/ros/humble/lib/liblibstatistics_collector.so
 i2cpwm_controller_node: /opt/ros/humble/lib/librcl.so
 i2cpwm_controller_node: /opt/ros/humble/lib/librmw_implementation.so
@@ -179,6 +162,7 @@ i2cpwm_controller_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_genera
 i2cpwm_controller_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so
 i2cpwm_controller_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
+i2cpwm_controller_node: libi2cpwm_controller__rosidl_typesupport_cpp.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so
 i2cpwm_controller_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so
@@ -188,8 +172,9 @@ i2cpwm_controller_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 i2cpwm_controller_node: /opt/ros/humble/lib/librcpputils.so
 i2cpwm_controller_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 i2cpwm_controller_node: /opt/ros/humble/lib/librcutils.so
+i2cpwm_controller_node: /usr/lib/aarch64-linux-gnu/libi2c.so
 i2cpwm_controller_node: CMakeFiles/i2cpwm_controller_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable i2cpwm_controller_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable i2cpwm_controller_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/i2cpwm_controller_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
