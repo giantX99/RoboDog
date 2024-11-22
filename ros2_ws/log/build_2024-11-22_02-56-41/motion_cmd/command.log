@@ -1,0 +1,4 @@
+Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/motion_cmd -DCMAKE_VERBOSE_MAKEFILE=ON -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/motion_cmd
+Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/motion_cmd -DCMAKE_VERBOSE_MAKEFILE=ON -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/motion_cmd
+Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '2': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4

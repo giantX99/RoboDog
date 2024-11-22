@@ -1,0 +1,178 @@
+[0.057s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/motion_cmd -Wno-dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/motion_cmd
+[0.110s] -- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.672s] -- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)
+[0.838s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.848s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.871s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.909s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.958s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.083s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.089s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.994s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.179s] -- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)
+[2.225s] -- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)
+[2.240s] -- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)
+[2.532s] -- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[2.543s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[2.549s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[2.554s] -- Found tf2_eigen: 0.25.8 (/opt/ros/humble/share/tf2_eigen/cmake)
+[2.563s] -- Found i2cpwm_controller: 0.5.1 (/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake)
+[2.779s] -- Configuring done
+[2.792s] -- Generating done
+[2.796s] -- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download
+[2.998s] [100%] Built target googletest
+[3.487s] -- Configuring done
+[3.668s] -- Generating done
+[3.687s] -- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd
+[3.732s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': /usr/bin/cmake /home/robodog/RoboDog/ros2_ws/src/motion_cmd -Wno-dev -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/motion_cmd
+[3.742s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[3.809s] /usr/bin/cmake -S/home/robodog/RoboDog/ros2_ws/src/motion_cmd -B/home/robodog/RoboDog/ros2_ws/build/motion_cmd --check-build-system CMakeFiles/Makefile.cmake 0
+[3.869s] /usr/bin/cmake -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles /home/robodog/RoboDog/ros2_ws/build/motion_cmd//CMakeFiles/progress.marks
+[3.899s] /usr/bin/gmake  -f CMakeFiles/Makefile2 all
+[3.906s] gmake[1]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[3.907s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/depend
+[3.909s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/depend
+[3.914s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[3.915s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/DependInfo.cmake --color=
+[3.917s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[3.918s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=
+[3.949s] Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_kinematics.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".
+[3.950s] Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_leg.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".
+[3.951s] Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/compiler_depend.internal".
+[3.952s] Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".
+[3.952s] [35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[3.953s] [35m[1mConsolidate compiler generated dependencies of target spot_micro_kinematics[0m
+[3.969s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[3.970s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build
+[3.982s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[3.982s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build
+[3.986s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[3.987s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build'.
+[3.987s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.001s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.001s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build'.
+[4.002s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.020s] [  6%] Built target gtest
+[4.024s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend
+[4.027s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/depend
+[4.032s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.032s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=
+[4.036s] [ 20%] Built target spot_micro_kinematics
+[4.037s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.038s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake --color=
+[4.041s] /usr/bin/gmake  -f CMakeFiles/smfsm.dir/build.make CMakeFiles/smfsm.dir/depend
+[4.048s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.051s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/DependInfo.cmake --color=
+[4.072s] Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/compiler_depend.internal".
+[4.075s] Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/compiler_depend.internal".
+[4.077s] [35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[4.079s] [35m[1mConsolidate compiler generated dependencies of target gmock[0m
+[4.084s] Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".
+[4.088s] Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".
+[4.092s] Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".
+[4.094s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.096s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build
+[4.099s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.102s] Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".
+[4.105s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build
+[4.110s] Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".
+[4.115s] Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".
+[4.133s] [35m[1mConsolidate compiler generated dependencies of target smfsm[0m
+[4.134s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.135s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build'.
+[4.135s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.136s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.145s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build'.
+[4.146s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.146s] [ 27%] Built target gtest_main
+[4.147s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/depend
+[4.148s] [ 34%] Built target gmock
+[4.150s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/depend
+[4.154s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/depend
+[4.157s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.157s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/DependInfo.cmake --color=
+[4.160s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.160s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/DependInfo.cmake --color=
+[4.166s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.171s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/DependInfo.cmake --color=
+[4.195s] Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/tests/test_utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/compiler_depend.internal".
+[4.197s] [35m[1mConsolidate compiler generated dependencies of target test_utils[0m
+[4.202s] Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/tests/test_spot_micro_leg.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/compiler_depend.internal".
+[4.204s] [35m[1mConsolidate compiler generated dependencies of target test_spot_micro_leg[0m
+[4.223s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.226s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build
+[4.229s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.231s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.231s] /usr/bin/gmake  -f CMakeFiles/smfsm.dir/build.make CMakeFiles/smfsm.dir/build
+[4.233s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build
+[4.261s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.263s] Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/tests/test_spot_micro_kinematics.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/compiler_depend.internal".
+[4.264s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.266s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build'.
+[4.268s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.269s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build'.
+[4.271s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.272s] [35m[1mConsolidate compiler generated dependencies of target test_spot_micro_kinematics[0m
+[4.283s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.285s] gmake[2]: Nothing to be done for 'CMakeFiles/smfsm.dir/build'.
+[4.287s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.292s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.295s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build
+[4.308s] [ 41%] Built target test_spot_micro_leg
+[4.309s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.309s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build'.
+[4.310s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.316s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend
+[4.322s] [ 65%] Built target smfsm
+[4.325s] /usr/bin/gmake  -f CMakeFiles/motion_cmd_node.dir/build.make CMakeFiles/motion_cmd_node.dir/depend
+[4.327s] [ 72%] Built target test_utils
+[4.331s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.331s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=
+[4.333s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.335s] cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/DependInfo.cmake --color=
+[4.350s] [ 79%] Built target test_spot_micro_kinematics
+[4.368s] Dependencies file "CMakeFiles/motion_cmd_node.dir/src/main.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".
+[4.368s] Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.internal".
+[4.370s] [35m[1mConsolidate compiler generated dependencies of target gmock_main[0m
+[4.371s] Dependencies file "CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".
+[4.373s] Dependencies file "CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".
+[4.376s] [35m[1mConsolidate compiler generated dependencies of target motion_cmd_node[0m
+[4.387s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.393s] /usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build
+[4.408s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.409s] gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build'.
+[4.409s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.440s] [ 86%] Built target gmock_main
+[4.457s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.457s] /usr/bin/gmake  -f CMakeFiles/motion_cmd_node.dir/build.make CMakeFiles/motion_cmd_node.dir/build
+[4.500s] gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.500s] gmake[2]: Nothing to be done for 'CMakeFiles/motion_cmd_node.dir/build'.
+[4.501s] gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.534s] [100%] Built target motion_cmd_node
+[4.538s] gmake[1]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'
+[4.538s] /usr/bin/cmake -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles 0
+[4.580s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[5.220s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd
+[5.250s] -- Install configuration: ""
+[5.251s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node
+[5.252s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch
+[5.253s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch/motion_cmd.launch.py
+[5.253s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config
+[5.254s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config/motion_cmd.yaml
+[5.254s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/package_run_dependencies/motion_cmd
+[5.255s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/parent_prefix_path/motion_cmd
+[5.255s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.sh
+[5.256s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.dsv
+[5.257s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.sh
+[5.257s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.dsv
+[5.258s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.bash
+[5.259s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.sh
+[5.259s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.zsh
+[5.259s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.dsv
+[5.261s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.dsv
+[5.262s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/packages/motion_cmd
+[5.263s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.263s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig.cmake
+[5.264s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig-version.cmake
+[5.264s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.xml
+[5.272s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd

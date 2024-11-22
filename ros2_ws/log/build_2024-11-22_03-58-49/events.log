@@ -1,0 +1,244 @@
+[0.000000] (-) TimerEvent: {}
+[0.001017] (-) JobUnselected: {'identifier': 'i2cpwm_controller'}
+[0.001884] (-) JobUnselected: {'identifier': 'servo_calibration'}
+[0.002446] (motion_cmd) JobQueued: {'identifier': 'motion_cmd', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.002988] (motion_cmd) JobStarted: {'identifier': 'motion_cmd'}
+[0.051626] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'cmake'}
+[0.055575] (motion_cmd) Command: {'cmd': ['/usr/bin/cmake', '/home/robodog/RoboDog/ros2_ws/src/motion_cmd', '-Wno-dev', '-DCATKIN_INSTALL_INTO_PREFIX_ROOT=0', '-DCMAKE_INSTALL_PREFIX=/home/robodog/RoboDog/ros2_ws/install/motion_cmd'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.119 56112 22'), ('ROS_PACKAGE_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/aarch64-linux-gnu/pkgconfig:/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '34'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'), ('SSH_CONNECTION', '10.7.90.119 56112 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')]), 'shell': False}
+[0.099190] (-) TimerEvent: {}
+[0.112742] (motion_cmd) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.199406] (-) TimerEvent: {}
+[0.300140] (-) TimerEvent: {}
+[0.400834] (-) TimerEvent: {}
+[0.501513] (-) TimerEvent: {}
+[0.602271] (-) TimerEvent: {}
+[0.674596] (motion_cmd) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.702461] (-) TimerEvent: {}
+[0.803255] (-) TimerEvent: {}
+[0.840175] (motion_cmd) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.850915] (motion_cmd) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.874148] (motion_cmd) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.903482] (-) TimerEvent: {}
+[0.912023] (motion_cmd) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.960462] (motion_cmd) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.003663] (-) TimerEvent: {}
+[1.085587] (motion_cmd) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.091419] (motion_cmd) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.103859] (-) TimerEvent: {}
+[1.204559] (-) TimerEvent: {}
+[1.305264] (-) TimerEvent: {}
+[1.405971] (-) TimerEvent: {}
+[1.506691] (-) TimerEvent: {}
+[1.607438] (-) TimerEvent: {}
+[1.708162] (-) TimerEvent: {}
+[1.808847] (-) TimerEvent: {}
+[1.909540] (-) TimerEvent: {}
+[1.996954] (motion_cmd) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.009721] (-) TimerEvent: {}
+[2.110466] (-) TimerEvent: {}
+[2.181362] (motion_cmd) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.210649] (-) TimerEvent: {}
+[2.227594] (motion_cmd) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.242356] (motion_cmd) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.310856] (-) TimerEvent: {}
+[2.411910] (-) TimerEvent: {}
+[2.513059] (-) TimerEvent: {}
+[2.534959] (motion_cmd) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.546115] (motion_cmd) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.551790] (motion_cmd) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.556616] (motion_cmd) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.8 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[2.565907] (motion_cmd) StdoutLine: {'line': b'-- Found i2cpwm_controller: 0.5.1 (/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake)\n'}
+[2.613231] (-) TimerEvent: {}
+[2.713998] (-) TimerEvent: {}
+[2.781785] (motion_cmd) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.794375] (motion_cmd) StdoutLine: {'line': b'-- Generating done\n'}
+[2.798500] (motion_cmd) StdoutLine: {'line': b'-- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download\n'}
+[2.814259] (-) TimerEvent: {}
+[2.915053] (-) TimerEvent: {}
+[3.000371] (motion_cmd) StdoutLine: {'line': b'[100%] Built target googletest\n'}
+[3.015271] (-) TimerEvent: {}
+[3.116126] (-) TimerEvent: {}
+[3.217005] (-) TimerEvent: {}
+[3.317729] (-) TimerEvent: {}
+[3.418623] (-) TimerEvent: {}
+[3.489757] (motion_cmd) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.518808] (-) TimerEvent: {}
+[3.619527] (-) TimerEvent: {}
+[3.670881] (motion_cmd) StdoutLine: {'line': b'-- Generating done\n'}
+[3.689964] (motion_cmd) StdoutLine: {'line': b'-- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd\n'}
+[3.719761] (-) TimerEvent: {}
+[3.734616] (motion_cmd) CommandEnded: {'returncode': 0}
+[3.736630] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'build'}
+[3.739207] (motion_cmd) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.119 56112 22'), ('ROS_PACKAGE_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/aarch64-linux-gnu/pkgconfig:/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '34'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'), ('SSH_CONNECTION', '10.7.90.119 56112 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')]), 'shell': False}
+[3.811565] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -S/home/robodog/RoboDog/ros2_ws/src/motion_cmd -B/home/robodog/RoboDog/ros2_ws/build/motion_cmd --check-build-system CMakeFiles/Makefile.cmake 0\n'}
+[3.819929] (-) TimerEvent: {}
+[3.871513] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles /home/robodog/RoboDog/ros2_ws/build/motion_cmd//CMakeFiles/progress.marks\n'}
+[3.901800] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/Makefile2 all\n'}
+[3.908807] (motion_cmd) StdoutLine: {'line': b"gmake[1]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.909398] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/depend\n'}
+[3.911121] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/depend\n'}
+[3.916958] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.917714] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/DependInfo.cmake --color=\n'}
+[3.919274] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.920182] (-) TimerEvent: {}
+[3.920721] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=\n'}
+[3.951015] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_kinematics.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[3.952152] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_leg.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[3.953045] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/compiler_depend.internal".\n'}
+[3.953923] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[3.954833] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest\x1b[0m\n'}
+[3.955270] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target spot_micro_kinematics\x1b[0m\n'}
+[3.971924] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.972819] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build\n'}
+[3.984523] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.985265] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build\n'}
+[3.988601] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.989661] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build'.\n"}
+[3.990091] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.003236] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.004035] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build'.\n"}
+[4.004452] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.020416] (-) TimerEvent: {}
+[4.022226] (motion_cmd) StdoutLine: {'line': b'[  6%] Built target gtest\n'}
+[4.026619] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend\n'}
+[4.028864] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/depend\n'}
+[4.034188] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.035024] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=\n'}
+[4.038754] (motion_cmd) StdoutLine: {'line': b'[ 20%] Built target spot_micro_kinematics\n'}
+[4.039677] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.040418] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake --color=\n'}
+[4.042018] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/smfsm.dir/build.make CMakeFiles/smfsm.dir/depend\n'}
+[4.049545] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.052016] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/DependInfo.cmake --color=\n'}
+[4.072811] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/compiler_depend.internal".\n'}
+[4.075853] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/compiler_depend.internal".\n'}
+[4.078581] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_main\x1b[0m\n'}
+[4.080914] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gmock\x1b[0m\n'}
+[4.085729] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.088530] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.092373] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.095301] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.097505] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build\n'}
+[4.100056] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.103129] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.105780] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build\n'}
+[4.110589] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.113982] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.118410] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target smfsm\x1b[0m\n'}
+[4.136046] (-) TimerEvent: {}
+[4.136633] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.137325] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build'.\n"}
+[4.138035] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.138612] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.139332] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build'.\n"}
+[4.148688] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.149161] (motion_cmd) StdoutLine: {'line': b'[ 27%] Built target gtest_main\n'}
+[4.149659] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/depend\n'}
+[4.150583] (motion_cmd) StdoutLine: {'line': b'[ 34%] Built target gmock\n'}
+[4.152925] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/depend\n'}
+[4.156941] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/depend\n'}
+[4.159214] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.160238] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/DependInfo.cmake --color=\n'}
+[4.162444] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.162946] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/DependInfo.cmake --color=\n'}
+[4.169165] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.173721] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/DependInfo.cmake --color=\n'}
+[4.197738] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/tests/test_utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/compiler_depend.internal".\n'}
+[4.200096] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_utils\x1b[0m\n'}
+[4.204632] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/tests/test_spot_micro_leg.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/compiler_depend.internal".\n'}
+[4.206298] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_spot_micro_leg\x1b[0m\n'}
+[4.225821] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.228119] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build\n'}
+[4.231285] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.233238] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.233948] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/smfsm.dir/build.make CMakeFiles/smfsm.dir/build\n'}
+[4.235483] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build\n'}
+[4.236151] (-) TimerEvent: {}
+[4.261932] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.264520] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/tests/test_spot_micro_kinematics.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[4.266396] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.267964] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build'.\n"}
+[4.269587] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.271121] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build'.\n"}
+[4.272823] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.274318] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_spot_micro_kinematics\x1b[0m\n'}
+[4.283718] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.286909] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'CMakeFiles/smfsm.dir/build'.\n"}
+[4.289183] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.291301] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.295913] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build\n'}
+[4.309751] (motion_cmd) StdoutLine: {'line': b'[ 41%] Built target test_spot_micro_leg\n'}
+[4.311044] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.312088] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build'.\n"}
+[4.312837] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.318250] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend\n'}
+[4.324091] (motion_cmd) StdoutLine: {'line': b'[ 65%] Built target smfsm\n'}
+[4.328049] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/motion_cmd_node.dir/build.make CMakeFiles/motion_cmd_node.dir/depend\n'}
+[4.329408] (motion_cmd) StdoutLine: {'line': b'[ 72%] Built target test_utils\n'}
+[4.333207] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.333998] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=\n'}
+[4.335913] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.336771] (-) TimerEvent: {}
+[4.337304] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/DependInfo.cmake --color=\n'}
+[4.353049] (motion_cmd) StdoutLine: {'line': b'[ 79%] Built target test_spot_micro_kinematics\n'}
+[4.370395] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/motion_cmd_node.dir/src/main.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".\n'}
+[4.371078] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.internal".\n'}
+[4.372455] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gmock_main\x1b[0m\n'}
+[4.373642] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".\n'}
+[4.375960] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".\n'}
+[4.378421] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target motion_cmd_node\x1b[0m\n'}
+[4.389269] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.395767] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build\n'}
+[4.410638] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.411593] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build'.\n"}
+[4.412022] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.436981] (-) TimerEvent: {}
+[4.442769] (motion_cmd) StdoutLine: {'line': b'[ 86%] Built target gmock_main\n'}
+[4.459252] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.460037] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/motion_cmd_node.dir/build.make CMakeFiles/motion_cmd_node.dir/build\n'}
+[4.502310] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.503003] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'CMakeFiles/motion_cmd_node.dir/build'.\n"}
+[4.503406] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.536826] (motion_cmd) StdoutLine: {'line': b'[100%] Built target motion_cmd_node\n'}
+[4.537561] (-) TimerEvent: {}
+[4.540239] (motion_cmd) StdoutLine: {'line': b"gmake[1]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.541052] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles 0\n'}
+[4.581893] (motion_cmd) CommandEnded: {'returncode': 0}
+[4.637896] (-) TimerEvent: {}
+[4.738726] (-) TimerEvent: {}
+[4.839457] (-) TimerEvent: {}
+[4.940225] (-) TimerEvent: {}
+[5.040966] (-) TimerEvent: {}
+[5.141618] (-) TimerEvent: {}
+[5.184343] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'install'}
+[5.222446] (motion_cmd) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.119 56112 22'), ('ROS_PACKAGE_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/aarch64-linux-gnu/pkgconfig:/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '34'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'), ('SSH_CONNECTION', '10.7.90.119 56112 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')]), 'shell': False}
+[5.241851] (-) TimerEvent: {}
+[5.252661] (motion_cmd) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[5.253928] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node\n'}
+[5.255143] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch\n'}
+[5.255718] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch/motion_cmd.launch.py\n'}
+[5.256262] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config\n'}
+[5.256636] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config/motion_cmd.yaml\n'}
+[5.257134] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/package_run_dependencies/motion_cmd\n'}
+[5.257646] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/parent_prefix_path/motion_cmd\n'}
+[5.258104] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.sh\n'}
+[5.258514] (motion_cmd) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.dsv\n'}
+[5.259320] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.sh\n'}
+[5.259964] (motion_cmd) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.dsv\n'}
+[5.260980] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.bash\n'}
+[5.261456] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.sh\n'}
+[5.261903] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.zsh\n'}
+[5.262324] (motion_cmd) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.dsv\n'}
+[5.263337] (motion_cmd) StdoutLine: {'line': b'-- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.dsv\n'}
+[5.265090] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/packages/motion_cmd\n'}
+[5.265654] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[5.266200] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig.cmake\n'}
+[5.266667] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig-version.cmake\n'}
+[5.267030] (motion_cmd) StdoutLine: {'line': b'-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.xml\n'}
+[5.274375] (motion_cmd) CommandEnded: {'returncode': 0}
+[5.342063] (-) TimerEvent: {}
+[5.443090] (-) TimerEvent: {}
+[5.543822] (-) TimerEvent: {}
+[5.644867] (-) TimerEvent: {}
+[5.674321] (motion_cmd) JobEnded: {'identifier': 'motion_cmd', 'rc': 0}
+[5.677180] (-) EventReactorShutdown: {}

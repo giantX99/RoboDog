@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>motion_cmd</name>
+  <version>0.0.0</version>
+  <description>ROS 2 adaptation of spot_micro_motion_cmd package</description>
+
+  <!-- Maintainer information -->
+  <maintainer email="gat7hb@umsystem.edu">gian_lucca</maintainer>
+
+  <!-- License information -->
+  <license>TODO</license>
+
+  <!-- Build tool dependency for ROS 2 (replacing catkin with ament_cmake) -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- Build dependencies -->
+  <build_depend>rclcpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>tf2</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+  <build_depend>tf2_eigen</build_depend>
+  <build_depend>i2cpwm_controller</build_depend>
+  <build_depend>Eigen3</build_depend>
+
+  <!-- Build export dependencies -->
+  <build_export_depend>rclcpp</build_export_depend>
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>geometry_msgs</build_export_depend>
+  <build_export_depend>tf2</build_export_depend>
+  <build_export_depend>tf2_ros</build_export_depend>
+  <build_export_depend>tf2_geometry_msgs</build_export_depend>
+  <build_export_depend>tf2_eigen</build_export_depend>
+  <build_export_depend>i2cpwm_controller</build_export_depend>
+  <build_export_depend>Eigen3</build_export_depend>
+
+  <!-- Execution dependencies -->
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>tf2</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>tf2_eigen</exec_depend>
+  <exec_depend>i2cpwm_controller</exec_depend>
+
+  <!-- The export tag contains other, unspecified, tags -->
+  <export>
+    <!-- Other tools can request additional information be placed here -->
+  </export>
+</package>

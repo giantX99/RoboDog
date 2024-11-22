@@ -1,0 +1,1398 @@
+[0.000000] (-) TimerEvent: {}
+[0.001608] (-) JobUnselected: {'identifier': 'i2cpwm_controller'}
+[0.002204] (-) JobUnselected: {'identifier': 'servo_calibration'}
+[0.002698] (motion_cmd) JobQueued: {'identifier': 'motion_cmd', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.002957] (motion_cmd) JobStarted: {'identifier': 'motion_cmd'}
+[0.051284] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'cmake'}
+[0.055317] (motion_cmd) JobProgress: {'identifier': 'motion_cmd', 'progress': 'build'}
+[0.059043] (motion_cmd) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.119 56112 22'), ('ROS_PACKAGE_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog'), ('SSH_TTY', '/dev/pts/1'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/aarch64-linux-gnu/pkgconfig:/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '34'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'), ('SSH_CONNECTION', '10.7.90.119 56112 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')]), 'shell': False}
+[0.099056] (-) TimerEvent: {}
+[0.137975] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -S/home/robodog/RoboDog/ros2_ws/src/motion_cmd -B/home/robodog/RoboDog/ros2_ws/build/motion_cmd --check-build-system CMakeFiles/Makefile.cmake 0\n'}
+[0.193076] (motion_cmd) StdoutLine: {'line': b'Re-run cmake file: Makefile older than: /home/robodog/RoboDog/ros2_ws/src/motion_cmd/CMakeLists.txt\n'}
+[0.199239] (-) TimerEvent: {}
+[0.210090] (motion_cmd) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.10 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.299425] (-) TimerEvent: {}
+[0.400262] (-) TimerEvent: {}
+[0.500923] (-) TimerEvent: {}
+[0.601578] (-) TimerEvent: {}
+[0.702276] (-) TimerEvent: {}
+[0.781802] (motion_cmd) StdoutLine: {'line': b'-- Found rclcpp: 16.0.10 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.802465] (-) TimerEvent: {}
+[0.903274] (-) TimerEvent: {}
+[0.948072] (motion_cmd) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.958811] (motion_cmd) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.981888] (motion_cmd) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.003393] (-) TimerEvent: {}
+[1.020077] (motion_cmd) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.070930] (motion_cmd) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.103563] (-) TimerEvent: {}
+[1.198763] (motion_cmd) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.203759] (-) TimerEvent: {}
+[1.204838] (motion_cmd) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.303937] (-) TimerEvent: {}
+[1.404705] (-) TimerEvent: {}
+[1.505415] (-) TimerEvent: {}
+[1.606148] (-) TimerEvent: {}
+[1.706971] (-) TimerEvent: {}
+[1.807749] (-) TimerEvent: {}
+[1.908517] (-) TimerEvent: {}
+[2.009363] (-) TimerEvent: {}
+[2.110167] (-) TimerEvent: {}
+[2.120397] (motion_cmd) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[2.210339] (-) TimerEvent: {}
+[2.305386] (motion_cmd) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.4 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[2.310514] (-) TimerEvent: {}
+[2.353223] (motion_cmd) StdoutLine: {'line': b'-- Found tf2: 0.25.8 (/opt/ros/humble/share/tf2/cmake)\n'}
+[2.368880] (motion_cmd) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.8 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[2.410702] (-) TimerEvent: {}
+[2.511468] (-) TimerEvent: {}
+[2.612258] (-) TimerEvent: {}
+[2.664468] (motion_cmd) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.8 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[2.674421] (motion_cmd) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[2.680280] (motion_cmd) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[2.685171] (motion_cmd) StdoutLine: {'line': b'-- Found tf2_eigen: 0.25.8 (/opt/ros/humble/share/tf2_eigen/cmake)\n'}
+[2.694518] (motion_cmd) StdoutLine: {'line': b'-- Found i2cpwm_controller: 0.5.1 (/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/cmake)\n'}
+[2.712371] (-) TimerEvent: {}
+[2.813076] (-) TimerEvent: {}
+[2.854308] (motion_cmd) StdoutLine: {'line': b'Re-run cmake no build system arguments\n'}
+[2.913262] (-) TimerEvent: {}
+[2.914047] (motion_cmd) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.926546] (motion_cmd) StdoutLine: {'line': b'-- Generating done\n'}
+[2.930930] (motion_cmd) StdoutLine: {'line': b'-- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download\n'}
+[3.006851] (motion_cmd) StdoutLine: {'line': b"gmake[1]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.007482] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -S/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download -B/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download --check-build-system CMakeFiles/Makefile.cmake 0\n'}
+[3.013435] (-) TimerEvent: {}
+[3.040230] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/CMakeFiles /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download//CMakeFiles/progress.marks\n'}
+[3.069540] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/Makefile2 all\n'}
+[3.075923] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.076574] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/depend\n'}
+[3.082229] (motion_cmd) StdoutLine: {'line': b"gmake[3]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.082806] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/CMakeFiles/googletest.dir/DependInfo.cmake --color=\n'}
+[3.113627] (-) TimerEvent: {}
+[3.119210] (motion_cmd) StdoutLine: {'line': b"gmake[3]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.120088] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/googletest.dir/build.make CMakeFiles/googletest.dir/build\n'}
+[3.125816] (motion_cmd) StdoutLine: {'line': b"gmake[3]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.126440] (motion_cmd) StdoutLine: {'line': b"gmake[3]: Nothing to be done for 'CMakeFiles/googletest.dir/build'.\n"}
+[3.126850] (motion_cmd) StdoutLine: {'line': b"gmake[3]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.162389] (motion_cmd) StdoutLine: {'line': b'[100%] Built target googletest\n'}
+[3.165151] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.166248] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download/CMakeFiles 0\n'}
+[3.196163] (motion_cmd) StdoutLine: {'line': b"gmake[1]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-download'\n"}
+[3.208951] (motion_cmd) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/CMakeLists.txt:4 (cmake_minimum_required):\n'}
+[3.209689] (motion_cmd) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[3.210234] (motion_cmd) StderrLine: {'line': b'  CMake.\n'}
+[3.210704] (motion_cmd) StderrLine: {'line': b'\n'}
+[3.211170] (motion_cmd) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[3.211626] (motion_cmd) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[3.212071] (motion_cmd) StderrLine: {'line': b'\n'}
+[3.212638] (motion_cmd) StderrLine: {'line': b'\x1b[0m\n'}
+[3.213746] (-) TimerEvent: {}
+[3.223817] (motion_cmd) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock/CMakeLists.txt:45 (cmake_minimum_required):\n'}
+[3.224521] (motion_cmd) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[3.224976] (motion_cmd) StderrLine: {'line': b'  CMake.\n'}
+[3.225397] (motion_cmd) StderrLine: {'line': b'\n'}
+[3.225780] (motion_cmd) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[3.226154] (motion_cmd) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[3.226485] (motion_cmd) StderrLine: {'line': b'\n'}
+[3.226793] (motion_cmd) StderrLine: {'line': b'\x1b[0m\n'}
+[3.228311] (motion_cmd) StderrLine: {'line': b'\x1b[0mCMake Deprecation Warning at /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest/CMakeLists.txt:56 (cmake_minimum_required):\n'}
+[3.229166] (motion_cmd) StderrLine: {'line': b'  Compatibility with CMake < 2.8.12 will be removed from a future version of\n'}
+[3.229535] (motion_cmd) StderrLine: {'line': b'  CMake.\n'}
+[3.229951] (motion_cmd) StderrLine: {'line': b'\n'}
+[3.230317] (motion_cmd) StderrLine: {'line': b'  Update the VERSION argument <min> value or use a ...<max> suffix to tell\n'}
+[3.230661] (motion_cmd) StderrLine: {'line': b'  CMake that the project does not need compatibility with older versions.\n'}
+[3.231020] (motion_cmd) StderrLine: {'line': b'\n'}
+[3.231357] (motion_cmd) StderrLine: {'line': b'\x1b[0m\n'}
+[3.314066] (-) TimerEvent: {}
+[3.415252] (-) TimerEvent: {}
+[3.515958] (-) TimerEvent: {}
+[3.616847] (-) TimerEvent: {}
+[3.651259] (motion_cmd) StdoutLine: {'line': b'-- Configuring done\n'}
+[3.717053] (-) TimerEvent: {}
+[3.817753] (-) TimerEvent: {}
+[3.832218] (motion_cmd) StdoutLine: {'line': b'-- Generating done\n'}
+[3.851812] (motion_cmd) StdoutLine: {'line': b'-- Build files have been written to: /home/robodog/RoboDog/ros2_ws/build/motion_cmd\n'}
+[3.897162] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_progress_start /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles /home/robodog/RoboDog/ros2_ws/build/motion_cmd//CMakeFiles/progress.marks\n'}
+[3.918009] (-) TimerEvent: {}
+[3.934704] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/Makefile2 all\n'}
+[3.942312] (motion_cmd) StdoutLine: {'line': b"gmake[1]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.942897] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/depend\n'}
+[3.944187] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/motion_cmd_node.dir/build.make CMakeFiles/motion_cmd_node.dir/depend\n'}
+[3.947046] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/depend\n'}
+[3.949112] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.949842] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/DependInfo.cmake --color=\n'}
+[3.952591] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.955186] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/DependInfo.cmake --color=\n'}
+[3.957936] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[3.960304] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/DependInfo.cmake --color=\n'}
+[3.984849] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_kinematics.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[3.987966] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/spot_micro_leg.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[3.990834] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/src/utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[3.993451] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/motion_cmd_node.dir/src/main.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".\n'}
+[3.995624] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target spot_micro_kinematics\x1b[0m\n'}
+[3.998291] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".\n'}
+[3.999431] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/compiler_depend.internal".\n'}
+[3.999801] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/motion_cmd_node.dir/compiler_depend.internal".\n'}
+[4.000113] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest\x1b[0m\n'}
+[4.000571] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target motion_cmd_node\x1b[0m\n'}
+[4.012581] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.014161] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build\n'}
+[4.018240] (-) TimerEvent: {}
+[4.021774] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.022646] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build\n'}
+[4.034518] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.035390] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest.dir/build'.\n"}
+[4.036117] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.041215] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.041808] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/spot_micro_kinematics.dir/build'.\n"}
+[4.042176] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.072021] (motion_cmd) StdoutLine: {'line': b'[  6%] Built target gtest\n'}
+[4.073961] (motion_cmd) StdoutLine: {'line': b'[ 20%] Built target spot_micro_kinematics\n'}
+[4.078455] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/smfsm.dir/build.make CMakeFiles/smfsm.dir/depend\n'}
+[4.080992] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/depend\n'}
+[4.083196] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.086055] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.087220] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/motion_cmd_node.dir/build.make CMakeFiles/motion_cmd_node.dir/build\n'}
+[4.089626] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/DependInfo.cmake --color=\n'}
+[4.092181] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/depend\n'}
+[4.092917] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.093423] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/DependInfo.cmake --color=\n'}
+[4.101517] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.102230] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake --color=\n'}
+[4.118474] (-) TimerEvent: {}
+[4.120890] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.123529] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.126521] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.129035] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.138646] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.139457] (motion_cmd) StdoutLine: {'line': b'Dependencies file "CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/CMakeFiles/smfsm.dir/compiler_depend.internal".\n'}
+[4.140109] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/compiler_depend.internal".\n'}
+[4.141616] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.142469] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gtest_main\x1b[0m\n'}
+[4.142938] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target smfsm\x1b[0m\n'}
+[4.163018] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.163738] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build\n'}
+[4.164266] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/compiler_depend.internal".\n'}
+[4.164787] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gmock\x1b[0m\n'}
+[4.192903] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.193688] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.194369] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googletest/CMakeFiles/gtest_main.dir/build'.\n"}
+[4.194851] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build\n'}
+[4.195242] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.195879] (motion_cmd) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o\x1b[0m\n'}
+[4.199596] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/std_srvs -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o -MF CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o.d -o CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/motion_cmd.cpp\n'}
+[4.212750] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.213541] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock.dir/build'.\n"}
+[4.214569] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.218729] (-) TimerEvent: {}
+[4.263184] (motion_cmd) StdoutLine: {'line': b'[ 31%] Built target gtest_main\n'}
+[4.274748] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/depend\n'}
+[4.281797] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.282501] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f CMakeFiles/smfsm.dir/build.make CMakeFiles/smfsm.dir/build\n'}
+[4.286545] (motion_cmd) StdoutLine: {'line': b'[ 37%] Built target gmock\n'}
+[4.288004] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.290419] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/DependInfo.cmake --color=\n'}
+[4.291785] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/depend\n'}
+[4.299099] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.299814] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/DependInfo.cmake --color=\n'}
+[4.319032] (-) TimerEvent: {}
+[4.330974] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/tests/test_utils.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/compiler_depend.internal".\n'}
+[4.333523] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_utils\x1b[0m\n'}
+[4.334455] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/tests/test_spot_micro_leg.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/compiler_depend.internal".\n'}
+[4.335340] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_spot_micro_leg\x1b[0m\n'}
+[4.341580] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.359509] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.360909] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build\n'}
+[4.363912] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.366023] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build\n'}
+[4.381105] (motion_cmd) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o\x1b[0m\n'}
+[4.382509] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.383206] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_leg.dir/build'.\n"}
+[4.383761] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.389198] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -isystem /opt/ros/humble/include/std_srvs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o -MF CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o.d -o CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/state.cpp\n'}
+[4.391534] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.392580] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_utils.dir/build'.\n"}
+[4.393421] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.419303] (-) TimerEvent: {}
+[4.423431] (motion_cmd) StdoutLine: {'line': b'[ 48%] Built target test_spot_micro_leg\n'}
+[4.429362] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/depend\n'}
+[4.433668] (motion_cmd) StdoutLine: {'line': b'[ 55%] Built target test_utils\n'}
+[4.438832] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/depend\n'}
+[4.442203] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.442806] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/DependInfo.cmake --color=\n'}
+[4.448480] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.449384] (motion_cmd) StdoutLine: {'line': b'cd /home/robodog/RoboDog/ros2_ws/build/motion_cmd && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/robodog/RoboDog/ros2_ws/src/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-src/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock /home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake --color=\n'}
+[4.478518] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/tests/test_spot_micro_kinematics.cpp.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/compiler_depend.internal".\n'}
+[4.481048] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target test_spot_micro_kinematics\x1b[0m\n'}
+[4.486400] (motion_cmd) StdoutLine: {'line': b'Dependencies file "libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o.d" is newer than depends file "/home/robodog/RoboDog/ros2_ws/build/motion_cmd/libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/compiler_depend.internal".\n'}
+[4.488559] (motion_cmd) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target gmock_main\x1b[0m\n'}
+[4.507022] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.508844] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build.make libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build\n'}
+[4.511269] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.513488] (motion_cmd) StdoutLine: {'line': b'/usr/bin/gmake  -f libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build.make libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build\n'}
+[4.519501] (-) TimerEvent: {}
+[4.529425] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.531773] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/CMakeFiles/test_spot_micro_kinematics.dir/build'.\n"}
+[4.533645] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.542790] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Entering directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.545311] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Nothing to be done for 'libs/spot_micro_kinematics_cpp/3rd_party/google-test/googletest-build/googlemock/CMakeFiles/gmock_main.dir/build'.\n"}
+[4.548270] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[4.563054] (motion_cmd) StdoutLine: {'line': b'[ 62%] Built target test_spot_micro_kinematics\n'}
+[4.591887] (motion_cmd) StdoutLine: {'line': b'[ 68%] Built target gmock_main\n'}
+[4.605597] (motion_cmd) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o\x1b[0m\n'}
+[4.609491] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -isystem /opt/ros/humble/include/std_srvs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o -MF CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o.d -o CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/idle.cpp\n'}
+[4.619691] (-) TimerEvent: {}
+[4.642230] (motion_cmd) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o\x1b[0m\n'}
+[4.649953] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -isystem /opt/ros/humble/include/std_srvs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o -MF CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o.d -o CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/stand.cpp\n'}
+[4.719891] (-) TimerEvent: {}
+[4.821368] (-) TimerEvent: {}
+[4.922645] (-) TimerEvent: {}
+[5.023862] (-) TimerEvent: {}
+[5.125057] (-) TimerEvent: {}
+[5.226239] (-) TimerEvent: {}
+[5.327480] (-) TimerEvent: {}
+[5.428730] (-) TimerEvent: {}
+[5.529968] (-) TimerEvent: {}
+[5.631123] (-) TimerEvent: {}
+[5.732593] (-) TimerEvent: {}
+[5.834033] (-) TimerEvent: {}
+[5.935415] (-) TimerEvent: {}
+[6.036906] (-) TimerEvent: {}
+[6.138754] (-) TimerEvent: {}
+[6.240047] (-) TimerEvent: {}
+[6.341250] (-) TimerEvent: {}
+[6.442731] (-) TimerEvent: {}
+[6.543985] (-) TimerEvent: {}
+[6.645522] (-) TimerEvent: {}
+[6.746875] (-) TimerEvent: {}
+[6.848255] (-) TimerEvent: {}
+[6.949914] (-) TimerEvent: {}
+[7.051521] (-) TimerEvent: {}
+[7.152845] (-) TimerEvent: {}
+[7.254287] (-) TimerEvent: {}
+[7.355981] (-) TimerEvent: {}
+[7.458265] (-) TimerEvent: {}
+[7.559708] (-) TimerEvent: {}
+[7.661689] (-) TimerEvent: {}
+[7.763382] (-) TimerEvent: {}
+[7.865279] (-) TimerEvent: {}
+[7.967134] (-) TimerEvent: {}
+[8.068689] (-) TimerEvent: {}
+[8.170356] (-) TimerEvent: {}
+[8.272118] (-) TimerEvent: {}
+[8.373704] (-) TimerEvent: {}
+[8.475388] (-) TimerEvent: {}
+[8.577400] (-) TimerEvent: {}
+[8.679268] (-) TimerEvent: {}
+[8.780790] (-) TimerEvent: {}
+[8.882381] (-) TimerEvent: {}
+[8.983988] (-) TimerEvent: {}
+[9.085906] (-) TimerEvent: {}
+[9.187487] (-) TimerEvent: {}
+[9.289092] (-) TimerEvent: {}
+[9.390797] (-) TimerEvent: {}
+[9.492443] (-) TimerEvent: {}
+[9.593986] (-) TimerEvent: {}
+[9.695699] (-) TimerEvent: {}
+[9.797464] (-) TimerEvent: {}
+[9.899103] (-) TimerEvent: {}
+[10.001331] (-) TimerEvent: {}
+[10.104700] (-) TimerEvent: {}
+[10.206839] (-) TimerEvent: {}
+[10.308599] (-) TimerEvent: {}
+[10.410367] (-) TimerEvent: {}
+[10.512744] (-) TimerEvent: {}
+[10.614873] (-) TimerEvent: {}
+[10.717144] (-) TimerEvent: {}
+[10.819266] (-) TimerEvent: {}
+[10.921100] (-) TimerEvent: {}
+[11.022956] (-) TimerEvent: {}
+[11.124723] (-) TimerEvent: {}
+[11.226404] (-) TimerEvent: {}
+[11.328287] (-) TimerEvent: {}
+[11.430228] (-) TimerEvent: {}
+[11.532370] (-) TimerEvent: {}
+[11.634196] (-) TimerEvent: {}
+[11.736158] (-) TimerEvent: {}
+[11.838095] (-) TimerEvent: {}
+[11.940167] (-) TimerEvent: {}
+[12.042192] (-) TimerEvent: {}
+[12.144121] (-) TimerEvent: {}
+[12.246096] (-) TimerEvent: {}
+[12.347994] (-) TimerEvent: {}
+[12.449871] (-) TimerEvent: {}
+[12.551814] (-) TimerEvent: {}
+[12.653784] (-) TimerEvent: {}
+[12.755614] (-) TimerEvent: {}
+[12.857326] (-) TimerEvent: {}
+[12.959144] (-) TimerEvent: {}
+[13.060971] (-) TimerEvent: {}
+[13.162830] (-) TimerEvent: {}
+[13.264438] (-) TimerEvent: {}
+[13.366050] (-) TimerEvent: {}
+[13.467740] (-) TimerEvent: {}
+[13.569334] (-) TimerEvent: {}
+[13.671114] (-) TimerEvent: {}
+[13.772782] (-) TimerEvent: {}
+[13.874393] (-) TimerEvent: {}
+[13.975936] (-) TimerEvent: {}
+[14.077845] (-) TimerEvent: {}
+[14.179976] (-) TimerEvent: {}
+[14.281755] (-) TimerEvent: {}
+[14.383631] (-) TimerEvent: {}
+[14.485224] (-) TimerEvent: {}
+[14.586874] (-) TimerEvent: {}
+[14.688407] (-) TimerEvent: {}
+[14.790204] (-) TimerEvent: {}
+[14.892179] (-) TimerEvent: {}
+[14.994115] (-) TimerEvent: {}
+[15.095854] (-) TimerEvent: {}
+[15.197686] (-) TimerEvent: {}
+[15.299314] (-) TimerEvent: {}
+[15.400921] (-) TimerEvent: {}
+[15.502814] (-) TimerEvent: {}
+[15.604715] (-) TimerEvent: {}
+[15.706815] (-) TimerEvent: {}
+[15.808530] (-) TimerEvent: {}
+[15.910420] (-) TimerEvent: {}
+[16.012240] (-) TimerEvent: {}
+[16.113956] (-) TimerEvent: {}
+[16.215621] (-) TimerEvent: {}
+[16.317593] (-) TimerEvent: {}
+[16.419574] (-) TimerEvent: {}
+[16.521340] (-) TimerEvent: {}
+[16.623199] (-) TimerEvent: {}
+[16.725046] (-) TimerEvent: {}
+[16.826845] (-) TimerEvent: {}
+[16.928448] (-) TimerEvent: {}
+[17.030436] (-) TimerEvent: {}
+[17.132197] (-) TimerEvent: {}
+[17.233986] (-) TimerEvent: {}
+[17.335950] (-) TimerEvent: {}
+[17.437820] (-) TimerEvent: {}
+[17.539833] (-) TimerEvent: {}
+[17.641635] (-) TimerEvent: {}
+[17.743844] (-) TimerEvent: {}
+[17.845610] (-) TimerEvent: {}
+[17.947426] (-) TimerEvent: {}
+[18.049047] (-) TimerEvent: {}
+[18.150716] (-) TimerEvent: {}
+[18.252499] (-) TimerEvent: {}
+[18.354174] (-) TimerEvent: {}
+[18.455883] (-) TimerEvent: {}
+[18.557691] (-) TimerEvent: {}
+[18.659379] (-) TimerEvent: {}
+[18.761034] (-) TimerEvent: {}
+[18.862725] (-) TimerEvent: {}
+[18.964409] (-) TimerEvent: {}
+[19.066191] (-) TimerEvent: {}
+[19.167850] (-) TimerEvent: {}
+[19.269538] (-) TimerEvent: {}
+[19.371200] (-) TimerEvent: {}
+[19.472847] (-) TimerEvent: {}
+[19.575152] (-) TimerEvent: {}
+[19.677485] (-) TimerEvent: {}
+[19.779158] (-) TimerEvent: {}
+[19.880700] (-) TimerEvent: {}
+[19.982254] (-) TimerEvent: {}
+[20.084169] (-) TimerEvent: {}
+[20.185850] (-) TimerEvent: {}
+[20.287464] (-) TimerEvent: {}
+[20.389096] (-) TimerEvent: {}
+[20.490779] (-) TimerEvent: {}
+[20.592448] (-) TimerEvent: {}
+[20.694079] (-) TimerEvent: {}
+[20.795674] (-) TimerEvent: {}
+[20.897616] (-) TimerEvent: {}
+[20.999286] (-) TimerEvent: {}
+[21.101563] (-) TimerEvent: {}
+[21.203872] (-) TimerEvent: {}
+[21.306177] (-) TimerEvent: {}
+[21.408436] (-) TimerEvent: {}
+[21.510869] (-) TimerEvent: {}
+[21.613076] (-) TimerEvent: {}
+[21.715287] (-) TimerEvent: {}
+[21.817538] (-) TimerEvent: {}
+[21.919712] (-) TimerEvent: {}
+[22.021895] (-) TimerEvent: {}
+[22.124133] (-) TimerEvent: {}
+[22.226357] (-) TimerEvent: {}
+[22.328485] (-) TimerEvent: {}
+[22.430709] (-) TimerEvent: {}
+[22.533164] (-) TimerEvent: {}
+[22.635637] (-) TimerEvent: {}
+[22.737822] (-) TimerEvent: {}
+[22.840057] (-) TimerEvent: {}
+[22.942252] (-) TimerEvent: {}
+[23.045043] (-) TimerEvent: {}
+[23.147461] (-) TimerEvent: {}
+[23.249698] (-) TimerEvent: {}
+[23.351920] (-) TimerEvent: {}
+[23.454413] (-) TimerEvent: {}
+[23.556769] (-) TimerEvent: {}
+[23.659055] (-) TimerEvent: {}
+[23.760752] (-) TimerEvent: {}
+[23.862461] (-) TimerEvent: {}
+[23.964085] (-) TimerEvent: {}
+[24.065806] (-) TimerEvent: {}
+[24.167588] (-) TimerEvent: {}
+[24.269368] (-) TimerEvent: {}
+[24.371180] (-) TimerEvent: {}
+[24.472973] (-) TimerEvent: {}
+[24.574801] (-) TimerEvent: {}
+[24.676780] (-) TimerEvent: {}
+[24.778500] (-) TimerEvent: {}
+[24.880286] (-) TimerEvent: {}
+[24.982006] (-) TimerEvent: {}
+[25.083800] (-) TimerEvent: {}
+[25.185718] (-) TimerEvent: {}
+[25.288012] (-) TimerEvent: {}
+[25.390073] (-) TimerEvent: {}
+[25.492068] (-) TimerEvent: {}
+[25.594382] (-) TimerEvent: {}
+[25.696568] (-) TimerEvent: {}
+[25.798654] (-) TimerEvent: {}
+[25.900537] (-) TimerEvent: {}
+[26.002353] (-) TimerEvent: {}
+[26.104135] (-) TimerEvent: {}
+[26.205977] (-) TimerEvent: {}
+[26.307814] (-) TimerEvent: {}
+[26.409555] (-) TimerEvent: {}
+[26.511316] (-) TimerEvent: {}
+[26.613019] (-) TimerEvent: {}
+[26.714731] (-) TimerEvent: {}
+[26.816733] (-) TimerEvent: {}
+[26.918326] (-) TimerEvent: {}
+[27.019993] (-) TimerEvent: {}
+[27.121605] (-) TimerEvent: {}
+[27.223214] (-) TimerEvent: {}
+[27.324878] (-) TimerEvent: {}
+[27.426526] (-) TimerEvent: {}
+[27.528251] (-) TimerEvent: {}
+[27.630071] (-) TimerEvent: {}
+[27.731802] (-) TimerEvent: {}
+[27.833417] (-) TimerEvent: {}
+[27.935074] (-) TimerEvent: {}
+[28.036680] (-) TimerEvent: {}
+[28.138370] (-) TimerEvent: {}
+[28.240011] (-) TimerEvent: {}
+[28.341670] (-) TimerEvent: {}
+[28.443259] (-) TimerEvent: {}
+[28.544859] (-) TimerEvent: {}
+[28.646814] (-) TimerEvent: {}
+[28.748424] (-) TimerEvent: {}
+[28.850136] (-) TimerEvent: {}
+[28.951857] (-) TimerEvent: {}
+[29.053459] (-) TimerEvent: {}
+[29.155201] (-) TimerEvent: {}
+[29.256724] (-) TimerEvent: {}
+[29.358163] (-) TimerEvent: {}
+[29.459636] (-) TimerEvent: {}
+[29.561174] (-) TimerEvent: {}
+[29.662767] (-) TimerEvent: {}
+[29.764351] (-) TimerEvent: {}
+[29.865939] (-) TimerEvent: {}
+[29.967533] (-) TimerEvent: {}
+[30.069091] (-) TimerEvent: {}
+[30.170588] (-) TimerEvent: {}
+[30.272075] (-) TimerEvent: {}
+[30.373678] (-) TimerEvent: {}
+[30.475314] (-) TimerEvent: {}
+[30.576941] (-) TimerEvent: {}
+[30.678545] (-) TimerEvent: {}
+[30.780098] (-) TimerEvent: {}
+[30.881738] (-) TimerEvent: {}
+[30.983498] (-) TimerEvent: {}
+[31.085536] (-) TimerEvent: {}
+[31.187167] (-) TimerEvent: {}
+[31.289365] (-) TimerEvent: {}
+[31.391003] (-) TimerEvent: {}
+[31.493246] (-) TimerEvent: {}
+[31.596077] (-) TimerEvent: {}
+[31.643596] (motion_cmd) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o\x1b[0m\n'}
+[31.652286] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -isystem /opt/ros/humble/include/std_srvs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o -MF CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o.d -o CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_stand.cpp\n'}
+[31.696475] (-) TimerEvent: {}
+[31.798162] (-) TimerEvent: {}
+[31.900024] (-) TimerEvent: {}
+[31.995726] (motion_cmd) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o\x1b[0m\n'}
+[32.000281] (-) TimerEvent: {}
+[32.001603] (motion_cmd) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/main.cpp.o\x1b[0m\n'}
+[32.005645] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -isystem /opt/ros/humble/include/std_srvs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o -MF CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o.d -o CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/transition_idle.cpp\n'}
+[32.008684] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/std_srvs -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/motion_cmd_node.dir/src/main.cpp.o -MF CMakeFiles/motion_cmd_node.dir/src/main.cpp.o.d -o CMakeFiles/motion_cmd_node.dir/src/main.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/main.cpp\n'}
+[32.100413] (-) TimerEvent: {}
+[32.201705] (-) TimerEvent: {}
+[32.303128] (-) TimerEvent: {}
+[32.404442] (-) TimerEvent: {}
+[32.505856] (-) TimerEvent: {}
+[32.607237] (-) TimerEvent: {}
+[32.708769] (-) TimerEvent: {}
+[32.810786] (-) TimerEvent: {}
+[32.912120] (-) TimerEvent: {}
+[33.013839] (-) TimerEvent: {}
+[33.115243] (-) TimerEvent: {}
+[33.216767] (-) TimerEvent: {}
+[33.318351] (-) TimerEvent: {}
+[33.419715] (-) TimerEvent: {}
+[33.521143] (-) TimerEvent: {}
+[33.622898] (-) TimerEvent: {}
+[33.725525] (-) TimerEvent: {}
+[33.826846] (-) TimerEvent: {}
+[33.928322] (-) TimerEvent: {}
+[34.030179] (-) TimerEvent: {}
+[34.131729] (-) TimerEvent: {}
+[34.233217] (-) TimerEvent: {}
+[34.335132] (-) TimerEvent: {}
+[34.436417] (-) TimerEvent: {}
+[34.537967] (-) TimerEvent: {}
+[34.639458] (-) TimerEvent: {}
+[34.740768] (-) TimerEvent: {}
+[34.842261] (-) TimerEvent: {}
+[34.943719] (-) TimerEvent: {}
+[35.045409] (-) TimerEvent: {}
+[35.147088] (-) TimerEvent: {}
+[35.248643] (-) TimerEvent: {}
+[35.350341] (-) TimerEvent: {}
+[35.451869] (-) TimerEvent: {}
+[35.553423] (-) TimerEvent: {}
+[35.655106] (-) TimerEvent: {}
+[35.756835] (-) TimerEvent: {}
+[35.858299] (-) TimerEvent: {}
+[35.960035] (-) TimerEvent: {}
+[36.061804] (-) TimerEvent: {}
+[36.163338] (-) TimerEvent: {}
+[36.264903] (-) TimerEvent: {}
+[36.366523] (-) TimerEvent: {}
+[36.468247] (-) TimerEvent: {}
+[36.570125] (-) TimerEvent: {}
+[36.671670] (-) TimerEvent: {}
+[36.773272] (-) TimerEvent: {}
+[36.874792] (-) TimerEvent: {}
+[36.976402] (-) TimerEvent: {}
+[37.077870] (-) TimerEvent: {}
+[37.179646] (-) TimerEvent: {}
+[37.281123] (-) TimerEvent: {}
+[37.382676] (-) TimerEvent: {}
+[37.484286] (-) TimerEvent: {}
+[37.586084] (-) TimerEvent: {}
+[37.687641] (-) TimerEvent: {}
+[37.789260] (-) TimerEvent: {}
+[37.891326] (-) TimerEvent: {}
+[37.993178] (-) TimerEvent: {}
+[38.094861] (-) TimerEvent: {}
+[38.196612] (-) TimerEvent: {}
+[38.298677] (-) TimerEvent: {}
+[38.401289] (-) TimerEvent: {}
+[38.503138] (-) TimerEvent: {}
+[38.604810] (-) TimerEvent: {}
+[38.706339] (-) TimerEvent: {}
+[38.808049] (-) TimerEvent: {}
+[38.909826] (-) TimerEvent: {}
+[39.011445] (-) TimerEvent: {}
+[39.113126] (-) TimerEvent: {}
+[39.214756] (-) TimerEvent: {}
+[39.316502] (-) TimerEvent: {}
+[39.418234] (-) TimerEvent: {}
+[39.520177] (-) TimerEvent: {}
+[39.622046] (-) TimerEvent: {}
+[39.723975] (-) TimerEvent: {}
+[39.826841] (-) TimerEvent: {}
+[39.929379] (-) TimerEvent: {}
+[40.032277] (-) TimerEvent: {}
+[40.134826] (-) TimerEvent: {}
+[40.236502] (-) TimerEvent: {}
+[40.338192] (-) TimerEvent: {}
+[40.439743] (-) TimerEvent: {}
+[40.541413] (-) TimerEvent: {}
+[40.642940] (-) TimerEvent: {}
+[40.744445] (-) TimerEvent: {}
+[40.846212] (-) TimerEvent: {}
+[40.947828] (-) TimerEvent: {}
+[41.049949] (-) TimerEvent: {}
+[41.152254] (-) TimerEvent: {}
+[41.254447] (-) TimerEvent: {}
+[41.356700] (-) TimerEvent: {}
+[41.458879] (-) TimerEvent: {}
+[41.567427] (-) TimerEvent: {}
+[41.668557] (-) TimerEvent: {}
+[41.769844] (-) TimerEvent: {}
+[41.870980] (-) TimerEvent: {}
+[41.972173] (-) TimerEvent: {}
+[42.073467] (-) TimerEvent: {}
+[42.174536] (-) TimerEvent: {}
+[42.275736] (-) TimerEvent: {}
+[42.376871] (-) TimerEvent: {}
+[42.477978] (-) TimerEvent: {}
+[42.579305] (-) TimerEvent: {}
+[42.680551] (-) TimerEvent: {}
+[42.781843] (-) TimerEvent: {}
+[42.884395] (-) TimerEvent: {}
+[42.987141] (-) TimerEvent: {}
+[43.089887] (-) TimerEvent: {}
+[43.192360] (-) TimerEvent: {}
+[43.295048] (-) TimerEvent: {}
+[43.397465] (-) TimerEvent: {}
+[43.499931] (-) TimerEvent: {}
+[43.602701] (-) TimerEvent: {}
+[43.705051] (-) TimerEvent: {}
+[43.807660] (-) TimerEvent: {}
+[43.910078] (-) TimerEvent: {}
+[44.012460] (-) TimerEvent: {}
+[44.115099] (-) TimerEvent: {}
+[44.217533] (-) TimerEvent: {}
+[44.319955] (-) TimerEvent: {}
+[44.421671] (-) TimerEvent: {}
+[44.523314] (-) TimerEvent: {}
+[44.624928] (-) TimerEvent: {}
+[44.727114] (-) TimerEvent: {}
+[44.829389] (-) TimerEvent: {}
+[44.932670] (-) TimerEvent: {}
+[45.035494] (-) TimerEvent: {}
+[45.137156] (-) TimerEvent: {}
+[45.238927] (-) TimerEvent: {}
+[45.340485] (-) TimerEvent: {}
+[45.442375] (-) TimerEvent: {}
+[45.544416] (-) TimerEvent: {}
+[45.646131] (-) TimerEvent: {}
+[45.747671] (-) TimerEvent: {}
+[45.849211] (-) TimerEvent: {}
+[45.950753] (-) TimerEvent: {}
+[46.052313] (-) TimerEvent: {}
+[46.154069] (-) TimerEvent: {}
+[46.255654] (-) TimerEvent: {}
+[46.357361] (-) TimerEvent: {}
+[46.459427] (-) TimerEvent: {}
+[46.564533] (-) TimerEvent: {}
+[46.667012] (-) TimerEvent: {}
+[46.769568] (-) TimerEvent: {}
+[46.871885] (-) TimerEvent: {}
+[46.974222] (-) TimerEvent: {}
+[47.076610] (-) TimerEvent: {}
+[47.179085] (-) TimerEvent: {}
+[47.281491] (-) TimerEvent: {}
+[47.383911] (-) TimerEvent: {}
+[47.486328] (-) TimerEvent: {}
+[47.588702] (-) TimerEvent: {}
+[47.691134] (-) TimerEvent: {}
+[47.793445] (-) TimerEvent: {}
+[47.895849] (-) TimerEvent: {}
+[47.998387] (-) TimerEvent: {}
+[48.100876] (-) TimerEvent: {}
+[48.203319] (-) TimerEvent: {}
+[48.305749] (-) TimerEvent: {}
+[48.408289] (-) TimerEvent: {}
+[48.510836] (-) TimerEvent: {}
+[48.613211] (-) TimerEvent: {}
+[48.715579] (-) TimerEvent: {}
+[48.817953] (-) TimerEvent: {}
+[48.920332] (-) TimerEvent: {}
+[49.022593] (-) TimerEvent: {}
+[49.125388] (-) TimerEvent: {}
+[49.227955] (-) TimerEvent: {}
+[49.330586] (-) TimerEvent: {}
+[49.433152] (-) TimerEvent: {}
+[49.534647] (-) TimerEvent: {}
+[49.636114] (-) TimerEvent: {}
+[49.737612] (-) TimerEvent: {}
+[49.839183] (-) TimerEvent: {}
+[49.940761] (-) TimerEvent: {}
+[50.042339] (-) TimerEvent: {}
+[50.143937] (-) TimerEvent: {}
+[50.245692] (-) TimerEvent: {}
+[50.347398] (-) TimerEvent: {}
+[50.448932] (-) TimerEvent: {}
+[50.550499] (-) TimerEvent: {}
+[50.652086] (-) TimerEvent: {}
+[50.753779] (-) TimerEvent: {}
+[50.855981] (-) TimerEvent: {}
+[50.957567] (-) TimerEvent: {}
+[51.059769] (-) TimerEvent: {}
+[51.161416] (-) TimerEvent: {}
+[51.263035] (-) TimerEvent: {}
+[51.364694] (-) TimerEvent: {}
+[51.466312] (-) TimerEvent: {}
+[51.571661] (-) TimerEvent: {}
+[51.673263] (-) TimerEvent: {}
+[51.774715] (-) TimerEvent: {}
+[51.876747] (-) TimerEvent: {}
+[51.978308] (-) TimerEvent: {}
+[52.079874] (-) TimerEvent: {}
+[52.181427] (-) TimerEvent: {}
+[52.283200] (-) TimerEvent: {}
+[52.384840] (-) TimerEvent: {}
+[52.486606] (-) TimerEvent: {}
+[52.588331] (-) TimerEvent: {}
+[52.690133] (-) TimerEvent: {}
+[52.792080] (-) TimerEvent: {}
+[52.893869] (-) TimerEvent: {}
+[52.995881] (-) TimerEvent: {}
+[53.097773] (-) TimerEvent: {}
+[53.199538] (-) TimerEvent: {}
+[53.301300] (-) TimerEvent: {}
+[53.403555] (-) TimerEvent: {}
+[53.506240] (-) TimerEvent: {}
+[53.608774] (-) TimerEvent: {}
+[53.711435] (-) TimerEvent: {}
+[53.813921] (-) TimerEvent: {}
+[53.916362] (-) TimerEvent: {}
+[54.018723] (-) TimerEvent: {}
+[54.121207] (-) TimerEvent: {}
+[54.224353] (-) TimerEvent: {}
+[54.325959] (-) TimerEvent: {}
+[54.428005] (-) TimerEvent: {}
+[54.529869] (-) TimerEvent: {}
+[54.631387] (-) TimerEvent: {}
+[54.732987] (-) TimerEvent: {}
+[54.834554] (-) TimerEvent: {}
+[54.936146] (-) TimerEvent: {}
+[55.037821] (-) TimerEvent: {}
+[55.139467] (-) TimerEvent: {}
+[55.241159] (-) TimerEvent: {}
+[55.342736] (-) TimerEvent: {}
+[55.444390] (-) TimerEvent: {}
+[55.546281] (-) TimerEvent: {}
+[55.647819] (-) TimerEvent: {}
+[55.749351] (-) TimerEvent: {}
+[55.850945] (-) TimerEvent: {}
+[55.952449] (-) TimerEvent: {}
+[56.054142] (-) TimerEvent: {}
+[56.155755] (-) TimerEvent: {}
+[56.257344] (-) TimerEvent: {}
+[56.359104] (-) TimerEvent: {}
+[56.460645] (-) TimerEvent: {}
+[56.562161] (-) TimerEvent: {}
+[56.667370] (-) TimerEvent: {}
+[56.769016] (-) TimerEvent: {}
+[56.870470] (-) TimerEvent: {}
+[56.971965] (-) TimerEvent: {}
+[57.073493] (-) TimerEvent: {}
+[57.175038] (-) TimerEvent: {}
+[57.276480] (-) TimerEvent: {}
+[57.378055] (-) TimerEvent: {}
+[57.479728] (-) TimerEvent: {}
+[57.581324] (-) TimerEvent: {}
+[57.682855] (-) TimerEvent: {}
+[57.784343] (-) TimerEvent: {}
+[57.885829] (-) TimerEvent: {}
+[57.987429] (-) TimerEvent: {}
+[58.088955] (-) TimerEvent: {}
+[58.190773] (-) TimerEvent: {}
+[58.292573] (-) TimerEvent: {}
+[58.394122] (-) TimerEvent: {}
+[58.496407] (-) TimerEvent: {}
+[58.597875] (-) TimerEvent: {}
+[58.699441] (-) TimerEvent: {}
+[58.801275] (-) TimerEvent: {}
+[58.814867] (motion_cmd) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding CXX object CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o\x1b[0m\n'}
+[58.824485] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -isystem /opt/ros/humble/include/std_srvs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o -MF CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o.d -o CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm/walk.cpp\n'}
+[58.901523] (-) TimerEvent: {}
+[58.976131] (motion_cmd) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o\x1b[0m\n'}
+[58.981822] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ -DDEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp -DRCUTILS_ENABLE_FAULT_INJECTION -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/include/motion_cmd -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/smfsm -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/rate_limited_first_order_filter -I/home/robodog/RoboDog/ros2_ws/src/motion_cmd/libs/spot_micro_kinematics_cpp/include -isystem /usr/include/eigen3 -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include/i2cpwm_controller -isystem /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/include -isystem /opt/ros/humble/include/rclcpp -isystem /opt/ros/humble/include/std_msgs -isystem /opt/ros/humble/include/geometry_msgs -isystem /opt/ros/humble/include/tf2 -isystem /opt/ros/humble/include/tf2_ros -isystem /opt/ros/humble/include/tf2_geometry_msgs -isystem /opt/ros/humble/include/tf2_eigen -isystem /opt/ros/humble/include/ament_index_cpp -isystem /opt/ros/humble/include/libstatistics_collector -isystem /opt/ros/humble/include/builtin_interfaces -isystem /opt/ros/humble/include/rosidl_runtime_c -isystem /opt/ros/humble/include/rcutils -isystem /opt/ros/humble/include/rosidl_typesupport_interface -isystem /opt/ros/humble/include/fastcdr -isystem /opt/ros/humble/include/rosidl_runtime_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_cpp -isystem /opt/ros/humble/include/rmw -isystem /opt/ros/humble/include/rosidl_typesupport_fastrtps_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_c -isystem /opt/ros/humble/include/rosidl_typesupport_introspection_cpp -isystem /opt/ros/humble/include/rcl -isystem /opt/ros/humble/include/rcl_interfaces -isystem /opt/ros/humble/include/rcl_logging_interface -isystem /opt/ros/humble/include/rcl_yaml_param_parser -isystem /opt/ros/humble/include/libyaml_vendor -isystem /opt/ros/humble/include/tracetools -isystem /opt/ros/humble/include/rcpputils -isystem /opt/ros/humble/include/statistics_msgs -isystem /opt/ros/humble/include/rosgraph_msgs -isystem /opt/ros/humble/include/rosidl_typesupport_cpp -isystem /opt/ros/humble/include/rosidl_typesupport_c -isystem /opt/ros/humble/include/std_srvs -isystem /opt/ros/humble/include/message_filters -isystem /opt/ros/humble/include/rclcpp_action -isystem /opt/ros/humble/include/action_msgs -isystem /opt/ros/humble/include/unique_identifier_msgs -isystem /opt/ros/humble/include/rcl_action -isystem /opt/ros/humble/include/tf2_msgs -Wno-error=maybe-uninitialized -std=gnu++17 -MD -MT CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o -MF CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o.d -o CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o -c /home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp\n'}
+[59.001802] (-) TimerEvent: {}
+[59.103301] (-) TimerEvent: {}
+[59.204802] (-) TimerEvent: {}
+[59.306330] (-) TimerEvent: {}
+[59.407936] (-) TimerEvent: {}
+[59.510095] (-) TimerEvent: {}
+[59.611678] (-) TimerEvent: {}
+[59.713255] (-) TimerEvent: {}
+[59.814944] (-) TimerEvent: {}
+[59.917237] (-) TimerEvent: {}
+[60.018846] (-) TimerEvent: {}
+[60.120689] (-) TimerEvent: {}
+[60.221868] (-) TimerEvent: {}
+[60.323425] (-) TimerEvent: {}
+[60.424892] (-) TimerEvent: {}
+[60.526453] (-) TimerEvent: {}
+[60.628033] (-) TimerEvent: {}
+[60.729555] (-) TimerEvent: {}
+[60.832039] (-) TimerEvent: {}
+[60.934107] (-) TimerEvent: {}
+[61.036622] (-) TimerEvent: {}
+[61.138339] (-) TimerEvent: {}
+[61.240919] (-) TimerEvent: {}
+[61.343110] (-) TimerEvent: {}
+[61.446108] (-) TimerEvent: {}
+[61.548738] (-) TimerEvent: {}
+[61.651653] (-) TimerEvent: {}
+[61.771180] (-) TimerEvent: {}
+[61.873766] (-) TimerEvent: {}
+[61.976454] (-) TimerEvent: {}
+[62.078610] (-) TimerEvent: {}
+[62.132681] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp:6\x1b[m\x1b[K:\n'}
+[62.135867] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_eigen/tf2_eigen/tf2_eigen.h:32:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[62.139097] (motion_cmd) StderrLine: {'line': b'   32 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_eigen/tf2_eigen.hpp instead\n'}
+[62.142502] (motion_cmd) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[62.145843] (motion_cmd) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/motion_cmd/src/utils.cpp:7\x1b[m\x1b[K:\n'}
+[62.149088] (motion_cmd) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/humble/include/tf2_geometry_msgs/tf2_geometry_msgs/tf2_geometry_msgs.h:35:2:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K#warning This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wcpp\x07-Wcpp\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[62.152198] (motion_cmd) StderrLine: {'line': b'   35 | #\x1b[01;35m\x1b[Kwarning\x1b[m\x1b[K This header is obsolete, please include tf2_geometry_msgs/tf2_geometry_msgs.hpp instead\n'}
+[62.155775] (motion_cmd) StderrLine: {'line': b'      |  \x1b[01;35m\x1b[K^~~~~~~\x1b[m\x1b[K\n'}
+[62.178867] (-) TimerEvent: {}
+[62.280534] (-) TimerEvent: {}
+[62.382113] (-) TimerEvent: {}
+[62.483715] (-) TimerEvent: {}
+[62.585427] (-) TimerEvent: {}
+[62.687093] (-) TimerEvent: {}
+[62.789573] (-) TimerEvent: {}
+[62.892134] (-) TimerEvent: {}
+[62.994576] (-) TimerEvent: {}
+[63.096104] (-) TimerEvent: {}
+[63.197787] (-) TimerEvent: {}
+[63.299673] (-) TimerEvent: {}
+[63.402576] (-) TimerEvent: {}
+[63.504978] (-) TimerEvent: {}
+[63.607720] (-) TimerEvent: {}
+[63.710125] (-) TimerEvent: {}
+[63.813472] (-) TimerEvent: {}
+[63.916518] (-) TimerEvent: {}
+[64.018426] (-) TimerEvent: {}
+[64.120682] (-) TimerEvent: {}
+[64.223195] (-) TimerEvent: {}
+[64.326101] (-) TimerEvent: {}
+[64.428568] (-) TimerEvent: {}
+[64.530952] (-) TimerEvent: {}
+[64.633656] (-) TimerEvent: {}
+[64.735699] (-) TimerEvent: {}
+[64.838035] (-) TimerEvent: {}
+[64.940817] (-) TimerEvent: {}
+[65.043030] (-) TimerEvent: {}
+[65.144412] (-) TimerEvent: {}
+[65.245782] (-) TimerEvent: {}
+[65.347123] (-) TimerEvent: {}
+[65.448756] (-) TimerEvent: {}
+[65.550266] (-) TimerEvent: {}
+[65.651764] (-) TimerEvent: {}
+[65.753205] (-) TimerEvent: {}
+[65.854633] (-) TimerEvent: {}
+[65.956023] (-) TimerEvent: {}
+[66.057455] (-) TimerEvent: {}
+[66.158945] (-) TimerEvent: {}
+[66.260256] (-) TimerEvent: {}
+[66.361639] (-) TimerEvent: {}
+[66.463076] (-) TimerEvent: {}
+[66.564542] (-) TimerEvent: {}
+[66.665955] (-) TimerEvent: {}
+[66.771399] (-) TimerEvent: {}
+[66.873897] (-) TimerEvent: {}
+[66.975848] (-) TimerEvent: {}
+[67.077934] (-) TimerEvent: {}
+[67.180431] (-) TimerEvent: {}
+[67.282501] (-) TimerEvent: {}
+[67.384746] (-) TimerEvent: {}
+[67.486840] (-) TimerEvent: {}
+[67.588906] (-) TimerEvent: {}
+[67.691075] (-) TimerEvent: {}
+[67.793505] (-) TimerEvent: {}
+[67.896267] (-) TimerEvent: {}
+[67.998536] (-) TimerEvent: {}
+[68.101051] (-) TimerEvent: {}
+[68.203209] (-) TimerEvent: {}
+[68.304600] (-) TimerEvent: {}
+[68.405985] (-) TimerEvent: {}
+[68.507380] (-) TimerEvent: {}
+[68.608772] (-) TimerEvent: {}
+[68.710233] (-) TimerEvent: {}
+[68.811777] (-) TimerEvent: {}
+[68.913613] (-) TimerEvent: {}
+[69.015413] (-) TimerEvent: {}
+[69.117694] (-) TimerEvent: {}
+[69.219825] (-) TimerEvent: {}
+[69.321418] (-) TimerEvent: {}
+[69.423006] (-) TimerEvent: {}
+[69.524581] (-) TimerEvent: {}
+[69.626271] (-) TimerEvent: {}
+[69.728531] (-) TimerEvent: {}
+[69.830583] (-) TimerEvent: {}
+[69.932984] (-) TimerEvent: {}
+[70.035518] (-) TimerEvent: {}
+[70.138110] (-) TimerEvent: {}
+[70.240441] (-) TimerEvent: {}
+[70.342771] (-) TimerEvent: {}
+[70.444975] (-) TimerEvent: {}
+[70.547089] (-) TimerEvent: {}
+[70.649252] (-) TimerEvent: {}
+[70.751811] (-) TimerEvent: {}
+[70.853957] (-) TimerEvent: {}
+[70.956115] (-) TimerEvent: {}
+[71.059102] (-) TimerEvent: {}
+[71.162652] (-) TimerEvent: {}
+[71.265132] (-) TimerEvent: {}
+[71.368482] (-) TimerEvent: {}
+[71.472304] (-) TimerEvent: {}
+[71.574935] (-) TimerEvent: {}
+[71.676658] (-) TimerEvent: {}
+[71.784852] (-) TimerEvent: {}
+[71.886622] (-) TimerEvent: {}
+[71.988283] (-) TimerEvent: {}
+[72.090067] (-) TimerEvent: {}
+[72.192447] (-) TimerEvent: {}
+[72.294736] (-) TimerEvent: {}
+[72.396400] (-) TimerEvent: {}
+[72.498027] (-) TimerEvent: {}
+[72.599770] (-) TimerEvent: {}
+[72.701823] (-) TimerEvent: {}
+[72.804130] (-) TimerEvent: {}
+[72.907078] (-) TimerEvent: {}
+[73.011240] (-) TimerEvent: {}
+[73.113763] (-) TimerEvent: {}
+[73.216576] (-) TimerEvent: {}
+[73.319172] (-) TimerEvent: {}
+[73.422109] (-) TimerEvent: {}
+[73.525486] (-) TimerEvent: {}
+[73.629116] (-) TimerEvent: {}
+[73.731701] (-) TimerEvent: {}
+[73.833795] (-) TimerEvent: {}
+[73.935874] (-) TimerEvent: {}
+[74.038008] (-) TimerEvent: {}
+[74.140079] (-) TimerEvent: {}
+[74.242227] (-) TimerEvent: {}
+[74.344382] (-) TimerEvent: {}
+[74.446611] (-) TimerEvent: {}
+[74.548631] (-) TimerEvent: {}
+[74.650811] (-) TimerEvent: {}
+[74.752956] (-) TimerEvent: {}
+[74.855844] (-) TimerEvent: {}
+[74.958011] (-) TimerEvent: {}
+[75.060029] (-) TimerEvent: {}
+[75.162196] (-) TimerEvent: {}
+[75.264255] (-) TimerEvent: {}
+[75.366243] (-) TimerEvent: {}
+[75.468356] (-) TimerEvent: {}
+[75.570757] (-) TimerEvent: {}
+[75.673066] (-) TimerEvent: {}
+[75.775501] (-) TimerEvent: {}
+[75.877647] (-) TimerEvent: {}
+[75.980285] (-) TimerEvent: {}
+[76.082589] (-) TimerEvent: {}
+[76.184901] (-) TimerEvent: {}
+[76.287046] (-) TimerEvent: {}
+[76.389540] (-) TimerEvent: {}
+[76.491605] (-) TimerEvent: {}
+[76.593864] (-) TimerEvent: {}
+[76.696041] (-) TimerEvent: {}
+[76.798437] (-) TimerEvent: {}
+[76.900804] (-) TimerEvent: {}
+[77.002932] (-) TimerEvent: {}
+[77.105341] (-) TimerEvent: {}
+[77.207473] (-) TimerEvent: {}
+[77.309467] (-) TimerEvent: {}
+[77.411448] (-) TimerEvent: {}
+[77.513464] (-) TimerEvent: {}
+[77.615389] (-) TimerEvent: {}
+[77.717454] (-) TimerEvent: {}
+[77.819480] (-) TimerEvent: {}
+[77.921527] (-) TimerEvent: {}
+[78.023528] (-) TimerEvent: {}
+[78.125530] (-) TimerEvent: {}
+[78.227595] (-) TimerEvent: {}
+[78.329623] (-) TimerEvent: {}
+[78.431798] (-) TimerEvent: {}
+[78.534736] (-) TimerEvent: {}
+[78.637052] (-) TimerEvent: {}
+[78.739454] (-) TimerEvent: {}
+[78.841667] (-) TimerEvent: {}
+[78.943954] (-) TimerEvent: {}
+[79.046341] (-) TimerEvent: {}
+[79.148778] (-) TimerEvent: {}
+[79.251160] (-) TimerEvent: {}
+[79.353549] (-) TimerEvent: {}
+[79.455899] (-) TimerEvent: {}
+[79.558988] (-) TimerEvent: {}
+[79.661051] (-) TimerEvent: {}
+[79.763301] (-) TimerEvent: {}
+[79.866023] (-) TimerEvent: {}
+[79.968935] (-) TimerEvent: {}
+[80.071029] (-) TimerEvent: {}
+[80.173197] (-) TimerEvent: {}
+[80.275295] (-) TimerEvent: {}
+[80.377451] (-) TimerEvent: {}
+[80.479486] (-) TimerEvent: {}
+[80.581540] (-) TimerEvent: {}
+[80.684074] (-) TimerEvent: {}
+[80.786385] (-) TimerEvent: {}
+[80.888391] (-) TimerEvent: {}
+[80.990503] (-) TimerEvent: {}
+[81.092775] (-) TimerEvent: {}
+[81.194982] (-) TimerEvent: {}
+[81.297051] (-) TimerEvent: {}
+[81.399004] (-) TimerEvent: {}
+[81.501030] (-) TimerEvent: {}
+[81.602122] (-) TimerEvent: {}
+[81.704119] (-) TimerEvent: {}
+[81.806156] (-) TimerEvent: {}
+[81.908178] (-) TimerEvent: {}
+[82.010059] (-) TimerEvent: {}
+[82.112074] (-) TimerEvent: {}
+[82.214549] (-) TimerEvent: {}
+[82.316653] (-) TimerEvent: {}
+[82.418724] (-) TimerEvent: {}
+[82.520728] (-) TimerEvent: {}
+[82.621768] (-) TimerEvent: {}
+[82.722917] (-) TimerEvent: {}
+[82.823960] (-) TimerEvent: {}
+[82.925090] (-) TimerEvent: {}
+[83.027322] (-) TimerEvent: {}
+[83.129431] (-) TimerEvent: {}
+[83.232250] (-) TimerEvent: {}
+[83.334464] (-) TimerEvent: {}
+[83.436623] (-) TimerEvent: {}
+[83.538744] (-) TimerEvent: {}
+[83.641002] (-) TimerEvent: {}
+[83.742981] (-) TimerEvent: {}
+[83.845074] (-) TimerEvent: {}
+[83.947151] (-) TimerEvent: {}
+[84.049488] (-) TimerEvent: {}
+[84.151520] (-) TimerEvent: {}
+[84.253846] (-) TimerEvent: {}
+[84.355849] (-) TimerEvent: {}
+[84.457975] (-) TimerEvent: {}
+[84.559699] (-) TimerEvent: {}
+[84.660947] (-) TimerEvent: {}
+[84.762303] (-) TimerEvent: {}
+[84.863308] (-) TimerEvent: {}
+[84.964265] (-) TimerEvent: {}
+[85.066336] (-) TimerEvent: {}
+[85.168306] (-) TimerEvent: {}
+[85.270395] (-) TimerEvent: {}
+[85.372437] (-) TimerEvent: {}
+[85.474617] (-) TimerEvent: {}
+[85.576637] (-) TimerEvent: {}
+[85.678709] (-) TimerEvent: {}
+[85.780802] (-) TimerEvent: {}
+[85.882930] (-) TimerEvent: {}
+[85.985015] (-) TimerEvent: {}
+[86.086034] (-) TimerEvent: {}
+[86.187052] (-) TimerEvent: {}
+[86.288077] (-) TimerEvent: {}
+[86.389795] (-) TimerEvent: {}
+[86.491219] (-) TimerEvent: {}
+[86.592833] (-) TimerEvent: {}
+[86.694407] (-) TimerEvent: {}
+[86.924840] (-) TimerEvent: {}
+[87.026215] (-) TimerEvent: {}
+[87.128914] (-) TimerEvent: {}
+[87.231104] (-) TimerEvent: {}
+[87.333729] (-) TimerEvent: {}
+[87.437457] (-) TimerEvent: {}
+[87.541385] (-) TimerEvent: {}
+[87.573072] (motion_cmd) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX static library libsmfsm.a\x1b[0m\n'}
+[87.578049] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -P CMakeFiles/smfsm.dir/cmake_clean_target.cmake\n'}
+[87.626016] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_link_script CMakeFiles/smfsm.dir/link.txt --verbose=1\n'}
+[87.641663] (-) TimerEvent: {}
+[87.665515] (motion_cmd) StdoutLine: {'line': b'/usr/bin/ar qc libsmfsm.a CMakeFiles/smfsm.dir/src/smfsm/state.cpp.o CMakeFiles/smfsm.dir/src/smfsm/idle.cpp.o CMakeFiles/smfsm.dir/src/smfsm/stand.cpp.o CMakeFiles/smfsm.dir/src/smfsm/transition_stand.cpp.o CMakeFiles/smfsm.dir/src/smfsm/transition_idle.cpp.o CMakeFiles/smfsm.dir/src/smfsm/walk.cpp.o\n'}
+[87.741882] (-) TimerEvent: {}
+[87.744538] (motion_cmd) StdoutLine: {'line': b'/usr/bin/ranlib libsmfsm.a\n'}
+[87.829848] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[87.842182] (-) TimerEvent: {}
+[87.881385] (motion_cmd) StdoutLine: {'line': b'[ 96%] Built target smfsm\n'}
+[87.942408] (-) TimerEvent: {}
+[88.043764] (-) TimerEvent: {}
+[88.145130] (-) TimerEvent: {}
+[88.246244] (-) TimerEvent: {}
+[88.347173] (-) TimerEvent: {}
+[88.447969] (-) TimerEvent: {}
+[88.548784] (-) TimerEvent: {}
+[88.649590] (-) TimerEvent: {}
+[88.750424] (-) TimerEvent: {}
+[88.851195] (-) TimerEvent: {}
+[88.951969] (-) TimerEvent: {}
+[89.052742] (-) TimerEvent: {}
+[89.153475] (-) TimerEvent: {}
+[89.254239] (-) TimerEvent: {}
+[89.355070] (-) TimerEvent: {}
+[89.455794] (-) TimerEvent: {}
+[89.556582] (-) TimerEvent: {}
+[89.657346] (-) TimerEvent: {}
+[89.758097] (-) TimerEvent: {}
+[89.858896] (-) TimerEvent: {}
+[89.959720] (-) TimerEvent: {}
+[90.060535] (-) TimerEvent: {}
+[90.161572] (-) TimerEvent: {}
+[90.262341] (-) TimerEvent: {}
+[90.363188] (-) TimerEvent: {}
+[90.463971] (-) TimerEvent: {}
+[90.564772] (-) TimerEvent: {}
+[90.665527] (-) TimerEvent: {}
+[90.766286] (-) TimerEvent: {}
+[90.867098] (-) TimerEvent: {}
+[90.967840] (-) TimerEvent: {}
+[91.068616] (-) TimerEvent: {}
+[91.169425] (-) TimerEvent: {}
+[91.270255] (-) TimerEvent: {}
+[91.371351] (-) TimerEvent: {}
+[91.472193] (-) TimerEvent: {}
+[91.573042] (-) TimerEvent: {}
+[91.673874] (-) TimerEvent: {}
+[91.774790] (-) TimerEvent: {}
+[91.875609] (-) TimerEvent: {}
+[91.976389] (-) TimerEvent: {}
+[92.077156] (-) TimerEvent: {}
+[92.177900] (-) TimerEvent: {}
+[92.278727] (-) TimerEvent: {}
+[92.379832] (-) TimerEvent: {}
+[92.480656] (-) TimerEvent: {}
+[92.581436] (-) TimerEvent: {}
+[92.682225] (-) TimerEvent: {}
+[92.783033] (-) TimerEvent: {}
+[92.883833] (-) TimerEvent: {}
+[92.984622] (-) TimerEvent: {}
+[93.085389] (-) TimerEvent: {}
+[93.186140] (-) TimerEvent: {}
+[93.286958] (-) TimerEvent: {}
+[93.387773] (-) TimerEvent: {}
+[93.488581] (-) TimerEvent: {}
+[93.589386] (-) TimerEvent: {}
+[93.690225] (-) TimerEvent: {}
+[93.791105] (-) TimerEvent: {}
+[93.891920] (-) TimerEvent: {}
+[93.992665] (-) TimerEvent: {}
+[94.093457] (-) TimerEvent: {}
+[94.194212] (-) TimerEvent: {}
+[94.295045] (-) TimerEvent: {}
+[94.395866] (-) TimerEvent: {}
+[94.496644] (-) TimerEvent: {}
+[94.597459] (-) TimerEvent: {}
+[94.698277] (-) TimerEvent: {}
+[94.799150] (-) TimerEvent: {}
+[94.899905] (-) TimerEvent: {}
+[95.000715] (-) TimerEvent: {}
+[95.101496] (-) TimerEvent: {}
+[95.202278] (-) TimerEvent: {}
+[95.303123] (-) TimerEvent: {}
+[95.403861] (-) TimerEvent: {}
+[95.504656] (-) TimerEvent: {}
+[95.605426] (-) TimerEvent: {}
+[95.706250] (-) TimerEvent: {}
+[95.807160] (-) TimerEvent: {}
+[95.907990] (-) TimerEvent: {}
+[96.008811] (-) TimerEvent: {}
+[96.109586] (-) TimerEvent: {}
+[96.210365] (-) TimerEvent: {}
+[96.311252] (-) TimerEvent: {}
+[96.412039] (-) TimerEvent: {}
+[96.512801] (-) TimerEvent: {}
+[96.613599] (-) TimerEvent: {}
+[96.714383] (-) TimerEvent: {}
+[96.815192] (-) TimerEvent: {}
+[96.916017] (-) TimerEvent: {}
+[97.016821] (-) TimerEvent: {}
+[97.117582] (-) TimerEvent: {}
+[97.218395] (-) TimerEvent: {}
+[97.319252] (-) TimerEvent: {}
+[97.420054] (-) TimerEvent: {}
+[97.520877] (-) TimerEvent: {}
+[97.621657] (-) TimerEvent: {}
+[97.722484] (-) TimerEvent: {}
+[97.823403] (-) TimerEvent: {}
+[97.924189] (-) TimerEvent: {}
+[98.024994] (-) TimerEvent: {}
+[98.125774] (-) TimerEvent: {}
+[98.226658] (-) TimerEvent: {}
+[98.327416] (-) TimerEvent: {}
+[98.428288] (-) TimerEvent: {}
+[98.529111] (-) TimerEvent: {}
+[98.629855] (-) TimerEvent: {}
+[98.730666] (-) TimerEvent: {}
+[98.831444] (-) TimerEvent: {}
+[98.932316] (-) TimerEvent: {}
+[99.033391] (-) TimerEvent: {}
+[99.134167] (-) TimerEvent: {}
+[99.234997] (-) TimerEvent: {}
+[99.335840] (-) TimerEvent: {}
+[99.436679] (-) TimerEvent: {}
+[99.537461] (-) TimerEvent: {}
+[99.638311] (-) TimerEvent: {}
+[99.739126] (-) TimerEvent: {}
+[99.839973] (-) TimerEvent: {}
+[99.940843] (-) TimerEvent: {}
+[100.041632] (-) TimerEvent: {}
+[100.142479] (-) TimerEvent: {}
+[100.243253] (-) TimerEvent: {}
+[100.344020] (-) TimerEvent: {}
+[100.444826] (-) TimerEvent: {}
+[100.545606] (-) TimerEvent: {}
+[100.646398] (-) TimerEvent: {}
+[100.747200] (-) TimerEvent: {}
+[100.847967] (-) TimerEvent: {}
+[100.948792] (-) TimerEvent: {}
+[101.049529] (-) TimerEvent: {}
+[101.150349] (-) TimerEvent: {}
+[101.251119] (-) TimerEvent: {}
+[101.351923] (-) TimerEvent: {}
+[101.452730] (-) TimerEvent: {}
+[101.553527] (-) TimerEvent: {}
+[101.654333] (-) TimerEvent: {}
+[101.755107] (-) TimerEvent: {}
+[101.855889] (-) TimerEvent: {}
+[101.956716] (-) TimerEvent: {}
+[102.057533] (-) TimerEvent: {}
+[102.158408] (-) TimerEvent: {}
+[102.259182] (-) TimerEvent: {}
+[102.359949] (-) TimerEvent: {}
+[102.460722] (-) TimerEvent: {}
+[102.561487] (-) TimerEvent: {}
+[102.662265] (-) TimerEvent: {}
+[102.762985] (-) TimerEvent: {}
+[102.863790] (-) TimerEvent: {}
+[102.964572] (-) TimerEvent: {}
+[103.065338] (-) TimerEvent: {}
+[103.166130] (-) TimerEvent: {}
+[103.266914] (-) TimerEvent: {}
+[103.367690] (-) TimerEvent: {}
+[103.468490] (-) TimerEvent: {}
+[103.569368] (-) TimerEvent: {}
+[103.670462] (-) TimerEvent: {}
+[103.771632] (-) TimerEvent: {}
+[103.872528] (-) TimerEvent: {}
+[103.973306] (-) TimerEvent: {}
+[104.074568] (-) TimerEvent: {}
+[104.175856] (-) TimerEvent: {}
+[104.277201] (-) TimerEvent: {}
+[104.378421] (-) TimerEvent: {}
+[104.479593] (-) TimerEvent: {}
+[104.580933] (-) TimerEvent: {}
+[104.682186] (-) TimerEvent: {}
+[104.783288] (-) TimerEvent: {}
+[104.884522] (-) TimerEvent: {}
+[104.985485] (-) TimerEvent: {}
+[105.086470] (-) TimerEvent: {}
+[105.187324] (-) TimerEvent: {}
+[105.288105] (-) TimerEvent: {}
+[105.388932] (-) TimerEvent: {}
+[105.489714] (-) TimerEvent: {}
+[105.590497] (-) TimerEvent: {}
+[105.691311] (-) TimerEvent: {}
+[105.792037] (-) TimerEvent: {}
+[105.892825] (-) TimerEvent: {}
+[105.993633] (-) TimerEvent: {}
+[106.094432] (-) TimerEvent: {}
+[106.195327] (-) TimerEvent: {}
+[106.296149] (-) TimerEvent: {}
+[106.396973] (-) TimerEvent: {}
+[106.497765] (-) TimerEvent: {}
+[106.598550] (-) TimerEvent: {}
+[106.699392] (-) TimerEvent: {}
+[106.800622] (-) TimerEvent: {}
+[106.901375] (-) TimerEvent: {}
+[107.002128] (-) TimerEvent: {}
+[107.102907] (-) TimerEvent: {}
+[107.203746] (-) TimerEvent: {}
+[107.304594] (-) TimerEvent: {}
+[107.405338] (-) TimerEvent: {}
+[107.506124] (-) TimerEvent: {}
+[107.606903] (-) TimerEvent: {}
+[107.707742] (-) TimerEvent: {}
+[107.808548] (-) TimerEvent: {}
+[107.909298] (-) TimerEvent: {}
+[108.010085] (-) TimerEvent: {}
+[108.110929] (-) TimerEvent: {}
+[108.211799] (-) TimerEvent: {}
+[108.312594] (-) TimerEvent: {}
+[108.413360] (-) TimerEvent: {}
+[108.514159] (-) TimerEvent: {}
+[108.614960] (-) TimerEvent: {}
+[108.715747] (-) TimerEvent: {}
+[108.816577] (-) TimerEvent: {}
+[108.917351] (-) TimerEvent: {}
+[109.018169] (-) TimerEvent: {}
+[109.118977] (-) TimerEvent: {}
+[109.219835] (-) TimerEvent: {}
+[109.320676] (-) TimerEvent: {}
+[109.421554] (-) TimerEvent: {}
+[109.522477] (-) TimerEvent: {}
+[109.623587] (-) TimerEvent: {}
+[109.725028] (-) TimerEvent: {}
+[109.826023] (-) TimerEvent: {}
+[109.927134] (-) TimerEvent: {}
+[110.027937] (-) TimerEvent: {}
+[110.128772] (-) TimerEvent: {}
+[110.229575] (-) TimerEvent: {}
+[110.330547] (-) TimerEvent: {}
+[110.431608] (-) TimerEvent: {}
+[110.532589] (-) TimerEvent: {}
+[110.633609] (-) TimerEvent: {}
+[110.734581] (-) TimerEvent: {}
+[110.835629] (-) TimerEvent: {}
+[110.936461] (-) TimerEvent: {}
+[111.037155] (-) TimerEvent: {}
+[111.138145] (-) TimerEvent: {}
+[111.238978] (-) TimerEvent: {}
+[111.339903] (-) TimerEvent: {}
+[111.374670] (motion_cmd) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable motion_cmd_node\x1b[0m\n'}
+[111.377691] (motion_cmd) StdoutLine: {'line': b'/usr/bin/cmake -E cmake_link_script CMakeFiles/motion_cmd_node.dir/link.txt --verbose=1\n'}
+[111.405344] (motion_cmd) StdoutLine: {'line': b'/usr/bin/c++ CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o CMakeFiles/motion_cmd_node.dir/src/main.cpp.o CMakeFiles/motion_cmd_node.dir/src/utils.cpp.o -o motion_cmd_node  -Wl,-rpath,/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/lib: /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_c.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_fastrtps_cpp.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_c.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_introspection_cpp.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_py.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller_lib.so /opt/ros/humble/lib/libstatic_transform_broadcaster_node.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_c.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_generator_c.so /home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/libi2cpwm_controller__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libstd_srvs__rosidl_generator_py.so /opt/ros/humble/lib/libstd_srvs__rosidl_typesupport_c.so /opt/ros/humble/lib/libstd_srvs__rosidl_generator_c.so /usr/lib/aarch64-linux-gnu/libi2c.so /usr/lib/aarch64-linux-gnu/liborocos-kdl.so /opt/ros/humble/lib/libtf2_ros.so /opt/ros/humble/lib/libtf2.so /opt/ros/humble/lib/libmessage_filters.so /opt/ros/humble/lib/librclcpp_action.so /opt/ros/humble/lib/librclcpp.so /opt/ros/humble/lib/liblibstatistics_collector.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_py.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/librosgraph_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_py.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/libstatistics_msgs__rosidl_generator_c.so /opt/ros/humble/lib/librcl_action.so /opt/ros/humble/lib/librcl.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_cpp.so /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_py.so /opt/ros/humble/lib/librcl_interfaces__rosidl_typesupport_c.so /opt/ros/humble/lib/librcl_interfaces__rosidl_generator_c.so /opt/ros/humble/lib/librcl_yaml_param_parser.so /opt/ros/humble/lib/libyaml.so /opt/ros/humble/lib/libtracetools.so /opt/ros/humble/lib/librmw_implementation.so /opt/ros/humble/lib/libament_index_cpp.so /opt/ros/humble/lib/librcl_logging_spdlog.so /opt/ros/humble/lib/librcl_logging_interface.so /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so /opt/ros/humble/lib/libfastcdr.so.1.0.24 /opt/ros/humble/lib/librmw.so /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_cpp.so /opt/ros/humble/lib/librosidl_typesupport_cpp.so /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_py.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_py.so /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so /opt/ros/humble/lib/libtf2_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/libtf2_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libgeometry_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libaction_msgs__rosidl_generator_py.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so /opt/ros/humble/lib/libaction_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so /opt/ros/humble/lib/libaction_msgs__rosidl_generator_c.so /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_c.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_py.so /usr/lib/aarch64-linux-gnu/libpython3.10.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_typesupport_c.so /opt/ros/humble/lib/librosidl_typesupport_c.so /opt/ros/humble/lib/librcpputils.so /opt/ros/humble/lib/libunique_identifier_msgs__rosidl_generator_c.so /opt/ros/humble/lib/librosidl_runtime_c.so /opt/ros/humble/lib/librcutils.so -ldl \n'}
+[111.440142] (-) TimerEvent: {}
+[111.541028] (-) TimerEvent: {}
+[111.642235] (-) TimerEvent: {}
+[111.743163] (-) TimerEvent: {}
+[111.844183] (-) TimerEvent: {}
+[111.945278] (-) TimerEvent: {}
+[112.046316] (-) TimerEvent: {}
+[112.147633] (-) TimerEvent: {}
+[112.248952] (-) TimerEvent: {}
+[112.349973] (-) TimerEvent: {}
+[112.451392] (-) TimerEvent: {}
+[112.552751] (-) TimerEvent: {}
+[112.653696] (-) TimerEvent: {}
+[112.754780] (-) TimerEvent: {}
+[112.856336] (-) TimerEvent: {}
+[112.957693] (-) TimerEvent: {}
+[113.058958] (-) TimerEvent: {}
+[113.160074] (-) TimerEvent: {}
+[113.261454] (-) TimerEvent: {}
+[113.362741] (-) TimerEvent: {}
+[113.463660] (-) TimerEvent: {}
+[113.564694] (-) TimerEvent: {}
+[113.666092] (-) TimerEvent: {}
+[113.767387] (-) TimerEvent: {}
+[113.868483] (-) TimerEvent: {}
+[113.969783] (-) TimerEvent: {}
+[114.070776] (-) TimerEvent: {}
+[114.171679] (-) TimerEvent: {}
+[114.272367] (-) TimerEvent: {}
+[114.373117] (-) TimerEvent: {}
+[114.474268] (-) TimerEvent: {}
+[114.574946] (-) TimerEvent: {}
+[114.675769] (-) TimerEvent: {}
+[114.776933] (-) TimerEvent: {}
+[114.877592] (-) TimerEvent: {}
+[114.978372] (-) TimerEvent: {}
+[115.079739] (-) TimerEvent: {}
+[115.180461] (-) TimerEvent: {}
+[115.281153] (-) TimerEvent: {}
+[115.381882] (-) TimerEvent: {}
+[115.482728] (-) TimerEvent: {}
+[115.583620] (-) TimerEvent: {}
+[115.685300] (-) TimerEvent: {}
+[115.688362] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o: in function `SpotMicroMotionCmd::SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node>)':\n"}
+[115.689424] (motion_cmd) StderrLine: {'line': b"motion_cmd.cpp:(.text+0x4c4): undefined reference to `smk::SpotMicroKinematics::SpotMicroKinematics(float, float, float, smk::SpotMicroConfig const&)'\n"}
+[115.691653] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: motion_cmd.cpp:(.text+0x58c): undefined reference to `smk::SpotMicroKinematics::setBodyState(smk::BodyState const&)'\n"}
+[115.696927] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o: in function `SpotMicroMotionCmd::setServoCommandMessageData()':\n"}
+[115.697973] (motion_cmd) StderrLine: {'line': b"motion_cmd.cpp:(.text+0x1b78): undefined reference to `smk::SpotMicroKinematics::setBodyState(smk::BodyState const&)'\n"}
+[115.700143] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: motion_cmd.cpp:(.text+0x1b8c): undefined reference to `smk::SpotMicroKinematics::getLegsJointAngles()'\n"}
+[115.705372] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o: in function `SpotMicroMotionCmd::handleInputCommands()':\n"}
+[115.706324] (motion_cmd) StderrLine: {'line': b"motion_cmd.cpp:(.text+0x2cd8): undefined reference to `smk::SpotMicroKinematics::getBodyState()'\n"}
+[115.710955] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o: in function `SpotMicroMotionCmd::changeState(std::unique_ptr<SpotMicroState, std::default_delete<SpotMicroState> >)':\n"}
+[115.711955] (motion_cmd) StderrLine: {'line': b"motion_cmd.cpp:(.text+0x2db0): undefined reference to `smk::SpotMicroKinematics::getBodyState()'\n"}
+[115.716384] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o: in function `SpotMicroMotionCmd::publishDynamicTransforms()':\n"}
+[115.717565] (motion_cmd) StderrLine: {'line': b"motion_cmd.cpp:(.text+0x3a44): undefined reference to `smk::SpotMicroKinematics::getLegsJointAngles()'\n"}
+[115.719638] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: motion_cmd.cpp:(.text+0x3b40): undefined reference to `smk::SpotMicroKinematics::getBodyHt()'\n"}
+[115.735527] (motion_cmd) StderrLine: {'line': b"/usr/bin/ld: CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o: in function `std::_MakeUniq<SpotMicroIdleState>::__single_object std::make_unique<SpotMicroIdleState>()':\n"}
+[115.736134] (motion_cmd) StderrLine: {'line': b"motion_cmd.cpp:(.text._ZSt11make_uniqueI18SpotMicroIdleStateJEENSt9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueI18SpotMicroIdleStateJEENSt9_MakeUniqIT_E15__single_objectEDpOT0_]+0x20): undefined reference to `SpotMicroIdleState::SpotMicroIdleState()'\n"}
+[115.785416] (-) TimerEvent: {}
+[115.886036] (-) TimerEvent: {}
+[115.986670] (-) TimerEvent: {}
+[116.087417] (-) TimerEvent: {}
+[116.188286] (-) TimerEvent: {}
+[116.195823] (motion_cmd) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[116.200396] (motion_cmd) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/motion_cmd_node.dir/build.make:251: motion_cmd_node] Error 1\n'}
+[116.201274] (motion_cmd) StdoutLine: {'line': b"gmake[2]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[116.202107] (motion_cmd) StdoutLine: {'line': b"gmake[1]: Leaving directory '/home/robodog/RoboDog/ros2_ws/build/motion_cmd'\n"}
+[116.202647] (motion_cmd) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:259: CMakeFiles/motion_cmd_node.dir/all] Error 2\n'}
+[116.203259] (motion_cmd) StderrLine: {'line': b'gmake: *** [Makefile:149: all] Error 2\n'}
+[116.213371] (motion_cmd) CommandEnded: {'returncode': 2}
+[116.288468] (-) TimerEvent: {}
+[116.389771] (-) TimerEvent: {}
+[116.490562] (-) TimerEvent: {}
+[116.591332] (-) TimerEvent: {}
+[116.597873] (motion_cmd) JobEnded: {'identifier': 'motion_cmd', 'rc': 2}
+[116.609576] (-) EventReactorShutdown: {}

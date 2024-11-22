@@ -1,0 +1,41 @@
+[3.135s] Invoking command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration': PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data
+[4.228s] running egg_info
+[4.231s] creating ../../build/servo_calibration/servo_calibration.egg-info
+[4.232s] writing ../../build/servo_calibration/servo_calibration.egg-info/PKG-INFO
+[4.234s] writing dependency_links to ../../build/servo_calibration/servo_calibration.egg-info/dependency_links.txt
+[4.236s] writing entry points to ../../build/servo_calibration/servo_calibration.egg-info/entry_points.txt
+[4.236s] writing requirements to ../../build/servo_calibration/servo_calibration.egg-info/requires.txt
+[4.237s] writing top-level names to ../../build/servo_calibration/servo_calibration.egg-info/top_level.txt
+[4.238s] writing manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+[4.246s] reading manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+[4.247s] adding license file 'LICENSE'
+[4.251s] writing manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+[4.251s] running build
+[4.252s] running build_py
+[4.253s] creating /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build
+[4.254s] creating /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib
+[4.254s] creating /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration
+[4.255s] copying servo_calibration/__init__.py -> /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration
+[4.255s] copying servo_calibration/servo_calib_test.py -> /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration
+[4.255s] copying servo_calibration/servo_move_keyboard.py -> /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration
+[4.256s] running install
+[4.257s] running install_lib
+[4.261s] creating /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration
+[4.262s] copying /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration/__init__.py -> /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration
+[4.262s] copying /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration/servo_calib_test.py -> /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration
+[4.263s] copying /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration/servo_move_keyboard.py -> /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration
+[4.266s] byte-compiling /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/__init__.py to __init__.cpython-310.pyc
+[4.268s] byte-compiling /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/servo_calib_test.py to servo_calib_test.cpython-310.pyc
+[4.275s] byte-compiling /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/servo_move_keyboard.py to servo_move_keyboard.cpython-310.pyc
+[4.281s] running install_data
+[4.281s] creating /home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/ament_index
+[4.282s] creating /home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/ament_index/resource_index
+[4.283s] creating /home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/ament_index/resource_index/packages
+[4.283s] copying resource/servo_calibration -> /home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/ament_index/resource_index/packages
+[4.284s] copying package.xml -> /home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration
+[4.284s] running install_egg_info
+[4.292s] Copying ../../build/servo_calibration/servo_calibration.egg-info to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration-0.0.0-py3.10.egg-info
+[4.299s] running install_scripts
+[4.382s] Installing servo_calib_node script to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/servo_calibration
+[4.385s] writing list of installed files to '/home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log'
+[4.504s] Invoked command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration' returned '0': PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data
