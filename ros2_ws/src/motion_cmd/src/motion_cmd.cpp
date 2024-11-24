@@ -43,7 +43,7 @@ SpotMicroMotionCmd::SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node> nh) {
   // Read in config parameters into smnc_
   // readInConfigParameters();
   setupParameters();
-
+  
   // Initialize spot micro kinematics object of this class
   sm_ = smk::SpotMicroKinematics(0.0f, 0.0f, 0.0f, smnc_.smc);
 
@@ -72,6 +72,7 @@ SpotMicroMotionCmd::SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node> nh) {
   servo_array_absolute_.servos = servo_array_.servos;
 
   // Initialize publishers and subscribers
+  std::cout<<"Before ROS pubs and subs Setup \n";
   // stand cmd event subscriber 
   stand_sub_ = nh_->create_subscription<std_msgs::msg::Bool>(
     "/stand_cmd", // Topic
@@ -123,7 +124,10 @@ SpotMicroMotionCmd::SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node> nh) {
   // Angle command state publisher for lcd monitor
   lcd_angle_cmd_pub_ = nh_->create_publisher<geometry_msgs::msg::Vector3>("lcd_angle_cmd", 1);
 
+  transform_br_ = std::make_shared<tf2_ros::TransformBroadcaster>(nh_);
+  static_transform_br_ = std::make_shared<tf2_ros::StaticTransformBroadcaster>(nh_);
 
+  std::cout<<"After ROS pubs and subs \n";
 
   // Initialize lcd monitor messages
   lcd_state_string_msg_.data = "Idle";
@@ -150,6 +154,7 @@ SpotMicroMotionCmd::SpotMicroMotionCmd(std::shared_ptr<rclcpp::Node> nh) {
     }
   }
 
+  std::cout<<"Before publish static transform \n";
   // Publish static transforms
   publishStaticTransforms();
 }
@@ -554,12 +559,14 @@ void SpotMicroMotionCmd::publishStaticTransforms() {
   tr_stamped = createTransform("base_link", "front_link",
                                0.0, 0.0, 0.0,
                                0.0, 0.0, 0.0);
+  std::cout<<"Before 1st static send \n";
   static_transform_br_->sendTransform(tr_stamped);
 
   // base_link to rear_link transform
   tr_stamped = createTransform("base_link", "rear_link",
                                0.0, 0.0, 0.0,
                                0.0, 0.0, 0.0);
+  std::cout<<"Before 2nd static send \n";                               
   static_transform_br_->sendTransform(tr_stamped);
 
   // base_link to lidar_link transform
@@ -570,6 +577,7 @@ void SpotMicroMotionCmd::publishStaticTransforms() {
   tr_stamped = createTransform("base_link", "lidar_link",
                                x_offset, y_offset, z_offset,
                                0.0, 0.0, yaw_angle);
+  std::cout<<"Before 3rd static send \n";                            
   static_transform_br_->sendTransform(tr_stamped);
 
   // legs to leg cover transforms
@@ -580,10 +588,14 @@ void SpotMicroMotionCmd::publishStaticTransforms() {
       { "rear_left_leg_link",   "rear_left_leg_link_cover" }};
   
   // Loop over all leg to leg cover name pairs, publish a 0 dist/rot transform 
+  std::cout<<"Before 1st loop \n";
+  int i = 1;
   for (auto it = leg_cover_pairs.begin(); it != leg_cover_pairs.end(); it++) {
     tr_stamped = createTransform(it->first, it->second,
                                0.0, 0.0, 0.0,
                                0.0, 0.0, 0.0);
+    std::cout<<"Before " << i <<" loop send \n";
+    i++;
     static_transform_br_->sendTransform(tr_stamped); 
   }
 
@@ -595,10 +607,14 @@ void SpotMicroMotionCmd::publishStaticTransforms() {
       { "rear_left_foot_link",   "rear_left_toe_link" }};
   
   // Loop over all name pairs, publish the same transform
+  std::cout<<"Before 2nd loop \n";
+  i = 1;
   for (auto it = foot_toe_pairs.begin(); it != foot_toe_pairs.end(); it++) {
     tr_stamped = createTransform(it->first, it->second,
                                0.0, 0.0, -0.13, // TODO: Change to a parameter
                                0.0, 0.0, 0.0);
+    std::cout<<"Before " << i <<" loop send \n";
+    i++;
     static_transform_br_->sendTransform(tr_stamped); 
   }
 }
@@ -765,7 +781,7 @@ Affine3d SpotMicroMotionCmd::getOdometryTransform() {
 // Thus setupParameters() cancel the need of the config file all parameters can be
 // found in this function
 void SpotMicroMotionCmd::setupParameters() {
-  
+
   // Robots dimmensions
   smnc_.smc.hip_link_length = 0.055;
   smnc_.smc.upper_leg_link_length = 0.1075;
@@ -835,7 +851,7 @@ void SpotMicroMotionCmd::setupParameters() {
   smnc_.dt = 0.02;
   smnc_.publish_odom = true;
 
-  smnc_.debug_mode = false;
+  smnc_.debug_mode = true;
   smnc_.plot_mode = false;
   smnc_.run_standalone = false;
   

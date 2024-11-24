@@ -1,0 +1,22 @@
+[2.898s] Invoking command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data
+[4.040s] running egg_info
+[4.042s] writing ../../build/servo_calibration/servo_calibration.egg-info/PKG-INFO
+[4.044s] writing dependency_links to ../../build/servo_calibration/servo_calibration.egg-info/dependency_links.txt
+[4.045s] writing entry points to ../../build/servo_calibration/servo_calibration.egg-info/entry_points.txt
+[4.045s] writing requirements to ../../build/servo_calibration/servo_calibration.egg-info/requires.txt
+[4.046s] writing top-level names to ../../build/servo_calibration/servo_calibration.egg-info/top_level.txt
+[4.055s] reading manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+[4.057s] adding license file 'LICENSE'
+[4.060s] writing manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+[4.061s] running build
+[4.062s] running build_py
+[4.063s] running install
+[4.064s] running install_lib
+[4.071s] running install_data
+[4.072s] running install_egg_info
+[4.079s] removing '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration-0.0.0-py3.10.egg-info' (and everything under it)
+[4.084s] Copying ../../build/servo_calibration/servo_calibration.egg-info to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration-0.0.0-py3.10.egg-info
+[4.088s] running install_scripts
+[4.174s] Installing servo_calib_node script to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/servo_calibration
+[4.176s] writing list of installed files to '/home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log'
+[4.302s] Invoked command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data

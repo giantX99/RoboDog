@@ -3,19 +3,18 @@ from launch.actions import DeclareLaunchArgument, GroupAction
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from launch.conditions import IfCondition
-from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python.packages import get_package_share_directory
 import os
 
-def generate_launch_description():
 
+def generate_launch_description():
     # Declare the arguments for the launch file
     return LaunchDescription([
-        DeclareLaunchArgument(
-            'run_standalone',
-            default_value='false',
-            description='Run without i2cpwm_controller node'
-        ),
+        # DeclareLaunchArgument(
+        #     'run_standalone',
+        #     default_value='false',
+        #     description='Run without i2cpwm_controller node'
+        # ),
         DeclareLaunchArgument(
             'debug_mode',
             default_value='false',
@@ -27,14 +26,14 @@ def generate_launch_description():
             description='Run LCD monitor node'
         ),
 
-        # i2cpwm_controller node (only runs if run_standalone is false)
-        Node(
-            package='i2cpwm_controller',
-            executable='i2cpwm_controller_node',
-            name='i2cpwm_controller_node',
-            output='screen',
-            condition=IfCondition(LaunchConfiguration('run_standalone').not_equals('true'))
-        ),
+        # # i2cpwm_controller node (only runs if run_standalone is false)
+        # Node(
+        #     package='i2cpwm_controller',
+        #     executable='i2cpwm_controller_node',
+        #     name='i2cpwm_controller_node',
+        #     output='screen',
+        #     condition=IfCondition(LaunchConfiguration('run_standalone'))
+        # ),
 
         # Spot Micro Motion Command node
         Node(
@@ -42,16 +41,17 @@ def generate_launch_description():
             executable='motion_cmd_node',
             name='motion_cmd_node',
             output='screen',
-            parameters=[os.path.join(
-                get_package_share_directory('motion_cmd'),
-                'config',
-                'motion_cmd.yaml'
-            )],
-            # Override debug_mode and run_standalone parameters if passed via command line
-            parameters=[{
-                'debug_mode': LaunchConfiguration('debug_mode'),
-                'run_standalone': LaunchConfiguration('run_standalone')
-            }]
+            parameters=[
+                # os.path.join(
+                #     get_package_share_directory('motion_cmd'),
+                #     'config',
+                #     'motion_cmd.yaml'
+                # ),
+                {
+                    'debug_mode': LaunchConfiguration('debug_mode'),
+                    # 'run_standalone': LaunchConfiguration('run_standalone')
+                }
+            ]
         ),
 
         # LCD monitor node (only runs if run_lcd is true)
