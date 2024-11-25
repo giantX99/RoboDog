@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: keyboard-teleop
+Version: 0.0.0
+Summary: ROS 2 package for keyboard teleop for RoboDog interacting with motion_cmd package
+Home-page: UNKNOWN
+Maintainer: robodog
+Maintainer-email: gat7hb@umsystem.edu
+License: Apache-2.0
+Platform: UNKNOWN
+
+UNKNOWN
+
