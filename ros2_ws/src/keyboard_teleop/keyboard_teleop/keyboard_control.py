@@ -252,9 +252,9 @@ class KeyboardControl(Node):
                                 self._ros_pub_vel_cmd.publish(self._vel_cmd_msg)
 
                             elif userInput == 'f':
-                                self._vel_cmd_msg.linear.x = 0
-                                self._vel_cmd_msg.linear.y = 0
-                                self._vel_cmd_msg.angular.z = 0
+                                self._vel_cmd_msg.linear.x = self.zero
+                                self._vel_cmd_msg.linear.y = self.zero
+                                self._vel_cmd_msg.angular.z = self.zero
 
                                 self._ros_pub_vel_cmd.publish(self._vel_cmd_msg)
                                 self.get_logger().info('Command issued to zero all rate commands.')
