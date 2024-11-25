@@ -1,0 +1,40 @@
+[0.072s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[0.358s] [  6%] Built target gtest
+[0.386s] [ 20%] Built target spot_micro_kinematics
+[0.525s] [ 27%] Built target gtest_main
+[0.529s] [ 34%] Built target gmock
+[0.655s] [ 58%] Built target smfsm
+[0.682s] [ 65%] Built target test_utils
+[0.702s] [ 72%] Built target test_spot_micro_kinematics
+[0.720s] [ 79%] Built target test_spot_micro_leg
+[0.784s] [35m[1mConsolidate compiler generated dependencies of target motion_cmd_node[0m
+[0.796s] [ 86%] Built target gmock_main
+[0.964s] [ 89%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o[0m
+[80.442s] [ 93%] [32m[1mLinking CXX executable motion_cmd_node[0m
+[86.076s] [100%] Built target motion_cmd_node
+[86.118s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[86.669s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd
+[86.702s] -- Install configuration: ""
+[86.707s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node
+[86.802s] -- Set runtime path of "/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node" to ""
+[86.802s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch
+[86.803s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch/motion_cmd.launch.py
+[86.803s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config
+[86.803s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config/motion_cmd.yaml
+[86.804s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/package_run_dependencies/motion_cmd
+[86.805s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/parent_prefix_path/motion_cmd
+[86.805s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.sh
+[86.806s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.dsv
+[86.806s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.sh
+[86.807s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.dsv
+[86.807s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.bash
+[86.808s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.sh
+[86.808s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.zsh
+[86.809s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.dsv
+[86.809s] -- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.dsv
+[86.810s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/packages/motion_cmd
+[86.811s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/ament_cmake_export_dependencies-extras.cmake
+[86.811s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig.cmake
+[86.812s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig-version.cmake
+[86.812s] -- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.xml
+[86.822s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd

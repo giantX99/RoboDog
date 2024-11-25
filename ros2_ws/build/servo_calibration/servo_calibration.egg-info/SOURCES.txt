@@ -11,6 +11,7 @@ setup.py
 ../../build/servo_calibration/servo_calibration.egg-info/zip-safe
 resource/servo_calibration
 servo_calibration/__init__.py
+servo_calibration/calibrate.py
 servo_calibration/servo_calib_test.py
 servo_calibration/servo_move_keyboard.py
 test/test_copyright.py

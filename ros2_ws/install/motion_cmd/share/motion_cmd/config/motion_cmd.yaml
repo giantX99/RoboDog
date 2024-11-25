@@ -38,6 +38,22 @@ LF_3: {num: 10, center: 306,range: 375.8,direction:  1, center_angle_deg: -93.95
 LF_2: {num: 11, center: 306,range: 416.2,direction:  1, center_angle_deg:  40.84}
 LF_1: {num: 12, center: 306,range: 341.0,direction:  1, center_angle_deg: -14.03}
 
+# NEW CALIBRATION:
+# {"RF_3", {{"num", 1}, {"center", 306}, {"range", 490.0}, {"direction", 1}, {"center_angle_deg", 77.57}}},
+# {"RF_2", {{"num", 2}, {"center", 306}, {"range", 490.0}, {"direction", 1}, {"center_angle_deg", -56.20}}},
+# {"RF_1", {{"num", 3}, {"center", 466}, {"range", 260.0}, {"direction", 1}, {"center_angle_deg", 6.43}}},
+# {"RB_3", {{"num", 4}, {"center", 306}, {"range", 490.0}, {"direction", 1}, {"center_angle_deg", 71.50}}},
+# {"RB_2", {{"num", 5}, {"center", 306}, {"range", 490.0}, {"direction", 1}, {"center_angle_deg", -55.14}}},
+# {"RB_1", {{"num", 6}, {"center", 106}, {"range", 180.0}, {"direction", -1}, {"center_angle_deg", -14.19}}},
+# {"LB_3", {{"num", 7}, {"center", 306}, {"range", 490.0}, {"direction", -1}, {"center_angle_deg", -93.12}}},
+# {"LB_2", {{"num", 8}, {"center", 306}, {"range", 490.0}, {"direction", -1}, {"center_angle_deg", 40.00}}},
+# {"LB_1", {{"num", 9}, {"center", 376}, {"range", 360.0}, {"direction", 1}, {"center_angle_deg", 4.40}}},
+# {"LF_3", {{"num", 10}, {"center", 306}, {"range", 490.0}, {"direction", -1}, {"center_angle_deg", -93.95}}},
+# {"LF_2", {{"num", 11}, {"center", 306}, {"range", 490.0}, {"direction", -1}, {"center_angle_deg", 40.84}}},
+# {"LF_1", {{"num", 12}, {"center", 266}, {"range", 330.0}, {"direction", 1}, {"center_angle_deg", -14.03}}}
+
+
+
 # Control Parameters
 transit_tau: 0.3 # Time constant in seconds for first order filters during transition state
 transit_rl: 0.06 # Body motion rate limit in m/s for transition state
