@@ -22,7 +22,8 @@ setup(
         'console_scripts': [
             # 'servo_calib_node = servo_calibration.servo_move_keyboard:main' # Move Servos Script
             # 'servo_calib_node = servo_calibration.servo_calib_test:main' # Calibration Script
-            'servo_calib_node = servo_calibration.calibrate:main' # Utilized calibration script 
+            # 'servo_calib_node = servo_calibration.calibrate:main' # Utilized calibration script
+            'servo_calib_node = servo_calibration.stand_dog:main' # Hard coded stand up command for RoboDog 
         ],
     },
 )

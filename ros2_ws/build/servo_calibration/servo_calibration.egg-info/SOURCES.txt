@@ -14,6 +14,7 @@ servo_calibration/__init__.py
 servo_calibration/calibrate.py
 servo_calibration/servo_calib_test.py
 servo_calibration/servo_move_keyboard.py
+servo_calibration/stand_dog.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py

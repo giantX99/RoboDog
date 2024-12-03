@@ -1,0 +1,54 @@
+[0.106s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
+[0.502s] [  0%] Built target i2cpwm_controller__cpp
+[0.617s] [ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[0.732s] [ 12%] Built target ament_cmake_python_copy_i2cpwm_controller
+[0.770s] [ 24%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[0.782s] [ 34%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[0.828s] [ 45%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[0.965s] [ 56%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[0.966s] [ 68%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[0.967s] [ 79%] Built target i2cpwm_controller__rosidl_typesupport_c
+[1.115s] [ 79%] Built target i2cpwm_controller
+[1.487s] [ 81%] Built target i2cpwm_controller_lib
+[1.493s] [ 82%] Built target i2cpwm_controller__py
+[1.507s] Traceback (most recent call last):
+[1.510s]   File "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/ament_cmake_python/i2cpwm_controller/setup.py", line 1, in <module>
+[1.511s]     from setuptools import find_packages
+[1.512s]   File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+[1.514s]     import setuptools.version
+[1.514s] gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/i2cpwm_controller_node.dir/all] Interrupt
+[1.514s]   File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+[1.522s]     import pkg_resources
+[1.523s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+[1.550s]     def _initialize_master_working_set():
+[1.550s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+[1.553s]     f(*args, **kwargs)
+[1.553s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3279, in _initialize_master_working_set
+[1.556s]     working_set = WorkingSet._build_master()
+[1.557s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 564, in _build_master
+[1.557s]     ws = cls()
+[1.558s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 557, in __init__
+[1.558s]     self.add_entry(entry)
+[1.559s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+[1.559s]     for dist in find_distributions(entry, True):
+[1.559s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2073, in find_on_path
+[1.560s]     path_item_entries = _by_version_descending(filtered)
+[1.560s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2043, in _by_version_descending
+[1.561s]     return sorted(names, key=_by_version, reverse=True)
+[1.561s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2041, in _by_version
+[1.562s]     return [try_parse(part) for part in parts]
+[1.562s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2041, in <listcomp>
+[1.563s]     return [try_parse(part) for part in parts]
+[1.563s]   File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2031, in try_parse
+[1.565s]     return packaging.version.Version(name)
+[1.566s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 281, in __init__
+[1.573s]     self._key = _cmpkey(
+[1.574s]   File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 459, in _cmpkey
+[1.575s]     reversed(list(itertools.dropwhile(lambda x: x == 0, reversed(release))))
+[1.578s] KeyboardInterrupt
+[1.645s] gmake[2]: *** [CMakeFiles/ament_cmake_python_build_i2cpwm_controller_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_i2cpwm_controller_egg] Interrupt
+[1.646s] gmake[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/ament_cmake_python_build_i2cpwm_controller_egg.dir/all] Interrupt
+[1.646s] gmake[1]: *** wait: No child processes.  Stop.
+[1.647s] gmake[1]: *** Waiting for unfinished jobs....
+[1.647s] gmake[1]: *** wait: No child processes.  Stop.
+[1.648s] gmake: *** [Makefile:146: all] Error 2

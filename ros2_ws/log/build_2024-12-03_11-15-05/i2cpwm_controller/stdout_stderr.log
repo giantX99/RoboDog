@@ -1,0 +1,53 @@
+[  0%] Built target i2cpwm_controller__cpp
+[ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_i2cpwm_controller
+[ 24%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[ 34%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[ 45%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[ 56%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[ 68%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[ 79%] Built target i2cpwm_controller__rosidl_typesupport_c
+[ 79%] Built target i2cpwm_controller
+[ 81%] Built target i2cpwm_controller_lib
+[ 82%] Built target i2cpwm_controller__py
+Traceback (most recent call last):
+  File "/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller/ament_cmake_python/i2cpwm_controller/setup.py", line 1, in <module>
+    from setuptools import find_packages
+  File "/usr/lib/python3/dist-packages/setuptools/__init__.py", line 16, in <module>
+    import setuptools.version
+gmake[1]: *** [CMakeFiles/Makefile2:622: CMakeFiles/i2cpwm_controller_node.dir/all] Interrupt
+  File "/usr/lib/python3/dist-packages/setuptools/version.py", line 1, in <module>
+    import pkg_resources
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3267, in <module>
+    def _initialize_master_working_set():
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3241, in _call_aside
+    f(*args, **kwargs)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 3279, in _initialize_master_working_set
+    working_set = WorkingSet._build_master()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 564, in _build_master
+    ws = cls()
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 557, in __init__
+    self.add_entry(entry)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 613, in add_entry
+    for dist in find_distributions(entry, True):
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2073, in find_on_path
+    path_item_entries = _by_version_descending(filtered)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2043, in _by_version_descending
+    return sorted(names, key=_by_version, reverse=True)
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2041, in _by_version
+    return [try_parse(part) for part in parts]
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2041, in <listcomp>
+    return [try_parse(part) for part in parts]
+  File "/usr/lib/python3/dist-packages/pkg_resources/__init__.py", line 2031, in try_parse
+    return packaging.version.Version(name)
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 281, in __init__
+    self._key = _cmpkey(
+  File "/usr/lib/python3/dist-packages/pkg_resources/_vendor/packaging/version.py", line 459, in _cmpkey
+    reversed(list(itertools.dropwhile(lambda x: x == 0, reversed(release))))
+KeyboardInterrupt
+gmake[2]: *** [CMakeFiles/ament_cmake_python_build_i2cpwm_controller_egg.dir/build.make:70: CMakeFiles/ament_cmake_python_build_i2cpwm_controller_egg] Interrupt
+gmake[1]: *** [CMakeFiles/Makefile2:451: CMakeFiles/ament_cmake_python_build_i2cpwm_controller_egg.dir/all] Interrupt
+gmake[1]: *** wait: No child processes.  Stop.
+gmake[1]: *** Waiting for unfinished jobs....
+gmake[1]: *** wait: No child processes.  Stop.
+gmake: *** [Makefile:146: all] Error 2

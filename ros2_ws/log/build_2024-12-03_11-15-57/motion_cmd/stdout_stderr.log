@@ -1,0 +1,36 @@
+[  6%] Built target gtest
+[ 20%] Built target spot_micro_kinematics
+[ 27%] Built target gtest_main
+[ 34%] Built target gmock
+[ 58%] Built target smfsm
+[ 65%] Built target test_utils
+[ 72%] Built target test_spot_micro_leg
+[ 79%] Built target test_spot_micro_kinematics
+[ 86%] Built target gmock_main
+[35m[1mConsolidate compiler generated dependencies of target motion_cmd_node[0m
+[ 89%] [32mBuilding CXX object CMakeFiles/motion_cmd_node.dir/src/motion_cmd.cpp.o[0m
+[ 93%] [32m[1mLinking CXX executable motion_cmd_node[0m
+[100%] Built target motion_cmd_node
+-- Install configuration: ""
+-- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node
+-- Set runtime path of "/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/motion_cmd/motion_cmd_node" to ""
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/launch/motion_cmd.launch.py
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config
+-- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/config/motion_cmd.yaml
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/package_run_dependencies/motion_cmd
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/parent_prefix_path/motion_cmd
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.sh
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.sh
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/environment/path.dsv
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.bash
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.sh
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.zsh
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/local_setup.dsv
+-- Installing: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.dsv
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/ament_index/resource_index/packages/motion_cmd
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig.cmake
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/cmake/motion_cmdConfig-version.cmake
+-- Up-to-date: /home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.xml

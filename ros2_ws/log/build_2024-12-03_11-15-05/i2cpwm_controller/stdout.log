@@ -1,0 +1,12 @@
+[  0%] Built target i2cpwm_controller__cpp
+[ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[ 12%] Built target ament_cmake_python_copy_i2cpwm_controller
+[ 24%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[ 34%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[ 45%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[ 56%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[ 68%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[ 79%] Built target i2cpwm_controller__rosidl_typesupport_c
+[ 79%] Built target i2cpwm_controller
+[ 81%] Built target i2cpwm_controller_lib
+[ 82%] Built target i2cpwm_controller__py
