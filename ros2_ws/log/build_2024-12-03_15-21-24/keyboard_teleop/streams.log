@@ -1,0 +1,21 @@
+[3.534s] Invoking command in '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop': PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/keyboard_teleop build --build-base /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/build install --record /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/install.log --single-version-externally-managed install_data
+[4.996s] running egg_info
+[4.999s] writing ../../build/keyboard_teleop/keyboard_teleop.egg-info/PKG-INFO
+[5.001s] writing dependency_links to ../../build/keyboard_teleop/keyboard_teleop.egg-info/dependency_links.txt
+[5.002s] writing entry points to ../../build/keyboard_teleop/keyboard_teleop.egg-info/entry_points.txt
+[5.004s] writing requirements to ../../build/keyboard_teleop/keyboard_teleop.egg-info/requires.txt
+[5.008s] writing top-level names to ../../build/keyboard_teleop/keyboard_teleop.egg-info/top_level.txt
+[5.015s] reading manifest file '../../build/keyboard_teleop/keyboard_teleop.egg-info/SOURCES.txt'
+[5.021s] writing manifest file '../../build/keyboard_teleop/keyboard_teleop.egg-info/SOURCES.txt'
+[5.022s] running build
+[5.023s] running build_py
+[5.024s] running install
+[5.026s] running install_lib
+[5.033s] running install_data
+[5.034s] running install_egg_info
+[5.043s] removing '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages/keyboard_teleop-0.0.0-py3.10.egg-info' (and everything under it)
+[5.045s] Copying ../../build/keyboard_teleop/keyboard_teleop.egg-info to /home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages/keyboard_teleop-0.0.0-py3.10.egg-info
+[5.055s] running install_scripts
+[5.155s] Installing keyboard_teleop_node script to /home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/keyboard_teleop
+[5.158s] writing list of installed files to '/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/install.log'
+[5.301s] Invoked command in '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop' returned '0': PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/keyboard_teleop build --build-base /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/build install --record /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/install.log --single-version-externally-managed install_data

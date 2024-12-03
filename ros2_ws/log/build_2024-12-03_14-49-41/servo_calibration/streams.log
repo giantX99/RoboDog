@@ -1,0 +1,30 @@
+[2.621s] Invoking command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data
+[3.662s] running egg_info
+[3.664s] writing ../../build/servo_calibration/servo_calibration.egg-info/PKG-INFO
+[3.665s] writing dependency_links to ../../build/servo_calibration/servo_calibration.egg-info/dependency_links.txt
+[3.666s] writing entry points to ../../build/servo_calibration/servo_calibration.egg-info/entry_points.txt
+[3.667s] writing requirements to ../../build/servo_calibration/servo_calibration.egg-info/requires.txt
+[3.668s] writing top-level names to ../../build/servo_calibration/servo_calibration.egg-info/top_level.txt
+[3.677s] reading manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+[3.678s] adding license file 'LICENSE'
+[3.681s] writing manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+[3.681s] running build
+[3.682s] running build_py
+[3.682s] copying servo_calibration/stand_dog.py -> /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration
+[3.685s] running install
+[3.686s] running install_lib
+[3.690s] copying /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration/stand_dog.py -> /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration
+[3.693s] byte-compiling /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/stand_dog.py to stand_dog.cpython-310.pyc
+[3.698s]   File "/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/stand_dog.py", line 150
+[3.698s]     2   :   ServoConvert(id=2, direction=1, max=576, min=316)#, center=466), # max = 576 ; min = 316 ; center = 466
+[3.699s]             
+[3.699s] SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[3.700s] 
+[3.700s] running install_data
+[3.700s] running install_egg_info
+[3.707s] removing '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration-0.0.0-py3.10.egg-info' (and everything under it)
+[3.708s] Copying ../../build/servo_calibration/servo_calibration.egg-info to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration-0.0.0-py3.10.egg-info
+[3.715s] running install_scripts
+[3.794s] Installing servo_calib_node script to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/servo_calibration
+[3.795s] writing list of installed files to '/home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log'
+[3.914s] Invoked command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data

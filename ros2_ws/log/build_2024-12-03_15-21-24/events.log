@@ -1,0 +1,344 @@
+[0.000000] (-) TimerEvent: {}
+[0.001674] (i2cpwm_controller) JobQueued: {'identifier': 'i2cpwm_controller', 'dependencies': OrderedDict()}
+[0.002301] (keyboard_teleop) JobQueued: {'identifier': 'keyboard_teleop', 'dependencies': OrderedDict()}
+[0.002778] (motion_cmd) JobQueued: {'identifier': 'motion_cmd', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.002975] (servo_calibration) JobQueued: {'identifier': 'servo_calibration', 'dependencies': OrderedDict([('i2cpwm_controller', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')])}
+[0.003256] (i2cpwm_controller) JobStarted: {'identifier': 'i2cpwm_controller'}
+[0.031549] (keyboard_teleop) JobStarted: {'identifier': 'keyboard_teleop'}
+[0.067252] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'cmake'}
+[0.073560] (i2cpwm_controller) JobProgress: {'identifier': 'i2cpwm_controller', 'progress': 'build'}
+[0.076402] (i2cpwm_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', '--', '-j4', '-l4'], 'cwd': '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'robodog'), ('SSH_CLIENT', '10.7.90.203 60394 22'), ('ROS_PACKAGE_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share'), ('XDG_SESSION_TYPE', 'tty'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/robodog'), ('OLDPWD', '/home/robodog/RoboDog'), ('SSH_TTY', '/dev/pts/0'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLCON_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robodog'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/aarch64-linux-gnu/pkgconfig:/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('AMENT_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/motion_cmd:/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller'), ('SSH_CONNECTION', '10.7.90.203 60394 10.7.16.101 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:/home/robodog/RoboDog/ros2_ws/install/motion_cmd:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller')]), 'shell': False}
+[0.098995] (-) TimerEvent: {}
+[0.199857] (-) TimerEvent: {}
+[0.300784] (-) TimerEvent: {}
+[0.377117] (i2cpwm_controller) StdoutLine: {'line': b'[  0%] Built target i2cpwm_controller__cpp\n'}
+[0.401006] (-) TimerEvent: {}
+[0.437851] (i2cpwm_controller) StdoutLine: {'line': b'[ 12%] Built target i2cpwm_controller__rosidl_generator_c\n'}
+[0.501280] (-) TimerEvent: {}
+[0.532881] (i2cpwm_controller) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_i2cpwm_controller\n'}
+[0.581609] (i2cpwm_controller) StdoutLine: {'line': b'[ 23%] Built target i2cpwm_controller__rosidl_typesupport_cpp\n'}
+[0.601556] (-) TimerEvent: {}
+[0.608336] (i2cpwm_controller) StdoutLine: {'line': b'[ 34%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp\n'}
+[0.663304] (i2cpwm_controller) StdoutLine: {'line': b'[ 45%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp\n'}
+[0.701754] (-) TimerEvent: {}
+[0.726884] (i2cpwm_controller) StdoutLine: {'line': b'[ 56%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c\n'}
+[0.802052] (-) TimerEvent: {}
+[0.828769] (i2cpwm_controller) StdoutLine: {'line': b'[ 78%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c\n'}
+[0.831964] (i2cpwm_controller) StdoutLine: {'line': b'[ 79%] Built target i2cpwm_controller__rosidl_typesupport_c\n'}
+[0.902239] (-) TimerEvent: {}
+[0.922537] (i2cpwm_controller) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding CXX object CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.o\x1b[0m\n'}
+[0.950654] (i2cpwm_controller) StdoutLine: {'line': b'[ 80%] Built target i2cpwm_controller\n'}
+[1.002558] (-) TimerEvent: {}
+[1.073761] (i2cpwm_controller) StdoutLine: {'line': b'[ 81%] Built target i2cpwm_controller__py\n'}
+[1.102728] (-) TimerEvent: {}
+[1.204097] (-) TimerEvent: {}
+[1.222040] (i2cpwm_controller) StdoutLine: {'line': b'[ 91%] Built target i2cpwm_controller__rosidl_generator_py\n'}
+[1.305025] (-) TimerEvent: {}
+[1.387276] (i2cpwm_controller) StdoutLine: {'line': b'[ 93%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.405216] (-) TimerEvent: {}
+[1.483353] (i2cpwm_controller) StdoutLine: {'line': b'[ 95%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext\n'}
+[1.505413] (-) TimerEvent: {}
+[1.543703] (i2cpwm_controller) StdoutLine: {'line': b'[ 97%] Built target i2cpwm_controller__rosidl_typesupport_c__pyext\n'}
+[1.605631] (-) TimerEvent: {}
+[1.707500] (-) TimerEvent: {}
+[1.810505] (-) TimerEvent: {}
+[1.912196] (-) TimerEvent: {}
+[2.014304] (-) TimerEvent: {}
+[2.117472] (-) TimerEvent: {}
+[2.219394] (-) TimerEvent: {}
+[2.282586] (i2cpwm_controller) StdoutLine: {'line': b'running egg_info\n'}
+[2.286621] (i2cpwm_controller) StdoutLine: {'line': b'writing i2cpwm_controller.egg-info/PKG-INFO\n'}
+[2.288027] (i2cpwm_controller) StdoutLine: {'line': b'writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt\n'}
+[2.289709] (i2cpwm_controller) StdoutLine: {'line': b'writing top-level names to i2cpwm_controller.egg-info/top_level.txt\n'}
+[2.302607] (i2cpwm_controller) StdoutLine: {'line': b"reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'\n"}
+[2.308137] (i2cpwm_controller) StdoutLine: {'line': b"writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'\n"}
+[2.319756] (-) TimerEvent: {}
+[2.423197] (-) TimerEvent: {}
+[2.467579] (i2cpwm_controller) StdoutLine: {'line': b'[ 97%] Built target ament_cmake_python_build_i2cpwm_controller_egg\n'}
+[2.523372] (-) TimerEvent: {}
+[2.625590] (-) TimerEvent: {}
+[2.728093] (-) TimerEvent: {}
+[2.829724] (-) TimerEvent: {}
+[2.931408] (-) TimerEvent: {}
+[3.032550] (-) TimerEvent: {}
+[3.134680] (-) TimerEvent: {}
+[3.236108] (-) TimerEvent: {}
+[3.337015] (-) TimerEvent: {}
+[3.438030] (-) TimerEvent: {}
+[3.539786] (-) TimerEvent: {}
+[3.556224] (keyboard_teleop) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/keyboard_teleop', 'build', '--build-base', '/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/build', 'install', '--record', '/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'robodog', 'SSH_CLIENT': '10.7.90.203 60394 22', 'ROS_PACKAGE_PATH': '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'MOTD_SHOWN': 'pam', 'HOME': '/home/robodog', 'OLDPWD': '/home/robodog/RoboDog', 'SSH_TTY': '/dev/pts/0', 'ROS_PYTHON_VERSION': '3', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLCON_PREFIX_PATH': '/home/robodog/RoboDog/ros2_ws/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robodog', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'PKG_CONFIG_PATH': '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/aarch64-linux-gnu/pkgconfig:/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '4', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'AMENT_PREFIX_PATH': '/home/robodog/RoboDog/ros2_ws/install/motion_cmd:/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PWD': '/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop', 'SSH_CONNECTION': '10.7.90.203 60394 10.7.16.101 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/home/robodog/RoboDog/ros2_ws/install/motion_cmd:/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller'}, 'shell': False}
+[3.640005] (-) TimerEvent: {}
+[3.741008] (-) TimerEvent: {}
+[3.841903] (-) TimerEvent: {}
+[3.942947] (-) TimerEvent: {}
+[4.043841] (-) TimerEvent: {}
+[4.144740] (-) TimerEvent: {}
+[4.246919] (-) TimerEvent: {}
+[4.348674] (-) TimerEvent: {}
+[4.450495] (-) TimerEvent: {}
+[4.554428] (-) TimerEvent: {}
+[4.656712] (-) TimerEvent: {}
+[4.758331] (-) TimerEvent: {}
+[4.859933] (-) TimerEvent: {}
+[4.961533] (-) TimerEvent: {}
+[5.027518] (keyboard_teleop) StdoutLine: {'line': b'running egg_info\n'}
+[5.030872] (keyboard_teleop) StdoutLine: {'line': b'writing ../../build/keyboard_teleop/keyboard_teleop.egg-info/PKG-INFO\n'}
+[5.032296] (keyboard_teleop) StdoutLine: {'line': b'writing dependency_links to ../../build/keyboard_teleop/keyboard_teleop.egg-info/dependency_links.txt\n'}
+[5.033648] (keyboard_teleop) StdoutLine: {'line': b'writing entry points to ../../build/keyboard_teleop/keyboard_teleop.egg-info/entry_points.txt\n'}
+[5.035837] (keyboard_teleop) StdoutLine: {'line': b'writing requirements to ../../build/keyboard_teleop/keyboard_teleop.egg-info/requires.txt\n'}
+[5.039678] (keyboard_teleop) StdoutLine: {'line': b'writing top-level names to ../../build/keyboard_teleop/keyboard_teleop.egg-info/top_level.txt\n'}
+[5.046547] (keyboard_teleop) StdoutLine: {'line': b"reading manifest file '../../build/keyboard_teleop/keyboard_teleop.egg-info/SOURCES.txt'\n"}
+[5.052265] (keyboard_teleop) StdoutLine: {'line': b"writing manifest file '../../build/keyboard_teleop/keyboard_teleop.egg-info/SOURCES.txt'\n"}
+[5.053734] (keyboard_teleop) StdoutLine: {'line': b'running build\n'}
+[5.054567] (keyboard_teleop) StdoutLine: {'line': b'running build_py\n'}
+[5.056042] (keyboard_teleop) StdoutLine: {'line': b'running install\n'}
+[5.057486] (keyboard_teleop) StdoutLine: {'line': b'running install_lib\n'}
+[5.061698] (-) TimerEvent: {}
+[5.064140] (keyboard_teleop) StdoutLine: {'line': b'running install_data\n'}
+[5.065306] (keyboard_teleop) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.074252] (keyboard_teleop) StdoutLine: {'line': b"removing '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages/keyboard_teleop-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.076644] (keyboard_teleop) StdoutLine: {'line': b'Copying ../../build/keyboard_teleop/keyboard_teleop.egg-info to /home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages/keyboard_teleop-0.0.0-py3.10.egg-info\n'}
+[5.086681] (keyboard_teleop) StdoutLine: {'line': b'running install_scripts\n'}
+[5.161937] (-) TimerEvent: {}
+[5.186681] (keyboard_teleop) StdoutLine: {'line': b'Installing keyboard_teleop_node script to /home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/keyboard_teleop\n'}
+[5.189636] (keyboard_teleop) StdoutLine: {'line': b"writing list of installed files to '/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/install.log'\n"}
+[5.262212] (-) TimerEvent: {}
+[5.331775] (keyboard_teleop) CommandEnded: {'returncode': 0}
+[5.363225] (-) TimerEvent: {}
+[5.398381] (keyboard_teleop) JobEnded: {'identifier': 'keyboard_teleop', 'rc': 0}
+[5.463414] (-) TimerEvent: {}
+[5.564239] (-) TimerEvent: {}
+[5.665046] (-) TimerEvent: {}
+[5.765863] (-) TimerEvent: {}
+[5.866730] (-) TimerEvent: {}
+[5.967654] (-) TimerEvent: {}
+[6.068605] (-) TimerEvent: {}
+[6.169459] (-) TimerEvent: {}
+[6.270360] (-) TimerEvent: {}
+[6.371243] (-) TimerEvent: {}
+[6.472088] (-) TimerEvent: {}
+[6.573089] (-) TimerEvent: {}
+[6.673887] (-) TimerEvent: {}
+[6.774733] (-) TimerEvent: {}
+[6.875554] (-) TimerEvent: {}
+[6.976435] (-) TimerEvent: {}
+[7.077298] (-) TimerEvent: {}
+[7.178224] (-) TimerEvent: {}
+[7.278999] (-) TimerEvent: {}
+[7.379812] (-) TimerEvent: {}
+[7.480618] (-) TimerEvent: {}
+[7.581425] (-) TimerEvent: {}
+[7.682235] (-) TimerEvent: {}
+[7.783046] (-) TimerEvent: {}
+[7.883835] (-) TimerEvent: {}
+[7.984632] (-) TimerEvent: {}
+[8.085465] (-) TimerEvent: {}
+[8.186260] (-) TimerEvent: {}
+[8.287056] (-) TimerEvent: {}
+[8.387868] (-) TimerEvent: {}
+[8.488679] (-) TimerEvent: {}
+[8.589519] (-) TimerEvent: {}
+[8.690337] (-) TimerEvent: {}
+[8.791156] (-) TimerEvent: {}
+[8.891910] (-) TimerEvent: {}
+[8.992711] (-) TimerEvent: {}
+[9.093546] (-) TimerEvent: {}
+[9.194403] (-) TimerEvent: {}
+[9.295193] (-) TimerEvent: {}
+[9.396010] (-) TimerEvent: {}
+[9.496839] (-) TimerEvent: {}
+[9.597689] (-) TimerEvent: {}
+[9.698524] (-) TimerEvent: {}
+[9.799355] (-) TimerEvent: {}
+[9.900167] (-) TimerEvent: {}
+[10.000999] (-) TimerEvent: {}
+[10.101821] (-) TimerEvent: {}
+[10.202683] (-) TimerEvent: {}
+[10.303565] (-) TimerEvent: {}
+[10.404372] (-) TimerEvent: {}
+[10.505206] (-) TimerEvent: {}
+[10.606050] (-) TimerEvent: {}
+[10.706916] (-) TimerEvent: {}
+[10.807790] (-) TimerEvent: {}
+[10.908613] (-) TimerEvent: {}
+[11.009434] (-) TimerEvent: {}
+[11.110250] (-) TimerEvent: {}
+[11.211106] (-) TimerEvent: {}
+[11.311899] (-) TimerEvent: {}
+[11.412717] (-) TimerEvent: {}
+[11.513548] (-) TimerEvent: {}
+[11.614381] (-) TimerEvent: {}
+[11.715281] (-) TimerEvent: {}
+[11.816098] (-) TimerEvent: {}
+[11.916925] (-) TimerEvent: {}
+[12.017716] (-) TimerEvent: {}
+[12.118586] (-) TimerEvent: {}
+[12.219444] (-) TimerEvent: {}
+[12.283486] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid I2cPwmController::servos_absolute(i2cpwm_controller::msg::ServoArray_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[12.284357] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:171:26:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kcannot convert \xe2\x80\x98\x1b[01m\x1b[Krclcpp::Logger\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kconst char*\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.284846] (i2cpwm_controller) StderrLine: {'line': b'  171 |         printf(\x1b[01;31m\x1b[Kget_logger()\x1b[m\x1b[K,"servo[%d] = %d", servo.servo, value);\n'}
+[12.285280] (i2cpwm_controller) StderrLine: {'line': b'      |                \x1b[01;31m\x1b[K~~~~~~~~~~^~\x1b[m\x1b[K\n'}
+[12.285689] (i2cpwm_controller) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[K|\x1b[m\x1b[K\n'}
+[12.286151] (i2cpwm_controller) StderrLine: {'line': b'      |                          \x1b[01;31m\x1b[Krclcpp::Logger\x1b[m\x1b[K\n'}
+[12.286625] (i2cpwm_controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:3\x1b[m\x1b[K,\n'}
+[12.287045] (i2cpwm_controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1\x1b[m\x1b[K:\n'}
+[12.287432] (i2cpwm_controller) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/stdio.h:356:43:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kint printf(const char*, ...)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[12.287956] (i2cpwm_controller) StderrLine: {'line': b'  356 | extern int printf (\x1b[01;36m\x1b[Kconst char *__restrict __format\x1b[m\x1b[K, ...);\n'}
+[12.288369] (i2cpwm_controller) StderrLine: {'line': b'      |                    \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[12.319636] (-) TimerEvent: {}
+[12.420448] (-) TimerEvent: {}
+[12.521277] (-) TimerEvent: {}
+[12.622128] (-) TimerEvent: {}
+[12.722913] (-) TimerEvent: {}
+[12.823752] (-) TimerEvent: {}
+[12.924548] (-) TimerEvent: {}
+[13.025352] (-) TimerEvent: {}
+[13.126206] (-) TimerEvent: {}
+[13.227031] (-) TimerEvent: {}
+[13.328118] (-) TimerEvent: {}
+[13.429220] (-) TimerEvent: {}
+[13.530003] (-) TimerEvent: {}
+[13.630911] (-) TimerEvent: {}
+[13.731711] (-) TimerEvent: {}
+[13.832545] (-) TimerEvent: {}
+[13.933340] (-) TimerEvent: {}
+[14.034205] (-) TimerEvent: {}
+[14.135018] (-) TimerEvent: {}
+[14.235811] (-) TimerEvent: {}
+[14.336602] (-) TimerEvent: {}
+[14.437734] (-) TimerEvent: {}
+[14.538618] (-) TimerEvent: {}
+[14.639401] (-) TimerEvent: {}
+[14.740220] (-) TimerEvent: {}
+[14.841003] (-) TimerEvent: {}
+[14.941828] (-) TimerEvent: {}
+[15.042728] (-) TimerEvent: {}
+[15.143512] (-) TimerEvent: {}
+[15.244339] (-) TimerEvent: {}
+[15.345365] (-) TimerEvent: {}
+[15.446274] (-) TimerEvent: {}
+[15.547083] (-) TimerEvent: {}
+[15.647868] (-) TimerEvent: {}
+[15.748696] (-) TimerEvent: {}
+[15.849549] (-) TimerEvent: {}
+[15.950405] (-) TimerEvent: {}
+[16.051228] (-) TimerEvent: {}
+[16.152032] (-) TimerEvent: {}
+[16.252900] (-) TimerEvent: {}
+[16.353741] (-) TimerEvent: {}
+[16.454649] (-) TimerEvent: {}
+[16.555444] (-) TimerEvent: {}
+[16.656239] (-) TimerEvent: {}
+[16.757070] (-) TimerEvent: {}
+[16.858118] (-) TimerEvent: {}
+[16.965181] (-) TimerEvent: {}
+[17.066054] (-) TimerEvent: {}
+[17.166917] (-) TimerEvent: {}
+[17.267849] (-) TimerEvent: {}
+[17.368776] (-) TimerEvent: {}
+[17.469697] (-) TimerEvent: {}
+[17.570559] (-) TimerEvent: {}
+[17.671393] (-) TimerEvent: {}
+[17.772239] (-) TimerEvent: {}
+[17.873076] (-) TimerEvent: {}
+[17.973909] (-) TimerEvent: {}
+[18.074777] (-) TimerEvent: {}
+[18.175590] (-) TimerEvent: {}
+[18.276474] (-) TimerEvent: {}
+[18.377327] (-) TimerEvent: {}
+[18.478186] (-) TimerEvent: {}
+[18.578975] (-) TimerEvent: {}
+[18.679789] (-) TimerEvent: {}
+[18.780634] (-) TimerEvent: {}
+[18.881461] (-) TimerEvent: {}
+[18.982272] (-) TimerEvent: {}
+[19.083116] (-) TimerEvent: {}
+[19.184004] (-) TimerEvent: {}
+[19.284815] (-) TimerEvent: {}
+[19.385663] (-) TimerEvent: {}
+[19.486519] (-) TimerEvent: {}
+[19.587332] (-) TimerEvent: {}
+[19.688126] (-) TimerEvent: {}
+[19.788923] (-) TimerEvent: {}
+[19.889774] (-) TimerEvent: {}
+[19.990678] (-) TimerEvent: {}
+[20.091476] (-) TimerEvent: {}
+[20.192313] (-) TimerEvent: {}
+[20.293144] (-) TimerEvent: {}
+[20.393949] (-) TimerEvent: {}
+[20.494926] (-) TimerEvent: {}
+[20.595715] (-) TimerEvent: {}
+[20.696492] (-) TimerEvent: {}
+[20.797281] (-) TimerEvent: {}
+[20.898051] (-) TimerEvent: {}
+[20.998880] (-) TimerEvent: {}
+[21.099676] (-) TimerEvent: {}
+[21.200504] (-) TimerEvent: {}
+[21.301292] (-) TimerEvent: {}
+[21.402108] (-) TimerEvent: {}
+[21.502868] (-) TimerEvent: {}
+[21.603648] (-) TimerEvent: {}
+[21.704447] (-) TimerEvent: {}
+[21.805289] (-) TimerEvent: {}
+[21.906163] (-) TimerEvent: {}
+[22.007065] (-) TimerEvent: {}
+[22.107850] (-) TimerEvent: {}
+[22.208640] (-) TimerEvent: {}
+[22.309440] (-) TimerEvent: {}
+[22.410261] (-) TimerEvent: {}
+[22.511051] (-) TimerEvent: {}
+[22.611847] (-) TimerEvent: {}
+[22.712672] (-) TimerEvent: {}
+[22.813454] (-) TimerEvent: {}
+[22.914261] (-) TimerEvent: {}
+[23.015044] (-) TimerEvent: {}
+[23.115838] (-) TimerEvent: {}
+[23.216638] (-) TimerEvent: {}
+[23.317486] (-) TimerEvent: {}
+[23.418338] (-) TimerEvent: {}
+[23.519132] (-) TimerEvent: {}
+[23.619947] (-) TimerEvent: {}
+[23.720778] (-) TimerEvent: {}
+[23.821543] (-) TimerEvent: {}
+[23.922283] (-) TimerEvent: {}
+[24.023010] (-) TimerEvent: {}
+[24.123735] (-) TimerEvent: {}
+[24.224469] (-) TimerEvent: {}
+[24.325230] (-) TimerEvent: {}
+[24.425964] (-) TimerEvent: {}
+[24.526836] (-) TimerEvent: {}
+[24.627675] (-) TimerEvent: {}
+[24.728543] (-) TimerEvent: {}
+[24.829700] (-) TimerEvent: {}
+[24.930569] (-) TimerEvent: {}
+[25.031401] (-) TimerEvent: {}
+[25.132241] (-) TimerEvent: {}
+[25.233140] (-) TimerEvent: {}
+[25.334028] (-) TimerEvent: {}
+[25.434906] (-) TimerEvent: {}
+[25.535774] (-) TimerEvent: {}
+[25.636659] (-) TimerEvent: {}
+[25.737549] (-) TimerEvent: {}
+[25.808739] (i2cpwm_controller) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/i2cpwm_controller_lib.dir/build.make:76: CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.o] Error 1\n'}
+[25.809604] (i2cpwm_controller) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/i2cpwm_controller_lib.dir/all] Error 2\n'}
+[25.810599] (i2cpwm_controller) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[25.816431] (i2cpwm_controller) CommandEnded: {'returncode': 2}
+[25.837729] (-) TimerEvent: {}
+[25.938570] (-) TimerEvent: {}
+[26.039372] (-) TimerEvent: {}
+[26.140134] (-) TimerEvent: {}
+[26.241137] (-) TimerEvent: {}
+[26.341832] (-) TimerEvent: {}
+[26.442535] (-) TimerEvent: {}
+[26.543280] (-) TimerEvent: {}
+[26.643988] (-) TimerEvent: {}
+[26.744718] (-) TimerEvent: {}
+[26.845394] (-) TimerEvent: {}
+[26.946150] (-) TimerEvent: {}
+[27.047187] (-) TimerEvent: {}
+[27.148221] (-) TimerEvent: {}
+[27.248366] (i2cpwm_controller) JobEnded: {'identifier': 'i2cpwm_controller', 'rc': 2}
+[27.250181] (-) TimerEvent: {}
+[27.260141] (motion_cmd) JobSkipped: {'identifier': 'motion_cmd'}
+[27.260378] (servo_calibration) JobSkipped: {'identifier': 'servo_calibration'}
+[27.260488] (-) EventReactorShutdown: {}

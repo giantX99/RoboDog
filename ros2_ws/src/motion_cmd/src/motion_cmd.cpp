@@ -787,18 +787,18 @@ void SpotMicroMotionCmd::setupParameters() {
   smnc_.num_servos = 12;
   smnc_.servo_max_angle_deg = 82.5;
   smnc_.servo_config = {
-    {"RF_3", {{"num", 1}, {"center", 306}, {"range", 385.0}, {"direction", 1}, {"center_angle_deg", 77.57}}},
-    {"RF_2", {{"num", 2}, {"center", 306}, {"range", 405.2}, {"direction", 1}, {"center_angle_deg", -56.20}}},
-    {"RF_1", {{"num", 3}, {"center", 306}, {"range", 333.7}, {"direction", -1}, {"center_angle_deg", 6.43}}},
-    {"RB_3", {{"num", 4}, {"center", 306}, {"range", 392.3}, {"direction", 1}, {"center_angle_deg", 71.50}}},
-    {"RB_2", {{"num", 5}, {"center", 306}, {"range", 407.0}, {"direction", 1}, {"center_angle_deg", -55.14}}},
-    {"RB_1", {{"num", 6}, {"center", 306}, {"range", 407.0}, {"direction", 1}, {"center_angle_deg", -14.19}}},
-    {"LB_3", {{"num", 7}, {"center", 306}, {"range", 370.3}, {"direction", 1}, {"center_angle_deg", -93.12}}},
-    {"LB_2", {{"num", 8}, {"center", 306}, {"range", 396.0}, {"direction", 1}, {"center_angle_deg", 40.00}}},
-    {"LB_1", {{"num", 9}, {"center", 306}, {"range", 337.3}, {"direction", -1}, {"center_angle_deg", 4.40}}},
-    {"LF_3", {{"num", 10}, {"center", 306}, {"range", 375.8}, {"direction", 1}, {"center_angle_deg", -93.95}}},
-    {"LF_2", {{"num", 11}, {"center", 306}, {"range", 416.2}, {"direction", 1}, {"center_angle_deg", 40.84}}},
-    {"LF_1", {{"num", 12}, {"center", 306}, {"range", 341.0}, {"direction", 1}, {"center_angle_deg", -14.03}}}
+      {"RF_3", {{"num", 1}, {"center", 306}, {"range", 300.0}, {"direction", 1}, {"center_angle_deg", 77.57}}},
+      {"RF_2", {{"num", 2}, {"center", 306}, {"range", 300.0}, {"direction", 1}, {"center_angle_deg", -56.20}}},
+      {"RF_1", {{"num", 3}, {"center", 466}, {"range", 150.0}, {"direction", 1}, {"center_angle_deg", 60.43}}},
+      {"RB_3", {{"num", 4}, {"center", 306}, {"range", 300.0}, {"direction", 1}, {"center_angle_deg", 71.50}}},
+      {"RB_2", {{"num", 5}, {"center", 306}, {"range", 300.0}, {"direction", 1}, {"center_angle_deg", -55.14}}},
+      {"RB_1", {{"num", 6}, {"center", 106}, {"range", 180.0}, {"direction", -1}, {"center_angle_deg", -14.19}}},
+      {"LB_3", {{"num", 7}, {"center", 306}, {"range", 300.0}, {"direction", -1}, {"center_angle_deg", -93.12}}},
+      {"LB_2", {{"num", 8}, {"center", 306}, {"range", 300.0}, {"direction", -1}, {"center_angle_deg", 40.00}}},
+      {"LB_1", {{"num", 9}, {"center", 376}, {"range", 300.0}, {"direction", 1}, {"center_angle_deg", 4.40}}},
+      {"LF_3", {{"num", 10}, {"center", 306}, {"range", 300.0}, {"direction", -1}, {"center_angle_deg", -93.95}}},
+      {"LF_2", {{"num", 11}, {"center", 306}, {"range", 300.0}, {"direction", -1}, {"center_angle_deg", 40.84}}},
+      {"LF_1", {{"num", 12}, {"center", 266}, {"range", 300.0}, {"direction", 1}, {"center_angle_deg", -14.03}}}
   };
 
   // Control

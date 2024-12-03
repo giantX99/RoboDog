@@ -1,0 +1,307 @@
+[0.427s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.428s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff7e063280>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff7e453e50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff7e453e50>>)
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.161s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.162s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.162s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/robodog/RoboDog/ros2_ws'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.163s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.164s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.212s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.213s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.214s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.215s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.216s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.217s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.218s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.219s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extensions ['ignore', 'ignore_ament_install']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extension 'ignore'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extension 'ignore_ament_install'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extensions ['colcon_pkg']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extension 'colcon_pkg'
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extensions ['colcon_meta']
+[1.221s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extension 'colcon_meta'
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extensions ['ros']
+[1.222s] Level 1:colcon.colcon_core.package_identification:_identify(src/i2cpwm_controller) by extension 'ros'
+[1.230s] DEBUG:colcon.colcon_core.package_identification:Package 'src/i2cpwm_controller' with type 'ros.ament_cmake' and name 'i2cpwm_controller'
+[1.231s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['ignore', 'ignore_ament_install']
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'ignore'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'ignore_ament_install'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['colcon_pkg']
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'colcon_pkg'
+[1.232s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['colcon_meta']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'colcon_meta'
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extensions ['ros']
+[1.233s] Level 1:colcon.colcon_core.package_identification:_identify(src/keyboard_teleop) by extension 'ros'
+[1.236s] DEBUG:colcon.colcon_core.package_identification:Package 'src/keyboard_teleop' with type 'ros.ament_python' and name 'keyboard_teleop'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extensions ['ignore', 'ignore_ament_install']
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extension 'ignore'
+[1.237s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extension 'ignore_ament_install'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extensions ['colcon_pkg']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extension 'colcon_pkg'
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extensions ['colcon_meta']
+[1.238s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extension 'colcon_meta'
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extensions ['ros']
+[1.239s] Level 1:colcon.colcon_core.package_identification:_identify(src/motion_cmd) by extension 'ros'
+[1.242s] DEBUG:colcon.colcon_core.package_identification:Package 'src/motion_cmd' with type 'ros.catkin' and name 'motion_cmd'
+[1.243s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extensions ['ignore', 'ignore_ament_install']
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extension 'ignore'
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extension 'ignore_ament_install'
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extensions ['colcon_pkg']
+[1.244s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extension 'colcon_pkg'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extensions ['colcon_meta']
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extension 'colcon_meta'
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extensions ['ros']
+[1.245s] Level 1:colcon.colcon_core.package_identification:_identify(src/servo_calibration) by extension 'ros'
+[1.247s] DEBUG:colcon.colcon_core.package_identification:Package 'src/servo_calibration' with type 'ros.ament_python' and name 'servo_calibration'
+[1.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.248s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.327s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.328s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.337s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 4 installed packages in /home/robodog/RoboDog/ros2_ws/install
+[1.346s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 270 installed packages in /opt/ros/humble
+[1.356s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.561s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'cmake_args' from command line to 'None'
+[1.562s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'cmake_target' from command line to 'None'
+[1.562s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.562s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'cmake_clean_cache' from command line to 'False'
+[1.562s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'cmake_clean_first' from command line to 'False'
+[1.562s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'cmake_force_configure' from command line to 'False'
+[1.562s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'ament_cmake_args' from command line to 'None'
+[1.563s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'catkin_cmake_args' from command line to 'None'
+[1.563s] Level 5:colcon.colcon_core.verb:set package 'i2cpwm_controller' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.563s] DEBUG:colcon.colcon_core.verb:Building package 'i2cpwm_controller' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller', 'merge_install': False, 'path': '/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller', 'symlink_install': False, 'test_result_base': None}
+[1.564s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_args' from command line to 'None'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_target' from command line to 'None'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[1.565s] Level 5:colcon.colcon_core.verb:set package 'keyboard_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.565s] DEBUG:colcon.colcon_core.verb:Building package 'keyboard_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop', 'merge_install': False, 'path': '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop', 'symlink_install': False, 'test_result_base': None}
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'cmake_args' from command line to 'None'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'cmake_target' from command line to 'None'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'cmake_clean_cache' from command line to 'False'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'cmake_clean_first' from command line to 'False'
+[1.567s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'cmake_force_configure' from command line to 'False'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'ament_cmake_args' from command line to 'None'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'catkin_cmake_args' from command line to 'None'
+[1.568s] Level 5:colcon.colcon_core.verb:set package 'motion_cmd' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.568s] DEBUG:colcon.colcon_core.verb:Building package 'motion_cmd' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robodog/RoboDog/ros2_ws/build/motion_cmd', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robodog/RoboDog/ros2_ws/install/motion_cmd', 'merge_install': False, 'path': '/home/robodog/RoboDog/ros2_ws/src/motion_cmd', 'symlink_install': False, 'test_result_base': None}
+[1.569s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_args' from command line to 'None'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_target' from command line to 'None'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_clean_cache' from command line to 'False'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_clean_first' from command line to 'False'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'cmake_force_configure' from command line to 'False'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'ament_cmake_args' from command line to 'None'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'catkin_cmake_args' from command line to 'None'
+[1.570s] Level 5:colcon.colcon_core.verb:set package 'servo_calibration' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.570s] DEBUG:colcon.colcon_core.verb:Building package 'servo_calibration' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/robodog/RoboDog/ros2_ws/build/servo_calibration', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/robodog/RoboDog/ros2_ws/install/servo_calibration', 'merge_install': False, 'path': '/home/robodog/RoboDog/ros2_ws/src/servo_calibration', 'symlink_install': False, 'test_result_base': None}
+[1.571s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.574s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.575s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller' with build type 'ament_cmake'
+[1.576s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller'
+[1.585s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.586s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.586s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.606s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop' with build type 'ament_python'
+[1.606s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_teleop', 'ament_prefix_path')
+[1.608s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/hook/ament_prefix_path.ps1'
+[1.611s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/hook/ament_prefix_path.dsv'
+[1.613s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/hook/ament_prefix_path.sh'
+[1.617s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.618s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.652s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
+[3.357s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop'
+[3.359s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.360s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[5.077s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop': PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/keyboard_teleop build --build-base /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/build install --record /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/install.log --single-version-externally-managed install_data
+[6.816s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/ros2_ws/src/keyboard_teleop' returned '0': PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/keyboard_teleop build --build-base /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/build install --record /home/robodog/RoboDog/ros2_ws/build/keyboard_teleop/install.log --single-version-externally-managed install_data
+[6.832s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop' for CMake module files
+[6.835s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop' for CMake config files
+[6.839s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib'
+[6.841s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/bin'
+[6.841s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/pkgconfig/keyboard_teleop.pc'
+[6.842s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/lib/python3.10/site-packages'
+[6.843s] Level 1:colcon.colcon_core.shell:create_environment_hook('keyboard_teleop', 'pythonpath')
+[6.844s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/hook/pythonpath.ps1'
+[6.847s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/hook/pythonpath.dsv'
+[6.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/hook/pythonpath.sh'
+[6.853s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/bin'
+[6.853s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(keyboard_teleop)
+[6.855s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/package.ps1'
+[6.860s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/package.dsv'
+[6.865s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/package.sh'
+[6.870s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/package.bash'
+[6.874s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/keyboard_teleop/package.zsh'
+[6.890s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop/share/colcon-core/packages/keyboard_teleop)
+[59.645s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
+[61.019s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller
+[61.546s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(i2cpwm_controller)
+[61.547s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller' for CMake module files
+[61.549s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller
+[61.554s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller' for CMake config files
+[61.563s] Level 1:colcon.colcon_core.shell:create_environment_hook('i2cpwm_controller', 'cmake_prefix_path')
+[61.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/cmake_prefix_path.ps1'
+[61.567s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/cmake_prefix_path.dsv'
+[61.569s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/cmake_prefix_path.sh'
+[61.573s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib'
+[61.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('i2cpwm_controller', 'ld_library_path_lib')
+[61.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/ld_library_path_lib.ps1'
+[61.577s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/ld_library_path_lib.dsv'
+[61.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/ld_library_path_lib.sh'
+[61.581s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/bin'
+[61.581s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/pkgconfig/i2cpwm_controller.pc'
+[61.582s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/python3.10/site-packages'
+[61.583s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/bin'
+[61.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.ps1'
+[61.587s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.dsv'
+[61.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.sh'
+[61.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.bash'
+[61.593s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.zsh'
+[61.596s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/colcon-core/packages/i2cpwm_controller)
+[62.950s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(i2cpwm_controller)
+[62.951s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller' for CMake module files
+[62.956s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller' for CMake config files
+[62.966s] Level 1:colcon.colcon_core.shell:create_environment_hook('i2cpwm_controller', 'cmake_prefix_path')
+[62.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/cmake_prefix_path.ps1'
+[62.969s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/cmake_prefix_path.dsv'
+[62.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/cmake_prefix_path.sh'
+[62.974s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib'
+[62.975s] Level 1:colcon.colcon_core.shell:create_environment_hook('i2cpwm_controller', 'ld_library_path_lib')
+[62.976s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/ld_library_path_lib.ps1'
+[62.978s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/ld_library_path_lib.dsv'
+[62.980s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/hook/ld_library_path_lib.sh'
+[62.982s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/bin'
+[62.982s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/pkgconfig/i2cpwm_controller.pc'
+[62.983s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/lib/python3.10/site-packages'
+[62.984s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/bin'
+[62.985s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.ps1'
+[62.988s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.dsv'
+[62.991s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.sh'
+[62.994s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.bash'
+[62.996s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/i2cpwm_controller/package.zsh'
+[62.998s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller/share/colcon-core/packages/i2cpwm_controller)
+[63.000s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/robodog/RoboDog/ros2_ws/src/motion_cmd' with build type 'catkin'
+[63.001s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/robodog/RoboDog/ros2_ws/src/motion_cmd'
+[63.002s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[63.002s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[63.022s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration' with build type 'ament_python'
+[63.023s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_calibration', 'ament_prefix_path')
+[63.025s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/hook/ament_prefix_path.ps1'
+[63.028s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/hook/ament_prefix_path.dsv'
+[63.030s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/hook/ament_prefix_path.sh'
+[63.033s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[63.034s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[63.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[64.663s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration'
+[64.665s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[64.665s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[67.245s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data
+[68.780s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/servo_calibration' for CMake module files
+[68.783s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/ros2_ws/src/servo_calibration' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd PYTHONPATH=/home/robodog/RoboDog/ros2_ws/build/servo_calibration/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/servo_calibration build --build-base /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build install --record /home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log --single-version-externally-managed install_data
+[68.786s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/servo_calibration' for CMake config files
+[68.791s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib'
+[68.792s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/bin'
+[68.793s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/pkgconfig/servo_calibration.pc'
+[68.794s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages'
+[68.794s] Level 1:colcon.colcon_core.shell:create_environment_hook('servo_calibration', 'pythonpath')
+[68.796s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/hook/pythonpath.ps1'
+[68.798s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/hook/pythonpath.dsv'
+[68.801s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/hook/pythonpath.sh'
+[68.805s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/bin'
+[68.805s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(servo_calibration)
+[68.807s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/package.ps1'
+[68.811s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/package.dsv'
+[68.814s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/package.sh'
+[68.817s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/package.bash'
+[68.821s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/servo_calibration/package.zsh'
+[68.828s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robodog/RoboDog/ros2_ws/install/servo_calibration/share/colcon-core/packages/servo_calibration)
+[69.600s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/motion_cmd -- -j4 -l4
+[70.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd
+[70.307s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/robodog/RoboDog/ros2_ws/build/motion_cmd' returned '0': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/i2cpwm_controller:/home/robodog/RoboDog/ros2_ws/install/motion_cmd /usr/bin/cmake --install /home/robodog/RoboDog/ros2_ws/build/motion_cmd
+[70.586s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_cmd', 'ros_package_path')
+[70.587s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/ros_package_path.ps1'
+[70.590s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/ros_package_path.dsv'
+[70.593s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/ros_package_path.sh'
+[70.598s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_cmd', 'pkg_config_path')
+[70.599s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/pkg_config_path.ps1'
+[70.601s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/pkg_config_path.dsv'
+[70.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/pkg_config_path.sh'
+[70.615s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_cmd', 'pkg_config_path_multiarch')
+[70.616s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/pkg_config_path_multiarch.ps1'
+[70.618s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/pkg_config_path_multiarch.dsv'
+[70.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/pkg_config_path_multiarch.sh'
+[70.625s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(motion_cmd)
+[70.626s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/motion_cmd' for CMake module files
+[70.629s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/motion_cmd' for CMake config files
+[70.631s] Level 1:colcon.colcon_core.shell:create_environment_hook('motion_cmd', 'cmake_prefix_path')
+[70.632s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/cmake_prefix_path.ps1'
+[70.634s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/cmake_prefix_path.dsv'
+[70.636s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/hook/cmake_prefix_path.sh'
+[70.639s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib'
+[70.640s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/bin'
+[70.640s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/pkgconfig/motion_cmd.pc'
+[70.641s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/lib/python3.10/site-packages'
+[70.642s] Level 1:colcon.colcon_core.environment:checking '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/bin'
+[70.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.ps1'
+[70.647s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.dsv'
+[70.650s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.sh'
+[70.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.bash'
+[70.654s] INFO:colcon.colcon_core.shell:Creating package script '/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/motion_cmd/package.zsh'
+[70.656s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/robodog/RoboDog/ros2_ws/install/motion_cmd/share/colcon-core/packages/motion_cmd)
+[70.658s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[70.659s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[70.659s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[70.660s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[70.682s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[70.682s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[70.682s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[70.723s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[70.724s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/ros2_ws/install/local_setup.ps1'
+[70.728s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robodog/RoboDog/ros2_ws/install/_local_setup_util_ps1.py'
+[70.735s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/ros2_ws/install/setup.ps1'
+[70.741s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/ros2_ws/install/local_setup.sh'
+[70.744s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/robodog/RoboDog/ros2_ws/install/_local_setup_util_sh.py'
+[70.748s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/ros2_ws/install/setup.sh'
+[70.753s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/ros2_ws/install/local_setup.bash'
+[70.756s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/ros2_ws/install/setup.bash'
+[70.761s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/robodog/RoboDog/ros2_ws/install/local_setup.zsh'
+[70.763s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/robodog/RoboDog/ros2_ws/install/setup.zsh'

@@ -1,0 +1,14 @@
+[01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:[m[K In member function ‘[01m[Kvoid I2cPwmController::servos_absolute(i2cpwm_controller::msg::ServoArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:171:26:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Logger[m[K’ to ‘[01m[Kconst char*[m[K’
+  171 |         printf([01;31m[Kget_logger()[m[K,"servo[%d] = %d", servo.servo, value);
+      |                [01;31m[K~~~~~~~~~~^~[m[K
+      |                          [01;31m[K|[m[K
+      |                          [01;31m[Krclcpp::Logger[m[K
+In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:3[m[K,
+                 from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kint printf(const char*, ...)[m[K’
+  356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+      |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/i2cpwm_controller_lib.dir/build.make:76: CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/i2cpwm_controller_lib.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

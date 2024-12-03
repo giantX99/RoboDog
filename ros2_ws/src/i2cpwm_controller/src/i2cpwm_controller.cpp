@@ -166,8 +166,9 @@ void I2cPwmController::servos_absolute(const i2cpwm_controller::msg::ServoArray:
             RCLCPP_ERROR(get_logger(), "Invalid PWM value %d. Must be between 0 and 4096", value);
             continue;
         }
-        _set_pwm_interval(servo.servo, 0, value);
         RCLCPP_DEBUG(get_logger(),"servo[%d] = %d", servo.servo, value);
+        _set_pwm_interval(servo.servo, 0, value);
+        printf("servo[%d] = %d\n", servo.servo, value);
     }
 }
 

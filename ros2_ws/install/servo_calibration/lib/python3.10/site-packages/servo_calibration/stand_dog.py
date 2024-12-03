@@ -60,7 +60,7 @@ keyDict = {
     'm': lambda x: x.set_max(x.value),
 }
 
-validCmds = ['quit','oneServo','allServos']
+validCmds = ['quit','oneServo','allServos', 'stand']
 
 class ServoConvert():
     '''
@@ -147,7 +147,7 @@ class SpotMicroServoControl(Node):
         self.servos = {
             0   :   ServoConvert(id=0, direction=1, max=576, min=86), 
             1   :   ServoConvert(id=1, direction=1, max=576, min=86),  
-            2   :   ServoConvert(id=2, direction=1, max=576, min=316, center=466), # max = 576 ; min = 316 ; center = 466
+            2   :   ServoConvert(id=2, direction=1, max=500, min=320),# center=466), # max = 576 ; min = 316 ; center = 466
             3   :   ServoConvert(id=3, direction=1, max=576, min=86), 
             4   :   ServoConvert(id=4, direction=1, max=576, min=86),  
             5   :   ServoConvert(id=5, direction=-1, max=86, min=266, center=106), # max =  86; min = 266 ; center = 106; dir = -1
@@ -166,7 +166,7 @@ class SpotMicroServoControl(Node):
         self._servo_array_msg.servos = [Servo() for _ in range(numServos)]
         
         # Create the servo array publisher
-        self.ros_pub_servo_array = self.create_publisher(ServoArray, "/servos_proportional", 1)
+        self.ros_pub_servo_array = self.create_publisher(ServoArray, "/servos_absolute", 1)
         self.get_logger().info("> Publisher corrrectly initialized")
 
         self.get_logger().info("Initialization complete")
@@ -294,10 +294,19 @@ class SpotMicroServoControl(Node):
                     self.send_servo_msg()
 
                     for s in self.servos:
-                        self.servos[s].value = self.servos[s]._center
-                    
+                        self.servos[s].value = self.servos[s]._center + 30
+                        print(f"SERVO: {s+1} ; PWM: {self.servos[s].value}")
                     self.send_servo_msg()
-                                
+
+                    for s in self.servos:
+                        self.servos[s].value = self.servos[s]._max - 50
+                        print(f"SERVO: {s+1} ; PWM: {self.servos[s].value}")
+                    self.send_servo_msg()
+
+                    # self.reset_all_servos_off()
+                    # self.send_servo_msg()
+
+
             # Set the control rate in Hz
             rclpy.spin_once(self, timeout_sec=0.1)
             

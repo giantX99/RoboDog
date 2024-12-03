@@ -1,0 +1,5 @@
+  File "/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/stand_dog.py", line 150
+    2   :   ServoConvert(id=2, direction=1, max=576, min=316)#, center=466), # max = 576 ; min = 316 ; center = 466
+            
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+

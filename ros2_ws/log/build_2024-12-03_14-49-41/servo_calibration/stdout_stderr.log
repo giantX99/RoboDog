@@ -1,0 +1,28 @@
+running egg_info
+writing ../../build/servo_calibration/servo_calibration.egg-info/PKG-INFO
+writing dependency_links to ../../build/servo_calibration/servo_calibration.egg-info/dependency_links.txt
+writing entry points to ../../build/servo_calibration/servo_calibration.egg-info/entry_points.txt
+writing requirements to ../../build/servo_calibration/servo_calibration.egg-info/requires.txt
+writing top-level names to ../../build/servo_calibration/servo_calibration.egg-info/top_level.txt
+reading manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+adding license file 'LICENSE'
+writing manifest file '../../build/servo_calibration/servo_calibration.egg-info/SOURCES.txt'
+running build
+running build_py
+copying servo_calibration/stand_dog.py -> /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration
+running install
+running install_lib
+copying /home/robodog/RoboDog/ros2_ws/build/servo_calibration/build/lib/servo_calibration/stand_dog.py -> /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration
+byte-compiling /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/stand_dog.py to stand_dog.cpython-310.pyc
+  File "/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration/stand_dog.py", line 150
+    2   :   ServoConvert(id=2, direction=1, max=576, min=316)#, center=466), # max = 576 ; min = 316 ; center = 466
+            
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+
+running install_data
+running install_egg_info
+removing '/home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/servo_calibration/servo_calibration.egg-info to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/python3.10/site-packages/servo_calibration-0.0.0-py3.10.egg-info
+running install_scripts
+Installing servo_calib_node script to /home/robodog/RoboDog/ros2_ws/install/servo_calibration/lib/servo_calibration
+writing list of installed files to '/home/robodog/RoboDog/ros2_ws/build/servo_calibration/install.log'

@@ -1,0 +1,39 @@
+[0.077s] Invoking command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
+[0.374s] [  0%] Built target i2cpwm_controller__cpp
+[0.435s] [ 12%] Built target i2cpwm_controller__rosidl_generator_c
+[0.530s] [ 12%] Built target ament_cmake_python_copy_i2cpwm_controller
+[0.581s] [ 23%] Built target i2cpwm_controller__rosidl_typesupport_cpp
+[0.608s] [ 34%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_cpp
+[0.661s] [ 45%] Built target i2cpwm_controller__rosidl_typesupport_introspection_cpp
+[0.726s] [ 56%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c
+[0.826s] [ 78%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c
+[0.829s] [ 79%] Built target i2cpwm_controller__rosidl_typesupport_c
+[0.920s] [ 80%] [32mBuilding CXX object CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.o[0m
+[0.948s] [ 80%] Built target i2cpwm_controller
+[1.071s] [ 81%] Built target i2cpwm_controller__py
+[1.219s] [ 91%] Built target i2cpwm_controller__rosidl_generator_py
+[1.386s] [ 93%] Built target i2cpwm_controller__rosidl_typesupport_fastrtps_c__pyext
+[1.483s] [ 95%] Built target i2cpwm_controller__rosidl_typesupport_introspection_c__pyext
+[1.542s] [ 97%] Built target i2cpwm_controller__rosidl_typesupport_c__pyext
+[2.280s] running egg_info
+[2.284s] writing i2cpwm_controller.egg-info/PKG-INFO
+[2.285s] writing dependency_links to i2cpwm_controller.egg-info/dependency_links.txt
+[2.290s] writing top-level names to i2cpwm_controller.egg-info/top_level.txt
+[2.300s] reading manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[2.308s] writing manifest file 'i2cpwm_controller.egg-info/SOURCES.txt'
+[2.466s] [ 97%] Built target ament_cmake_python_build_i2cpwm_controller_egg
+[12.281s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:[m[K In member function ‘[01m[Kvoid I2cPwmController::servos_absolute(i2cpwm_controller::msg::ServoArray_<std::allocator<void> >::SharedPtr)[m[K’:
+[12.281s] [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:171:26:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Krclcpp::Logger[m[K’ to ‘[01m[Kconst char*[m[K’
+[12.282s]   171 |         printf([01;31m[Kget_logger()[m[K,"servo[%d] = %d", servo.servo, value);
+[12.282s]       |                [01;31m[K~~~~~~~~~~^~[m[K
+[12.283s]       |                          [01;31m[K|[m[K
+[12.283s]       |                          [01;31m[Krclcpp::Logger[m[K
+[12.284s] In file included from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/include/i2cpwm_controller.h:3[m[K,
+[12.284s]                  from [01m[K/home/robodog/RoboDog/ros2_ws/src/i2cpwm_controller/src/i2cpwm_controller.cpp:1[m[K:
+[12.284s] [01m[K/usr/include/stdio.h:356:43:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kint printf(const char*, ...)[m[K’
+[12.285s]   356 | extern int printf ([01;36m[Kconst char *__restrict __format[m[K, ...);
+[12.285s]       |                    [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~[m[K
+[25.806s] gmake[2]: *** [CMakeFiles/i2cpwm_controller_lib.dir/build.make:76: CMakeFiles/i2cpwm_controller_lib.dir/src/i2cpwm_controller.cpp.o] Error 1
+[25.807s] gmake[1]: *** [CMakeFiles/Makefile2:595: CMakeFiles/i2cpwm_controller_lib.dir/all] Error 2
+[25.808s] gmake: *** [Makefile:146: all] Error 2
+[25.814s] Invoked command in '/home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller' returned '2': CMAKE_PREFIX_PATH=/home/robodog/RoboDog/ros2_ws/install/servo_calibration:/home/robodog/RoboDog/ros2_ws/install/keyboard_teleop:/opt/ros/humble:${CMAKE_PREFIX_PATH} /usr/bin/cmake --build /home/robodog/RoboDog/ros2_ws/build/i2cpwm_controller -- -j4 -l4
