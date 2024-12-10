@@ -1,7 +1,7 @@
 
 # RoboDog Project
 
-Welcome to the RoboDog Project repository, developed as part of the Electrical & Computer Engineering Capstone Project for FY2024. This project involves the design and implementation of a robotic dog controlled by a Raspberry Pi 4 running Ubuntu 22.04 and ROS 2 Humble Hawksbill.
+Welcome to the RoboDog Project repository, developed as part of the University of Missouri Electrical & Computer Engineering Capstone Project for FY2024. This project involves the improvement of design and implementation of a robotic dog controlled by a Raspberry Pi 4 running Ubuntu 22.04 and ROS 2 Humble Hawksbill.
 
 ## Table of Contents
 
